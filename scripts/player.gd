@@ -4,7 +4,9 @@ extends CharacterBody3D
 @onready var head: Node3D = $head
 @onready var standing_collision_shape: CollisionShape3D = $standing_collision_shape
 @onready var crouching_collision_shape: CollisionShape3D = $crouching_collision_shape
-@onready var ray_cast_3d: RayCast3D = $RayCast3D
+@onready var ray_cast_3d: RayCast3D = $crouch_checker
+@onready var interaction: RayCast3D = $head/Camera3D/interaction_check
+@onready var hand: Node3D = $hand
 
 # Speed variables
 var CURRENT_SPEED = 5.0
@@ -34,9 +36,16 @@ func _input(event: InputEvent) -> void:
 		rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 		head.rotate_x(deg_to_rad(-event.relative.y * mouse_sens))
 		head.rotation.x = clamp(head.rotation.x, deg_to_rad(-89), deg_to_rad(89))
-	
-func _physics_process(delta: float) -> void:
+		
 
+func _physics_process(delta: float) -> void:
+	var object = interaction.get_collider()
+	if interaction.is_colliding():
+		if object.is_in_group("item"):
+			if Input.is_action_pressed("interact"):
+				object.global_position = hand.global_position
+				object.global_rotation = hand.global_rotation
+				
 # Handle Movement State
 	# Crouching
 	if Input.is_action_pressed("crouch"):
