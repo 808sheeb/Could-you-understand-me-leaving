@@ -1,11 +1,12 @@
-extends Node
+extends Node3D
 
+class_name InteractableItem
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+@export var ItemHightlightMesh : MeshInstance3D
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func GainFocus():
+	ItemHightlightMesh.visible = true
+	
+func LoseFocus():
+	ItemHightlightMesh.visible = false
+	
