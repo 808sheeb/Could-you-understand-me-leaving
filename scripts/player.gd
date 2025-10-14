@@ -8,11 +8,11 @@ extends CharacterBody3D
 
 
 # Speed variables
-var CURRENT_SPEED = 5.0
+var CURRENT_SPEED = 3.0
 
-const WALKING_SPEED = 5.0
-const SPRINTING_SPEED = 8.0
-const CROUCHING_SPEED = 3.0
+const WALKING_SPEED = 3.0
+const SPRINTING_SPEED = 5.0
+const CROUCHING_SPEED = 2.0
 
 
 # Input variables
@@ -39,9 +39,9 @@ func _input(event: InputEvent) -> void:
 
 func _physics_process(delta: float) -> void:
 	
-	if %interact_ray.is_colliding():
-		var target = %interact_ray.get_collider()
-		print(target)
+	#if %interact_ray.is_colliding():
+		#var target = %interact_ray.get_collider()
+		#print(target)
 	
 # Handle Movement State
 	# Crouching
