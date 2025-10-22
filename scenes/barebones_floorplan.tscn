@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=9 format=3 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_jeeq7"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="2_2sury"]
@@ -16,7 +16,11 @@ sky = SubResource("Sky_tefeu")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kv8ak"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2sury"]
+albedo_texture = ExtResource("2_2sury")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2olvw"]
 albedo_texture = ExtResource("2_2sury")
 uv1_triplanar = true
 
@@ -33,131 +37,360 @@ environment = SubResource("Environment_bwnir")
 
 [node name="stage" type="Node3D" parent="."]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013301849, 0.03152466, 0.0011401176)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="stage"]
-use_collision = true
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="stage/CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.367897, 7.859213, 20)
-size = Vector3(0.25, 16, 60)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="stage/CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.367897, 8.859213, 20)
-operation = 2
-size = Vector3(0.25, 10, 44)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, 0)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, 20)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D5" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 40)
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D6" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, 40)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D9" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013301849, 16.031525, 0.0011401176)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D10" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 20)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D11" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 16, 0)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D12" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 16, 20)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D13" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 40)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D14" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 16, 40)
-use_collision = true
-size = Vector3(35, 0.25, 20)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D7" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.518, 7.856, -9.872)
-use_collision = true
-size = Vector3(70, 16, 0.25)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D8" type="CSGBox3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.518, 7.856, 50.128)
-use_collision = true
-size = Vector3(70, 16, 0.25)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="stage"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.251274, 0, 0)
-use_collision = true
-
-[node name="CSGBox3D10" type="CSGBox3D" parent="stage/CSGCombiner3D2"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -7.6247926, 7.856, 38.694828)
-size = Vector3(23.295715, 16, 0.25)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D11" type="CSGBox3D" parent="stage/CSGCombiner3D2"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -7.624792, 5.9182405, 38.694828)
-operation = 2
-size = Vector3(7.211914, 12.124481, 3.1896973)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGCombiner3D3" type="CSGCombiner3D" parent="stage"]
-use_collision = true
-
-[node name="CSGBox3D9" type="CSGBox3D" parent="stage/CSGCombiner3D3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.679544, 7.856, 27.146763)
-size = Vector3(38.162384, 16, 0.25)
-material = SubResource("StandardMaterial3D_kv8ak")
-
-[node name="CSGBox3D10" type="CSGBox3D" parent="stage/CSGCombiner3D3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.851856, 11.424359, 27.146763)
-operation = 2
-size = Vector3(10.2503395, 8.863281, 0.25)
-material = SubResource("StandardMaterial3D_kv8ak")
-
 [node name="player" parent="." instance=ExtResource("3_2sury")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.6919746, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.023253, -1.3797219, -11.4893465)
+
+[node name="floorplan" type="Node3D" parent="."]
+
+[node name="Kitchen" type="Node3D" parent="floorplan"]
+
+[node name="dining_room" type="CSGCombiner3D" parent="floorplan/Kitchen"]
+
+[node name="kitchen_dining_divider" type="CSGBox3D" parent="floorplan/Kitchen/dining_room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.583849, 2.5, -1.2692327)
+use_collision = true
+size = Vector3(7, 5, 0.5)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="door2" type="CSGBox3D" parent="floorplan/Kitchen/dining_room"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -10.529486, 2, -1.288599)
+operation = 2
+use_collision = true
+size = Vector3(1.7978516, 4, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="kitchen_dining-room" type="CSGBox3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0, -3)
+use_collision = true
+size = Vector3(7, 0.1, 24)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="kitchen_wall" type="CSGBox3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2.5, -4.5)
+use_collision = true
+size = Vector3(0.1, 5, 27)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="kitchen_divider" type="CSGBox3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.5, -3.5196533)
+use_collision = true
+size = Vector3(0.5, 5, 11)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="kitchen_oven_wall" type="CSGBox3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 2.5, -15)
+use_collision = true
+size = Vector3(7, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="kitchen_doorway" type="CSGCombiner3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.5, -12.519653)
+
+[node name="kitchen_wall_small" type="CSGBox3D" parent="floorplan/Kitchen/kitchen_doorway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
+use_collision = true
+size = Vector3(0.5, 5, 6)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="door" type="CSGBox3D" parent="floorplan/Kitchen/kitchen_doorway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 2.5)
+operation = 2
+use_collision = true
+size = Vector3(0.5, 4, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="kitchen_divider2" type="CSGBox3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 1.2072754, 2.9559464)
+use_collision = true
+size = Vector3(0.5, 2.4145508, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="Living Room" type="Node3D" parent="floorplan"]
+
+[node name="living_room_floor" type="CSGBox3D" parent="floorplan/Living Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+use_collision = true
+size = Vector3(11, 0.1, 18)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="living_room_window" type="CSGCombiner3D" parent="floorplan/Living Room"]
+use_collision = true
+
+[node name="living_room_front_wall" type="CSGBox3D" parent="floorplan/Living Room/living_room_window"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.5, 9)
+use_collision = true
+size = Vector3(18, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="window_cutout" type="CSGBox3D" parent="floorplan/Living Room/living_room_window"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.7541504, 9)
+operation = 2
+use_collision = true
+size = Vector3(12, 3.4916992, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="living_room_wall" type="CSGBox3D" parent="floorplan/Living Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 0)
+use_collision = true
+size = Vector3(0.1, 5, 18)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="living_room_divider" type="CSGBox3D" parent="floorplan/Living Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0500002, -0.28353882, -8.736845)
+use_collision = true
+size = Vector3(8, 3.5286255, 0.5)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="Foyer" type="Node3D" parent="floorplan"]
+
+[node name="foyer_floor_up" type="CSGBox3D" parent="floorplan/Foyer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -11)
+use_collision = true
+size = Vector3(5, 0.1, 4)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="foyer_ramp_up" type="CSGPolygon3D" parent="floorplan/Foyer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, -9)
+use_collision = true
+polygon = PackedVector2Array(-0.0041692257, -1.0098171, 0.0040988326, 1.0539018, 3.0175562, -0.9984677)
+depth = 4.0
+material = SubResource("StandardMaterial3D_2olvw")
+
+[node name="foyer_floor" type="CSGBox3D" parent="floorplan/Foyer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.522, -2.023, -13)
+use_collision = true
+size = Vector3(3, 0.1, 8)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="foyer_ramp_down" type="CSGPolygon3D" parent="floorplan/Foyer"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.025, -3.03, -17)
+use_collision = true
+polygon = PackedVector2Array(0.0043959618, -2.5248063, 0.0040988326, 1.0539018, 5.4359875, -2.4061954)
+depth = 4.0
+material = SubResource("StandardMaterial3D_2olvw")
+
+[node name="Shihab" type="Node3D" parent="floorplan"]
+
+[node name="shihab_floor" type="CSGBox3D" parent="floorplan/Shihab"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -22)
+use_collision = true
+size = Vector3(10, 0.1, 10)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="shihab_door_wall" type="CSGBox3D" parent="floorplan/Shihab"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, -19.45155)
+use_collision = true
+size = Vector3(0.5, 5, 5)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="shihab_wall" type="CSGBox3D" parent="floorplan/Shihab"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2.5, -22)
+use_collision = true
+size = Vector3(0.1, 5, 10)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="shihab_window_wall" type="CSGBox3D" parent="floorplan/Shihab"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.5, -16.930647)
+use_collision = true
+size = Vector3(10, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="shihab_wall_2" type="CSGBox3D" parent="floorplan/Shihab"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2.5, -24.930647)
+use_collision = true
+size = Vector3(8, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="shihab_window_wall2" type="CSGBox3D" parent="floorplan/Shihab"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.5, -21.930647)
+use_collision = true
+size = Vector3(2, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="shihab_door_wall2" type="CSGBox3D" parent="floorplan/Shihab"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.5, -24.45155)
+use_collision = true
+size = Vector3(0.5, 5, 5)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="door" type="CSGBox3D" parent="floorplan/Shihab/shihab_door_wall2"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.10670376, -0.5, 0.9645252)
+operation = 2
+use_collision = true
+size = Vector3(0.9458008, 4, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="Rayah" type="Node3D" parent="floorplan"]
+
+[node name="rayah_wall_back" type="CSGBox3D" parent="floorplan/Rayah"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2.5, -30.5)
+use_collision = true
+size = Vector3(0.1, 5, 13)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="rayah_door_wall" type="CSGBox3D" parent="floorplan/Rayah"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.5, -30.45155)
+use_collision = true
+size = Vector3(0.5, 5, 13)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="door" type="CSGBox3D" parent="floorplan/Rayah/rayah_door_wall"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.10670376, -0.5, 5.169054)
+operation = 2
+use_collision = true
+size = Vector3(0.9458008, 4, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="rayah_floor" type="CSGCombiner3D" parent="floorplan/Rayah"]
+use_collision = true
+
+[node name="rayah_floor" type="CSGBox3D" parent="floorplan/Rayah/rayah_floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -30.5)
+use_collision = true
+size = Vector3(8, 0.1, 13)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="rayah_floor2" type="CSGBox3D" parent="floorplan/Rayah/rayah_floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, -25.5)
+operation = 2
+use_collision = true
+size = Vector3(1, 0.1, 3)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="parent_back_wall" type="CSGBox3D" parent="floorplan/Rayah"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 2.5, -36.93065)
+use_collision = true
+size = Vector3(7, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="Parents" type="Node3D" parent="floorplan"]
+
+[node name="parent_side_wall" type="CSGBox3D" parent="floorplan/Parents"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2.5, -32)
+use_collision = true
+size = Vector3(0.1, 5, 10)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="parent_back_wall" type="CSGBox3D" parent="floorplan/Parents"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2.5, -36.93065)
+use_collision = true
+size = Vector3(13, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="parent_door_wall" type="CSGBox3D" parent="floorplan/Parents"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2.5, -26.930647)
+use_collision = true
+size = Vector3(13, 5, 0.5)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="door" type="CSGBox3D" parent="floorplan/Parents/parent_door_wall"]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -3.611895, -0.5, -0.018598557)
+operation = 2
+use_collision = true
+size = Vector3(0.9458008, 4, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="door2" type="CSGBox3D" parent="floorplan/Parents/parent_door_wall"]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 0.5796819, -0.5, -0.018599106)
+operation = 2
+use_collision = true
+size = Vector3(0.9458008, 4, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="parent_floor" type="CSGBox3D" parent="floorplan/Parents"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -32)
+use_collision = true
+size = Vector3(12, 0.1, 10)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="Basement" type="Node3D" parent="floorplan"]
+
+[node name="Washroom" type="Node3D" parent="floorplan"]
+
+[node name="washroom_back_wall" type="CSGBox3D" parent="floorplan/Washroom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2.5, -21)
+use_collision = true
+size = Vector3(0.1, 5, 6)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="washroom_floor" type="CSGBox3D" parent="floorplan/Washroom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0, -21)
+use_collision = true
+size = Vector3(7, 0.1, 6)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="washroom_side_wall" type="CSGBox3D" parent="floorplan/Washroom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 2.5, -18)
+use_collision = true
+size = Vector3(7, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="washroom_door_wall" type="CSGBox3D" parent="floorplan/Washroom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.5, -20.95155)
+use_collision = true
+size = Vector3(0.5, 5, 6)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="door" type="CSGBox3D" parent="floorplan/Washroom/washroom_door_wall"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.10670376, -0.5, 0.5103626)
+operation = 2
+use_collision = true
+size = Vector3(0.9458008, 4, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="washroom_shower_wall" type="CSGBox3D" parent="floorplan/Washroom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 2.5, -23.930647)
+use_collision = true
+size = Vector3(7, 5, 0.1)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="Hallway" type="Node3D" parent="floorplan"]
+
+[node name="hallway_floor" type="CSGBox3D" parent="floorplan/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, -20)
+use_collision = true
+size = Vector3(3, 0.1, 14)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="cubby_floor" type="CSGBox3D" parent="floorplan/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0, -16.5)
+use_collision = true
+size = Vector3(7, 0.1, 3)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="cubby_backwall" type="CSGBox3D" parent="floorplan/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2.5, -16.5)
+use_collision = true
+size = Vector3(0.1, 5, 3)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="coatclosert_door" type="CSGBox3D" parent="floorplan/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -15.5)
+use_collision = true
+size = Vector3(2, 0.1, 5)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="coatcloset_backwall" type="CSGBox3D" parent="floorplan/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.5, -15)
+use_collision = true
+size = Vector3(0.1, 5, 4)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="coatcloset_sidewall" type="CSGBox3D" parent="floorplan/Hallway"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 2.5, -13)
+use_collision = true
+size = Vector3(0.1, 5, 2)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="coatcloset_wall" type="CSGBox3D" parent="floorplan/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, -14.95155)
+use_collision = true
+size = Vector3(0.5, 5, 4)
+material = SubResource("StandardMaterial3D_2sury")
+
+[node name="door" type="CSGBox3D" parent="floorplan/Hallway/coatcloset_wall"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.10670381, -0.5, -0.12161732)
+operation = 2
+use_collision = true
+size = Vector3(0.9458008, 4, 2)
+material = SubResource("StandardMaterial3D_2sury")
