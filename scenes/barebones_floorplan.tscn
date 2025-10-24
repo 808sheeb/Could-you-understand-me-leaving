@@ -13,6 +13,7 @@ sky_material = SubResource("PanoramaSkyMaterial_2olvw")
 [sub_resource type="Environment" id="Environment_bwnir"]
 background_mode = 2
 sky = SubResource("Sky_tefeu")
+ambient_light_sky_contribution = 0.45
 tonemap_mode = 2
 glow_enabled = true
 
@@ -170,6 +171,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4.957368, 1.9625959)
 use_collision = true
 size = Vector3(0.5, 0.087646484, 4)
 material = SubResource("StandardMaterial3D_2sury")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.936605, 4.667466, -10.719354)
+light_color = Color(1, 0, 0, 1)
+light_volumetric_fog_energy = 5.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.936605, 4.667466, -3.4517264)
+light_volumetric_fog_energy = 5.0
 
 [node name="Living Room" type="Node3D" parent="floorplan"]
 
@@ -446,7 +456,7 @@ size = Vector3(14, 5, 0.1)
 material = SubResource("StandardMaterial3D_2sury")
 
 [node name="window" type="CSGBox3D" parent="floorplan/Parents/parent_back_wall"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4358127, 0.099999905, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4358127, 0.43642187, 0)
 operation = 2
 size = Vector3(5, 3, 1)
 
