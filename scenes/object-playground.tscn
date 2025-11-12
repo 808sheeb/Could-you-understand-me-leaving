@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cvgboaqgvkxmr"]
 
-[ext_resource type="PackedScene" uid="uid://cuqlwf3610rgi" path="res://assets/3D Models/Models/Objects_Interior(Village)_Demo.fbx" id="1_65y3u"]
+[ext_resource type="PackedScene" uid="uid://cuqlwf3610rgi" path="res://assets/house assets/Models/Objects_Interior(Village)_Demo.fbx" id="1_65y3u"]
 
 [node name="ObjectPlayground" type="Node3D"]
 

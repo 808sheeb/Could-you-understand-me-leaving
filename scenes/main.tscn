@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://dxj5cq8f3ocjg"]
+[gd_scene load_steps=8 format=3 uid="uid://dxj5cq8f3ocjg"]
 
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="1_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="2_sugp2"]
-[ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player.tscn" id="3_sugp2"]
-[ext_resource type="PackedScene" uid="uid://cnhhiy7xbl4qn" path="res://scenes/TestCube.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="3_sugp2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jyhfs"]
 albedo_texture = ExtResource("1_0wfyh")
@@ -47,6 +46,3 @@ shadow_enabled = true
 environment = SubResource("Environment_o6xl0")
 
 [node name="player" parent="." instance=ExtResource("3_sugp2")]
-
-[node name="ItemTestCube" parent="." instance=ExtResource("4_jyhfs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4731903, 0.490735, 0)
