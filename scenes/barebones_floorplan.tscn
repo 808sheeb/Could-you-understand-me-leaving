@@ -14,6 +14,7 @@ sky_material = SubResource("PanoramaSkyMaterial_2olvw")
 
 [sub_resource type="Environment" id="Environment_bwnir"]
 background_mode = 2
+background_color = Color(1, 0, 0, 1)
 sky = SubResource("Sky_tefeu")
 ambient_light_sky_contribution = 0.45
 tonemap_mode = 2
@@ -497,6 +498,8 @@ size = Vector3(0.63183594, 1.7681274, 0.50683594)
 
 [node name="Button" parent="floorplan/Parents/button-pedestal" instance=ExtResource("4_bwnir")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8822056, 0)
+prompt_message = "Push"
+prompt_input = "forward"
 
 [node name="Basement" type="Node3D" parent="floorplan"]
 
@@ -641,7 +644,6 @@ material = SubResource("StandardMaterial3D_2sury")
 
 [node name="roof" type="CSGBox3D" parent="floorplan/Outside_Exterior"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 4.9598236, -13.90916)
-visible = false
 use_collision = true
 size = Vector3(0.1, 24, 46)
 material = SubResource("StandardMaterial3D_2sury")
@@ -650,3 +652,6 @@ material = SubResource("StandardMaterial3D_2sury")
 
 [node name="Bed01" parent="." instance=ExtResource("4_2olvw")]
 transform = Transform3D(-1.0293366e-07, 0, -2.2743654, 0, 2.2743654, 0, 2.3548477, 0, -9.941567e-08, 5.1730113, 0.39454353, -17.996796)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
