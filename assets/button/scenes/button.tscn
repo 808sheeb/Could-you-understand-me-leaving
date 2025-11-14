@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=4 uid="uid://psk3nbwd1l05"]
 
-[ext_resource type="Script" uid="uid://bt4p5vkno6g5u" path="res://scripts/button.gd" id="1_8f5ms"]
+[ext_resource type="Script" uid="uid://bt4p5vkno6g5u" path="res://scripts/interact/button.gd" id="1_8f5ms"]
 [ext_resource type="Texture2D" uid="uid://q0usq7w7yefu" path="res://assets/button/Textures/colormap.png" id="1_o1wpg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hyjdc"]
@@ -80,16 +80,16 @@ shadow_mesh = SubResource("ArrayMesh_ato32")
 [sub_resource type="BoxShape3D" id="BoxShape3D_vf05v"]
 size = Vector3(0.31860352, 0.103759766, 0.30273438)
 
-[sub_resource type="Animation" id="Animation_d1cm2"]
-resource_name = "toggle-on"
-length = 0.2
+[sub_resource type="Animation" id="Animation_d6ilk"]
+resource_name = "toggle"
+length = 0.5
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
 tracks/0/path = NodePath("button-floor-round-small/button")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.033333335, 1, 0, -0.00030419754, 0, 0.06666667, 1, 0, -0.0049382723, 0, 0.13333334, 1, 0, -0.04506173, 0, 0.2, 1, 0, -0.05, 0)
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.033333335, 1, 0, -0.00012641978, 0, 0.06666667, 1, 0, -0.0020227164, 0, 0.1, 1, 0, -0.010240002, 0, 0.13333334, 1, 0, -0.03102914, 0, 0.16666667, 1, 0, -0.04506173, 0, 0.2, 1, 0, -0.04936, 0, 0.3, 1, 0, -0.04936, 0, 0.33333334, 1, 0, -0.04506173, 0, 0.36666667, 1, 0, -0.031029135, 0, 0.4, 1, 0, -0.0102400035, 0, 0.43333334, 1, 0, -0.00202272, 0, 0.5, 1, 0, 0, 0)
 
 [sub_resource type="Animation" id="Animation_0iwab"]
 resource_name = "toggle-off"
@@ -102,16 +102,16 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 0, -0.05, 0, 0.033333335, 1, 0, -0.0496958, 0, 0.06666667, 1, 0, -0.04506173, 0, 0.13333334, 1, 0, -0.004938272, 0, 0.2, 1, 0, 0, 0)
 
-[sub_resource type="Animation" id="Animation_d6ilk"]
-resource_name = "toggle"
-length = 0.5
+[sub_resource type="Animation" id="Animation_d1cm2"]
+resource_name = "toggle-on"
+length = 0.2
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
 tracks/0/path = NodePath("button-floor-round-small/button")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.033333335, 1, 0, -0.00012641978, 0, 0.06666667, 1, 0, -0.0020227164, 0, 0.1, 1, 0, -0.010240002, 0, 0.13333334, 1, 0, -0.03102914, 0, 0.16666667, 1, 0, -0.04506173, 0, 0.2, 1, 0, -0.04936, 0, 0.3, 1, 0, -0.04936, 0, 0.33333334, 1, 0, -0.04506173, 0, 0.36666667, 1, 0, -0.031029135, 0, 0.4, 1, 0, -0.0102400035, 0, 0.43333334, 1, 0, -0.00202272, 0, 0.5, 1, 0, 0, 0)
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.033333335, 1, 0, -0.00030419754, 0, 0.06666667, 1, 0, -0.0049382723, 0, 0.13333334, 1, 0, -0.04506173, 0, 0.2, 1, 0, -0.05, 0)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tj0pr"]
 _data = {
