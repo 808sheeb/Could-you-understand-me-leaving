@@ -1,8 +1,8 @@
 extends Node2D
 @onready var alarm: Timer = $Alarm
-@onready var alarm_light: OmniLight3D = $"../floorplan/Parents/alarm_light"
 var rng = RandomNumberGenerator.new()
 @export var snooze = true
+signal snoozed
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	startAlarm()
@@ -17,14 +17,13 @@ func _on_alarm_timeout() -> void:
 func _on_button_interacted(_body):
 	if !snooze:
 		startAlarm()
+		snoozed.emit()
 
 func startAlarm():
 	var snoozeTime = rng.randi_range(10,20)
 	print(snoozeTime)
 	alarm.start(snoozeTime)
-	alarm_light.light_color = Color.WHITE
 	snooze = true
 
 func alarmTimeout():
 	snooze = false
-	alarm_light.light_color = Color.RED

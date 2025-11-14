@@ -1,6 +1,7 @@
 extends Interactable
 var playback : AnimationNodeStateMachinePlayback
 
+
 func _ready():
 	playback = $AnimationTree.get("parameters/playback")
 

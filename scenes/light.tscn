@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://nq53nrl3ps1s"]
+
+[ext_resource type="Script" uid="uid://s2gcsivl07mn" path="res://scripts/interact/light.gd" id="1_24oxn"]
+
+[node name="light" type="OmniLight3D"]
+light_volumetric_fog_energy = 5.0
+script = ExtResource("1_24oxn")

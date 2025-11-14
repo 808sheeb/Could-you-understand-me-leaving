@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=13 format=3 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_jeeq7"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="2_2sury"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dfw8iouxwrtdg" path="res://assets/house assets/lib/bed_01.tscn" id="4_2olvw"]
 [ext_resource type="PackedScene" uid="uid://psk3nbwd1l05" path="res://assets/button/scenes/button.tscn" id="4_bwnir"]
 [ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/gui.gd" id="6_kv8ak"]
+[ext_resource type="PackedScene" uid="uid://nq53nrl3ps1s" path="res://scenes/light.tscn" id="6_n51hg"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2olvw"]
 panorama = ExtResource("1_jeeq7")
@@ -503,6 +504,10 @@ size = Vector3(0.63183594, 1.7681274, 0.50683594)
 [node name="Button" parent="floorplan/Parents/button-pedestal" instance=ExtResource("4_bwnir")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8822056, 0)
 
+[node name="light" parent="floorplan/Parents" instance=ExtResource("6_n51hg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1592855, 3.6962423, -32.139114)
+light_energy = 2.32
+
 [node name="Basement" type="Node3D" parent="floorplan"]
 
 [node name="basement_floor" type="CSGBox3D" parent="floorplan/Basement"]
@@ -659,4 +664,5 @@ one_shot = true
 
 [connection signal="interacted" from="floorplan/Parents/button-pedestal/Button" to="floorplan/Parents/button-pedestal/Button" method="_on_interacted"]
 [connection signal="interacted" from="floorplan/Parents/button-pedestal/Button" to="GUI" method="_on_button_interacted"]
+[connection signal="snoozed" from="GUI" to="floorplan/Parents/light" method="_on_gui_snoozed"]
 [connection signal="timeout" from="GUI/Alarm" to="GUI" method="_on_alarm_timeout"]
