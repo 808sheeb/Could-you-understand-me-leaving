@@ -1,10 +1,18 @@
-[gd_scene load_steps=11 format=3 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=13 format=3 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_jeeq7"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="2_2sury"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player.tscn" id="3_2sury"]
 [ext_resource type="PackedScene" uid="uid://dfw8iouxwrtdg" path="res://assets/3D Models/lib/bed_01.tscn" id="4_2olvw"]
 [ext_resource type="PackedScene" uid="uid://jol7brg5wv6m" path="res://assets/3D Models/lib/red-button.tscn" id="4_bwnir"]
+=======
+[ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="3_2sury"]
+[ext_resource type="PackedScene" uid="uid://dfw8iouxwrtdg" path="res://assets/house assets/lib/bed_01.tscn" id="4_2olvw"]
+[ext_resource type="PackedScene" uid="uid://psk3nbwd1l05" path="res://assets/button/scenes/button.tscn" id="4_bwnir"]
+[ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/gui.gd" id="6_kv8ak"]
+[ext_resource type="Script" uid="uid://cj08e33e2jrl6" path="res://scripts/interact/light.gd" id="6_n51hg"]
+>>>>>>> Stashed changes
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2olvw"]
 panorama = ExtResource("1_jeeq7")
@@ -384,6 +392,9 @@ material = SubResource("StandardMaterial3D_2sury")
 
 [node name="furniture" type="Node3D" parent="floorplan/Shihab"]
 
+[node name="Bed01" parent="floorplan/Shihab" instance=ExtResource("4_2olvw")]
+transform = Transform3D(-1.0293366e-07, 0, -2.2743654, 0, 2.2743654, 0, 2.3548477, 0, -9.941567e-08, 5.1730113, 0.39454353, -17.996796)
+
 [node name="Rayah" type="Node3D" parent="floorplan"]
 
 [node name="rayah_wall_back" type="CSGBox3D" parent="floorplan/Rayah"]
@@ -494,8 +505,19 @@ material = SubResource("StandardMaterial3D_2sury")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9838543, 0.20630145, -32.027237)
 size = Vector3(1, 1.7681274, 1)
 
+<<<<<<< Updated upstream
 [node name="RedButton" parent="floorplan/Parents/button-pedestal" instance=ExtResource("4_bwnir")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.03408456, 0.98658836, 0.03544265)
+=======
+[node name="Button" parent="floorplan/Parents/button-pedestal" instance=ExtResource("4_bwnir")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8822056, 0)
+
+[node name="light_alarm" type="OmniLight3D" parent="floorplan/Parents"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5834827, 3.6585107, -31.897758)
+light_energy = 2.65
+light_volumetric_fog_energy = 9.75
+script = ExtResource("6_n51hg")
+>>>>>>> Stashed changes
 
 [node name="Basement" type="Node3D" parent="floorplan"]
 
@@ -644,7 +666,18 @@ use_collision = true
 size = Vector3(0.1, 24, 46)
 material = SubResource("StandardMaterial3D_2sury")
 
-[node name="Node" type="Node" parent="."]
+[node name="GUI" type="Node2D" parent="."]
+script = ExtResource("6_kv8ak")
 
+<<<<<<< Updated upstream
 [node name="Bed01" parent="." instance=ExtResource("4_2olvw")]
 transform = Transform3D(-1.0293366e-07, 0, -2.2743654, 0, 2.2743654, 0, 2.3548477, 0, -9.941567e-08, 5.1730113, 0.39454353, -17.996796)
+=======
+[node name="alarm_timer" type="Timer" parent="GUI"]
+wait_time = 10.0
+one_shot = true
+
+[connection signal="interacted" from="floorplan/Parents/button-pedestal/Button" to="GUI" method="_on_button_push"]
+[connection signal="isSnoozed" from="GUI" to="floorplan/Parents/light_alarm" method="is_snoozed"]
+[connection signal="timeout" from="GUI/alarm_timer" to="GUI" method="_on_alarm_timeout"]
+>>>>>>> Stashed changes
