@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dmrxcl117nshn"
-path="res://.godot/imported/button-floor-round-small.glb-a3d173be0521910ab633f26b73b45f05.scn"
+path="res://.godot/imported/button-floor-round-small.glb-791a20e7d439c5a991199ba5912ce2a9.scn"
 
 [deps]
 
-source_file="res://assets/button/button-floor-round-small.glb"
-dest_files=["res://.godot/imported/button-floor-round-small.glb-a3d173be0521910ab633f26b73b45f05.scn"]
+source_file="res://scenes/objects/button/button-floor-round-small.glb"
+dest_files=["res://.godot/imported/button-floor-round-small.glb-791a20e7d439c5a991199ba5912ce2a9.scn"]
 
 [params]
 

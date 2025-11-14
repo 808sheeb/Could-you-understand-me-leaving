@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=4 uid="uid://psk3nbwd1l05"]
 
 [ext_resource type="Script" uid="uid://bt4p5vkno6g5u" path="res://scripts/interact/button.gd" id="1_8f5ms"]
-[ext_resource type="Texture2D" uid="uid://q0usq7w7yefu" path="res://assets/button/Textures/colormap.png" id="1_o1wpg"]
+[ext_resource type="Texture2D" uid="uid://q0usq7w7yefu" path="res://scenes/objects/button/Textures/colormap.png" id="1_o1wpg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hyjdc"]
 resource_name = "colormap"

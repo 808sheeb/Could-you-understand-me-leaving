@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://4x7a2sb80jt2"
-path="res://.godot/imported/button-floor-square-small.glb-be0887df8585db022e03907771c60d70.scn"
+path="res://.godot/imported/button-floor-square-small.glb-8992634917990e27be55d9970c9ad0f8.scn"
 
 [deps]
 
-source_file="res://assets/button/button-floor-square-small.glb"
-dest_files=["res://.godot/imported/button-floor-square-small.glb-be0887df8585db022e03907771c60d70.scn"]
+source_file="res://scenes/objects/button/button-floor-square-small.glb"
+dest_files=["res://.godot/imported/button-floor-square-small.glb-8992634917990e27be55d9970c9ad0f8.scn"]
 
 [params]
 

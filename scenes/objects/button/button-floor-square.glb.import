@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dka6yycwg62bh"
-path="res://.godot/imported/button-floor-round.glb-709d9195666c9a62c7f63fe087ff70eb.scn"
+uid="uid://bsvvyf2spe31a"
+path="res://.godot/imported/button-floor-square.glb-1438fbe881912c4890749fca2c6f927f.scn"
 
 [deps]
 
-source_file="res://assets/button/button-floor-round.glb"
-dest_files=["res://.godot/imported/button-floor-round.glb-709d9195666c9a62c7f63fe087ff70eb.scn"]
+source_file="res://scenes/objects/button/button-floor-square.glb"
+dest_files=["res://.godot/imported/button-floor-square.glb-1438fbe881912c4890749fca2c6f927f.scn"]
 
 [params]
 

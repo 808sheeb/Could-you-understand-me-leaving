@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="2_2sury"]
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="3_2sury"]
 [ext_resource type="PackedScene" uid="uid://dfw8iouxwrtdg" path="res://assets/house assets/lib/bed_01.tscn" id="4_2olvw"]
-[ext_resource type="PackedScene" uid="uid://psk3nbwd1l05" path="res://assets/button/scenes/button.tscn" id="4_bwnir"]
+[ext_resource type="PackedScene" uid="uid://psk3nbwd1l05" path="res://scenes/objects/button/scenes/button.tscn" id="4_bwnir"]
 [ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/gui.gd" id="6_kv8ak"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2olvw"]
