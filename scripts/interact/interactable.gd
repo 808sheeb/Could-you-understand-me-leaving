@@ -5,6 +5,8 @@ class_name Interactable
 @export var prompt_message = "Interact"
 @export var prompt_input = "interact"
 
+signal interacted(body)
+
 func get_prompt():
 	var key_name = ""
 	for action in InputMap.action_get_events(prompt_input):
@@ -14,4 +16,5 @@ func get_prompt():
 	return prompt_message + "\n[" + key_name + "]"
 
 func interact(body):
-	print(body.name, " interacted with ", name)
+	print("push")
+	interacted.emit(body)

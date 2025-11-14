@@ -181,6 +181,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.936605, 4.667466, -10.719
 light_color = Color(1, 0, 0, 1)
 light_volumetric_fog_energy = 5.0
 
+[node name="OmniLight3D3" type="OmniLight3D" parent="floorplan/Kitchen"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1592855, 3.6962423, -32.139114)
+light_color = Color(1, 0, 0, 1)
+light_volumetric_fog_energy = 5.0
+
 [node name="OmniLight3D2" type="OmniLight3D" parent="floorplan/Kitchen"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.936605, 4.667466, -3.4517264)
 light_volumetric_fog_energy = 5.0
@@ -498,8 +503,6 @@ size = Vector3(0.63183594, 1.7681274, 0.50683594)
 
 [node name="Button" parent="floorplan/Parents/button-pedestal" instance=ExtResource("4_bwnir")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8822056, 0)
-prompt_message = "Push"
-prompt_input = "forward"
 
 [node name="Basement" type="Node3D" parent="floorplan"]
 
@@ -655,3 +658,5 @@ transform = Transform3D(-1.0293366e-07, 0, -2.2743654, 0, 2.2743654, 0, 2.354847
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[connection signal="interacted" from="floorplan/Parents/button-pedestal/Button" to="floorplan/Parents/button-pedestal/Button" method="_on_interacted"]

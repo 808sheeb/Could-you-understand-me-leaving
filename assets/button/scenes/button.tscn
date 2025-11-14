@@ -1,6 +1,6 @@
-[gd_scene load_steps=13 format=4 uid="uid://psk3nbwd1l05"]
+[gd_scene load_steps=17 format=4 uid="uid://psk3nbwd1l05"]
 
-[ext_resource type="Script" uid="uid://c5mn7w2wmmbh6" path="res://scripts/interact/interactable.gd" id="1_8f5ms"]
+[ext_resource type="Script" uid="uid://bt4p5vkno6g5u" path="res://scripts/button.gd" id="1_8f5ms"]
 [ext_resource type="Texture2D" uid="uid://q0usq7w7yefu" path="res://assets/button/Textures/colormap.png" id="1_o1wpg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hyjdc"]
@@ -24,7 +24,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_d1j5l"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_8f5ms"]
 resource_name = "button-floor-round-small_button-floor-round-small"
 _surfaces = [{
 "aabb": AABB(-0.15, -1.1654965e-14, -0.15, 0.3, 0.05, 0.3),
@@ -58,7 +58,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_b2l2r"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_k43tw"]
 resource_name = "button-floor-round-small_button"
 _surfaces = [{
 "aabb": AABB(-0.1, 0.05, -0.1, 0.2, 0.05, 0.2),
@@ -77,27 +77,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ato32")
 
-[sub_resource type="Animation" id="Animation_d6ilk"]
-resource_name = "toggle"
-length = 0.5
-tracks/0/type = "position_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("button-floor-round-small/button")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.033333335, 1, 0, -0.00012641978, 0, 0.06666667, 1, 0, -0.0020227164, 0, 0.1, 1, 0, -0.010240002, 0, 0.13333334, 1, 0, -0.03102914, 0, 0.16666667, 1, 0, -0.04506173, 0, 0.2, 1, 0, -0.04936, 0, 0.3, 1, 0, -0.04936, 0, 0.33333334, 1, 0, -0.04506173, 0, 0.36666667, 1, 0, -0.031029135, 0, 0.4, 1, 0, -0.0102400035, 0, 0.43333334, 1, 0, -0.00202272, 0, 0.5, 1, 0, 0, 0)
-
-[sub_resource type="Animation" id="Animation_0iwab"]
-resource_name = "toggle-off"
-length = 0.2
-tracks/0/type = "position_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("button-floor-round-small/button")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, -0.05, 0, 0.033333335, 1, 0, -0.0496958, 0, 0.06666667, 1, 0, -0.04506173, 0, 0.13333334, 1, 0, -0.004938272, 0, 0.2, 1, 0, 0, 0)
+[sub_resource type="BoxShape3D" id="BoxShape3D_vf05v"]
+size = Vector3(0.31860352, 0.103759766, 0.30273438)
 
 [sub_resource type="Animation" id="Animation_d1cm2"]
 resource_name = "toggle-on"
@@ -110,6 +91,28 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.033333335, 1, 0, -0.00030419754, 0, 0.06666667, 1, 0, -0.0049382723, 0, 0.13333334, 1, 0, -0.04506173, 0, 0.2, 1, 0, -0.05, 0)
 
+[sub_resource type="Animation" id="Animation_0iwab"]
+resource_name = "toggle-off"
+length = 0.2
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("button-floor-round-small/button")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, -0.05, 0, 0.033333335, 1, 0, -0.0496958, 0, 0.06666667, 1, 0, -0.04506173, 0, 0.13333334, 1, 0, -0.004938272, 0, 0.2, 1, 0, 0, 0)
+
+[sub_resource type="Animation" id="Animation_d6ilk"]
+resource_name = "toggle"
+length = 0.5
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("button-floor-round-small/button")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.033333335, 1, 0, -0.00012641978, 0, 0.06666667, 1, 0, -0.0020227164, 0, 0.1, 1, 0, -0.010240002, 0, 0.13333334, 1, 0, -0.03102914, 0, 0.16666667, 1, 0, -0.04506173, 0, 0.2, 1, 0, -0.04936, 0, 0.3, 1, 0, -0.04936, 0, 0.33333334, 1, 0, -0.04506173, 0, 0.36666667, 1, 0, -0.031029135, 0, 0.4, 1, 0, -0.0102400035, 0, 0.43333334, 1, 0, -0.00202272, 0, 0.5, 1, 0, 0, 0)
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tj0pr"]
 _data = {
 &"toggle": SubResource("Animation_d6ilk"),
@@ -117,25 +120,44 @@ _data = {
 &"toggle-on": SubResource("Animation_d1cm2")
 }
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_vf05v"]
-size = Vector3(0.31860352, 0.14550781, 0.3125)
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8f5ms"]
+animation = &"toggle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_k43tw"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2uujy"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_7c1xd"]
+states/Start/position = Vector2(201, 100)
+states/toggle/node = SubResource("AnimationNodeAnimation_8f5ms")
+states/toggle/position = Vector2(435, 74)
+transitions = ["Start", "toggle", SubResource("AnimationNodeStateMachineTransition_k43tw"), "toggle", "End", SubResource("AnimationNodeStateMachineTransition_2uujy")]
 
 [node name="Button" type="StaticBody3D"]
 script = ExtResource("1_8f5ms")
 
-[node name="MeshInstance" type="MeshInstance3D" parent="."]
-mesh = SubResource("ArrayMesh_d1j5l")
+[node name="button-floor-round-small" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.001, -0.012, -0.001)
+mesh = SubResource("ArrayMesh_8f5ms")
 skeleton = NodePath("")
 
-[node name="ButtonMesh" type="MeshInstance3D" parent="MeshInstance"]
-mesh = SubResource("ArrayMesh_b2l2r")
+[node name="button" type="MeshInstance3D" parent="button-floor-round-small"]
+mesh = SubResource("ArrayMesh_k43tw")
 skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0010548402, 0.03804749, -0.0009471476)
+shape = SubResource("BoxShape3D_vf05v")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_tj0pr")
 }
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0010548402, 0.05770081, -0.0009471476)
-shape = SubResource("BoxShape3D_vf05v")
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_7c1xd")
+anim_player = NodePath("../AnimationPlayer")
