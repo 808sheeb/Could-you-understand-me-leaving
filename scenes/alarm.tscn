@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://d0xojgdyceyvy"]
-
-[ext_resource type="Script" uid="uid://cajpgvq1g8xv8" path="res://scripts/interact/alarm.gd" id="1_60k40"]
-
-[node name="Timer" type="Timer"]
-autostart = true
-script = ExtResource("1_60k40")
