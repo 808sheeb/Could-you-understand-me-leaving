@@ -1,14 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=13 format=3 uid="uid://2nr7svv4u1cy"]
 
-[ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_jeeq7"]
-[ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="2_2sury"]
-[ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="3_2sury"]
-[ext_resource type="PackedScene" uid="uid://dfw8iouxwrtdg" path="res://assets/house assets/lib/bed_01.tscn" id="4_2olvw"]
-[ext_resource type="PackedScene" uid="uid://psk3nbwd1l05" path="res://scenes/objects/button/scenes/button.tscn" id="4_bwnir"]
-[ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/gui.gd" id="6_kv8ak"]
+[ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_gmmk2"]
+[ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="2_nlaq8"]
+[ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
+[ext_resource type="PackedScene" uid="uid://dfw8iouxwrtdg" path="res://assets/house assets/lib/bed_01.tscn" id="4_2bm56"]
+[ext_resource type="PackedScene" uid="uid://psk3nbwd1l05" path="res://scenes/objects/button/scenes/button.tscn" id="5_x4sld"]
+[ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/gui.gd" id="7_63qeg"]
+[ext_resource type="PackedScene" uid="uid://b50gw0kf52kdd" path="res://scenes/objects/light.tscn" id="7_gmmk2"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2olvw"]
-panorama = ExtResource("1_jeeq7")
+panorama = ExtResource("1_gmmk2")
 
 [sub_resource type="Sky" id="Sky_tefeu"]
 sky_material = SubResource("PanoramaSkyMaterial_2olvw")
@@ -22,14 +23,14 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2sury"]
-albedo_texture = ExtResource("2_2sury")
+albedo_texture = ExtResource("3_5e3qg")
 uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2olvw"]
-albedo_texture = ExtResource("2_2sury")
+albedo_texture = ExtResource("3_5e3qg")
 uv1_triplanar = true
 
-[node name="BarebonesFloorplan" type="Node3D"]
+[node name="main_house" type="Node3D"]
 
 [node name="env" type="Node3D" parent="."]
 
@@ -42,7 +43,7 @@ environment = SubResource("Environment_bwnir")
 
 [node name="stage" type="Node3D" parent="."]
 
-[node name="player" parent="." instance=ExtResource("3_2sury")]
+[node name="player" parent="." instance=ExtResource("2_nlaq8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3105354, -2.1698208, -10.809837)
 
 [node name="floorplan" type="Node3D" parent="."]
@@ -177,14 +178,8 @@ use_collision = true
 size = Vector3(0.5, 0.087646484, 4)
 material = SubResource("StandardMaterial3D_2sury")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="floorplan/Kitchen"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.936605, 4.667466, -10.719354)
-light_color = Color(1, 0, 0, 1)
-light_volumetric_fog_energy = 5.0
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="floorplan/Kitchen"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.936605, 4.667466, -3.4517264)
-light_volumetric_fog_energy = 5.0
+[node name="Light" parent="floorplan/Kitchen" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35129, 4.2249746, -3.2452831)
 
 [node name="Living Room" type="Node3D" parent="floorplan"]
 
@@ -221,6 +216,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0500002, -0.28353882, -8.73
 use_collision = true
 size = Vector3(8, 3.5286255, 0.5)
 material = SubResource("StandardMaterial3D_2sury")
+
+[node name="Light3" parent="floorplan/Living Room" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8749695, 3.5961528, -9.7975235)
+
+[node name="Light4" parent="floorplan/Living Room" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.57975, 3.5961528, 4.4606233)
+
+[node name="Light2" parent="floorplan/Living Room" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40823174, 4.2249746, 0.47612667)
 
 [node name="Foyer" type="Node3D" parent="floorplan"]
 
@@ -387,8 +391,11 @@ material = SubResource("StandardMaterial3D_2sury")
 
 [node name="furniture" type="Node3D" parent="floorplan/Shihab"]
 
-[node name="Bed01" parent="floorplan/Shihab" instance=ExtResource("4_2olvw")]
+[node name="Bed01" parent="floorplan/Shihab" instance=ExtResource("4_2bm56")]
 transform = Transform3D(-1.0293366e-07, 0, -2.2743654, 0, 2.2743654, 0, 2.3548477, 0, -9.941567e-08, 5.1730113, 0.39454353, -17.996796)
+
+[node name="Light8" parent="floorplan/Shihab" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.107069, 4.2249746, -20.70145)
 
 [node name="Rayah" type="Node3D" parent="floorplan"]
 
@@ -451,6 +458,9 @@ use_collision = true
 size = Vector3(1.7121582, 4, 2)
 material = SubResource("StandardMaterial3D_2sury")
 
+[node name="Light7" parent="floorplan/Rayah" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.725805, 4.2249746, -32.0476)
+
 [node name="Parents" type="Node3D" parent="floorplan"]
 
 [node name="parent_side_wall" type="CSGBox3D" parent="floorplan/Parents"]
@@ -500,8 +510,11 @@ material = SubResource("StandardMaterial3D_2sury")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0092466, 0.20630145, -32.027237)
 size = Vector3(0.63183594, 1.7681274, 0.50683594)
 
-[node name="Button" parent="floorplan/Parents/button-pedestal" instance=ExtResource("4_bwnir")]
+[node name="Button" parent="floorplan/Parents/button-pedestal" instance=ExtResource("5_x4sld")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8822056, 0)
+
+[node name="Light" parent="floorplan/Parents" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0533018, 4.089256, -32.202293)
 
 [node name="Basement" type="Node3D" parent="floorplan"]
 
@@ -591,6 +604,9 @@ use_collision = true
 size = Vector3(3, 5, 0.1)
 material = SubResource("StandardMaterial3D_2sury")
 
+[node name="Light6" parent="floorplan/Washroom" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.554033, 4.2249746, -19.72974)
+
 [node name="Hallway" type="Node3D" parent="floorplan"]
 
 [node name="hallway_floor" type="CSGBox3D" parent="floorplan/Hallway"]
@@ -642,6 +658,9 @@ use_collision = true
 size = Vector3(0.9458008, 4, 2)
 material = SubResource("StandardMaterial3D_2sury")
 
+[node name="Light5" parent="floorplan/Hallway" instance=ExtResource("7_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6094456, 4.2249746, -23.016409)
+
 [node name="Outside_Exterior" type="Node3D" parent="floorplan"]
 
 [node name="roof" type="CSGBox3D" parent="floorplan/Outside_Exterior"]
@@ -651,7 +670,7 @@ size = Vector3(0.1, 24, 46)
 material = SubResource("StandardMaterial3D_2sury")
 
 [node name="GUI" type="Node2D" parent="."]
-script = ExtResource("6_kv8ak")
+script = ExtResource("7_63qeg")
 
 [node name="Alarm" type="Timer" parent="GUI"]
 wait_time = 10.0
@@ -659,4 +678,7 @@ one_shot = true
 
 [connection signal="interacted" from="floorplan/Parents/button-pedestal/Button" to="floorplan/Parents/button-pedestal/Button" method="_on_interacted"]
 [connection signal="interacted" from="floorplan/Parents/button-pedestal/Button" to="GUI" method="_on_button_interacted"]
+[connection signal="snoozed" from="GUI" to="floorplan/Parents/Light" method="_on_gui_snoozed"]
+[connection signal="timeout" from="GUI/Alarm" to="player" method="_on_alarm_timeout"]
+[connection signal="timeout" from="GUI/Alarm" to="floorplan/Parents/Light" method="_on_alarm_timeout"]
 [connection signal="timeout" from="GUI/Alarm" to="GUI" method="_on_alarm_timeout"]

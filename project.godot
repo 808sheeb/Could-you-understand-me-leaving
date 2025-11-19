@@ -15,6 +15,10 @@ run/main_scene="uid://2nr7svv4u1cy"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
+
 [filesystem]
 
 import/blender/enabled=false

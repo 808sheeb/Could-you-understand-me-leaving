@@ -12,18 +12,17 @@ func _process(_delta):
 	pass
 
 func _on_alarm_timeout() -> void:
-	alarmTimeout()
+	GlobalMessenger.ALARM_TIMEOUT.emit()
+	snooze = false
 
 func _on_button_interacted(_body):
 	if !snooze:
 		startAlarm()
+		GlobalMessenger.ALARM_SNOOZE.emit()
 		snoozed.emit()
 
 func startAlarm():
-	var snoozeTime = rng.randi_range(10,20)
+	var snoozeTime = rng.randi_range(6, 10)
 	print(snoozeTime)
 	alarm.start(snoozeTime)
 	snooze = true
-
-func alarmTimeout():
-	snooze = false
