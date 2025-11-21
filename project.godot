@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_3d_cursor/plugin.cfg")
+
 [filesystem]
 
 import/blender/enabled=false

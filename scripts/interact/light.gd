@@ -11,6 +11,8 @@ var light_toggle = true;
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	oLight.set_param(Light3D.PARAM_ENERGY, e)
+	GlobalMessenger.connect("ALARM_TIMEOUT", on_timeout)
+	GlobalMessenger.connect("ALARM_SNOOZE", on_snoozed)
 	pass # Replace with function body.
 
 
@@ -24,15 +26,13 @@ func _process(delta: float) -> void:
 		oLight.set_param(Light3D.PARAM_ENERGY,2.5) 
 		emission_lerp(delta)
 
-func _on_alarm_timeout() -> void:
+func on_timeout() -> void:
 	snoozed = !snoozed
-	print("alarm is going off")
-	pass # Replace with function body.
-
-func _on_gui_snoozed() -> void:
+	#print("alarm is going off")
+	
+func on_snoozed() -> void:
 	snoozed = !snoozed
 	print("alarm is snoozed")
-	pass # Replace with function body.
 
 func emission_lerp(delta) -> void:
 	#flips the lerp operations based on if the light emission has maxxed out
