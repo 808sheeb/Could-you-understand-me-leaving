@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dn7ax2wmv48gl"
+path="res://.godot/imported/normal.png-9bbebba65cf265020ab3a00b6f7a7efd.image"
+
+[deps]
+
+source_file="res://scenes/worlds/frostgorge-heights/t-data/normal.png"
+dest_files=["res://.godot/imported/normal.png-9bbebba65cf265020ab3a00b6f7a7efd.image"]
+
+[params]
+
