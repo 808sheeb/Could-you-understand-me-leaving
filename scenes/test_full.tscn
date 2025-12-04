@@ -1,0 +1,181 @@
+[gd_scene load_steps=15 format=4 uid="uid://pop7w56opibc"]
+
+[ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/main_house.tscn" id="1_1rfvt"]
+[ext_resource type="PackedScene" uid="uid://c3s1f6jqgx5cb" path="res://scenes/worlds/frostgorge_sound/frostgorge_sound.tscn" id="2_qcraa"]
+[ext_resource type="Script" uid="uid://cw1r4c1d7beyv" path="res://addons/portals/scripts/portal_3d.gd" id="3_u1m2w"]
+[ext_resource type="Material" uid="uid://dcfkcyddxkglf" path="res://addons/portals/materials/editor-preview-portal-material.tres" id="4_48hla"]
+[ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="5_erke1"]
+[ext_resource type="Script" uid="uid://c4cil2ki6d5kn" path="res://scripts/player/player.gd" id="6_ib1lk"]
+[ext_resource type="PackedScene" uid="uid://cxtpglx1dkimv" path="res://scenes/player/InteractRay.tscn" id="7_0hdao"]
+[ext_resource type="Texture2D" uid="uid://b75iag0h1qf2b" path="res://scenes/player/crosshair043.png" id="8_53h1o"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ib1lk"]
+_surfaces = [{
+"aabb": AABB(-1, -1.75, -1, 2, 3.5, 1),
+"attribute_data": PackedByteArray("AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAIA/AACAPw=="),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAQABAABAAUAAQADAAUABQADAAcAAwACAAcABwACAAYAAgAAAAYABgAAAAQABAAFAAYABgAFAAcAAAABAAIAAgABAAMA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AACAvwAA4D8AAAAAAACAPwAA4D8AAAAAAACAvwAA4L8AAAAAAACAPwAA4L8AAAAAAACAvwAA4D8AAIC/AACAPwAA4D8AAIC/AACAvwAA4L8AAIC/AACAPwAA4L8AAIC//3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgA==")
+}]
+script = ExtResource("5_erke1")
+size = Vector3(2, 3.5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0hdao"]
+size = Vector3(2, 3.5, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_u1m2w"]
+_surfaces = [{
+"aabb": AABB(-1, -1.75, -1, 2, 3.5, 1),
+"attribute_data": PackedByteArray("AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAIA/AACAPw=="),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAQABAABAAUAAQADAAUABQADAAcAAwACAAcABwACAAYAAgAAAAYABgAAAAQABAAFAAYABgAFAAcAAAABAAIAAgABAAMA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AACAvwAA4D8AAAAAAACAPwAA4D8AAAAAAACAvwAA4L8AAAAAAACAPwAA4L8AAAAAAACAvwAA4D8AAIC/AACAPwAA4D8AAIC/AACAvwAA4L8AAIC/AACAPwAA4L8AAIC//3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgA==")
+}]
+script = ExtResource("5_erke1")
+size = Vector3(2, 3.5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_48hla"]
+size = Vector3(2, 3.5, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0wfyh"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sugp2"]
+height = 1.0
+
+[node name="Node3D" type="Node3D"]
+
+[node name="main_house" parent="." instance=ExtResource("1_1rfvt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19281423, 6.1000004, 0.08684564)
+
+[node name="Portal3D" type="Node3D" parent="main_house" node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
+process_priority = 100
+process_physics_priority = 100
+transform = Transform3D(0, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 0, 0.61748517, 1.5958571, -1.3969996)
+script = ExtResource("3_u1m2w")
+_portal_mesh_path = NodePath("Portal3D_Mesh")
+_teleport_area_path = NodePath("TeleportArea")
+_teleport_collider_path = NodePath("TeleportArea/Collider")
+portal_size = Vector2(2, 3.5)
+exit_portal = NodePath("../../FrostgorgeSound/Portal3D")
+player_camera = NodePath("../../player/head/Camera3D")
+portal_frame_width = 0.0
+viewport_size_mode = 0
+view_direction = 0
+portal_render_layer = 524288
+is_teleport = true
+teleport_direction = 2
+rigidbody_boost = 0.0
+teleport_tolerance = 0.5
+teleport_interactions = 3
+teleport_collision_mask = 32768
+start_deactivated = false
+metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
+metadata/_edit_group_ = true
+
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/Portal3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
+layers = 524288
+material_override = ExtResource("4_48hla")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_ib1lk")
+
+[node name="TeleportArea" type="Area3D" parent="main_house/Portal3D"]
+
+[node name="Collider" type="CollisionShape3D" parent="main_house/Portal3D/TeleportArea"]
+shape = SubResource("BoxShape3D_0hdao")
+
+[node name="FrostgorgeSound" parent="." instance=ExtResource("2_qcraa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5000, 0, 7.892)
+
+[node name="Portal3D" type="Node3D" parent="FrostgorgeSound" node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
+process_priority = 100
+process_physics_priority = 100
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3190746, 49.443764)
+script = ExtResource("3_u1m2w")
+_portal_mesh_path = NodePath("Portal3D_Mesh")
+_teleport_area_path = NodePath("TeleportArea")
+_teleport_collider_path = NodePath("TeleportArea/Collider")
+portal_size = Vector2(2, 3.5)
+exit_portal = NodePath("../../main_house/Portal3D")
+player_camera = NodePath("../../player/head/Camera3D")
+portal_frame_width = 0.0
+viewport_size_mode = 0
+view_direction = 0
+portal_render_layer = 524288
+is_teleport = true
+teleport_direction = 2
+rigidbody_boost = 0.0
+teleport_tolerance = 0.5
+teleport_interactions = 3
+teleport_collision_mask = 32768
+start_deactivated = false
+metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
+metadata/_edit_group_ = true
+
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="FrostgorgeSound/Portal3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
+layers = 524288
+material_override = ExtResource("4_48hla")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_u1m2w")
+
+[node name="TeleportArea" type="Area3D" parent="FrostgorgeSound/Portal3D"]
+
+[node name="Collider" type="CollisionShape3D" parent="FrostgorgeSound/Portal3D/TeleportArea"]
+shape = SubResource("BoxShape3D_48hla")
+
+[node name="player" type="CharacterBody3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.6568978, 4.2527337, -10.226682)
+collision_layer = 32769
+script = ExtResource("6_ib1lk")
+
+[node name="standing_collision_shape" type="CollisionShape3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_0wfyh")
+
+[node name="crouching_collision_shape" type="CollisionShape3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5068252, 0)
+shape = SubResource("CapsuleShape3D_sugp2")
+disabled = true
+
+[node name="head" type="Node3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+
+[node name="Camera3D" type="Camera3D" parent="player/head"]
+
+[node name="InteractRay" parent="player/head" instance=ExtResource("7_0hdao")]
+
+[node name="crouch_checker" type="RayCast3D" parent="player"]
+target_position = Vector3(0, 2, 0)
+
+[node name="UI" type="Control" parent="player"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CrossHair" type="TextureRect" parent="player/UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_top = -14.0
+offset_right = 14.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_53h1o")
+expand_mode = 1

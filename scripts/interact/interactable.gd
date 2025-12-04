@@ -16,5 +16,6 @@ func get_prompt():
 	return prompt_message + "\n[" + key_name + "]"
 
 func interact(body):
-	print("push")
+	#print("push")
+	#print(body)
 	interacted.emit(body)
