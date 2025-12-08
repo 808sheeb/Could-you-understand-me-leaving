@@ -17,5 +17,4 @@ func get_prompt():
 
 func interact(body):
 	#print("push")
-	#print(body)
 	interacted.emit(body)
