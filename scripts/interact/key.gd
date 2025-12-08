@@ -15,6 +15,12 @@ func _on_interacted(_body):
 	
 	if keyName == "winter":
 		GlobalMessenger.KEY_WINTER.emit()
+	elif keyName == "gallery":
+		GlobalMessenger.KEY_GALLERY.emit()
+	elif keyName == "ether":
+		GlobalMessenger.KEY_ETHER.emit()
+	elif keyName == "toilet":
+		GlobalMessenger.KEY_TOILET.emit()
 
 func reset_key():
 	keyParent.add_child(self)

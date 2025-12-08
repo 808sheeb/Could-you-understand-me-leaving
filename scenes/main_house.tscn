@@ -1,18 +1,13 @@
-[gd_scene load_steps=25 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=14 format=3 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_gmmk2"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
 [ext_resource type="PackedScene" uid="uid://dfw8iouxwrtdg" path="res://assets/house assets/lib/bed_01.tscn" id="4_2bm56"]
-[ext_resource type="Script" uid="uid://dy6l5wgllx48c" path="res://scripts/interact/key.gd" id="4_gmmk2"]
+[ext_resource type="PackedScene" uid="uid://celmha118kao6" path="res://scenes/objects/key_winter.tscn" id="4_gmmk2"]
 [ext_resource type="PackedScene" uid="uid://psk3nbwd1l05" path="res://scenes/objects/button/scenes/button.tscn" id="5_x4sld"]
 [ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/gui.gd" id="7_63qeg"]
 [ext_resource type="PackedScene" uid="uid://b50gw0kf52kdd" path="res://scenes/objects/light.tscn" id="7_gmmk2"]
-[ext_resource type="Script" uid="uid://c4cil2ki6d5kn" path="res://scripts/player/player.gd" id="8_63qeg"]
-[ext_resource type="PackedScene" uid="uid://cxtpglx1dkimv" path="res://scenes/player/InteractRay.tscn" id="9_6urhb"]
-[ext_resource type="Texture2D" uid="uid://b75iag0h1qf2b" path="res://scenes/player/crosshair043.png" id="10_klxp4"]
-[ext_resource type="Script" uid="uid://cw1r4c1d7beyv" path="res://addons/portals/scripts/portal_3d.gd" id="11_4lcgp"]
-[ext_resource type="Material" uid="uid://dcfkcyddxkglf" path="res://addons/portals/materials/editor-preview-portal-material.tres" id="12_vf36g"]
-[ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="13_4xk7b"]
+[ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="8_nlaq8"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2olvw"]
 panorama = ExtResource("1_gmmk2")
@@ -32,36 +27,9 @@ glow_enabled = true
 albedo_texture = ExtResource("3_5e3qg")
 uv1_triplanar = true
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_gmmk2"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_nlaq8"]
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2olvw"]
 albedo_texture = ExtResource("3_5e3qg")
 uv1_triplanar = true
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0wfyh"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sugp2"]
-height = 1.0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_3vkaa"]
-_surfaces = [{
-"aabb": AABB(-1.5, -2, -1, 3, 4, 1),
-"attribute_data": PackedByteArray("AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAIA/AACAPw=="),
-"format": 34359742487,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAQABAABAAUAAQADAAUABQADAAcAAwACAAcABwACAAYAAgAAAAYABgAAAAQABAAFAAYABgAFAAcAAAABAAIAAgABAAMA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("AADAvwAAAEAAAAAAAADAPwAAAEAAAAAAAADAvwAAAMAAAAAAAADAPwAAAMAAAAAAAADAvwAAAEAAAIC/AADAPwAAAEAAAIC/AADAvwAAAMAAAIC/AADAPwAAAMAAAIC//3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgA==")
-}]
-script = ExtResource("13_4xk7b")
-size = Vector3(3, 4, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_yjd0d"]
-size = Vector3(3, 4, 1)
 
 [node name="main_house" type="Node3D"]
 
@@ -256,18 +224,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.57975, 3.5961528, 4.460623
 [node name="Light2" parent="floorplan/Living Room" instance=ExtResource("7_gmmk2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40823174, 4.2249746, 0.47612667)
 
-[node name="KEY_WINTER" type="Node3D" parent="floorplan/Living Room"]
-
-[node name="winter_key" type="StaticBody3D" parent="floorplan/Living Room/KEY_WINTER"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.049705, 0.58936965, -4.016199)
-script = ExtResource("4_gmmk2")
-keyName = "winter"
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="floorplan/Living Room/KEY_WINTER/winter_key"]
-shape = SubResource("BoxShape3D_gmmk2")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="floorplan/Living Room/KEY_WINTER/winter_key"]
-mesh = SubResource("BoxMesh_nlaq8")
+[node name="KEY_WINTER" parent="floorplan/Living Room" instance=ExtResource("4_gmmk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Foyer" type="Node3D" parent="floorplan"]
 
@@ -719,129 +677,9 @@ script = ExtResource("7_63qeg")
 wait_time = 10.0
 one_shot = true
 
-[node name="player" type="CharacterBody3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.7466526, 0, -4.8557243)
-collision_layer = 32769
-script = ExtResource("8_63qeg")
+[node name="player" parent="." instance=ExtResource("8_nlaq8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4777176, 0, 0)
 
-[node name="standing_collision_shape" type="CollisionShape3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("CapsuleShape3D_0wfyh")
-
-[node name="crouching_collision_shape" type="CollisionShape3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5068252, 0)
-shape = SubResource("CapsuleShape3D_sugp2")
-disabled = true
-
-[node name="head" type="Node3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
-
-[node name="Camera3D" type="Camera3D" parent="player/head"]
-
-[node name="InteractRay" parent="player/head" instance=ExtResource("9_6urhb")]
-
-[node name="crouch_checker" type="RayCast3D" parent="player"]
-target_position = Vector3(0, 2, 0)
-
-[node name="UI" type="Control" parent="player"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="CrossHair" type="TextureRect" parent="player/UI"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -14.0
-offset_top = -14.0
-offset_right = 14.0
-offset_bottom = 14.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("10_klxp4")
-expand_mode = 1
-
-[node name="Portal3D" type="Node3D" parent="." node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
-process_priority = 100
-process_physics_priority = 100
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3405753, 0)
-script = ExtResource("11_4lcgp")
-_portal_mesh_path = NodePath("Portal3D_Mesh")
-_teleport_area_path = NodePath("TeleportArea")
-_teleport_collider_path = NodePath("TeleportArea/Collider")
-portal_size = Vector2(3, 4)
-exit_portal = NodePath("../Portal3D2")
-player_camera = NodePath("../player/head/Camera3D")
-portal_frame_width = 0.97
-viewport_size_mode = 0
-view_direction = 0
-portal_render_layer = 524288
-is_teleport = true
-teleport_direction = 2
-rigidbody_boost = 0.0
-teleport_tolerance = 0.5
-teleport_interactions = 3
-teleport_collision_mask = 32768
-start_deactivated = false
-metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
-metadata/_edit_group_ = true
-
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Portal3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
-layers = 524288
-material_override = ExtResource("12_vf36g")
-cast_shadow = 0
-mesh = SubResource("ArrayMesh_3vkaa")
-
-[node name="TeleportArea" type="Area3D" parent="Portal3D"]
-
-[node name="Collider" type="CollisionShape3D" parent="Portal3D/TeleportArea"]
-shape = SubResource("BoxShape3D_yjd0d")
-
-[node name="Portal3D2" type="Node3D" parent="." node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
-process_priority = 100
-process_physics_priority = 100
-transform = Transform3D(-0.9599472, 0, 0.28018078, 0, 1, 0, -0.28018078, 0, -0.9599472, -10.117756, 1.3405753, -26.167255)
-script = ExtResource("11_4lcgp")
-_portal_mesh_path = NodePath("Portal3D_Mesh")
-_teleport_area_path = NodePath("TeleportArea")
-_teleport_collider_path = NodePath("TeleportArea/Collider")
-portal_size = Vector2(3, 4)
-exit_portal = NodePath("../Portal3D")
-player_camera = NodePath("../player/head/Camera3D")
-portal_frame_width = 0.99
-viewport_size_mode = 0
-view_direction = 0
-portal_render_layer = 524288
-is_teleport = true
-teleport_direction = 2
-rigidbody_boost = 0.0
-teleport_tolerance = 0.5
-teleport_interactions = 3
-teleport_collision_mask = 32768
-start_deactivated = false
-metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
-metadata/_edit_group_ = true
-
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Portal3D2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
-layers = 524288
-material_override = ExtResource("12_vf36g")
-cast_shadow = 0
-mesh = SubResource("ArrayMesh_3vkaa")
-
-[node name="TeleportArea" type="Area3D" parent="Portal3D2"]
-
-[node name="Collider" type="CollisionShape3D" parent="Portal3D2/TeleportArea"]
-shape = SubResource("BoxShape3D_yjd0d")
-
-[connection signal="interacted" from="floorplan/Living Room/KEY_WINTER/winter_key" to="floorplan/Living Room/KEY_WINTER/winter_key" method="_on_interacted"]
 [connection signal="interacted" from="floorplan/Parents/button-pedestal/Button" to="floorplan/Parents/button-pedestal/Button" method="_on_interacted"]
 [connection signal="interacted" from="floorplan/Parents/button-pedestal/Button" to="GUI" method="_on_button_interacted"]
 [connection signal="snoozed" from="GUI" to="floorplan/Parents/Light" method="_on_gui_snoozed"]
