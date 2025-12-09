@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://83xpkpmrop1w"
-path.s3tc="res://.godot/imported/Wood_01-256x256.png-80f3056d71a31b926644c35be70d9c12.s3tc.ctex"
+uid="uid://bh3njtsr5pbcq"
+path.s3tc="res://.godot/imported/Plaster001_1K-JPG_Color.jpg-171d89867d10747c58c1deba81e1ed89.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/tex/256x256/Wood/Wood_01-256x256.png"
-dest_files=["res://.godot/imported/Wood_01-256x256.png-80f3056d71a31b926644c35be70d9c12.s3tc.ctex"]
+source_file="res://assets/tex/plaster/Plaster001_1K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/Plaster001_1K-JPG_Color.jpg-171d89867d10747c58c1deba81e1ed89.s3tc.ctex"]
 
 [params]
 

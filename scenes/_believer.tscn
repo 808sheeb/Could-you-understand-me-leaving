@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://df7w7xyrweg3t"]
+
+[ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/main_house.tscn" id="1_np6k1"]
+[ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="2_oaoh5"]
+
+[node name="Believer" type="Node3D"]
+
+[node name="main_house" parent="." instance=ExtResource("1_np6k1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0022422075, -0.048403382, -0.017375946)
+
+[node name="player" parent="." instance=ExtResource("2_oaoh5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7691078, 0, -5.6546125)

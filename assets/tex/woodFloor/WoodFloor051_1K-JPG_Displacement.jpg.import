@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://83xpkpmrop1w"
-path.s3tc="res://.godot/imported/Wood_01-256x256.png-80f3056d71a31b926644c35be70d9c12.s3tc.ctex"
+uid="uid://bxc1y633376n8"
+path.s3tc="res://.godot/imported/WoodFloor051_1K-JPG_Displacement.jpg-d38eef4e8961720089500dcb0493c67e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/tex/256x256/Wood/Wood_01-256x256.png"
-dest_files=["res://.godot/imported/Wood_01-256x256.png-80f3056d71a31b926644c35be70d9c12.s3tc.ctex"]
+source_file="res://assets/tex/woodFloor/WoodFloor051_1K-JPG_Displacement.jpg"
+dest_files=["res://.godot/imported/WoodFloor051_1K-JPG_Displacement.jpg-d38eef4e8961720089500dcb0493c67e.s3tc.ctex"]
 
 [params]
 
@@ -26,8 +26,8 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=7
+roughness/src_normal="res://assets/tex/woodFloor/WoodFloor051_1K-JPG_NormalGL.jpg"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

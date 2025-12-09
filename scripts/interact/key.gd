@@ -24,4 +24,4 @@ func _on_interacted(_body):
 
 func reset_key():
 	keyParent.add_child(self)
-	pass
+	self.transform.origin = Vector3(0,0.5,0)
