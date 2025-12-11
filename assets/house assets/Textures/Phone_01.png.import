@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpu3heout2kcw"
-path.s3tc="res://.godot/imported/Phone_01.png-d655d45eac680428351c2b321bf0cb03.s3tc.ctex"
+uid="uid://dv34t2wmbko2a"
+path.s3tc="res://.godot/imported/Phone_01.png-4e0f84de8e74f5026cff4d2647100f28.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/house assets/Textures/Phone_01.png"
-dest_files=["res://.godot/imported/Phone_01.png-d655d45eac680428351c2b321bf0cb03.s3tc.ctex"]
+source_file="res://assets/house assets/textures/Phone_01.png"
+dest_files=["res://.godot/imported/Phone_01.png-4e0f84de8e74f5026cff4d2647100f28.s3tc.ctex"]
 
 [params]
 

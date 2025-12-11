@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://df7w7xyrweg3t"]
 
-[ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/main_house.tscn" id="1_np6k1"]
+[ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="2_oaoh5"]
 
 [node name="Believer" type="Node3D"]

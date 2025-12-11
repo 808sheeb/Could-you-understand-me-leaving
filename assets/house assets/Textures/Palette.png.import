@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bskwa0vkgy7tp"
-path.s3tc="res://.godot/imported/Palette.png-6bff36b6321213d3706b84146c050874.s3tc.ctex"
+uid="uid://c5quwvxcnoaiu"
+path.s3tc="res://.godot/imported/Palette.png-b7141d5db63fdba2c375189ea24425da.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/house assets/Textures/Palette.png"
-dest_files=["res://.godot/imported/Palette.png-6bff36b6321213d3706b84146c050874.s3tc.ctex"]
+source_file="res://assets/house assets/textures/Palette.png"
+dest_files=["res://.godot/imported/Palette.png-b7141d5db63fdba2c375189ea24425da.s3tc.ctex"]
 
 [params]
 

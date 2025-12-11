@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnqe6kd14371p"
-path.s3tc="res://.godot/imported/Flan.png-24ac7aaed6cd35a1f021a97719ea0fc7.s3tc.ctex"
+uid="uid://eyc5wqlnc0oh"
+path.s3tc="res://.godot/imported/Flan.png-6aae1b80682a833d62ef3f0a3faf8dd3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/house assets/Textures/Flan.png"
-dest_files=["res://.godot/imported/Flan.png-24ac7aaed6cd35a1f021a97719ea0fc7.s3tc.ctex"]
+source_file="res://assets/house assets/textures/Flan.png"
+dest_files=["res://.godot/imported/Flan.png-6aae1b80682a833d62ef3f0a3faf8dd3.s3tc.ctex"]
 
 [params]
 

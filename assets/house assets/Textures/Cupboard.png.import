@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dugr40kq8kdf3"
-path.s3tc="res://.godot/imported/Cupboard.png-3c339a957c61f3733666b9039dd1f8fd.s3tc.ctex"
+uid="uid://dqohe2r1b1wxf"
+path.s3tc="res://.godot/imported/Cupboard.png-36fb1acd3c77e2bf363a8925b479bb1f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/house assets/Textures/Cupboard.png"
-dest_files=["res://.godot/imported/Cupboard.png-3c339a957c61f3733666b9039dd1f8fd.s3tc.ctex"]
+source_file="res://assets/house assets/textures/Cupboard.png"
+dest_files=["res://.godot/imported/Cupboard.png-36fb1acd3c77e2bf363a8925b479bb1f.s3tc.ctex"]
 
 [params]
 
