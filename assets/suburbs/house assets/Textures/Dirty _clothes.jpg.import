@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c08ige6uyf5y"
-path.s3tc="res://.godot/imported/Dirty _clothes.jpg-51c73a664043b7bf603ca57c7e4dbd7d.s3tc.ctex"
+path.s3tc="res://.godot/imported/Dirty _clothes.jpg-b4adada6ce87b320e9880d4f52f72c7a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Dirty _clothes.jpg"
-dest_files=["res://.godot/imported/Dirty _clothes.jpg-51c73a664043b7bf603ca57c7e4dbd7d.s3tc.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Dirty _clothes.jpg"
+dest_files=["res://.godot/imported/Dirty _clothes.jpg-b4adada6ce87b320e9880d4f52f72c7a.s3tc.ctex"]
 
 [params]
 

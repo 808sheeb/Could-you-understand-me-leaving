@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctontugtvxn1u"
-path.s3tc="res://.godot/imported/Tool_Table.jpg-3cf715693c4cc38483e1c0c6478a268b.s3tc.ctex"
+path.s3tc="res://.godot/imported/Tool_Table.jpg-df47a12878698217db3d427632239db2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Tool_Table.jpg"
-dest_files=["res://.godot/imported/Tool_Table.jpg-3cf715693c4cc38483e1c0c6478a268b.s3tc.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Tool_Table.jpg"
+dest_files=["res://.godot/imported/Tool_Table.jpg-df47a12878698217db3d427632239db2.s3tc.ctex"]
 
 [params]
 

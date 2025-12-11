@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b314jdbscalqr"
-path.s3tc="res://.godot/imported/BrickOld.jpg-6b0e081e9d80a3b40b709309f7c17945.s3tc.ctex"
+path.s3tc="res://.godot/imported/BrickOld.jpg-69b85f4a9942edf538beb2076b4e0768.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/BrickOld.jpg"
-dest_files=["res://.godot/imported/BrickOld.jpg-6b0e081e9d80a3b40b709309f7c17945.s3tc.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/BrickOld.jpg"
+dest_files=["res://.godot/imported/BrickOld.jpg-69b85f4a9942edf538beb2076b4e0768.s3tc.ctex"]
 
 [params]
 

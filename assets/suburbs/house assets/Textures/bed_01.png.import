@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca5q8acdc7hso"
-path.s3tc="res://.godot/imported/bed_01.png-2308824c8898d4485ca45ae35ec3acb3.s3tc.ctex"
+path.s3tc="res://.godot/imported/bed_01.png-29e57e603da1fac113995c76615bea16.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/bed_01.png"
-dest_files=["res://.godot/imported/bed_01.png-2308824c8898d4485ca45ae35ec3acb3.s3tc.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/bed_01.png"
+dest_files=["res://.godot/imported/bed_01.png-29e57e603da1fac113995c76615bea16.s3tc.ctex"]
 
 [params]
 

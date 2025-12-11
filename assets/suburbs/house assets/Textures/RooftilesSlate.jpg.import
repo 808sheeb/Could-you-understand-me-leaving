@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccmojs55wgn5w"
-path.s3tc="res://.godot/imported/RooftilesSlate.jpg-2b1d7906f86a7dc43605ecd406ae7f26.s3tc.ctex"
+path.s3tc="res://.godot/imported/RooftilesSlate.jpg-36c532bbb689a4d82521c064e9015c43.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/RooftilesSlate.jpg"
-dest_files=["res://.godot/imported/RooftilesSlate.jpg-2b1d7906f86a7dc43605ecd406ae7f26.s3tc.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/RooftilesSlate.jpg"
+dest_files=["res://.godot/imported/RooftilesSlate.jpg-36c532bbb689a4d82521c064e9015c43.s3tc.ctex"]
 
 [params]
 

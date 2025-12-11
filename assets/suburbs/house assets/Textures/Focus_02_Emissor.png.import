@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0f7hnw8bap77"
-path.s3tc="res://.godot/imported/Focus_02_Emissor.png-f6b64c761b56231968383510f71c7558.s3tc.ctex"
+path.s3tc="res://.godot/imported/Focus_02_Emissor.png-a97036f81776245254228bc704e3219d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Focus_02_Emissor.png"
-dest_files=["res://.godot/imported/Focus_02_Emissor.png-f6b64c761b56231968383510f71c7558.s3tc.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Focus_02_Emissor.png"
+dest_files=["res://.godot/imported/Focus_02_Emissor.png-a97036f81776245254228bc704e3219d.s3tc.ctex"]
 
 [params]
 

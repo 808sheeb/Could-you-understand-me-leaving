@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fvl0fs8kfpc6"
-path.s3tc="res://.godot/imported/BrickSmallBrown.jpg-e3d8eb9ccc7d7c19432ebc990e9bea33.s3tc.ctex"
+path.s3tc="res://.godot/imported/BrickSmallBrown.jpg-c587f16bdb24aa306b7988634ede16c8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/BrickSmallBrown.jpg"
-dest_files=["res://.godot/imported/BrickSmallBrown.jpg-e3d8eb9ccc7d7c19432ebc990e9bea33.s3tc.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/BrickSmallBrown.jpg"
+dest_files=["res://.godot/imported/BrickSmallBrown.jpg-c587f16bdb24aa306b7988634ede16c8.s3tc.ctex"]
 
 [params]
 
