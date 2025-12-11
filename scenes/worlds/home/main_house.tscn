@@ -139,7 +139,6 @@ environment = SubResource("Environment_bwnir")
 [node name="stage" type="Node3D" parent="."]
 
 [node name="floorplan" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 188.16795, 5.7250614, -267.0898)
 
 [node name="Kitchen" type="Node3D" parent="floorplan"]
 
