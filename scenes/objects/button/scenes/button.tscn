@@ -132,7 +132,7 @@ switch_mode = 2
 advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_7c1xd"]
-states/Start/position = Vector2(201, 100)
+states/Start/position = Vector2(201.66667, 99.55556)
 states/toggle/node = SubResource("AnimationNodeAnimation_8f5ms")
 states/toggle/position = Vector2(435, 74)
 transitions = ["Start", "toggle", SubResource("AnimationNodeStateMachineTransition_k43tw"), "toggle", "End", SubResource("AnimationNodeStateMachineTransition_2uujy")]

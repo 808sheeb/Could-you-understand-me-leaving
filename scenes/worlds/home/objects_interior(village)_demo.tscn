@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmsg5rv5f07fv"]
+
+[ext_resource type="PackedScene" uid="uid://dhx3nl41doyuq" path="res://assets/suburbs/interior objects 01/Models/Objects_Interior(Village)_Demo.fbx" id="1_4iu2t"]
+
+[node name="Objects_Interior(Village)_Demo" instance=ExtResource("1_4iu2t")]
+
+[node name="Ceiling_Fan_Blades_01" parent="." index="157"]
+transform = Transform3D(79.69934, 0, 0, 0, -9.500902e-06, 79.69933, 0, -79.69933, -9.500902e-06, -14.799572, 2.3056293, -3.8583763)
+
+[node name="Ceiling_Fan_01" parent="." index="158"]
+transform = Transform3D(79.69934, 0, 0, 0, -9.500902e-06, 79.69933, 0, -79.69933, -9.500902e-06, -14.799572, 2.6265116, -3.8583763)
+
+[node name="Flower_Table" parent="." index="170"]
+transform = Transform3D(85.53716, 0, 0, 0, -1.0196824e-05, 85.537155, 0, -85.537155, -1.0196824e-05, -10.372578, 0.76739943, 0.440387)
+
+[node name="Flower_Table_01" parent="." index="171"]
+transform = Transform3D(8.941843, 0, 0, 0, -1.0659508e-06, 8.941842, 0, -8.941842, -1.0659508e-06, -10.773362, 0.7851219, 0.440387)
