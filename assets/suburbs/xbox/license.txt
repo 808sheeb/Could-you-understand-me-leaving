@@ -1,0 +1,11 @@
+Model Information:
+* title:	PSX Xbox Console & Controller
+* source:	https://sketchfab.com/3d-models/psx-xbox-console-controller-611c5e5e30664b0bade4d583b21905da
+* author:	Tomitos (https://sketchfab.com/designrobco)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PSX Xbox Console & Controller" (https://sketchfab.com/3d-models/psx-xbox-console-controller-611c5e5e30664b0bade4d583b21905da) by Tomitos (https://sketchfab.com/designrobco) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
