@@ -25,7 +25,7 @@ var direction = Vector3.ZERO
 # Movement Variables
 var lerp_speed = 10.0
 const JUMP_VELOCITY = 5.2
-var crouching_depth = -0.8
+var crouching_depth = -0.9
 
 # Constrain mouse to window
 func _ready() -> void:

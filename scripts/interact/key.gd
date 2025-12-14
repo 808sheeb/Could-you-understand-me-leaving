@@ -27,5 +27,7 @@ func _on_interacted(_body):
 func reset_key():
 	if pickedUp:
 		keyParent.add_child(self)
-		self.transform.origin = Vector3(0,0.5,0)
+		if keyName == "winter":
+			self.transform.origin = Vector3(-1.164,0.939,0.336)
+			self.rotation_degrees = Vector3(0, 56.5, 0)
 		pickedUp = false
