@@ -19,12 +19,12 @@ const CROUCHING_SPEED = 5.0
 
 
 # Input variables
-const mouse_sens = 0.4
+const mouse_sens = 0.3
 var direction = Vector3.ZERO
 
 # Movement Variables
 var lerp_speed = 10.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 5.2
 var crouching_depth = -0.8
 
 # Constrain mouse to window
