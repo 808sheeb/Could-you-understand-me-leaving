@@ -1,7 +1,6 @@
-[gd_scene load_steps=805 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=804 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_gmmk2"]
-[ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="1_nlaq8"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
 [ext_resource type="Texture2D" uid="uid://c8k3g8e8342b2" path="res://assets/tex/stucco.png" id="3_b0akw"]
 [ext_resource type="Material" uid="uid://qs515fr0c26f" path="res://assets/tex/woodFloor/WoodFloor051_1K-JPG.tres" id="3_x4sld"]
@@ -12437,7 +12436,7 @@ size = Vector3(5.1900444, 0.16615295, 0.39672852)
 material = SubResource("StandardMaterial3D_jjsy1")
 
 [node name="Door3" type="Node3D" parent="floorplan/Rayah/Walls & Floors"]
-transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, 1.509958e-07, 0, 1, -5.7457504, 0.17979288, -25.675846)
+transform = Transform3D(-1, -8.742278e-08, -1.509958e-07, -8.742278e-08, 1, 0, 1.509958e-07, 1.3200472e-14, -1, -5.7457504, 0.17979288, -25.675846)
 
 [node name="door" parent="floorplan/Rayah/Walls & Floors/Door3" instance=ExtResource("36_0fh25")]
 transform = Transform3D(-7.649493e-08, 0, -1.75, 0, 1.75, 0, 1.75, 0, -7.649493e-08, 0.20323944, 0.027938604, -0.929657)
@@ -12801,7 +12800,7 @@ operation = 2
 size = Vector3(5.0842285, 1, 2.1238937)
 
 [node name="Door3" type="Node3D" parent="floorplan/Parents/Walls & Floors"]
-transform = Transform3D(-1.07284414e-07, 0, -1, 0, 1, 0, -1, 0, 1.07284414e-07, -2.598297, 0.17979288, -26.682056)
+transform = Transform3D(-7.54979e-08, -1.1399867e-14, 1, -1.509958e-07, 1, 0, -1, -1.509958e-07, -7.54979e-08, -2.598297, 0.17979288, -26.68015)
 
 [node name="door" parent="floorplan/Parents/Walls & Floors/Door3" instance=ExtResource("36_0fh25")]
 transform = Transform3D(-7.649493e-08, 0, -1.75, 0, 1.75, 0, 1.75, 0, -7.649493e-08, 0.20323944, 0.027938604, -0.929657)
@@ -12891,12 +12890,14 @@ skeleton = NodePath("")
 [node name="Outside_Exterior" type="Node3D" parent="floorplan"]
 
 [node name="roof" type="CSGBox3D" parent="floorplan/Outside_Exterior"]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 4.9598236, -13.909161)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 5.0436487, -13.909161)
 size = Vector3(0.1, 24, 46)
 material = ExtResource("6_ktftv")
 
-[node name="player" parent="floorplan" instance=ExtResource("1_nlaq8")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.6235657, -1.13798, -10.545502)
+[node name="roof2" type="CSGBox3D" parent="floorplan/Outside_Exterior"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 4.931075, -13.909161)
+size = Vector3(0.1, 24, 46)
+material = ExtResource("6_ktftv")
 
 [node name="suburb" parent="." instance=ExtResource("24_wjckd")]
 transform = Transform3D(2.85, 0, 0, 0, 2.85, 0, 0, 0, 2.85, 15.601807, -7.663498, 0)

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gkss2ju2ecyy"
-path.s3tc="res://.godot/imported/Plastic_09.jpg-ed4c0e7aebb6ad781922989ce0f2a367.s3tc.ctex"
+path.s3tc="res://.godot/imported/Plastic_09.jpg-4fcba7c119489abc4fa8d332f9f8025f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/textures/Plastic_09.jpg"
-dest_files=["res://.godot/imported/Plastic_09.jpg-ed4c0e7aebb6ad781922989ce0f2a367.s3tc.ctex"]
+source_file="res://assets/suburbs/interior objects 02/Textures/Plastic_09.jpg"
+dest_files=["res://.godot/imported/Plastic_09.jpg-4fcba7c119489abc4fa8d332f9f8025f.s3tc.ctex"]
 
 [params]
 

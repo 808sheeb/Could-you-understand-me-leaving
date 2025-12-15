@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dri41gu3cpg1s"
-path.s3tc="res://.godot/imported/Cutlery.png-8db17705d7b783176747c95b97821a65.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cutlery.png-ec5fa3ce87cda468449ed879f8efd87a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/textures/Cutlery.png"
-dest_files=["res://.godot/imported/Cutlery.png-8db17705d7b783176747c95b97821a65.s3tc.ctex"]
+source_file="res://assets/suburbs/interior objects 02/Textures/Cutlery.png"
+dest_files=["res://.godot/imported/Cutlery.png-ec5fa3ce87cda468449ed879f8efd87a.s3tc.ctex"]
 
 [params]
 

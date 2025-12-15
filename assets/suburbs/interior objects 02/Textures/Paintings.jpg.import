@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c82p0phu3w7jg"
-path.s3tc="res://.godot/imported/Paintings.jpg-aa93372cfbf60bcf6d3f5d89348a537a.s3tc.ctex"
+path.s3tc="res://.godot/imported/Paintings.jpg-a1f70191db688ba7e3b63eca5aa25cde.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/textures/Paintings.jpg"
-dest_files=["res://.godot/imported/Paintings.jpg-aa93372cfbf60bcf6d3f5d89348a537a.s3tc.ctex"]
+source_file="res://assets/suburbs/interior objects 02/Textures/Paintings.jpg"
+dest_files=["res://.godot/imported/Paintings.jpg-a1f70191db688ba7e3b63eca5aa25cde.s3tc.ctex"]
 
 [params]
 

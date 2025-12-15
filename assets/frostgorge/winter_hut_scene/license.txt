@@ -1,0 +1,8 @@
+Model Information:
+* title:	Winter hut scene
+* source:	https://sketchfab.com/3d-models/winter-hut-scene-28d9d05974a447c19314d80611c4a80d
+* author:	katydid (https://sketchfab.com/Katydid.)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
