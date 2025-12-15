@@ -1,4 +1,4 @@
-[gd_scene load_steps=804 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=805 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_gmmk2"]
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="1_nlaq8"]
@@ -8021,6 +8021,17 @@ size = Vector3(2.4902344, 1.1998291, 2.1220093)
 [sub_resource type="BoxShape3D" id="BoxShape3D_lnbln"]
 size = Vector3(2.0309753, 2.0680847, 0.6767273)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3wtca"]
+transparency = 1
+diffuse_mode = 3
+specular_mode = 2
+disable_specular_occlusion = true
+albedo_color = Color(1, 1, 1, 0.50980395)
+metallic = 0.23
+metallic_specular = 0.0
+roughness = 0.2
+uv1_triplanar = true
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mjc21"]
 resource_name = "atlas_mueblesDormitorio1"
 vertex_color_use_as_albedo = true
@@ -12320,7 +12331,7 @@ transform = Transform3D(0.86075085, 0, 0.5090264, 0, 1, 0, -0.5090264, 0, 0.8607
 shape = SubResource("BoxShape3D_kwoif")
 
 [node name="CollisionShape3D7" type="CollisionShape3D" parent="floorplan/Shihab/Colliders"]
-transform = Transform3D(0.86075085, 0, 0.5090264, 0, 1, 0, -0.5090264, 0, 0.86075085, 4.8372803, 1.3999877, 4.512329)
+transform = Transform3D(0.85134727, -0.14741237, 0.50346535, 0.12688532, 0.9890751, 0.0750368, -0.5090264, 0, 0.86075085, 4.8917007, 1.3999877, 4.512329)
 shape = SubResource("BoxShape3D_76a6i")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="floorplan/Shihab/Colliders"]
@@ -12400,6 +12411,12 @@ transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, -10.
 use_collision = true
 size = Vector3(5.1878967, 0.16615295, 0.39672852)
 material = SubResource("StandardMaterial3D_jjsy1")
+
+[node name="Ledge17" type="CSGBox3D" parent="floorplan/Rayah/Walls & Floors"]
+transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, -10.591576, 2.9160671, -36.97066)
+use_collision = true
+size = Vector3(4.9915543, 3.0999928, 0.037109375)
+material = SubResource("StandardMaterial3D_3wtca")
 
 [node name="Ledge14" type="CSGBox3D" parent="floorplan/Rayah/Walls & Floors"]
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -13.11734, 2.9168792, -36.97066)
