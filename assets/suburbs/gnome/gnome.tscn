@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjhny54mwtceq"]
+
+[ext_resource type="PackedScene" uid="uid://biwk7y23gnueq" path="res://assets/suburbs/gnome/scene.gltf" id="1_yeb4d"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_yeb4d")]
