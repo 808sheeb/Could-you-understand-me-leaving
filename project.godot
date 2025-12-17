@@ -12,7 +12,7 @@ config_version=5
 
 config/name="believer"
 config/description="believer is a walking-simulator about repetitive patterns and agency"
-run/main_scene="uid://2nr7svv4u1cy"
+run/main_scene="uid://df7w7xyrweg3t"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
@@ -24,6 +24,7 @@ GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
 
 window/size/viewport_width=1400
 window/size/viewport_height=800
+window/size/mode=3
 window/size/resizable=false
 window/size/borderless=true
 

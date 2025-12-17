@@ -19,7 +19,7 @@ const CROUCHING_SPEED = 5.0
 
 
 # Input variables
-const mouse_sens = 0.3
+const mouse_sens = 0.17
 var direction = Vector3.ZERO
 
 # Movement Variables

@@ -1,4 +1,4 @@
-[gd_scene load_steps=983 format=4 uid="uid://c3s1f6jqgx5cb"]
+[gd_scene load_steps=998 format=4 uid="uid://c3s1f6jqgx5cb"]
 
 [ext_resource type="Script" uid="uid://cnuvnlcwm3oun" path="res://addons/zylann.hterrain/hterrain.gd" id="1_o4umk"]
 [ext_resource type="Resource" uid="uid://bhvwr4aeavwgf" path="res://scenes/worlds/frostgorge_sound/t_data/data.hterrain" id="2_84ewn"]
@@ -13737,6 +13737,51 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_n0v88")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_y7cig"]
+size = Vector3(28.282288, 19.199768, 1.6053467)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8bhr2"]
+size = Vector3(9.673853, 0.60495377, 6.934372)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0xkdp"]
+size = Vector3(6.06532, 8.180108, 10.954613)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_11dlb"]
+size = Vector3(12.649847, 5.544644, 17.63172)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t78yt"]
+size = Vector3(10.8272705, 14.585676, 3.5184965)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1yyol"]
+size = Vector3(5.0703735, 3.9930334, 9.102281)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cdk23"]
+size = Vector3(8.017153, 8.661049, 5.9077983)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lou4f"]
+size = Vector3(3.4122357, 0.60495377, 12.109688)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mcq4g"]
+size = Vector3(4.5187697, 4.5465055, 4.325329)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbjq7"]
+size = Vector3(4.5187697, 4.5465055, 0.7148771)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rpx35"]
+size = Vector3(16.979034, 19.199768, 1.6053467)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g0eku"]
+size = Vector3(8.806038, 14.246468, 1.1938171)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ursx"]
+size = Vector3(31.217781, 19.199768, 1.6053467)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xkcg2"]
+size = Vector3(47.060917, 19.199768, 1.5648804)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ogmdl"]
+size = Vector3(30.566254, 31.207306, 1.5648804)
+
 [node name="FrostgorgeSound" type="Node3D"]
 
 [node name="HTerrain" type="Node3D" parent="."]
@@ -13801,7 +13846,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.5
 shape = SubResource("BoxShape3D_cmdkh")
 
 [node name="Tree2" type="StaticBody3D" parent="Node3D"]
-transform = Transform3D(0.33068883, 0.24237347, 1.0594481e-08, 0, -1.792167e-08, 0.41, 0.24237347, -0.33068883, -1.4454868e-08, 37.50049, 8.963821, 267.4331)
+transform = Transform3D(0.33068883, 0.24237347, 1.0594481e-08, 0, -1.792167e-08, 0.41, 0.24237347, -0.33068883, -1.4454868e-08, 37.50049, -3.2393913, 267.4331)
 
 [node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree2"]
 transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
@@ -13867,7 +13912,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.5
 shape = SubResource("BoxShape3D_cmdkh")
 
 [node name="Tree4" type="StaticBody3D" parent="Node3D"]
-transform = Transform3D(0.27019697, 0.19803686, 8.656467e-09, 0, -1.4643315e-08, 0.335, 0.19803686, -0.27019697, -1.1810686e-08, 68.9373, 10.252349, 233.91873)
+transform = Transform3D(0.27019697, 0.19803686, 8.656467e-09, 0, -1.4643315e-08, 0.335, 0.19803686, -0.27019697, -1.1810686e-08, 68.9373, -8.58076, 233.91873)
 
 [node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree4"]
 transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
@@ -13900,7 +13945,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.5
 shape = SubResource("BoxShape3D_cmdkh")
 
 [node name="Tree5" type="StaticBody3D" parent="Node3D"]
-transform = Transform3D(0.33068883, 0.24237347, 1.0594481e-08, 0, -1.792167e-08, 0.41, 0.24237347, -0.33068883, -1.4454868e-08, 90.138695, 13.062357, 229.93231)
+transform = Transform3D(0.33068883, 0.24237347, 1.0594481e-08, 0, -1.792167e-08, 0.41, 0.24237347, -0.33068883, -1.4454868e-08, 90.138695, -6.1877728, 229.93231)
 
 [node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree5"]
 transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
@@ -13929,6 +13974,336 @@ mesh = SubResource("ArrayMesh_47ril")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree6" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(0.27103582, 0.30763546, -1.780749e-08, 1.0256376e-08, 1.4696708e-08, 0.41, 0.30763546, -0.27103582, 2.0197766e-09, -95.94936, -3.9041152, 287.77863)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree6"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree6/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree6/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree6/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree6"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree6/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree6/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree6/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree7" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(0.27103582, 0.30763546, -1.780749e-08, 1.0256376e-08, 1.4696708e-08, 0.41, 0.30763546, -0.27103582, 2.0197766e-09, -101.72631, -3.239387, 236.84601)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree7"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree7/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree7/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree7/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree7"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree7/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree7/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree7/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree8" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(0.25120392, 0.28512552, -1.65045e-08, 9.50591e-09, 1.3621337e-08, 0.38000003, 0.28512552, -0.25120392, 1.8719812e-09, -144.76926, -6.9627676, 266.25287)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree8"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree8/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree8/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree8/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree8"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree8/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree8/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree8/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree9" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(0.22145617, 0.25136074, -1.4550027e-08, 8.3802085e-09, 1.2008285e-08, 0.33500004, 0.25136074, -0.22145617, 1.6503061e-09, -165.12395, -8.580757, 238.4578)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree9"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree9/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree9/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree9/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree9"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree9/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree9/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree9/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree10" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(0.27103582, 0.30763546, -1.780749e-08, 1.0256376e-08, 1.4696708e-08, 0.41, 0.30763546, -0.27103582, 2.0197766e-09, -164.9856, -6.187769, 223.604)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree10"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree10/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree10/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree10/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree10"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree10/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree10/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree10/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree11" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(-0.07304137, 0.40344155, 1.7634987e-08, 3.4862124e-16, -1.7921671e-08, 0.41000015, 0.40344155, 0.07304137, 3.192734e-09, -49.717945, -3.9041195, 254.11508)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree11"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree11/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree11/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree11/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree11"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree11/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree11/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree11/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree12" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(-0.07304137, 0.40344155, 1.7634987e-08, 3.4862124e-16, -1.7921671e-08, 0.41000015, 0.40344155, 0.07304137, 3.192734e-09, -58.84975, -3.2393913, 304.55432)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree12"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree12/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree12/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree12/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree12"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree12/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree12/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree12/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree13" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(-0.067696825, 0.3739213, 1.6344623e-08, 6.049326e-16, -1.661033e-08, 0.38000003, 0.3739213, 0.067696825, 2.9591225e-09, -16.074451, -6.9627724, 287.53387)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree13"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree13/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree13/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree13/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree13"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree13/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree13/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree13/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree14" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(-0.059680145, 0.3296412, 1.4409075e-08, -5.3329586e-16, -1.4643319e-08, 0.33500004, 0.3296412, 0.059680145, 2.6086995e-09, -14.951679, -8.58076, 318.13544)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree14"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree14/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree14/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree14/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree14"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree14/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree14/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree14/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
+shape = SubResource("BoxShape3D_cmdkh")
+
+[node name="Tree15" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(-0.07304137, 0.40344155, 1.7634987e-08, 3.4862124e-16, -1.7921671e-08, 0.41000015, 0.40344155, 0.07304137, 3.192734e-09, -2.0815861, -6.1877737, 335.44873)
+
+[node name="AM113_028_Picea_Defintion_287" type="Node3D" parent="Node3D/Tree15"]
+transform = Transform3D(0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0, 0.15774341, 0, 0, 0)
+
+[node name="_14" type="Node3D" parent="Node3D/Tree15/AM113_028_Picea_Defintion_287"]
+
+[node name="Object_133" type="MeshInstance3D" parent="Node3D/Tree15/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_q3uwx")
+skeleton = NodePath("")
+
+[node name="Object_134" type="MeshInstance3D" parent="Node3D/Tree15/AM113_028_Picea_Defintion_287/_14"]
+mesh = SubResource("ArrayMesh_wb74a")
+skeleton = NodePath("")
+
+[node name="AM113_028_Picea_Defintion1_288" type="Node3D" parent="Node3D/Tree15"]
+transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0)
+
+[node name="_29" type="Node3D" parent="Node3D/Tree15/AM113_028_Picea_Defintion1_288"]
+
+[node name="Object_137" type="MeshInstance3D" parent="Node3D/Tree15/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_ui20w")
+skeleton = NodePath("")
+
+[node name="Object_138" type="MeshInstance3D" parent="Node3D/Tree15/AM113_028_Picea_Defintion1_288/_29"]
+mesh = SubResource("ArrayMesh_47ril")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Tree15"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5890503, -0.31381226, 51.54544)
 shape = SubResource("BoxShape3D_cmdkh")
 
@@ -16577,3 +16952,70 @@ skeleton = NodePath("")
 [node name="Object_971" type="MeshInstance3D" parent="Node3D/9331_511/_238"]
 mesh = SubResource("ArrayMesh_e3bdu")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.5179, 0, 189.24124)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7251892, 9.099885, 8.574554)
+shape = SubResource("BoxShape3D_y7cig")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5851669, 8.756581, 12.498108)
+shape = SubResource("BoxShape3D_8bhr2")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.549507, 7.2896967, 14.779066)
+shape = SubResource("BoxShape3D_0xkdp")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.257248, 5.971965, 30.440369)
+shape = SubResource("BoxShape3D_11dlb")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.306755, 10.49248, 37.80073)
+shape = SubResource("BoxShape3D_t78yt")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.974157, 5.1961594, 34.70511)
+shape = SubResource("BoxShape3D_1yyol")
+
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.104759, 7.5301647, 25.88147)
+shape = SubResource("BoxShape3D_cdk23")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.367109, 7.412684, 15.385651)
+shape = SubResource("BoxShape3D_lou4f")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(0.84500057, 0, 0.5347653, 0, 1, 0, -0.5347653, 0, 0.84500057, -6.300373, 5.798008, 12.738403)
+shape = SubResource("BoxShape3D_mcq4g")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(0.84500057, -0.077686146, 0.52909243, 5.5879354e-09, 0.9893918, 0.14527148, -0.5347653, -0.122754484, 0.83603656, -7.436447, 9.493417, 10.943237)
+shape = SubResource("BoxShape3D_pbjq7")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.763641, 9.099885, 8.574554)
+shape = SubResource("BoxShape3D_rpx35")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999997, -16.980537, 10.536973, 5.5141296)
+shape = SubResource("BoxShape3D_g0eku")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.763641, 9.099885, 8.574554)
+shape = SubResource("BoxShape3D_rpx35")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(-4.3711392e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711392e-08, -33.67987, 9.099885, 24.08139)
+shape = SubResource("BoxShape3D_1ursx")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, -10.689911, 9.099885, 40.256897)
+shape = SubResource("BoxShape3D_xkcg2")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(2.9802322e-08, 0, 1, 0, 1, 0, -1, 0, 2.9802322e-08, 13.139591, 15.103654, 24.462189)
+shape = SubResource("BoxShape3D_ogmdl")
