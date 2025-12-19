@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpyx1bu2rhbyc"]
+
+[ext_resource type="AudioStream" uid="uid://de2u7po1fyifj" path="res://assets/audio/Alarm Sound.mp3" id="1_kosdh"]
+[ext_resource type="Script" uid="uid://crqc8lt4sdrr" path="res://scripts/audio_controller.gd" id="1_xbc4u"]
+
+[node name="AudioController" type="Node"]
+script = ExtResource("1_xbc4u")
+
+[node name="alarm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_kosdh")
+
+[node name="walking_wood" type="AudioStreamPlayer" parent="."]
