@@ -9625,7 +9625,7 @@ transform = Transform3D(-1.8025794e-08, 0, 0.2629626, 0, 0.23338795, 0, -0.41238
 [node name="Furniture" type="Node3D" parent="floorplan/Foyer_Basement"]
 
 [node name="Painting_03" type="MeshInstance3D" parent="floorplan/Foyer_Basement/Furniture"]
-transform = Transform3D(97.112, 0, 0, 0, -4.2449005e-06, 97.112, 0, -97.112, -4.2449005e-06, 3.9970398, 2.0543017, 7.7134533)
+transform = Transform3D(97.112, 0, 0, 0, -4.2449005e-06, 97.112, 0, -97.112, -4.2449005e-06, 2.8909073, 2.0543017, -15.7512665)
 mesh = SubResource("ArrayMesh_sewag")
 skeleton = NodePath("")
 
