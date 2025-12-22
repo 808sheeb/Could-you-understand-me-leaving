@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dsorlpvk1yrts"
-path="res://.godot/imported/scene.gltf-aa4a45a797a7ece3cabc7811f214850c.scn"
+uid="uid://cs1phusnyjnt4"
+path="res://.godot/imported/cat.gltf-c64fa26d310f746d2c847ef8b78232dd.scn"
 
 [deps]
 
-source_file="res://assets/suburbs/black cat/scene.gltf"
-dest_files=["res://.godot/imported/scene.gltf-aa4a45a797a7ece3cabc7811f214850c.scn"]
+source_file="res://assets/suburbs/cat/cat.gltf"
+dest_files=["res://.godot/imported/cat.gltf-c64fa26d310f746d2c847ef8b78232dd.scn"]
 
 [params]
 

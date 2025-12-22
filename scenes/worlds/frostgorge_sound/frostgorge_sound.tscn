@@ -1,4 +1,4 @@
-[gd_scene load_steps=998 format=4 uid="uid://c3s1f6jqgx5cb"]
+[gd_scene load_steps=1008 format=4 uid="uid://c3s1f6jqgx5cb"]
 
 [ext_resource type="Script" uid="uid://cnuvnlcwm3oun" path="res://addons/zylann.hterrain/hterrain.gd" id="1_o4umk"]
 [ext_resource type="Resource" uid="uid://bhvwr4aeavwgf" path="res://scenes/worlds/frostgorge_sound/t_data/data.hterrain" id="2_84ewn"]
@@ -13747,7 +13747,16 @@ size = Vector3(9.673853, 0.60495377, 6.934372)
 size = Vector3(6.06532, 8.180108, 10.954613)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_11dlb"]
-size = Vector3(12.649847, 5.544644, 17.63172)
+size = Vector3(12.649847, 4.9677563, 17.63172)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6u50q"]
+size = Vector3(3.371054, 4.317374, 3.9092262)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p4kmu"]
+size = Vector3(46.49695, 1.1093707, 30.38966)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tqu4a"]
+size = Vector3(755.19476, 1.1093707, 764.42267)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t78yt"]
 size = Vector3(10.8272705, 14.585676, 3.5184965)
@@ -13781,6 +13790,57 @@ size = Vector3(47.060917, 19.199768, 1.5648804)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ogmdl"]
 size = Vector3(30.566254, 31.207306, 1.5648804)
+
+[sub_resource type="Curve" id="Curve_cmdkh"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, -101.1236), 0.0, 0.0, 0, 0, Vector2(0.36138612, 262.9214), 0.0, 0.0, 0, 0, Vector2(0.98019797, 360), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_y7cig"]
+curve = SubResource("Curve_cmdkh")
+
+[sub_resource type="Curve" id="Curve_rpx35"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_g0eku"]
+curve = SubResource("Curve_rpx35")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cmdkh"]
+lifetime_randomness = 0.08
+emission_shape_scale = Vector3(120, 35.87, 120)
+emission_shape = 1
+emission_sphere_radius = 1.0
+angle_min = 1.0728835e-05
+angle_max = 349.50003
+angle_curve = SubResource("CurveTexture_y7cig")
+spread = 114.828
+flatness = 0.5
+initial_velocity_max = 0.29999998
+gravity = Vector3(-1.935, -3, 0)
+linear_accel_min = -2.2351742e-06
+linear_accel_max = 0.29999775
+damping_max = 1.0
+scale_min = 0.01
+scale_max = 0.65
+scale_curve = SubResource("CurveTexture_g0eku")
+collision_mode = 2
+collision_use_scale = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y7cig"]
+transparency = 1
+shading_mode = 0
+diffuse_mode = 1
+specular_mode = 2
+disable_specular_occlusion = true
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_rpx35"]
+lightmap_size_hint = Vector2i(5, 7)
+material = SubResource("StandardMaterial3D_y7cig")
+add_uv2 = true
+size = Vector3(0.1, 0.1, 0.1)
 
 [node name="FrostgorgeSound" type="Node3D"]
 
@@ -16969,8 +17029,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.549507, 7.2896967, 14.779
 shape = SubResource("BoxShape3D_0xkdp")
 
 [node name="CollisionShape3D13" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.257248, 5.971965, 30.440369)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.257248, 5.6835203, 30.440369)
 shape = SubResource("BoxShape3D_11dlb")
+
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(0.9965236, 0, -0.08331261, 0, 1, 0, 0.08331261, 0, 0.9965236, -19.46357, 5.3583307, 35.808502)
+shape = SubResource("BoxShape3D_6u50q")
+
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -11.173649, 2.7121897, 22.614319)
+shape = SubResource("BoxShape3D_p4kmu")
+
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 44.792873, 2.7121897, 244.07227)
+shape = SubResource("BoxShape3D_tqu4a")
 
 [node name="CollisionShape3D14" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.306755, 10.49248, 37.80073)
@@ -17019,3 +17091,19 @@ shape = SubResource("BoxShape3D_xkcg2")
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
 transform = Transform3D(2.9802322e-08, 0, 1, 0, 1, 0, -1, 0, 2.9802322e-08, 13.139591, 15.103654, 24.462189)
 shape = SubResource("BoxShape3D_ogmdl")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1007, 47.54554, 58.34691)
+amount = 70000
+lifetime = 6.4399999999999995
+preprocess = 10.0
+speed_scale = 0.25
+randomness = 0.28
+visibility_aabb = AABB(-155.69711, -95.05662, -119.541214, 274.19556, 130.11305, 238.69733)
+transform_align = 1
+process_material = SubResource("ParticleProcessMaterial_cmdkh")
+draw_pass_1 = SubResource("BoxMesh_rpx35")
+
+[node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="GPUParticles3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8944855, -43.451702, 12.072861)
+size = Vector3(10.821075, 7.069763, 8.442841)

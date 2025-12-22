@@ -1,6 +1,5 @@
-[gd_scene load_steps=822 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=818 format=4 uid="uid://2nr7svv4u1cy"]
 
-[ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_gmmk2"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
 [ext_resource type="Texture2D" uid="uid://c8k3g8e8342b2" path="res://assets/tex/stucco.png" id="3_b0akw"]
 [ext_resource type="Material" uid="uid://qs515fr0c26f" path="res://assets/tex/woodFloor/WoodFloor051_1K-JPG.tres" id="3_x4sld"]
@@ -148,20 +147,7 @@
 [ext_resource type="Texture2D" uid="uid://cgqrf3ufdgoh" path="res://assets/suburbs/door/textures/Material_normal.png" id="102_n1scb"]
 [ext_resource type="Script" uid="uid://3ssnjabo10ur" path="res://scripts/scene/shihab_room.gd" id="110_tmdxj"]
 [ext_resource type="Texture2D" uid="uid://ca71eq6v586bf" path="res://assets/tex/hockey.png" id="125_ktftv"]
-
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2olvw"]
-panorama = ExtResource("1_gmmk2")
-
-[sub_resource type="Sky" id="Sky_tefeu"]
-sky_material = SubResource("PanoramaSkyMaterial_2olvw")
-
-[sub_resource type="Environment" id="Environment_bwnir"]
-background_mode = 2
-background_color = Color(1, 0, 0, 1)
-sky = SubResource("Sky_tefeu")
-ambient_light_sky_contribution = 0.45
-tonemap_mode = 2
-glow_enabled = true
+[ext_resource type="PackedScene" uid="uid://dogf07em8akg3" path="res://assets/suburbs/cat/beef.tscn" id="149_3wtca"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2olvw"]
 albedo_texture = ExtResource("3_5e3qg")
@@ -9433,38 +9419,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_3w15l")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_hvjqa"]
-_surfaces = [{
-"aabb": AABB(-1, -0.7228209, -1, 2, 1.4456418, 2),
-"format": 34896613377,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
-"name": "Material",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("AAAAAAAAAAAAAP////8AAAAAAAD//wAAAAD//wAAAAD///////8AAP//AAAAAAAA//8AAP//AAD/////AAAAAA==")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_ytngr"]
-resource_name = "Sketchfab_Scene_Cube_Material_0"
-_surfaces = [{
-"aabb": AABB(-1, -0.7228209, -1, 2, 1.4456418, 2),
-"attribute_data": PackedByteArray("4NB+IqzeA+rg0APqrN5+IvrjGgWHIHjx+uN48YcgGgWs3n4i4NAD6qzeA+rg0H4ihyAaBfrjePGHIHjx+uMaBe9iqorPoFyHz6Cqiu9iXIfPoKqK72Jch+9iqorPoFyH"),
-"format": 34896613399,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_2cmia"),
-"name": "Material",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("AAAAAAAAqioAAP////+qKgAAAAD//6oqAAD//wAAqioAAP//AAD/////////////AAD/////////////AAD///////8AAFTV//8AAP//VNX///////9U1f//AAAAAFTV//8AAAAAAAAAAAAA//8AAP//AAD//wAAAAAAAAAAAAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAP///////wCAAAAAAP//AIAAAP////8AgP//AAD//wCAVNVU1VTVVNVU1VTVVNVU1f9//7//f/+//3//v/9//7+qKqoqqiqqKqoqqiqqKqoq/3//P/9//z//f/8//3//P////3////9/////f////3//f////3////9/////f///")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_hvjqa")
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_ij5q6"]
 size = Vector3(1, 1.9976807, 0.09277344)
 
@@ -9614,16 +9568,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k1n28")
 
+[sub_resource type="Curve3D" id="Curve3D_3wtca"]
+closed = true
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.645, 0, 0, 0, 0, 0, 0.404, 0, 8.533, -1.985, 0, 0, 0, 0, 0, 4.1828995, 0, 11.320822, 0, 0, 3.985, 0, 0, 0, -3.458809, 0, 9.807177, 3.325, 0, 0, 0, 0, 0, -5.47, 0, 6.085, 0, 0, 3.14, 0, 0, 0, -8.1948395, 0, 3.2095208, -3.185, 0, 0, 0, 0, 0, -3.24, 0, 0.632, 0, 0, 3.36, 5.63, 0, 0, -5.764, 0, -5.228, 0, 0, 0, 0, 0, 0, -0.26892853, 0, -5.220971),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 9
+
 [node name="main_house" type="Node3D"]
-
-[node name="env" type="Node3D" parent="."]
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="env"]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
-shadow_enabled = true
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="env"]
-environment = SubResource("Environment_bwnir")
 
 [node name="stage" type="Node3D" parent="."]
 
@@ -10521,7 +10474,7 @@ mesh = SubResource("ArrayMesh_gsplu")
 skeleton = NodePath("")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="floorplan/Living Room/Furniture"]
-transform = Transform3D(-0.98991525, 0, -0.14166151, 0, 1, 0, 0.14166151, 0, -0.98991525, -4.316658, 0.082999945, 4.9623623)
+transform = Transform3D(-0.9800776, 0, -0.19861539, 0, 1, 0, 0.19861539, 0, -0.9800776, -4.316658, 0.082999945, 4.9623623)
 mesh = SubResource("PlaneMesh_ktftv")
 skeleton = NodePath("../..")
 
@@ -13030,13 +12983,6 @@ use_collision = true
 size = Vector3(0.9458008, 3.8016357, 1.8895264)
 material = ExtResource("6_ktftv")
 
-[node name="door2" type="CSGBox3D" parent="floorplan/Parents/Walls & Floors/parent_door_wall"]
-transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 0.528656, -0.6020508, -0.018598557)
-operation = 2
-use_collision = true
-size = Vector3(0.9458008, 3.7958984, 1.8979492)
-material = ExtResource("6_ktftv")
-
 [node name="parent_floor" type="CSGBox3D" parent="floorplan/Parents/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.083252, 0, -30.941498)
 use_collision = true
@@ -13117,11 +13063,6 @@ skeleton = NodePath("")
 [node name="door" type="Node3D" parent="floorplan/Parents/Walls & Floors/Door4/door/DoorCollider"]
 transform = Transform3D(0.5055269, 4.478423e-16, -4.371139e-08, 2.209728e-08, -1.024544e-08, 1, 0, -0.062886044, -1.6292068e-07, 0.5140295, 0.5925129, 0.05810643)
 
-[node name="Cube_Material_0" type="MeshInstance3D" parent="floorplan/Parents/Walls & Floors/Door4/door/DoorCollider/door"]
-transform = Transform3D(1, 0, 0, 0, 1, 9.094947e-13, 0, 0, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_ytngr")
-skeleton = NodePath("")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floorplan/Parents/Walls & Floors/Door4/door/DoorCollider"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5140295, 0.59037673, 0.05810643)
 shape = SubResource("BoxShape3D_ij5q6")
@@ -13139,29 +13080,6 @@ transform = Transform3D(0.0027936955, 0, 0, 0, -5.8858833e-09, 0.06316028, 0, -0
 [node name="Cube_004_Material_016_0" type="MeshInstance3D" parent="floorplan/Parents/Walls & Floors/Door4/door/Hinge_Bottom"]
 mesh = SubResource("ArrayMesh_0iywf")
 skeleton = NodePath("")
-
-[node name="DoorBevel" type="Node3D" parent="floorplan/Parents/Walls & Floors/Door4"]
-transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 0.075416565, -0.016265154, -0.04304886)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="floorplan/Parents/Walls & Floors/Door4/DoorBevel"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
-size = Vector3(1.0751953, 0.03466797, 0.123046875)
-material = ExtResource("45_y8g1j")
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="floorplan/Parents/Walls & Floors/Door4/DoorBevel"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
-size = Vector3(1.0751953, 0.03466797, 0.123046875)
-material = ExtResource("45_y8g1j")
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="floorplan/Parents/Walls & Floors/Door4/DoorBevel"]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
-size = Vector3(2.0252075, 0.03125, 0.123046875)
-material = ExtResource("45_y8g1j")
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="floorplan/Parents/Walls & Floors/Door4/DoorBevel"]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
-size = Vector3(2.0245972, 0.03125, 0.123046875)
-material = ExtResource("45_y8g1j")
 
 [node name="Ledge13" type="CSGBox3D" parent="floorplan/Parents/Walls & Floors"]
 transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, 2.4161224, 2.9700966, -36.97066)
@@ -13215,6 +13133,19 @@ script = ExtResource("7_63qeg")
 [node name="Alarm" type="Timer" parent="GUI"]
 wait_time = 10.0
 one_shot = true
+
+[node name="cats" type="Node3D" parent="."]
+
+[node name="Path3D" type="Path3D" parent="cats"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96, -0.9154576, -6.9039955)
+curve = SubResource("Curve3D_3wtca")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="cats/Path3D"]
+transform = Transform3D(-0.999589, 0, 0.028231723, 0, 1, 0, -0.028231723, 0, -0.999589, 0, 0, 0)
+
+[node name="Beef" parent="cats/Path3D/PathFollow3D" instance=ExtResource("149_3wtca")]
+transform = Transform3D(-0.14994027, 0, -0.004234812, 0, 0.15, 0, 0.004234812, 0, -0.14994027, -0.25131226, -0.62894213, 1.1354265)
+isWalking = true
 
 [connection signal="interacted" from="floorplan/Parents/Furniture/button-pedestal/Button" to="floorplan/Parents/Furniture/button-pedestal/Button" method="_on_interacted"]
 [connection signal="interacted" from="floorplan/Parents/Furniture/button-pedestal/Button" to="GUI" method="_on_button_interacted"]

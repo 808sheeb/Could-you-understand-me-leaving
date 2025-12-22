@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=4 uid="uid://df7w7xyrweg3t"]
+[gd_scene load_steps=23 format=4 uid="uid://df7w7xyrweg3t"]
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
+[ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="2_ax3ly"]
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="2_oaoh5"]
 [ext_resource type="PackedScene" uid="uid://c3s1f6jqgx5cb" path="res://scenes/worlds/frostgorge_sound/frostgorge_sound.tscn" id="3_60jeo"]
 [ext_resource type="Script" uid="uid://cw1r4c1d7beyv" path="res://addons/portals/scripts/portal_3d.gd" id="4_dr874"]
@@ -9,6 +10,33 @@
 [ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="6_2sl5q"]
 [ext_resource type="Material" uid="uid://k0bayr4chxet" path="res://assets/tex/painted wood/PaintedWood009C_1K-JPG.tres" id="8_2sl5q"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
+[ext_resource type="Texture2D" uid="uid://c343dnc88a3o1" path="res://assets/suburbs/door/textures/Material_baseColor.png" id="10_a0lqf"]
+[ext_resource type="Shader" uid="uid://dgfj234f1vyp6" path="res://assets/shaders/KimiRetro.gdshader" id="10_vwutt"]
+[ext_resource type="Texture2D" uid="uid://cgqrf3ufdgoh" path="res://assets/suburbs/door/textures/Material_normal.png" id="11_si686"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_xxq3l"]
+panorama = ExtResource("2_ax3ly")
+
+[sub_resource type="Sky" id="Sky_tefeu"]
+sky_material = SubResource("PanoramaSkyMaterial_xxq3l")
+
+[sub_resource type="Environment" id="Environment_a0lqf"]
+background_mode = 2
+background_color = Color(1, 0, 0, 1)
+sky = SubResource("Sky_tefeu")
+ambient_light_sky_contribution = 0.45
+tonemap_mode = 3
+glow_enabled = true
+glow_levels/6 = 1.05
+glow_normalized = true
+glow_intensity = 1.55
+glow_strength = 1.3
+glow_bloom = 0.05
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.6509804, 0.96727943, 1, 1)
+fog_density = 0.6641
+fog_depth_curve = 0.5946054
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ymoqr"]
 _surfaces = [{
@@ -28,8 +56,71 @@ size = Vector3(1.9, 3.75, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_vwutt"]
 size = Vector3(1.9, 3.75, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o1gsj"]
+resource_name = "Material"
+cull_mode = 2
+albedo_texture = ExtResource("10_a0lqf")
+roughness = 0.82111454
+normal_enabled = true
+normal_scale = 0.40791476
+normal_texture = ExtResource("11_si686")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7280c"]
+_surfaces = [{
+"aabb": AABB(-1, -0.7228209, -1, 2, 1.4456418, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAP////8AAAAAAAD//wAAAAD//wAAAAD///////8AAP//AAAAAAAA//8AAP//AAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ltgfj"]
+resource_name = "Sketchfab_Scene_Cube_Material_0"
+_surfaces = [{
+"aabb": AABB(-1, -0.7228209, -1, 2, 1.4456418, 2),
+"attribute_data": PackedByteArray("4NB+IqzeA+rg0APqrN5+IvrjGgWHIHjx+uN48YcgGgWs3n4i4NAD6qzeA+rg0H4ihyAaBfrjePGHIHjx+uMaBe9iqorPoFyHz6Cqiu9iXIfPoKqK72Jch+9iqorPoFyH"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_o1gsj"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAqioAAP////+qKgAAAAD//6oqAAD//wAAqioAAP//AAD/////////////AAD/////////////AAD///////8AAFTV//8AAP//VNX///////9U1f//AAAAAFTV//8AAAAAAAAAAAAA//8AAP//AAD//wAAAAAAAAAAAAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAP///////wCAAAAAAP//AIAAAP////8AgP//AAD//wCAVNVU1VTVVNVU1VTVVNVU1f9//7//f/+//3//v/9//7+qKqoqqiqqKqoqqiqqKqoq/3//P/9//z//f/8//3//P////3////9/////f////3//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7280c")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ax3ly"]
+shader = ExtResource("10_vwutt")
+shader_parameter/resolution_x = 320
+shader_parameter/resolution_y = 240
+shader_parameter/color_bit_depth = 4
+shader_parameter/dither_strength = 0.03
+shader_parameter/jitter_amount = 0.008
+shader_parameter/jitter_speed = 1.2
+shader_parameter/jitter_frequency = 180.0
+shader_parameter/chromatic_aberration_strength = 0.015
+shader_parameter/vignette_strength = 0.8
+shader_parameter/vignette_radius = 0.9
+
 [node name="Believer" type="Node3D"]
 script = ExtResource("1_gmu73")
+
+[node name="env" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="env"]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="env"]
+environment = SubResource("Environment_a0lqf")
 
 [node name="main_house" parent="." instance=ExtResource("1_np6k1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0022422075, -0.048403382, -0.017375946)
@@ -47,7 +138,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -454.1902, 1797.1227)
 [node name="WinterPortal2" type="Node3D" parent="." node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -35.09246, -450.25253, 1857.7196)
+transform = Transform3D(1, 0, -1.172251e-07, 0, 1, 0, 1.172251e-07, 0, 1, -8.816292, -450.25253, 1845.3568)
 script = ExtResource("4_dr874")
 _portal_mesh_path = NodePath("Portal3D_Mesh")
 _teleport_area_path = NodePath("TeleportArea")
@@ -61,8 +152,8 @@ view_direction = 1
 portal_render_layer = 524288
 is_teleport = true
 teleport_direction = 0
-rigidbody_boost = 0.0
-teleport_tolerance = 0.5
+rigidbody_boost = 1.0
+teleport_tolerance = 3.0
 teleport_interactions = 3
 teleport_collision_mask = 32768
 start_deactivated = false
@@ -70,16 +161,74 @@ metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
 [node name="Portal3D_Mesh" type="MeshInstance3D" parent="WinterPortal2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0.026813507, -0.11697388, -0.09460449)
 layers = 524288
 material_override = ExtResource("5_gmu73")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_ymoqr")
 
 [node name="TeleportArea" type="Area3D" parent="WinterPortal2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.026813507, -0.11697388, -0.09460449)
 
 [node name="Collider" type="CollisionShape3D" parent="WinterPortal2/TeleportArea"]
 shape = SubResource("BoxShape3D_vwutt")
+
+[node name="DoorBevel" type="Node3D" parent="WinterPortal2"]
+transform = Transform3D(-1.8, 0, 1.5736099e-07, 0, 1.8, 0, -1.5736099e-07, 0, -1.8, 0.024143219, -1.8795776, -0.04309082)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, -0.005279541, 2.0363617, -0.0057373047)
+size = Vector3(1.109436, 0.03466797, 1.7595215)
+material = ExtResource("8_2sl5q")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, -0.005279541, 2.1287384, -0.0057373047)
+size = Vector3(1.109436, 0.16088867, 1.7595215)
+material = ExtResource("8_2sl5q")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, -0.53692627, 0.97587585, -0.866333)
+size = Vector3(0.03199768, 2.1556396, 0.03012085)
+material = ExtResource("8_2sl5q")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, 0.52771044, 0.97587585, -0.866333)
+size = Vector3(0.03199768, 2.1556396, 0.03012085)
+material = ExtResource("8_2sl5q")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, 0.52771044, 0.97587585, 0.86035156)
+size = Vector3(0.03199768, 2.1556396, 0.03012085)
+material = ExtResource("8_2sl5q")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(1, 0, -7.1054274e-14, 0, 1, 0, 7.1054274e-14, 0, 1, -0.54050446, 0.97587585, 0.86035156)
+size = Vector3(0.03199768, 2.1556396, 0.03012085)
+material = ExtResource("8_2sl5q")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
+size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("8_2sl5q")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(-4.3711392e-08, -1, -7.1054274e-14, 1, -4.3711392e-08, 0, -1.1011428e-19, -7.1054274e-14, 1, -0.54451036, 1.0089874, 0)
+size = Vector3(2.0887527, 0.03125, 0.123046875)
+material = ExtResource("8_2sl5q")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="WinterPortal2/DoorBevel"]
+transform = Transform3D(-4.3711392e-08, -1, -7.1054274e-14, 1, -4.3711392e-08, 0, -9.147956e-20, -7.1054274e-14, 1, 0.5343895, 1.0092773, 0)
+size = Vector3(2.0887299, 0.03125, 0.123046875)
+material = ExtResource("8_2sl5q")
+
+[node name="door" type="Node3D" parent="WinterPortal2"]
+transform = Transform3D(0.9118398, 1.3322676e-15, -8.2178445e-08, 3.9857778e-08, -1.0245439e-08, 1.8800237, -7.1054274e-15, -0.06288604, -3.0629477e-07, 0.03119564, -0.1362915, -0.09838867)
+visible = false
+
+[node name="Cube_Material_0" type="MeshInstance3D" parent="WinterPortal2/door"]
+transform = Transform3D(1, 0, 0, 0, 1, 9.094947e-13, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_ltgfj")
+skeleton = NodePath("")
 
 [node name="WinterBorder" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.02698, 0, -26.877924)
@@ -87,7 +236,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.02698, 0, -26.877924)
 [node name="WinterPortal" type="Node3D" parent="WinterBorder" node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0003452301, 0.14203572, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034332275, 0.17980057, 0)
 script = ExtResource("4_dr874")
 _portal_mesh_path = NodePath("Portal3D_Mesh")
 _teleport_area_path = NodePath("TeleportArea")
@@ -101,8 +250,8 @@ view_direction = 1
 portal_render_layer = 524288
 is_teleport = true
 teleport_direction = 0
-rigidbody_boost = 0.0
-teleport_tolerance = 1.0
+rigidbody_boost = 1.0
+teleport_tolerance = 3.0
 teleport_interactions = 3
 teleport_collision_mask = 32768
 start_deactivated = true
@@ -122,7 +271,7 @@ mesh = SubResource("ArrayMesh_ymoqr")
 shape = SubResource("BoxShape3D_vwutt")
 
 [node name="DoorBevel" type="Node3D" parent="WinterBorder"]
-transform = Transform3D(-1.8, 0, 1.57361e-07, 0, 1.8, 0, -1.57361e-07, 0, -1.8, -0.016207695, -1.5947964, -0.043052673)
+transform = Transform3D(-1.8, 0, 1.57361e-07, 0, 1.8, 0, -1.57361e-07, 0, -1.8, -0.016204834, -1.6650283, -0.043052673)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="WinterBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
@@ -145,5 +294,15 @@ size = Vector3(2.0245972, 0.03125, 0.123046875)
 material = ExtResource("8_2sl5q")
 
 [node name="AudioController" parent="." instance=ExtResource("9_ymoqr")]
+
+[node name="Shader" type="Node" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Shader"]
+material = SubResource("ShaderMaterial_ax3ly")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [editable path="player"]

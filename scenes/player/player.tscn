@@ -6,7 +6,7 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0wfyh"]
 radius = 0.58740234
-height = 2.7451172
+height = 2.2988281
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sugp2"]
 height = 1.4313965
@@ -15,7 +15,7 @@ height = 1.4313965
 script = ExtResource("1_gmlin")
 
 [node name="standing_collision_shape" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3725586, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1494141, 0)
 shape = SubResource("CapsuleShape3D_0wfyh")
 
 [node name="crouching_collision_shape" type="CollisionShape3D" parent="."]
@@ -24,7 +24,7 @@ shape = SubResource("CapsuleShape3D_sugp2")
 disabled = true
 
 [node name="head" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.085274, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9399834, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head"]
 
