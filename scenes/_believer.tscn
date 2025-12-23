@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://df7w7xyrweg3t"]
+[gd_scene load_steps=22 format=4 uid="uid://df7w7xyrweg3t"]
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
@@ -11,7 +11,6 @@
 [ext_resource type="Material" uid="uid://k0bayr4chxet" path="res://assets/tex/painted wood/PaintedWood009C_1K-JPG.tres" id="8_2sl5q"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
 [ext_resource type="Texture2D" uid="uid://c343dnc88a3o1" path="res://assets/suburbs/door/textures/Material_baseColor.png" id="10_a0lqf"]
-[ext_resource type="Shader" uid="uid://dgfj234f1vyp6" path="res://assets/shaders/KimiRetro.gdshader" id="10_vwutt"]
 [ext_resource type="Texture2D" uid="uid://cgqrf3ufdgoh" path="res://assets/suburbs/door/textures/Material_normal.png" id="11_si686"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_xxq3l"]
@@ -37,7 +36,14 @@ fog_light_color = Color(0.6509804, 0.96727943, 1, 1)
 fog_density = 0.6641
 fog_depth_curve = 0.5946054
 volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+volumetric_fog_albedo = Color(0.2421875, 1, 0.80462646, 1)
 volumetric_fog_emission = Color(0.734375, 0.8692627, 1, 1)
+
+[sub_resource type="FogMaterial" id="FogMaterial_a0lqf"]
+density = 0.035
+emission = Color(0.5234375, 0.8876398, 1, 1)
+edge_fade = 0.36050007
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ymoqr"]
 _surfaces = [{
@@ -98,19 +104,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7280c")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ax3ly"]
-shader = ExtResource("10_vwutt")
-shader_parameter/resolution_x = 320
-shader_parameter/resolution_y = 240
-shader_parameter/color_bit_depth = 4
-shader_parameter/dither_strength = 0.03
-shader_parameter/jitter_amount = 0.008
-shader_parameter/jitter_speed = 1.2
-shader_parameter/jitter_frequency = 180.0
-shader_parameter/chromatic_aberration_strength = 0.015
-shader_parameter/vignette_strength = 0.8
-shader_parameter/vignette_radius = 0.9
-
 [node name="Believer" type="Node3D"]
 script = ExtResource("1_gmu73")
 
@@ -125,6 +118,11 @@ environment = SubResource("Environment_a0lqf")
 
 [node name="main_house" parent="." instance=ExtResource("1_np6k1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0022422075, -0.048403382, -0.017375946)
+
+[node name="FogVolume" type="FogVolume" parent="main_house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.35823, -5.665756, -7.418762)
+size = Vector3(47.349182, 21.831268, 73.59021)
+material = SubResource("FogMaterial_a0lqf")
 
 [node name="player" parent="." instance=ExtResource("2_oaoh5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.88255, -3.5526738, -12.868246)
@@ -295,15 +293,5 @@ size = Vector3(2.0245972, 0.03125, 0.123046875)
 material = ExtResource("8_2sl5q")
 
 [node name="AudioController" parent="." instance=ExtResource("9_ymoqr")]
-
-[node name="Shader" type="Node" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="Shader"]
-material = SubResource("ShaderMaterial_ax3ly")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [editable path="player"]
