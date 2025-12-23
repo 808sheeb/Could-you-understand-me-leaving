@@ -17,13 +17,13 @@
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_xxq3l"]
 panorama = ExtResource("2_ax3ly")
 
-[sub_resource type="Sky" id="Sky_tefeu"]
+[sub_resource type="Sky" id="Sky_a0lqf"]
 sky_material = SubResource("PanoramaSkyMaterial_xxq3l")
 
 [sub_resource type="Environment" id="Environment_a0lqf"]
 background_mode = 2
 background_color = Color(1, 0, 0, 1)
-sky = SubResource("Sky_tefeu")
+sky = SubResource("Sky_a0lqf")
 ambient_light_sky_contribution = 0.45
 tonemap_mode = 3
 glow_enabled = true
@@ -32,11 +32,12 @@ glow_normalized = true
 glow_intensity = 1.55
 glow_strength = 1.3
 glow_bloom = 0.05
-fog_enabled = true
 fog_mode = 1
 fog_light_color = Color(0.6509804, 0.96727943, 1, 1)
 fog_density = 0.6641
 fog_depth_curve = 0.5946054
+volumetric_fog_enabled = true
+volumetric_fog_emission = Color(0.734375, 0.8692627, 1, 1)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ymoqr"]
 _surfaces = [{
@@ -152,8 +153,8 @@ view_direction = 1
 portal_render_layer = 524288
 is_teleport = true
 teleport_direction = 0
-rigidbody_boost = 1.0
-teleport_tolerance = 3.0
+rigidbody_boost = 0.0
+teleport_tolerance = 0.5
 teleport_interactions = 3
 teleport_collision_mask = 32768
 start_deactivated = false
@@ -249,9 +250,9 @@ viewport_size_mode = 0
 view_direction = 1
 portal_render_layer = 524288
 is_teleport = true
-teleport_direction = 0
-rigidbody_boost = 1.0
-teleport_tolerance = 3.0
+teleport_direction = 1
+rigidbody_boost = 0.0
+teleport_tolerance = 0.5
 teleport_interactions = 3
 teleport_collision_mask = 32768
 start_deactivated = true
