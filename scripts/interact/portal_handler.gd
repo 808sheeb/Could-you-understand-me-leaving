@@ -15,9 +15,9 @@ func _ready() -> void:
 func winterPortal():
 	winter_border.visible = true
 	winterActive = true
-	winter_portal.activate()
+	#winter_portal.activate()
 	
 func resetPortal():
 	winterActive = false
 	winter_border.visible = false
-	winter_portal.deactivate()
+	#winter_portal.deactivate()
