@@ -8,11 +8,12 @@ func _ready() -> void:
 	
 func _process(_delta: float) -> void:
 	if keyIsActive:
-		cutter.visible = true
+		#cutter.visible = true
 		#print("key active")
+		pass
 	else:
 		cutter.visible = false
 		#print("key inactive")
-
+		#pass
 func activeToggle():
 	keyIsActive = !keyIsActive

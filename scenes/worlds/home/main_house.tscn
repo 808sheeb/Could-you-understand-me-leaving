@@ -12804,6 +12804,7 @@ material = ExtResource("6_ktftv")
 
 [node name="Cutter" type="CSGBox3D" parent="floorplan/Shihab/Floors & Walls/shihab_wall_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4628067, -0.65407753, 0)
+visible = false
 operation = 2
 size = Vector3(1.9382354, 3.9467278, 1)
 
