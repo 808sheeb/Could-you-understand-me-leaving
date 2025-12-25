@@ -14,16 +14,16 @@ height = 1.4313965
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_p47bc"]
 shader = ExtResource("3_lvxji")
-shader_parameter/resolution_x = 320
-shader_parameter/resolution_y = 240
-shader_parameter/color_bit_depth = 4
-shader_parameter/dither_strength = 0.03
-shader_parameter/jitter_amount = 0.008
-shader_parameter/jitter_speed = 1.2
+shader_parameter/resolution_x = 1280
+shader_parameter/resolution_y = 720
+shader_parameter/color_bit_depth = 10
+shader_parameter/dither_strength = 0.02
+shader_parameter/jitter_amount = 0.003
+shader_parameter/jitter_speed = 1.0
 shader_parameter/jitter_frequency = 180.0
-shader_parameter/chromatic_aberration_strength = 0.015
-shader_parameter/vignette_strength = 0.8
-shader_parameter/vignette_radius = 0.9
+shader_parameter/chromatic_aberration_strength = 0.0030000001425
+shader_parameter/vignette_strength = 0.2730000129675
+shader_parameter/vignette_radius = 0.86400004104
 
 [node name="player" type="CharacterBody3D"]
 script = ExtResource("1_gmlin")
@@ -55,9 +55,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="ColorRect" type="ColorRect" parent="UI"]
+material = SubResource("ShaderMaterial_p47bc")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="CrossHair" type="TextureRect" parent="UI"]
-z_index = 2
-z_as_relative = false
+z_index = -1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -72,12 +80,3 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_p47bc")
 expand_mode = 1
-
-[node name="ColorRect" type="ColorRect" parent="UI"]
-material = SubResource("ShaderMaterial_p47bc")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2

@@ -7,6 +7,7 @@ var emissionB = 2.3
 var e = 2.5
 var light_toggle = true;
 @onready var oLight: OmniLight3D = $OmniLight3D
+@export var light_energy = 1.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -20,7 +21,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if snoozed:
 		oLight.set_color(Color.WHITE)
-		oLight.set_param(Light3D.PARAM_ENERGY,2.5)
+		oLight.set_param(Light3D.PARAM_ENERGY, light_energy)
 	elif !snoozed:
 		oLight.set_color(Color.RED)
 		oLight.set_param(Light3D.PARAM_ENERGY,2.5) 

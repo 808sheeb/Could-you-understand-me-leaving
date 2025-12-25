@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
-[ext_resource type="Texture2D" uid="uid://cjwyt2qng202y" path="res://assets/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="2_ax3ly"]
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="2_oaoh5"]
 [ext_resource type="PackedScene" uid="uid://c3s1f6jqgx5cb" path="res://scenes/worlds/frostgorge_sound/frostgorge_sound.tscn" id="3_60jeo"]
+[ext_resource type="Script" uid="uid://3us3vbt02r78" path="res://scripts/scene/house_fog.gd" id="4_a0lqf"]
 [ext_resource type="Script" uid="uid://cw1r4c1d7beyv" path="res://addons/portals/scripts/portal_3d.gd" id="4_dr874"]
 [ext_resource type="Material" uid="uid://dcfkcyddxkglf" path="res://addons/portals/materials/editor-preview-portal-material.tres" id="5_gmu73"]
 [ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="6_2sl5q"]
@@ -13,11 +13,10 @@
 [ext_resource type="Texture2D" uid="uid://c343dnc88a3o1" path="res://assets/suburbs/door/textures/Material_baseColor.png" id="10_a0lqf"]
 [ext_resource type="Texture2D" uid="uid://cgqrf3ufdgoh" path="res://assets/suburbs/door/textures/Material_normal.png" id="11_si686"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_xxq3l"]
-panorama = ExtResource("2_ax3ly")
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xxq3l"]
 
 [sub_resource type="Sky" id="Sky_a0lqf"]
-sky_material = SubResource("PanoramaSkyMaterial_xxq3l")
+sky_material = SubResource("ProceduralSkyMaterial_xxq3l")
 
 [sub_resource type="Environment" id="Environment_a0lqf"]
 background_mode = 2
@@ -42,7 +41,7 @@ volumetric_fog_emission = Color(0.734375, 0.8692627, 1, 1)
 
 [sub_resource type="FogMaterial" id="FogMaterial_a0lqf"]
 density = 0.035
-emission = Color(0.5234375, 0.8876398, 1, 1)
+emission = Color(0.72265625, 1, 0.7789917, 1)
 edge_fade = 0.36050007
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ymoqr"]
@@ -123,6 +122,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0022422075, -0.048403382, -
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.35823, -5.665756, -7.418762)
 size = Vector3(47.349182, 21.831268, 73.59021)
 material = SubResource("FogMaterial_a0lqf")
+script = ExtResource("4_a0lqf")
 
 [node name="player" parent="." instance=ExtResource("2_oaoh5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.88255, -3.5526738, -12.868246)
