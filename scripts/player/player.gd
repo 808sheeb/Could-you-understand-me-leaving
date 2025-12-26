@@ -10,21 +10,21 @@ extends CharacterBody3D
 # Speed variables
 # have this be 3 for actual gameplay
 # be 7 - 10 for debug
-var CURRENT_SPEED = 10.0
+var CURRENT_SPEED = 3.0
 
 # defaults are 3, 5, & 2
-const WALKING_SPEED = 5.0
-const SPRINTING_SPEED = 8.0
-const CROUCHING_SPEED = 5.0
+const WALKING_SPEED = 3.0
+const SPRINTING_SPEED = 5.0
+const CROUCHING_SPEED = 2.0
 
 
 # Input variables
-const mouse_sens = 0.17
+const mouse_sens = 0.1
 var direction = Vector3.ZERO
 
 # Movement Variables
 var lerp_speed = 10.0
-const JUMP_VELOCITY = 5.2
+const JUMP_VELOCITY = 5.0
 var crouching_depth = -0.9
 
 # Constrain mouse to window
