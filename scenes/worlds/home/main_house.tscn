@@ -13726,7 +13726,6 @@ transform = Transform3D(-0.59306747, 0, 0.8051528, 0, 1, 0, -0.8051528, 0, -0.59
 
 [node name="Outside_Exterior" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.1362457)
-visible = false
 
 [node name="roof" type="CSGBox3D" parent="Outside_Exterior"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 5.0436487, -13.909161)
