@@ -8,7 +8,10 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3081r"]
 resource_name = "RockMaterial3"
 cull_mode = 2
+specular_mode = 2
+disable_specular_occlusion = true
 albedo_texture = ExtResource("3_48mv7")
+metallic_specular = 0.0
 roughness = 0.0
 texture_filter = 2
 

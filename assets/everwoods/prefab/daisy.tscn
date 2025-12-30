@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=4 uid="uid://c1i71fyc4afve"]
+
+[ext_resource type="Texture2D" uid="uid://bxjnfg2ftl2tn" path="res://assets/everwoods/nature_pack/textures/Flower1.png" id="1_vqptq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lhtq2"]
+resource_name = "Flower1"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_vqptq")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4tuts"]
+_surfaces = [{
+"aabb": AABB(-0.01, -0.01, -0.01, 0.02, 0.02, 0.02),
+"format": 34359742465,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwA"),
+"name": "Flower1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("CtcjPArXIzwAAAAACtcjPArXI7wAAAAACtcjvArXI7wAAAAACtcjvArXIzwAAAAACtcjPGy05ztstOc7CtcjPGy057tstOe7CtcjvGy057tstOe7CtcjvGy05ztstOc7CtcjPG2057tqtOc7CtcjPG205ztqtOe7CtcjvG205ztqtOe7CtcjvG2057tqtOc7CtcjPEiiASMK1yM8CtcjPMGikyQK1yO8CtcjvMGikyQK1yO8CtcjvEiiASMK1yM8")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_joed3"]
+resource_name = "Plane_065"
+_surfaces = [{
+"aabb": AABB(-0.01, -0.01, -0.01, 0.02, 0.02, 0.02),
+"attribute_data": PackedByteArray("S8N9P1w2cD9ALQ88XDZwP2AtDzwwmnw9S8N9PzCafD1Lw30/XDZwP0AtDzxcNnA/YC0PPDCafD1Lw30/MJp8PUvDfT9cNnA/QC0PPFw2cD9gLQ88MJp8PUvDfT8wmnw9S8N9P1w2cD9ALQ88XDZwP2AtDzwwmnw9S8N9PzCafD0="),
+"format": 34359742487,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwA"),
+"material": SubResource("StandardMaterial3D_lhtq2"),
+"name": "Flower1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("CtcjPArXIzwAAAAACtcjPArXI7wAAAAACtcjvArXI7wAAAAACtcjvArXIzwAAAAACtcjPGy05ztstOc7CtcjPGy057tstOe7CtcjvGy057tstOe7CtcjvGy05ztstOc7CtcjPG2057tqtOc7CtcjPG205ztqtOe7CtcjvG205ztqtOe7CtcjvG2057tqtOc7CtcjPEiiASMK1yM8CtcjPMGikyQK1yO8CtcjvMGikyQK1yO8CtcjvEiiASMK1yM8/3//f/9/////f/9//3////9//3//f////3//f/9/////f/8//3//3/9//z//f//f/3//P/9//9//f/8//3//3/+/AAD/f/+f/78AAP9//5//vwAA/3//n/+/AAD/f/+f/38AAP9//7//fwAA/3//v/9/AAD/f/+//38AAP9//78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4tuts")
+
+[node name="Dandi" type="Node3D"]
+
+[node name="Flower1" type="MeshInstance3D" parent="."]
+transform = Transform3D(-8.754453e-06, -51.92828, 51.928288, -73.437675, 8.754454e-06, -2.1886135e-06, -2.1886133e-06, -51.928288, -51.928288, 0, 0.506261, 0)
+mesh = SubResource("ArrayMesh_joed3")
+skeleton = NodePath("")
+
+[node name="Flower2" type="MeshInstance3D" parent="."]
+transform = Transform3D(8.754453e-06, 51.928276, -51.92829, -73.437675, 8.754454e-06, -2.1886137e-06, 2.1886133e-06, 51.92829, 51.928284, 0, 0.506261, 0)
+mesh = SubResource("ArrayMesh_joed3")
+skeleton = NodePath("")

@@ -5,7 +5,7 @@ var posX
 var posZ
 var newposY
 @export var speed = 0.5
-@export var range : float = 0.0
+@export var mrange : float = 0.0
 var maxY
 var minY
 var t = 0.0
@@ -14,8 +14,8 @@ func _ready() -> void:
 	posY = self.get_position().y
 	posX = self.get_position().x
 	posZ = self.get_position().z
-	minY = posY - range
-	maxY = posY + range
+	minY = posY - mrange
+	maxY = posY + mrange
 
 func _process(delta: float) -> void:
 	posY = self.get_position().y
