@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxtpglx1dkimv"]
+[gd_scene load_steps=3 format=3 uid="uid://cxtpglx1dkimv"]
 
 [ext_resource type="Script" uid="uid://dhobspgbgyqek" path="res://scripts/player/interact_ray.gd" id="1_thr0h"]
+[ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="2_vyx2q"]
 
 [node name="InteractRay" type="RayCast3D"]
 target_position = Vector3(0, 0, -4)
@@ -16,8 +17,9 @@ offset_bottom = 97.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 4
-theme_override_font_sizes/font_size = 18
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_vyx2q")
+theme_override_font_sizes/font_size = 30
 text = "Prompt
 [KEY]"
 horizontal_alignment = 1

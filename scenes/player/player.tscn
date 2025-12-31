@@ -18,11 +18,11 @@ shader = ExtResource("3_lvxji")
 shader_parameter/resolution_x = 1280
 shader_parameter/resolution_y = 720
 shader_parameter/color_bit_depth = 10
-shader_parameter/dither_strength = 0.02
-shader_parameter/jitter_amount = 0.003
-shader_parameter/jitter_speed = 1.0
+shader_parameter/dither_strength = 0.03
+shader_parameter/jitter_amount = 0.002
+shader_parameter/jitter_speed = 1.2
 shader_parameter/jitter_frequency = 180.0
-shader_parameter/chromatic_aberration_strength = 0.0030000001425
+shader_parameter/chromatic_aberration_strength = 0.002000000095
 shader_parameter/vignette_strength = 0.2730000129675
 shader_parameter/vignette_radius = 0.86400004104
 
@@ -44,6 +44,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9399834, 0)
 [node name="Camera3D" type="Camera3D" parent="head"]
 
 [node name="InteractRay" parent="head" instance=ExtResource("2_lvxji")]
+
+[node name="prompt" parent="head/InteractRay" index="0"]
+theme_override_font_sizes/font_size = 18
 
 [node name="crouch_checker" type="RayCast3D" parent="."]
 target_position = Vector3(0, 2, 0)
@@ -81,3 +84,5 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_p47bc")
 expand_mode = 1
+
+[editable path="head/InteractRay"]

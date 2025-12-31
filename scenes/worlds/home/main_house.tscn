@@ -13729,16 +13729,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.136
 
 [node name="roof" type="CSGBox3D" parent="Outside_Exterior"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 5.0436487, -13.909161)
+use_collision = true
 size = Vector3(0.1, 24, 46)
 material = ExtResource("6_ktftv")
 
 [node name="roof2" type="CSGBox3D" parent="Outside_Exterior"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 4.931075, -13.909161)
+use_collision = true
 size = Vector3(0.1, 24, 46)
 material = ExtResource("6_ktftv")
 
 [node name="roof3" type="CSGBox3D" parent="Outside_Exterior"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 7.000366, 4.855287, -3.3163872)
+use_collision = true
 size = Vector3(0.1, 3.8120117, 24.814453)
 material = SubResource("StandardMaterial3D_o53ab")
 

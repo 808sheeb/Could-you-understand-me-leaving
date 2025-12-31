@@ -1,0 +1,111 @@
+[gd_scene load_steps=6 format=3 uid="uid://2ryuuvkes5yv"]
+
+[ext_resource type="Script" uid="uid://boqul3xb1lxxi" path="res://scripts/ui/main_menu.gd" id="1_1g8jr"]
+[ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="1_fe2o3"]
+[ext_resource type="FontFile" uid="uid://6iqd81sjjutx" path="res://assets/font/BETTERLETT.TTF" id="2_1g8jr"]
+[ext_resource type="Shader" uid="uid://dgfj234f1vyp6" path="res://assets/shaders/KimiRetro.gdshader" id="4_m1kxf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x2yvf"]
+shader = ExtResource("4_m1kxf")
+shader_parameter/resolution_x = 1280
+shader_parameter/resolution_y = 720
+shader_parameter/color_bit_depth = 10
+shader_parameter/dither_strength = 0.03
+shader_parameter/jitter_amount = 0.002
+shader_parameter/jitter_speed = 1.2
+shader_parameter/jitter_frequency = 180.0
+shader_parameter/chromatic_aberration_strength = 0.002000000095
+shader_parameter/vignette_strength = 0.2730000129675
+shader_parameter/vignette_radius = 0.86400004104
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1g8jr")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.50980395)
+
+[node name="Explore" type="Button" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -489.0
+offset_top = -26.75
+offset_bottom = 26.75
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.4453125, 0.4453125, 0.4453125, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_fonts/font = ExtResource("1_fe2o3")
+theme_override_font_sizes/font_size = 45
+text = "Explore"
+flat = true
+autowrap_mode = 3
+
+[node name="Quit" type="Button" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -489.0
+offset_top = 43.0
+offset_bottom = 96.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.4453125, 0.4453125, 0.4453125, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_fe2o3")
+theme_override_font_sizes/font_size = 45
+text = "Quit
+"
+flat = true
+autowrap_mode = 3
+
+[node name="believer" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -666.0
+offset_top = -360.0
+offset_bottom = 323.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1.0258527, 1.091133, 1.166, 1)
+theme_override_fonts/font = ExtResource("2_1g8jr")
+theme_override_font_sizes/font_size = 260
+text = "believer
+"
+horizontal_alignment = 2
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_x2yvf")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="Explore" to="." method="_on_explore_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

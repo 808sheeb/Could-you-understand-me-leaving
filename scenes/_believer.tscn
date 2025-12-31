@@ -99,3 +99,4 @@ material = ExtResource("8_2sl5q")
 [node name="AudioController" parent="." instance=ExtResource("9_ymoqr")]
 
 [editable path="player"]
+[editable path="player/head/InteractRay"]

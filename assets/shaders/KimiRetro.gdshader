@@ -15,8 +15,8 @@ uniform float jitter_speed = 1.3;
 uniform float jitter_frequency = 180.0;
 
 // chromatic mess & vignette
-uniform float chromatic_aberration_strength : hint_range(0.0, 0.1) = 0.1;
-uniform float vignette_strength : hint_range(0.0, 1.0) = 0.5;
+uniform float chromatic_aberration_strength : hint_range(0.0, 0.1) = 0.01;
+uniform float vignette_strength : hint_range(0.0, 1.0) = 0.35;
 uniform float vignette_radius : hint_range(0.0, 2.0) = 0.6;
 
 float hash(vec2 p){
