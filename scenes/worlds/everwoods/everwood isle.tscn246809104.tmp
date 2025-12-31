@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://gm3tdyml46ae"]
+[gd_scene load_steps=39 format=4 uid="uid://gm3tdyml46ae"]
 
 [ext_resource type="Script" uid="uid://1yoargr7wb3m" path="res://scripts/scene/everwood_isle.gd" id="1_0r102"]
 [ext_resource type="Script" uid="uid://cnuvnlcwm3oun" path="res://addons/zylann.hterrain/hterrain.gd" id="1_1rp6g"]
@@ -18,7 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://cht31gr1syyqt" path="res://assets/everwoods/prefab/tree_02.tscn" id="22_0r102"]
 [ext_resource type="PackedScene" uid="uid://5annr5wnotsy" path="res://assets/everwoods/prefab/grass.tscn" id="23_8i3j6"]
 [ext_resource type="PackedScene" uid="uid://c1i71fyc4afve" path="res://assets/everwoods/prefab/daisy.tscn" id="24_vq78a"]
-[ext_resource type="Texture2D" uid="uid://d3vqd5wmyicvu" path="res://assets/suburbs/gnome/textures/Material_baseColor.png" id="26_0gnni"]
 [ext_resource type="PackedScene" uid="uid://cjmv3i5xpp04o" path="res://assets/everwoods/prefab/log.tscn" id="26_0r102"]
 [ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="26_8i3j6"]
 [ext_resource type="PackedScene" uid="uid://b3dep4ultlovo" path="res://assets/everwoods/prefab/rock_tree_05.tscn" id="26_hiuo5"]
@@ -124,48 +123,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_cc4wl")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fo6th"]
-resource_name = "Material"
-cull_mode = 2
-albedo_texture = ExtResource("26_0gnni")
-emission_texture = ExtResource("26_0gnni")
-uv1_scale = Vector3(1, -1, 1)
-texture_filter = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_hiuo5"]
-_surfaces = [{
-"aabb": AABB(-0.43084747, -0.968063, -0.56966174, 0.86169493, 2.5055623, 1.1393235),
-"format": 34896613377,
-"index_count": 276,
-"index_data": PackedByteArray("DQAXABgAFwANABkAGAAXABoAGgAXABkAGAAaAA4AGgAZABsAGwAOABoAHAAbABkADgAbAA8AHQAbABwAGwAdAA8ACwAOAA8ADAAYAA4ACwAMAA4ADAAeABgAAwAYAB4AAwANABgAHwAeAAwAHwAKAB4AAwAeAAoADAAJAB8ACQAMAAsAAgAKAB8AAgAfAAkACgACAAMAAAACAAkAAQADAAIAAAABAAIACAAAAAkACAAJAAsAIAABAAAAIAAEAAEAAAAGACAABgAAAAgAIQAEACAAIQAgAAYABAAFAAEABQAEACEAAQAFAAMABwAhAAYABwAGAAgAIgAFACEABwAiACEABQATAAMADQADABMADQATABUABQAUABMAFAAVABMADQAVABYAFAAWABUADQAWACMAIwAWABQAIwAUAAUAIgAjAAUAGQANACMAIwAiACQAGQAjACUAJAAlACMAGQAlABwAJgAkACIAJQAkACYAJgAiAAcAJQAnABwAJQAmACcABwAnACYAHAAnAB0AJwAHABIAJwASAB0ABwAIABIAHQASACgAKAASAAgAKAAIACkAKQAIAAsAHQAoACoAKgAoACsAKwAoACkALAAdACoAHQAsAA8ALAALAA8ALAAqAC0AKwAtACoALAAuAAsAKQALAC4ALQAuACwAKwApABEAKwAvAC0AEQAvACsALQAvABAAEQAQAC8ALQAQAC4AKQAQABEAKQAuABAA"),
-"lods": [1.2599941, PackedByteArray("AAABAAIAAQADAAIAAAAEAAEABAAFAAEAAQAFAAMABAAAAAYABwAEAAYABwAFAAQABgAAAAgABwAGAAgAAAACAAkACAAAAAkACgACAAMAAgAKAAkACAAJAAsACQAKAAwACQAMAAsAAwANAAoADAAKAA0ABwANAAUACwAMAA4ADAANAA4ACwAOAA8ADgANAA8ADwAQAAsAEQALABAAEQAQAA8AEQAIAAsABwAIABIAEgAIABEADwASABEADQAHABIADQASAA8ABQATAAMADQADABMABQAUABMADQAUAAUAFAAVABMADQATABUAFAAWABUADQAVABYADQAWABQA")],
-"name": "Material",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 48,
-"vertex_data": PackedByteArray("p/lNe4EyAAD//x5BUjAAAP//HkGszwAAn+ilLnPZAABW4h5BKiYAAJ/opS6LJgAA+MhDg+EUAAAkc0OD4RQAABjZXYt6NgAAp/lNe33NAAD24B5BC+AAABjZXYuEyQAA+MhDgx3rAAAeM6Uuc9kAACRzQ4Md6wAAWD1kiDy0AAAW0bHCTsEAABbRscKwPgAAWD1kiMJLAAC45gAA/sMAALjmAAAAPAAA3TMAAP7DAADdMwAAADwAAE0/HkEt3AAAnHAeQf//AAAAAB5BrM8AAC9e8W+W1AAAATRNe33NAACfHpl3/38AAIcclob/fwAAf8seQf//AABu439xfdkAAF3l03B9KAAAf8seQQAAAACccB5BAAAAAB4zpS6LJgAA0T0eQTUkAAAAAB5BUjAAACdZUnDxKAAAATRNe4EyAACnKQaZsEkAAGPkSbSPPQAA+xkWp/9/AACURdzAz1QAAKcpBplOtgAAlEXcwC+rAABj5Em0b8IAAHd9////fwAA")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_6omgo"]
-resource_name = "Sketchfab_Scene_Object_0"
-_surfaces = [{
-"aabb": AABB(-0.43084747, -0.968063, -0.56966174, 0.86169493, 2.5055623, 1.1393235),
-"attribute_data": PackedByteArray("PJAlBVC+XARQvrQ9Qs45QTyQ6zxCztcALfOAOS3zkAi9gJMGvYB9O6dThwmnU4k4d4vRQTKE02ZDU21n3FMbmMuEgZfLIzxy6xqTTemzd3Dju5lL0ram4aTG5vLxt+f8vZz44RqIff2Twtet2s1q5DjN+7Dwv3GYu88TpC9Gz6CweqDmnFUV54MzGOOKGf/+Hkpm/uIZaONJCqP1ag/AsBcQ55tFAeemoAG45v8AgbPr/Mards55guv8Gnx2znP66/wpz+v8of6BP7yy6zLksqpPirIYhgagSxk1swsNwty5OujXvU0x2w1oYOVdZyXWWH73sVqBltq0jsSxf5Tl1iWcmbE6tkexrsQ32jVgHwk1YPA4FkubQu3xxqvr/Ai+X+gIvl7aGnwG08arBtMpz+3xKc9e2qH+3SvhO647uwenUo097hHAKioBuwe+MRaGsgb3mLIGc14="),
-"format": 34896613399,
-"index_count": 276,
-"index_data": PackedByteArray("HwAyADMAMgAfADQAKAAfADMANAAfADUAJwApACgAKAA2ACcAKAAzADYANwAnADYAKwAnADcAKwA3ACoAJQAqADcANwA2ACUAJQA2ADMAJgAlACMAIwAlACIAJQAzACIAIwAiACQAMwA4ACIAMwAyADgAOAAyADQAOQAiADgAOAA0ADkAIgA5ACEAOQA6ACEAOwA5ADQAOgA5ADsANAA8ADsAOwA9ADoAPAA9ADsAPQAgADoANAA1ADwAPQAYACAAPgA8ADUAPAA/AD0APAA+AD8AGAA9AD8ANQBAAD4APwA+AEAAPwBAABgAQAA1AB0AGABAAEEAQAAdAEEAHQAaAEEAGgAdAB4AQQAaAEIAQgAaABwAQgAcABsAGwAVAEIAQQBCABUAGABBABUAGAAVABcAFQAWABcAGAAXABkAAAABAAIAAQADAAIAAAACAAQAAQAFAAMABQAGAAMABQAHAAYACAAAAAQACAAEAAkAQwAIAAkAQwAJAEQAQwBEAAsAQwALAAoADAANAA4ADwAOAA0ADwANABAADAATAA0ADAAUABMADAAOAEUARQAOABEARQARABIARgBHAEgARwBGACwARgAuACwARgBJAC4ASgBJAEYARgBIAEoASgAtAEkASwBKAEgARwBMAEgASABMAEsARwAwAEwATAAwADEATAAxAE0ASwBMAE0ASwBNAC8ATgBPAFAAUQBPAE4AUgBPAFEAUwBUAFUA"),
-"lods": [1.2599941, PackedByteArray("AAABAAIAAQADAAIAAAACAAQAAQAFAAMABQAGAAMABQAHAAYACAAAAAQACAAEAAkACgAIAAkACgAJAAsADAANAA4ADwAOAA0ADwANABAADAAOABEADAARABIADAATAA0ADAAUABMAFQAWABcAGAAVABcAGAAXABkAGAAaABUAGgAbABUAGwAaABwAGAAdABoAGgAdAB4AGAAfAB0AHwAYACAAHwAgACEAIgAfACEAIwAiACQAIwAlACIAJQAfACIAJgAlACMAJQAnAB8AKAAfACcAJwApACgAKgAnACUAKwAnACoALAAtAC4ALwAtACwALAAwAC8AMAAxAC8A")],
-"material": SubResource("StandardMaterial3D_fo6th"),
-"name": "Material",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 86,
-"vertex_data": PackedByteArray("p/lNe4EyRNv//x5BUjC74///HkGszyDRn+ilLnPZKNKn+U17fc3yw5/opS6LJvvuuOYAAP7D69S45gAAADzf+hjZXYt6Ns/ZGNldi4TJtroW0bHCsD5n5hbRscJOwYyzHjOlLnPZfKHdMwAA/sPtrt0zAAAAPFrcuOYAAAA8ie+45gAA/sOq4rjmAAAAPJjsn+ilLosmKuS45gAA/sMirp/opS5z2S+o+MhDg+EUzOin+U17gTLZ4RjZXYt6NoffJHNDg+EUvedYPWSIwkuL8VbiHkEqJnv+p/lNe4Ey0uv//x5BUjDL/p/opS6LJpft//8eQVIwjeseM6Uuc9lG+Vg9ZIjCS2D2WD1kiDy0SPgkc0ODHet9/RjZXYuEyRvtWD1kiDy0Ufv4yEODHev+9qf5TXt9zZHh9uAeQQvgYfmf6KUuc9mH9v//HkGsz/3np/lNe33NZfP//x5BrM/m9lg9ZIg8tLnAFtGxwk7BjsAY2V2LhMnrwhbRscKwPmrlWD1kiMJLIvYY2V2LejZA2E0/HkEt3G3+nHAeQf//ov0AAB5BrM/Q/R4zpS6LJl/zf8seQf//cf9u439xfdkI8i9e8W+W1LT8ATRNe33NzvSHHJaG/39a/58emXf/fzj8AAAeQVIwMvkBNE17gTJo99E9HkE1JD/8J1lScPEogP+ccB5BAADA93/LHkEAAEz2XeXTcH0o//lj5Em0jz3c5WPkSbRvwifAHjOlLosmgOKnKQaZTrZFw4cclob/f5nU+xkWp/9/mNpj5Em0b8KmyJRF3MAvq9jRlEXcwM9UJfGnKQaZsEkR62PkSbSPPdLjlEXcwC+rFKR3ff///3+szBbRscJOwRmclEXcwM9UFt0W0bHCsD5n+RbRscKwPoDkFtGxwk7BiJt3ff///3/801S5nlWwrAFL1KBgW76TG1tgrHJeD6oPR2CGLE7opdBKpsYpVXS2Ym3iyL9TCqtAb6VIUuJBOzXbiVA66Zsb7r9aEbnXcJLGNyeU2izvIvw+NjWHKijmk3WjvzJiwtAma4T9rWrv+RWoiwjgU/zH1nKTyOVz8gp6U+QZyUEOYa5xPvgRVbL1jSIH5hcQGiEhF4RgaY+bGucMFx8GIgSoT33Xnu5rGqiiapUUJyg7ANDN1nE8rAGpTnjWtZp128OTS1RKca24wXRKffqLGd1vyXWuVTN4uinddl8Lgeo2CL0g5P544a33giWjQLp+kPxNPqcvUXzG9HlPQ/8QZTb8S180FV97iQBzZ7zTcXIQu6FObqO4ZTxiHvHVYyedcFQ3qnxb0a05pHtr8m0npSZW+7gDSbCzbLZWRyC/zdPrsu2oorSDREWzyM9zOY4tHbV1M2m3Izgs2iYw")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_hiuo5")
-
 [node name="Everwoods" type="Node3D"]
 script = ExtResource("1_0r102")
 
@@ -233,7 +190,7 @@ ESC: Quit
 horizontal_alignment = 1
 
 [node name="player" parent="." instance=ExtResource("11_33egx")]
-transform = Transform3D(-0.3916627, 0, -0.9201088, 0, 1, 0, 0.9201088, 0, -0.3916627, -119.5632, -1.1210265, 18.37598)
+transform = Transform3D(-0.7071067, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, -0.7071067, -140.93813, 35.24319, 163.0642)
 collision_layer = 32769
 
 [node name="Camera3D" parent="player/head" index="0"]
@@ -9401,24 +9358,6 @@ mrange = 1.4
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
-
-[node name="Sketchfab_Scene" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -112.529274, 49.1153, 146.00128)
-
-[node name="Sketchfab_model" type="Node3D" parent="Sketchfab_Scene"]
-transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 0)
-
-[node name="root" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model"]
-
-[node name="GLTF_SceneRootNode" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/root"]
-transform = Transform3D(1, 0, 0, 0, 2.220446e-16, -1, 0, 1, 2.220446e-16, 0, 0, 0)
-
-[node name="Cube_0" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode"]
-
-[node name="Object_4" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Cube_0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.011123657, 0)
-mesh = SubResource("ArrayMesh_6omgo")
-skeleton = NodePath("")
 
 [connection signal="body_entered" from="WaterCheck/Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
