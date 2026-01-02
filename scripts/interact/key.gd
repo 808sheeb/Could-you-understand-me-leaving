@@ -19,10 +19,10 @@ func _on_interacted(_body):
 		GlobalMessenger.KEY_WINTER.emit()
 	elif keyName == "gallery":
 		GlobalMessenger.KEY_GALLERY.emit()
-	elif keyName == "meadow":
-		GlobalMessenger.KEY_MEADOW.emit()
-	elif keyName == "toilet":
-		GlobalMessenger.KEY_TOILET.emit()
+	elif keyName == "isle":
+		GlobalMessenger.KEY_ISLE.emit()
+	elif keyName == "merry":
+		GlobalMessenger.KEY_MERRY.emit()
 
 func reset_key():
 	if pickedUp:
@@ -30,7 +30,7 @@ func reset_key():
 		if keyName == "winter":
 			self.transform.origin = Vector3(-1.164,0.939,0.336)
 			self.rotation_degrees = Vector3(0, 56.5, 0)
-		if keyName == "toilet":
+		if keyName == "merry":
 			self.transform.origin = Vector3(-8.228,3.28,-18.314)
 			self.rotation_degrees = Vector3(-73.6, 0, -11.1)
 			self.scale = Vector3(0.095, 0.095, 0.095)

@@ -1,9 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://brpnlbf5j2yec"]
+[gd_scene load_steps=17 format=3 uid="uid://brpnlbf5j2yec"]
 
 [ext_resource type="Script" uid="uid://c4cil2ki6d5kn" path="res://scripts/player/player.gd" id="1_gmlin"]
 [ext_resource type="PackedScene" uid="uid://cxtpglx1dkimv" path="res://scenes/player/InteractRay.tscn" id="2_lvxji"]
+[ext_resource type="Script" uid="uid://cecfklyph86yo" path="res://scripts/ui/panel_sizing.gd" id="3_5gtgg"]
+[ext_resource type="Script" uid="uid://vljj2uieem77" path="res://scripts/ui/inventory.gd" id="3_je7p5"]
 [ext_resource type="Shader" uid="uid://dgfj234f1vyp6" path="res://assets/shaders/KimiRetro.gdshader" id="3_lvxji"]
 [ext_resource type="Texture2D" uid="uid://b75iag0h1qf2b" path="res://scenes/player/crosshair043.png" id="3_p47bc"]
+[ext_resource type="Texture2D" uid="uid://bqes7kttxafsl" path="res://assets/ui/billi.png" id="3_qek5x"]
+[ext_resource type="Texture2D" uid="uid://cx2nmutqd6s7f" path="res://assets/ui/merry.png" id="4_5gtgg"]
+[ext_resource type="Texture2D" uid="uid://tyyo8e3dq4yb" path="res://assets/ui/xbox.png" id="5_h17s1"]
+[ext_resource type="Texture2D" uid="uid://b1wdjh86hm3ar" path="res://assets/ui/gnome.png" id="6_je7p5"]
+[ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="10_h17s1"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0wfyh"]
 radius = 0.38964844
@@ -12,6 +19,36 @@ height = 2.2988281
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sugp2"]
 radius = 0.3779297
 height = 1.4313965
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h17s1"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.15, 0.15, 0.15, 0.6117647)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5gtgg"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.15, 0.15, 0.15, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 8
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_bottom = 8.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_p47bc"]
 shader = ExtResource("3_lvxji")
@@ -59,14 +96,64 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="UI"]
-material = SubResource("ShaderMaterial_p47bc")
+[node name="Inventory" type="Control" parent="UI"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_je7p5")
+
+[node name="Panel" type="Panel" parent="UI/Inventory"]
+layout_mode = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_h17s1")
+script = ExtResource("3_5gtgg")
+
+[node name="Inventory-HBOX" type="HBoxContainer" parent="UI/Inventory"]
+layout_mode = 1
+offset_left = 10.0
+offset_top = 28.0
+offset_right = 324.0
+offset_bottom = 99.0
+theme_override_constants/separation = 10
+
+[node name="Xbox" type="TextureRect" parent="UI/Inventory/Inventory-HBOX"]
+visible = false
+layout_mode = 2
+texture = ExtResource("5_h17s1")
+expand_mode = 3
+
+[node name="Merry" type="TextureRect" parent="UI/Inventory/Inventory-HBOX"]
+visible = false
+layout_mode = 2
+texture = ExtResource("4_5gtgg")
+expand_mode = 3
+
+[node name="Billi" type="TextureRect" parent="UI/Inventory/Inventory-HBOX"]
+visible = false
+layout_mode = 2
+texture = ExtResource("3_qek5x")
+expand_mode = 3
+
+[node name="Gnome" type="TextureRect" parent="UI/Inventory/Inventory-HBOX"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_je7p5")
+expand_mode = 3
+
+[node name="Panel2" type="Panel" parent="UI/Inventory"]
+layout_mode = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_5gtgg")
+script = ExtResource("3_5gtgg")
+
+[node name="Label" type="Label" parent="UI/Inventory"]
+layout_mode = 1
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 98.0
+offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 15
+text = "Keys Obtained:"
 
 [node name="CrossHair" type="TextureRect" parent="UI"]
 z_index = -1
@@ -84,5 +171,14 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_p47bc")
 expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="UI"]
+material = SubResource("ShaderMaterial_p47bc")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [editable path="head/InteractRay"]

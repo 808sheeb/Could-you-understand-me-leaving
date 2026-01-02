@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://gm3tdyml46ae"]
+[gd_scene load_steps=42 format=4 uid="uid://gm3tdyml46ae"]
 
 [ext_resource type="Script" uid="uid://1yoargr7wb3m" path="res://scripts/scene/everwood_isle.gd" id="1_0r102"]
 [ext_resource type="Script" uid="uid://cnuvnlcwm3oun" path="res://addons/zylann.hterrain/hterrain.gd" id="1_1rp6g"]
@@ -20,7 +20,6 @@
 [ext_resource type="PackedScene" uid="uid://c1i71fyc4afve" path="res://assets/everwoods/prefab/daisy.tscn" id="24_vq78a"]
 [ext_resource type="Texture2D" uid="uid://d3vqd5wmyicvu" path="res://assets/suburbs/gnome/textures/Material_baseColor.png" id="26_0gnni"]
 [ext_resource type="PackedScene" uid="uid://cjmv3i5xpp04o" path="res://assets/everwoods/prefab/log.tscn" id="26_0r102"]
-[ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="26_8i3j6"]
 [ext_resource type="PackedScene" uid="uid://b3dep4ultlovo" path="res://assets/everwoods/prefab/rock_tree_05.tscn" id="26_hiuo5"]
 [ext_resource type="Texture2D" uid="uid://doljx8tkgjjhh" path="res://assets/everwoods/nature_pack/textures/Stone.png" id="26_vq78a"]
 [ext_resource type="PackedScene" uid="uid://c7ai7xirvbo0u" path="res://assets/everwoods/prefab/rock_moss_01.tscn" id="27_8i3j6"]
@@ -205,33 +204,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.461731, -145.099, 1.3755493
 shape = SubResource("BoxShape3D_x88xo")
 debug_color = Color(6.948612, 0, 10.555825, 1)
 
-[node name="INFO" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Label" type="Label" parent="INFO"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
-offset_top = -23.0
-offset_right = 20.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_fonts/font = ExtResource("26_8i3j6")
-theme_override_font_sizes/font_size = 18
-text = "G: Reset
-ESC: Quit
-"
-horizontal_alignment = 1
-
 [node name="player" parent="." instance=ExtResource("11_33egx")]
 transform = Transform3D(-0.3916627, 0, -0.9201088, 0, 1, 0, 0.9201088, 0, -0.3916627, -119.5632, -1.1210265, 18.37598)
 collision_layer = 32769
@@ -298,7 +270,8 @@ mrange = 1.0
 
 [node name="Rock-Tree_42" parent="Foliage" instance=ExtResource("13_5n5ib")]
 transform = Transform3D(0.157348, 1.5184695e-07, -0.98754317, -6.747309e-08, 1, 1.4301166e-07, 0.98754317, 4.412999e-08, 0.157348, -130.69595, 12.491309, 97.083)
-mrange = 1.0
+speed = 0.3
+mrange = 1.5
 
 [node name="Rock-Tree_05" parent="Foliage" instance=ExtResource("12_hou2u")]
 transform = Transform3D(0.9942373, -2.955943e-09, -0.10720119, -1.2603283e-08, 1, -1.444628e-07, 0.10720119, 1.449814e-07, 0.9942373, -106.40488, 3.46136, 57.179344)
@@ -381,7 +354,8 @@ mrange = 1.5
 
 [node name="Rock-Tree_47" parent="Foliage" instance=ExtResource("13_5n5ib")]
 transform = Transform3D(0.75410235, 1.448055e-07, -0.6567568, -6.747309e-08, 1, 1.4301166e-07, 0.6567568, -6.353201e-08, 0.75410235, -147.98605, 25.183899, 138.56659)
-mrange = 1.0
+speed = 0.7
+mrange = 1.4
 
 [node name="Rock-Tree_48" parent="Foliage" instance=ExtResource("13_5n5ib")]
 transform = Transform3D(0.75410235, 1.448055e-07, -0.6567568, -6.747309e-08, 1, 1.4301166e-07, 0.6567568, -6.353201e-08, 0.75410235, -146.03925, 26.299782, 143.63696)
