@@ -13,3 +13,8 @@ func _physics_process(_delta):
 			
 			if Input.is_action_just_pressed(collider.prompt_input):
 				collider.interact(collider)
+		elif collider is Cat:
+			prompt.text = collider.get_prompt()
+			
+			if Input.is_action_just_pressed(collider.prompt_input):
+				collider.interact(collider)

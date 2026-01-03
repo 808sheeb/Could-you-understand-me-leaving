@@ -64,6 +64,8 @@ shader_parameter/vignette_strength = 0.2730000129675
 shader_parameter/vignette_radius = 0.86400004104
 
 [node name="player" type="CharacterBody3D"]
+collision_layer = 13
+collision_mask = 13
 script = ExtResource("1_gmlin")
 
 [node name="standing_collision_shape" type="CollisionShape3D" parent="."]

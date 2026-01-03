@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://df7w7xyrweg3t"]
+[gd_scene load_steps=11 format=3 uid="uid://df7w7xyrweg3t"]
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="2_oaoh5"]
 [ext_resource type="PackedScene" uid="uid://c3s1f6jqgx5cb" path="res://scenes/worlds/frostgorge_sound/frostgorge_sound.tscn" id="3_60jeo"]
 [ext_resource type="Script" uid="uid://3us3vbt02r78" path="res://scripts/scene/house_fog.gd" id="4_a0lqf"]
-[ext_resource type="Material" uid="uid://k0bayr4chxet" path="res://assets/tex/painted wood/PaintedWood009C_1K-JPG.tres" id="8_2sl5q"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xxq3l"]
@@ -79,22 +78,18 @@ transform = Transform3D(-1.8, 0, 1.57361e-07, 0, 1.8, 0, -1.57361e-07, 0, -1.8, 
 [node name="CSGBox3D" type="CSGBox3D" parent="WinterBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
-material = ExtResource("8_2sl5q")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="WinterBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
-material = ExtResource("8_2sl5q")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="WinterBorder/DoorBevel"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
 size = Vector3(2.0252075, 0.03125, 0.123046875)
-material = ExtResource("8_2sl5q")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="WinterBorder/DoorBevel"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
-material = ExtResource("8_2sl5q")
 
 [node name="AudioController" parent="." instance=ExtResource("9_ymoqr")]
 

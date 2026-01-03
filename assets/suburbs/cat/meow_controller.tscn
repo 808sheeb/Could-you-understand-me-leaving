@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cit5r11uxqbcd"]
+
+[ext_resource type="AudioStream" uid="uid://dv4sxiaap410q" path="res://assets/audio/meow/meow1.mp3" id="1_4gdgw"]
+[ext_resource type="Script" uid="uid://bss8fb4k21mc3" path="res://scripts/interact/beef_trigger.gd" id="1_6eg0x"]
+[ext_resource type="AudioStream" uid="uid://b42hpddm073ny" path="res://assets/audio/meow/meow2.mp3" id="2_6eg0x"]
+[ext_resource type="AudioStream" uid="uid://dg4qx8bn07lj1" path="res://assets/audio/meow/meow3.mp3" id="3_hjbd5"]
+[ext_resource type="AudioStream" uid="uid://dcjvrp7mb0fsp" path="res://assets/audio/meow/meow4.mp3" id="4_cavax"]
+
+[node name="MeowController" type="Node3D"]
+script = ExtResource("1_6eg0x")
+
+[node name="meow_0" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("1_4gdgw")
+volume_db = -5.0
+
+[node name="meow_1" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_6eg0x")
+volume_db = -5.0
+
+[node name="meow_2" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_hjbd5")
+volume_db = -5.0
+
+[node name="meow_3" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_cavax")
+volume_db = -5.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="meowChecker"]
