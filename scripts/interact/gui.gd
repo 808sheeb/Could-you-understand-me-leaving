@@ -24,6 +24,6 @@ func _on_button_interacted(_body):
 
 func startAlarm():
 	var snoozeTime = rng.randi_range(4, 6)
-	print(snoozeTime)
+	#print(snoozeTime)
 	alarm.start(snoozeTime)
 	snooze = true

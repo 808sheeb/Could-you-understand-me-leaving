@@ -11,17 +11,7 @@ var target_pos: Vector3
 @export var SPEED := 2.35
 
 @onready var nav_agent: NavigationAgent3D = $Nav/NavigationAgent3D
-var destination_points := [Vector3(-99.7, -1.5, -5.5), Vector3(-91.8, -1.5, -5.3), Vector3(-100.44, -7.6, -15.66)]
-var destination_direction := [Vector3(0.0, -170, 0.0), Vector3(0.0, -127.2, 0.0), Vector3(0.0, 88.4, 0.0)]
-
-
-func _ready() -> void:
-	has_target = true
-	target_pos = destination_points[1]
-
-func _process(_delta) -> void:
-	pass
-	#print(timer.time_left)
+var destination_points := [Vector3(-94.116, -1.5, 4.05), Vector3(-96.05, -1.5, -8.938), Vector3(-95.614, -1.5, -0.853), Vector3(-96.44, -1.5, -2.98), Vector3(-102.01, -1.5, -5.4), Vector3(-103.35, -1.5, -1.47), Vector3(-103.35, -1.5, -13.1), Vector3(-96.33, -1.5, -19.62), Vector3(-97.42, -7.48, -18.23), Vector3(-89.32, -3.68, -16.6), Vector3(-88.5, -3.68, -12.7), Vector3(-91.5, -1.5, 5.6), Vector3(-99.7, -1.5, -5.5), Vector3(-91.8, -1.5, -5.2), Vector3(-100.44, -7.6, -15.66)]
 
 func _physics_process(delta: float) -> void:
 	if has_target:

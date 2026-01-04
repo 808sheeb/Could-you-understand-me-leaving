@@ -7,4 +7,3 @@ func _ready():
 
 func _on_interacted(_body):
 	playback.travel("Start")
-	pass # Replace with function body.

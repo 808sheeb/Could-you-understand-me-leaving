@@ -600,6 +600,8 @@ _data = {
 }
 
 [node name="Billi" type="CharacterBody3D"]
+collision_layer = 262144
+collision_mask = 262144
 floor_max_angle = 1.2217305
 script = ExtResource("1_aulm1")
 prompt_message = "Pet"
@@ -609,13 +611,17 @@ SPEED = 1.9
 transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.015524287, 0.4362568, 0.09506059)
 shape = SubResource("BoxShape3D_btfgg")
 
+[node name="moveTimer" type="Timer" parent="."]
+wait_time = 25.0
+one_shot = true
+autostart = true
+
 [node name="Nav" type="Node3D" parent="."]
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="Nav"]
 path_desired_distance = 0.3
 target_desired_distance = 0.2
 path_height_offset = 0.1
-debug_enabled = true
 
 [node name="billi_blend" type="Node3D" parent="."]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)

@@ -2,6 +2,7 @@ extends Cat
 @onready var move_timer: Timer = $moveTimer
 @onready var player: CharacterBody3D = $"../../../player"
 
+## DEBUG CAT
 #func _input(event: InputEvent) -> void:
 	###move units
 	#if event.is_action_pressed("right click"):
@@ -24,7 +25,10 @@ extends Cat
 	#var raycast = space_state.intersect_ray(query)
 	#
 	#return raycast
-
+func _ready() -> void:
+	has_target = true
+	target_pos = destination_points[randi_range(0, destination_points.size()-1)]
+	
 func _process(_delta) -> void:
 	if has_target:
 		ap.play("Walk")
@@ -33,9 +37,9 @@ func _process(_delta) -> void:
 		
 	if velocity == Vector3.ZERO and move_timer.time_left == 0:
 		has_target = true
-		target_pos = destination_points[randi_range(0,destination_points.size())]
+		target_pos = destination_points[randi_range(0,destination_points.size() - 1)]
 		move_timer.start(randf_range(10,100))
-		print(move_timer.time_left)
+		#print(move_timer.time_left)
 		
 	if velocity == Vector3.ZERO:
 		look_at(player.get_global_position(), Vector3.UP, true)

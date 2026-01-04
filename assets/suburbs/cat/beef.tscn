@@ -601,8 +601,11 @@ _data = {
 }
 
 [node name="Beef" type="CharacterBody3D"]
+collision_layer = 524288
+collision_mask = 524288
 floor_max_angle = 1.3089969
 script = ExtResource("1_btfgg")
+prompt_message = "Pet"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.40586978, 0.014298902)

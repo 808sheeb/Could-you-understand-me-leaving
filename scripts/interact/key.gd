@@ -17,10 +17,6 @@ func _on_interacted(_body):
 	
 	if keyName == "winter":
 		GlobalMessenger.KEY_WINTER.emit()
-	elif keyName == "gallery":
-		GlobalMessenger.KEY_GALLERY.emit()
-	elif keyName == "isle":
-		GlobalMessenger.KEY_ISLE.emit()
 	elif keyName == "merry":
 		GlobalMessenger.KEY_MERRY.emit()
 

@@ -1,4 +1,12 @@
 extends Cat
+@onready var move_timer: Timer = $moveTimer
+@onready var player: CharacterBody3D = $"../../../player"
+var keyDestinations := [Vector3(-94, -1.5, 5.2), Vector3(-91.5, -1.5, 5.6), Vector3(-100, -1.5, -8.1), Vector3(-99, -1.5, -5.5), Vector3(-100.87, -1.5, -7.4)]
+var isPickable := false
+var pickedUp := false
+
+var keyBody = null
+var keyParent = null
 
 #func _input(event: InputEvent) -> void:
 	###move units
@@ -23,9 +31,58 @@ extends Cat
 	#
 	#return raycast
 	#
-
+func _ready() -> void:
+	has_target = true
+	target_pos = destination_points[randi_range(0, destination_points.size()-1)]
+	GlobalMessenger.connect("ALARM_SNOOZE", reset_key)
+	
 func _process(_delta) -> void:
 	if has_target:
 		ap.play("Walk")
 	elif !has_target:
 		ap.play("Idle_02")
+		
+	if velocity == Vector3.ZERO and move_timer.time_left == 0:
+		# get a random number from 0 to 1
+		var r = randf_range(0, 0.6)
+		# if rand is higher than 0.7 , 30% of the time do this
+		if r > 0.7:
+			target_pos = destination_points[randi_range(0,destination_points.size() - 1)]
+			#print(move_timer.time_left)
+		#otherwise do this
+		else:
+			target_pos = keyDestinations[randi_range(0, keyDestinations.size()-1)]
+			
+		move_timer.start(randf_range(5,10))
+		has_target = true
+		
+	if velocity == Vector3.ZERO:
+		look_at(player.get_global_position(), Vector3.UP, true)
+		
+	if isPickable:
+		prompt_message = "Pick Up"
+	elif !isPickable:
+		prompt_message = "Pet"
+
+func _on_interacted(_body) -> void:
+	if isPickable:
+		keyBody = _body.get_parent_node_3d()
+		keyParent = keyBody.get_parent_node_3d()
+		keyBody.remove_child(self)
+		pickedUp = true
+		GlobalMessenger.KEY_ISLE.emit()
+
+func entered_table(_body):
+	isPickable = true
+	#print("entered")
+	
+func exited_table(_body):
+	isPickable = false
+	#print("exited")
+
+func reset_key():
+	if pickedUp:
+		keyParent.add_child(self)
+		self.set_position(Vector3(-94.4, -1.5, -24.98))
+		pickedUp = false
+		isPickable = false

@@ -33,7 +33,7 @@ func on_timeout() -> void:
 	
 func on_snoozed() -> void:
 	snoozed = !snoozed
-	print("alarm is snoozed")
+	#print("alarm is snoozed")
 
 func emission_lerp(delta) -> void:
 	#flips the lerp operations based on if the light emission has maxxed out

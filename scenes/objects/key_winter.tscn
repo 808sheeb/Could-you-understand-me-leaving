@@ -51,6 +51,7 @@ shadow_mesh = SubResource("ArrayMesh_ds7oe")
 [node name="winter_key" type="StaticBody3D" parent="."]
 script = ExtResource("1_ruipk")
 keyName = "winter"
+prompt_message = "Pick Up"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="winter_key"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0715332, 0.010498047)

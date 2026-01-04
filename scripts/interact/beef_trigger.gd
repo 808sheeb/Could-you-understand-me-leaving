@@ -16,7 +16,7 @@ func _process(_delta) -> void:
 	pass
 	
 func meowChecker():
-	print("free to meow again")
+	#print("free to meow again")
 	hasMeowed = false
 
 func isPetting(_body):
