@@ -53,7 +53,6 @@ data = PackedVector3Array(-0.2588, -0.5115, 0.3981, -0.21779999, -0.33069998, 0.
 [node name="key_gnome" type="Node3D"]
 
 [node name="key_gnome" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9681411, 0)
 script = ExtResource("1_pa8gb")
 prompt_message = "Pick Up"
 
