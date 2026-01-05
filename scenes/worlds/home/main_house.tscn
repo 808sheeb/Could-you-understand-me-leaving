@@ -13822,9 +13822,9 @@ operation = 2
 size = Vector3(1, 1.9310303, 5.1610107)
 
 [node name="living_room_wall2" type="CSGBox3D" parent="Outside_Exterior"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.095482, 2.5, 0.27685547)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.095482, -0.68310547, 0.27685547)
 use_collision = true
-size = Vector3(0.1, 5, 17.44629)
+size = Vector3(0.1, 11.366211, 17.44629)
 material = SubResource("StandardMaterial3D_4oe1e")
 
 [node name="living_room_wall3" type="CSGBox3D" parent="Outside_Exterior"]

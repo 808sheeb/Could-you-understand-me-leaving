@@ -20,7 +20,6 @@ func _process(_delta) -> void:
 	if gnomeCount == 2:
 		KEY_GALLERY.emit()
 		gnomeCount = 0
-	print(gnomeCount)
 
 func gnomeUp():
 	gnomeCount += 1
