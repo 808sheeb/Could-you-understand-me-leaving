@@ -5,20 +5,25 @@ class_name Key
 var keyBody = null
 var keyParent = null
 var pickedUp = false
+var isAlarmGoingOff = false
 
 func _ready() -> void:
 	GlobalMessenger.connect('ALARM_SNOOZE', reset_key)
+	GlobalMessenger.connect('ALARM_TIMEOUT', alarming)
 
 func _on_interacted(_body):
-	keyBody = _body.get_parent_node_3d()
-	keyParent = keyBody.get_parent_node_3d()
-	keyBody.remove_child(self)
-	pickedUp = true
+	if !isAlarmGoingOff:
+		keyBody = _body.get_parent_node_3d()
+		keyParent = keyBody.get_parent_node_3d()
+		keyBody.remove_child(self)
+		pickedUp = true
 	
-	if keyName == "winter":
-		GlobalMessenger.KEY_WINTER.emit()
-	elif keyName == "merry":
-		GlobalMessenger.KEY_MERRY.emit()
+		if keyName == "winter":
+			GlobalMessenger.KEY_WINTER.emit()
+		elif keyName == "merry":
+			GlobalMessenger.KEY_MERRY.emit()
+	elif isAlarmGoingOff:
+		GlobalMessenger.UI_ITEM.emit()
 
 func reset_key():
 	if pickedUp:
@@ -31,3 +36,7 @@ func reset_key():
 			self.rotation_degrees = Vector3(-73.6, 0, -11.1)
 			self.scale = Vector3(0.095, 0.095, 0.095)
 		pickedUp = false
+	isAlarmGoingOff = false
+
+func alarming():
+	isAlarmGoingOff = true

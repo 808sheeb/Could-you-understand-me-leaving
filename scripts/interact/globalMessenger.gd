@@ -9,6 +9,10 @@ signal KEY_GALLERY
 signal KEY_ISLE
 signal KEY_MERRY
 
+signal UI_ITEM
+signal UI_DOOR
+signal UI_WORLD
+
 var gnomeCount = 0
 
 func _ready() -> void:

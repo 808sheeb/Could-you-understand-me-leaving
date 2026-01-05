@@ -19,4 +19,4 @@ func _on_interacted(_body):
 		playback.play("Open")
 	if !toggle:
 		playback.play("Close")
-	pass # Replace with function body.
+	GlobalMessenger.UI_DOOR.emit()

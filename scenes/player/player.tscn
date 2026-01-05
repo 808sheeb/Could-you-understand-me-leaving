@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://brpnlbf5j2yec"]
+[gd_scene load_steps=18 format=3 uid="uid://brpnlbf5j2yec"]
 
 [ext_resource type="Script" uid="uid://c4cil2ki6d5kn" path="res://scripts/player/player.gd" id="1_gmlin"]
 [ext_resource type="PackedScene" uid="uid://cxtpglx1dkimv" path="res://scenes/player/InteractRay.tscn" id="2_lvxji"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://tyyo8e3dq4yb" path="res://assets/ui/xbox.png" id="5_h17s1"]
 [ext_resource type="Texture2D" uid="uid://b1wdjh86hm3ar" path="res://assets/ui/gnome.png" id="6_je7p5"]
 [ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="10_h17s1"]
+[ext_resource type="Script" uid="uid://civ04amcchtb6" path="res://scripts/ui/narration.gd" id="12_fm80t"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0wfyh"]
 radius = 0.38964844
@@ -183,5 +184,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Narration" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -111.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("10_h17s1")
+horizontal_alignment = 1
+autowrap_mode = 2
+script = ExtResource("12_fm80t")
 
 [editable path="head/InteractRay"]
