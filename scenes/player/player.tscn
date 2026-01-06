@@ -199,4 +199,10 @@ horizontal_alignment = 1
 autowrap_mode = 2
 script = ExtResource("12_fm80t")
 
+[node name="Timer" type="Timer" parent="UI/Narration"]
+wait_time = 3.5
+one_shot = true
+
+[connection signal="timeout" from="UI/Narration/Timer" to="UI/Narration" method="textTimeout"]
+
 [editable path="head/InteractRay"]
