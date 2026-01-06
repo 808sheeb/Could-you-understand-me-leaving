@@ -42,4 +42,5 @@ func _process(_delta) -> void:
 		#print(move_timer.time_left)
 		
 	if velocity == Vector3.ZERO:
-		look_at(player.get_global_position(), Vector3.UP, true)
+		if player != null:
+			look_at(player.get_global_position(), Vector3.UP, true)

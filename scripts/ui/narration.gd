@@ -2,9 +2,10 @@ extends Label
 
 var textState := 0;
 var alarmingItem := "Before you can pick up this item, Please disarm the home alarm. \n Please wake up."
-var alarmingDoor := "Please wake up. Before continuing you must disarm the alarm."
+var alarmingDoor := "Please wake up. Before continuing you must disable the alarm."
 var alarmingWorld := "To continute exploring, please disarm the alarm."
 var alarmSnooze := "Please wake up. Please find yourself."
+var waterRespawn := "Revitalization initiated. Try not to die again."
 var activeText := ""
 var alarmIsTimedout = false
 @onready var t: Timer = $Timer
@@ -15,6 +16,7 @@ func _ready() -> void:
 	GlobalMessenger.connect("UI_ITEM", itemCalled)
 	GlobalMessenger.connect("UI_DOOR", doorCalled)
 	GlobalMessenger.connect("UI_WORLD", worldCalled)
+	GlobalMessenger.connect("UI_WATER", waterCalled)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta) -> void:
@@ -27,6 +29,8 @@ func _process(_delta) -> void:
 			activeText = alarmingDoor
 		elif textState == 3:
 			activeText = alarmingWorld
+		elif textState == 4:
+			activeText = waterRespawn
 	
 	text = activeText
 	
@@ -48,6 +52,11 @@ func doorCalled():
 	
 func worldCalled():
 	textState = 3
+	t.stop()
+	t.start()
+	
+func waterCalled():
+	textState = 4
 	t.stop()
 	t.start()
 

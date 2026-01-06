@@ -2,7 +2,6 @@ extends Interactable
 var toggle = false
 var isAlarmGoingOff := false
 @export var playback : AnimationPlayer
-@onready var t: Timer = $"../Timer"
 
 func _ready() -> void:
 	prompt_message = "Open Door"

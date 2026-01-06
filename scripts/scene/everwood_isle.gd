@@ -1,26 +1,24 @@
 extends Node3D
-@onready var player: CharacterBody3D = $player
-var spawn : Transform3D
+var spawn := Vector3(2336.8, 0.377, 14.342)
 @onready var timer: Timer = $Timer
+@onready var player: CharacterBody3D = $"../player"
 
 func _ready() -> void:
-	spawn = player.get_global_transform()
+	pass
 	
 
 func _process(_delta) -> void:
-	if Input.is_action_pressed("escape"):
-		get_tree().quit()
-	if Input.is_action_pressed("reset") and timer.time_left == 0:
-		player.set_global_transform(spawn)
+	pass
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if timer.time_left == 0:
 		if body == player:
 			resetPlayer()
+			GlobalMessenger.UI_WATER.emit()
 
 func resetPlayer():
 	timer.start()
 
 
 func _on_timer_timeout() -> void:
-	player.set_global_transform(spawn)
+	player.set_position(spawn)

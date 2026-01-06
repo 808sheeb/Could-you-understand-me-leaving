@@ -12,6 +12,7 @@ signal KEY_MERRY
 signal UI_ITEM
 signal UI_DOOR
 signal UI_WORLD
+signal UI_WATER
 
 var gnomeCount = 0
 

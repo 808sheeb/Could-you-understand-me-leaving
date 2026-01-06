@@ -1,4 +1,4 @@
-[gd_scene load_steps=865 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=866 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Script" uid="uid://b6o8f5opu4h3a" path="res://scripts/scene/foyer_basement.gd" id="1_pyu8g"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
@@ -151,6 +151,7 @@
 [ext_resource type="Texture2D" uid="uid://cgqrf3ufdgoh" path="res://assets/suburbs/door/textures/Material_normal.png" id="102_n1scb"]
 [ext_resource type="Script" uid="uid://3ssnjabo10ur" path="res://scripts/scene/shihab_room.gd" id="110_tmdxj"]
 [ext_resource type="Texture2D" uid="uid://ca71eq6v586bf" path="res://assets/tex/hockey.png" id="125_ktftv"]
+[ext_resource type="Script" uid="uid://y01em3wljs7g" path="res://scripts/scene/rayah_room.gd" id="135_4oe1e"]
 [ext_resource type="Script" uid="uid://crr0jslgqurv6" path="res://scripts/scene/ceiling_fan_blades.gd" id="147_2cmia"]
 [ext_resource type="Script" uid="uid://duepedk1hbqjh" path="res://scripts/interact/door_special.gd" id="148_w7eew"]
 [ext_resource type="PackedScene" uid="uid://dogf07em8akg3" path="res://assets/suburbs/cat/beef.tscn" id="149_3wtca"]
@@ -13068,6 +13069,11 @@ skeleton = NodePath("")
 
 [node name="Floors & Walls" type="Node3D" parent="Shihab"]
 
+[node name="Cutter2" type="CSGBox3D" parent="Shihab/Floors & Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7470016, 1.8459225, -26.107767)
+use_collision = true
+size = Vector3(5.7599497, 3.9467278, 1.1484375)
+
 [node name="shihab_floor" type="CSGBox3D" parent="Shihab/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -20.433838)
 use_collision = true
@@ -13119,10 +13125,10 @@ size = Vector3(8.766113, 5, 0.1)
 material = ExtResource("6_ktftv")
 
 [node name="Cutter" type="CSGBox3D" parent="Shihab/Floors & Walls/shihab_wall_2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4628067, -0.65407753, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4959488, -0.65407753, 0)
 visible = false
 operation = 2
-size = Vector3(1.9382354, 3.9467278, 1)
+size = Vector3(1.8719497, 3.9467278, 1)
 
 [node name="shihab_window_wall2" type="CSGBox3D" parent="Shihab/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9464417, 2.3532715, -21.899601)
@@ -13328,6 +13334,7 @@ shape = SubResource("BoxShape3D_lnbln")
 
 [node name="Rayah" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.1362457)
+script = ExtResource("135_4oe1e")
 
 [node name="Walls & Floors" type="Node3D" parent="Rayah"]
 
@@ -13335,6 +13342,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.136
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 2.5, -30.5)
 use_collision = true
 size = Vector3(0.1, 5, 13)
+material = ExtResource("6_ktftv")
+
+[node name="RayahCutter" type="CSGBox3D" parent="Rayah/Walls & Floors/rayah_wall_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6117096, 0.96003914)
+operation = 2
+size = Vector3(1, 3.7, 1.898211)
+
+[node name="rayah_wall_back2" type="CSGBox3D" parent="Rayah/Walls & Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.811241, 2.5, -30.5)
+use_collision = true
+size = Vector3(0.4381836, 5, 13)
+material = ExtResource("6_ktftv")
+
+[node name="rayah_wall_back3" type="CSGBox3D" parent="Rayah/Walls & Floors"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -15.559402, 2.5, -24.515564)
+use_collision = true
+size = Vector3(0.1, 5, 1.0311279)
+material = ExtResource("6_ktftv")
+
+[node name="rayah_wall_back4" type="CSGBox3D" parent="Rayah/Walls & Floors"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -15.559402, 2.5, -36.87184)
+use_collision = true
+size = Vector3(0.1, 5, 1.0311279)
 material = ExtResource("6_ktftv")
 
 [node name="rayah_door_wall" type="CSGBox3D" parent="Rayah/Walls & Floors"]
@@ -13351,13 +13381,13 @@ size = Vector3(0.9458008, 3.8114014, 1.9213867)
 material = ExtResource("6_ktftv")
 
 [node name="rayah_floor2" type="CSGBox3D" parent="Rayah/Walls & Floors"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.496613, 0, -29.18821)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.981491, 0, -29.18821)
 use_collision = true
-size = Vector3(9.006775, 0.1, 15.623581)
+size = Vector3(9.976532, 0.1, 15.623581)
 material = ExtResource("3_x4sld")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Rayah/Walls & Floors/rayah_floor2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5213623, 0, 6.6364784)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0364838, 0, 6.6364784)
 operation = 2
 size = Vector3(5.9919434, 1, 2.4906006)
 
