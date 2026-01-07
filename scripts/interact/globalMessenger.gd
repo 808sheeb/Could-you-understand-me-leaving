@@ -5,6 +5,7 @@ signal ALARM_SNOOZE
 signal KEY_WINTER
 signal KEY_GNOME
 signal KEY_GNOME_DOWN
+signal KEY_GNOME_RESET
 signal KEY_GALLERY
 signal KEY_ISLE
 signal KEY_MERRY
@@ -27,7 +28,9 @@ func _process(_delta) -> void:
 		gnomeCount = 0
 
 func gnomeUp():
-	gnomeCount += 1
+	if gnomeCount < 2:
+		gnomeCount += 1
 
 func gnomeDown():
-	gnomeCount -= 1
+	if gnomeCount > 0:
+		gnomeCount -= 1

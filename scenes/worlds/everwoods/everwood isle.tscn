@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://gm3tdyml46ae"]
+[gd_scene load_steps=35 format=4 uid="uid://gm3tdyml46ae"]
 
 [ext_resource type="Script" uid="uid://1yoargr7wb3m" path="res://scripts/scene/everwood_isle.gd" id="1_0r102"]
 [ext_resource type="Script" uid="uid://cnuvnlcwm3oun" path="res://addons/zylann.hterrain/hterrain.gd" id="1_1rp6g"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://cqfd22pt6x3nx" path="res://assets/everwoods/prefab/tree_03.tscn" id="21_1rp6g"]
 [ext_resource type="PackedScene" uid="uid://cht31gr1syyqt" path="res://assets/everwoods/prefab/tree_02.tscn" id="22_0r102"]
 [ext_resource type="PackedScene" uid="uid://5annr5wnotsy" path="res://assets/everwoods/prefab/grass.tscn" id="23_8i3j6"]
+[ext_resource type="PackedScene" uid="uid://bklk2f6g44260" path="res://scenes/objects/key_gnome.tscn" id="24_0p2j5"]
 [ext_resource type="PackedScene" uid="uid://c1i71fyc4afve" path="res://assets/everwoods/prefab/daisy.tscn" id="24_vq78a"]
 [ext_resource type="PackedScene" uid="uid://cjmv3i5xpp04o" path="res://assets/everwoods/prefab/log.tscn" id="26_0r102"]
 [ext_resource type="PackedScene" uid="uid://b3dep4ultlovo" path="res://assets/everwoods/prefab/rock_tree_05.tscn" id="26_hiuo5"]
@@ -9300,6 +9301,9 @@ mrange = 1.4
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
+
+[node name="key_gnome" parent="." instance=ExtResource("24_0p2j5")]
+transform = Transform3D(0.08096439, 0, 0.99671704, 0, 1, 0, -0.99671704, 0, 0.08096439, -113, 49.201897, 145.35565)
 
 [connection signal="body_entered" from="WaterCheck/Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

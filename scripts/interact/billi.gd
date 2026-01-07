@@ -7,6 +7,7 @@ var pickedUp := false
 
 var keyBody = null
 var keyParent = null
+var isAlarmGoingOff = false
 
 #func _input(event: InputEvent) -> void:
 	###move units
@@ -34,6 +35,7 @@ var keyParent = null
 func _ready() -> void:
 	has_target = true
 	target_pos = destination_points[randi_range(0, destination_points.size()-1)]
+	GlobalMessenger.connect("ALARM_TIMEOUT", alarmTimedOut)
 	GlobalMessenger.connect("ALARM_SNOOZE", reset_key)
 	
 func _process(_delta) -> void:
@@ -65,12 +67,14 @@ func _process(_delta) -> void:
 		prompt_message = "Pet"
 
 func _on_interacted(_body) -> void:
-	if isPickable:
+	if isPickable and !isAlarmGoingOff:
 		keyBody = _body.get_parent_node_3d()
 		keyParent = keyBody.get_parent_node_3d()
 		keyBody.remove_child(self)
 		pickedUp = true
 		GlobalMessenger.KEY_ISLE.emit()
+	elif isAlarmGoingOff:
+		GlobalMessenger.UI_ITEM.emit()
 
 func entered_table(_body):
 	isPickable = true
@@ -81,8 +85,13 @@ func exited_table(_body):
 	#print("exited")
 
 func reset_key():
+	isAlarmGoingOff = false
 	if pickedUp:
 		keyParent.add_child(self)
 		self.set_position(Vector3(-94.4, -1.5, -24.98))
 		pickedUp = false
 		isPickable = false
+
+func alarmTimedOut():
+	isAlarmGoingOff = true
+	

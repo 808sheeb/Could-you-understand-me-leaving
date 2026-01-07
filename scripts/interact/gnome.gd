@@ -7,10 +7,12 @@ var objT = null
 var objS = Vector3(0.3, 0.3, 0.3)
 var objR = null
 var objP = null
+var isAlarmGoingOff = false
 
 func _ready() -> void:
-	GlobalMessenger.connect('ALARM_SNOOZE', reset_key)
-		
+	GlobalMessenger.connect('ALARM_SNOOZE', alarmSnoozed)
+	GlobalMessenger.connect('ALARM_TIMEOUT', alarmTimedOut)
+	GlobalMessenger.connect('KEY_GNOME_RESET', reset_key)
 	
 func reset_key():
 	if pickedUp:
@@ -22,6 +24,9 @@ func reset_key():
 		self.set_rotation(objR)
 		pickedUp = false
 		GlobalMessenger.KEY_GNOME_DOWN.emit()
+		
+func alarmSnoozed():
+	isAlarmGoingOff = false
 
 func _on_interacted(_body):
 	keyBody = _body.get_parent_node_3d()
@@ -37,3 +42,6 @@ func _on_interacted(_body):
 	keyBody.remove_child(self)
 	pickedUp = true
 	GlobalMessenger.KEY_GNOME.emit()
+
+func alarmTimedOut():
+	isAlarmGoingOff = true

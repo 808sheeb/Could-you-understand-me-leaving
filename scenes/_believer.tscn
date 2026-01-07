@@ -1,9 +1,10 @@
-[gd_scene load_steps=23 format=4 uid="uid://df7w7xyrweg3t"]
+[gd_scene load_steps=24 format=4 uid="uid://df7w7xyrweg3t"]
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="2_oaoh5"]
 [ext_resource type="PackedScene" uid="uid://c3s1f6jqgx5cb" path="res://scenes/worlds/frostgorge_sound/frostgorge_sound.tscn" id="3_60jeo"]
+[ext_resource type="Material" uid="uid://qs515fr0c26f" path="res://assets/tex/woodFloor/WoodFloor051_1K-JPG.tres" id="3_ax3ly"]
 [ext_resource type="Script" uid="uid://3us3vbt02r78" path="res://scripts/scene/house_fog.gd" id="4_a0lqf"]
 [ext_resource type="Script" uid="uid://cw1r4c1d7beyv" path="res://addons/portals/scripts/portal_3d.gd" id="6_ymoqr"]
 [ext_resource type="PackedScene" uid="uid://gm3tdyml46ae" path="res://scenes/worlds/everwoods/everwood isle.tscn" id="7_ax3ly"]
@@ -138,18 +139,22 @@ transform = Transform3D(-1.8, 0, 1.57361e-07, 0, 1.8, 0, -1.57361e-07, 0, -1.8, 
 [node name="CSGBox3D" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("3_ax3ly")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("3_ax3ly")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
 size = Vector3(2.0252075, 0.03125, 0.123046875)
+material = ExtResource("3_ax3ly")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
+material = ExtResource("3_ax3ly")
 
 [node name="EverwoodsBorder" type="Node3D" parent="main_house"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -106.96404, 0.03378874, -31.723154)
@@ -160,18 +165,22 @@ transform = Transform3D(-1.8, 0, 1.57361e-07, 0, 1.8, 0, -1.57361e-07, 0, -1.8, 
 [node name="CSGBox3D" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("3_ax3ly")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("3_ax3ly")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
 size = Vector3(2.0252075, 0.03125, 0.123046875)
+material = ExtResource("3_ax3ly")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
+material = ExtResource("3_ax3ly")
 
 [node name="FogVolume" type="FogVolume" parent="main_house"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.35823, -5.665756, -7.418762)
@@ -220,7 +229,7 @@ shape = SubResource("BoxShape3D_vwutt")
 [node name="HousePortalEverwoods" type="Node3D" parent="main_house" node_paths=PackedStringArray("exit_portal") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -106.98594, 0.16521978, -31.684752)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -106.98594, 0.16521978, -31.697474)
 script = ExtResource("6_ymoqr")
 _portal_mesh_path = NodePath("Portal3D_Mesh")
 _teleport_area_path = NodePath("TeleportArea")
@@ -237,7 +246,7 @@ rigidbody_boost = 0.5
 teleport_tolerance = 1.0
 teleport_interactions = 3
 teleport_collision_mask = 32768
-start_deactivated = false
+start_deactivated = true
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 

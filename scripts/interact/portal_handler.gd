@@ -19,7 +19,9 @@ func _ready() -> void:
 	GlobalMessenger.connect("KEY_ISLE", islePortal)
 	
 func _process(_delta) -> void:
-	print(player.get_position())
+	#DEBUG PLAYER POSITION
+	#print(player.get_position())
+	pass
 
 func winterPortal():
 	winterPortalActive = true
