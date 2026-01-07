@@ -2,6 +2,8 @@ extends Node3D
 
 var winterPortalActive =  false
 var islePortalActive = false
+var galleryPortalActive = false
+var voidPortalActive = false
 @onready var winter_portal: Portal3D = $main_house/HousePortalWinter
 @onready var winter_border: Node3D = $main_house/WinterBorder
 @onready var isle_border: Node3D = $main_house/EverwoodsBorder
@@ -17,6 +19,7 @@ func _ready() -> void:
 	#on key pickup, do this
 	GlobalMessenger.connect("KEY_WINTER", winterPortal)
 	GlobalMessenger.connect("KEY_ISLE", islePortal)
+	GlobalMessenger.connect("KEY_GALLERY", galleryPortal)
 	
 func _process(_delta) -> void:
 	#DEBUG PLAYER POSITION
@@ -33,6 +36,10 @@ func islePortal():
 	isle_border.visible = true
 	isle_portal.activate()
 	
+func galleryPortal():
+	galleryPortalActive = true
+	
+
 func resetPortal():
 	#WINTER
 	winterPortalActive = false

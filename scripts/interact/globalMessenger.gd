@@ -6,9 +6,9 @@ signal KEY_WINTER
 signal KEY_GNOME
 signal KEY_GNOME_DOWN
 signal KEY_GNOME_RESET
-signal KEY_GALLERY
+signal KEY_VOID
 signal KEY_ISLE
-signal KEY_MERRY
+signal KEY_GALLERY
 
 signal UI_ITEM
 signal UI_DOOR
