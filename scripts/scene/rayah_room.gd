@@ -4,7 +4,7 @@ var keyIsActive = false
 
 func _ready() -> void:
 	GlobalMessenger.connect("KEY_ISLE", activeToggle)
-	GlobalMessenger.connect("ALARM_SNOOZE", activeToggle)
+	GlobalMessenger.connect("ALARM_SNOOZE", alarmSnooze)
 	
 func _process(_delta: float) -> void:
 	if keyIsActive:
@@ -16,4 +16,7 @@ func _process(_delta: float) -> void:
 		#pass
 
 func activeToggle():
-	keyIsActive = !keyIsActive
+	keyIsActive = true
+	
+func alarmSnooze():
+	keyIsActive = false
