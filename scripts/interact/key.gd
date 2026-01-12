@@ -21,7 +21,7 @@ func _on_interacted(_body):
 		if keyName == "winter":
 			GlobalMessenger.KEY_WINTER.emit()
 		elif keyName == "merry":
-			GlobalMessenger.KEY_MERRY.emit()
+			GlobalMessenger.KEY_VOID.emit()
 	elif isAlarmGoingOff:
 		GlobalMessenger.UI_ITEM.emit()
 

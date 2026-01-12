@@ -5980,10 +5980,10 @@ size = Vector3(0.59265137, 2.2349396, 0.13079834)
 [sub_resource type="BoxShape3D" id="BoxShape3D_8wt1l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_40oa6"]
-size = Vector3(1, 2.0908203, 1)
+size = Vector3(1, 1.7358398, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_118hn"]
-size = Vector3(1, 1.776001, 0.8803711)
+size = Vector3(1, 1.7019653, 0.8803711)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tuonj"]
 size = Vector3(0.8418579, 1, 0.6675415)
@@ -12034,12 +12034,12 @@ mesh = SubResource("ArrayMesh_4m4r0")
 skeleton = NodePath("")
 
 [node name="Box_005" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Hallway/Furniture"]
-transform = Transform3D(-2.0716598e-06, 67.73114, 2.9606224e-06, 0, -2.9606224e-06, 67.73114, 47.39405, 2.960622e-06, 1.2941289e-13, -0.100746155, 0.16595012, 0.166893)
+transform = Transform3D(-2.0716598e-06, 67.73114, 2.9606226e-06, 0, -2.9606226e-06, 67.73114, 47.394054, 2.960622e-06, 1.294129e-13, -0.011787415, 0.16595024, 0.166893)
 mesh = SubResource("ArrayMesh_puu7y")
 skeleton = NodePath("")
 
 [node name="Box_006" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Hallway/Furniture"]
-transform = Transform3D(3.5781509e-06, -67.73113, -2.9606217e-06, 0, -2.9606217e-06, 67.73113, -47.394047, -5.1135585e-06, -2.2352073e-13, -0.18052673, 0.57648665, 0.20942497)
+transform = Transform3D(3.5781516e-06, -67.73114, -2.960622e-06, 0, -2.960622e-06, 67.73114, -47.394054, -5.113559e-06, -2.2352077e-13, -0.033180237, 0.5764869, 0.20942497)
 mesh = SubResource("ArrayMesh_o3f03")
 skeleton = NodePath("")
 
@@ -12057,9 +12057,9 @@ size = Vector3(4.935913, 0.1, 14.764259)
 material = ExtResource("3_x4sld")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls/hallway_floor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5179749, 0, 0.53857803)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5179749, 0, 0.50110245)
 operation = 2
-size = Vector3(2.1367798, 1, 5.8129883)
+size = Vector3(2.1367798, 1, 5.8879395)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls/hallway_floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.957985, 0, -4.0073776)
@@ -12067,13 +12067,30 @@ operation = 2
 size = Vector3(1.1839066, 1, 2.4744873)
 
 [node name="cubby_floor" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.05072, 0, -16.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.110321, 0, -16.5)
 use_collision = true
-size = Vector3(2.1014404, 0.1, 3)
+size = Vector3(4.220642, 0.1, 3)
 material = ExtResource("3_x4sld")
 
 [node name="cubby_backwall" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2.5, -16.5)
+use_collision = true
+size = Vector3(0.1, 5, 3)
+material = ExtResource("6_ktftv")
+
+[node name="cutter" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls/cubby_backwall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16321564, 0.10546875, 0.0692749)
+operation = 2
+size = Vector3(1, 2.956787, 2.1287842)
+
+[node name="cubby_backwall2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.936813, 2.5, -16.5)
+use_collision = true
+size = Vector3(0.1, 5, 3)
+material = ExtResource("6_ktftv")
+
+[node name="cubby_backwall3" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.528465, 2.5, -16.5)
 use_collision = true
 size = Vector3(0.1, 5, 3)
 material = ExtResource("6_ktftv")
@@ -12373,11 +12390,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3955688, 0, 0.22514153)
 shape = SubResource("BoxShape3D_8wt1l")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="NavigationRegion3D/floorplan/Hallway/Colliders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2745438, 0.54541016, -0.030519485)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2745438, 0.36791992, -0.030519485)
 shape = SubResource("BoxShape3D_40oa6")
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="NavigationRegion3D/floorplan/Hallway/Colliders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2745438, 0.3880005, 1.0463924)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2745438, 0.35098267, 1.0463924)
 shape = SubResource("BoxShape3D_118hn")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="NavigationRegion3D/floorplan/Hallway/Colliders"]
@@ -12389,12 +12406,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7380066, 1.7865753, 2.58540
 shape = SubResource("BoxShape3D_r2wrt")
 
 [node name="wall_lightD" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Hallway"]
-transform = Transform3D(-5.4857793e-08, 0, 1.255, 0, 1.255, 0, -1.255, 0, -5.4857793e-08, -8.005821, 3.4526968, -16.362381)
+transform = Transform3D(1.2549999, 0, -5.9604645e-08, 0, 1.255, 0, 5.9604645e-08, 0, 1.2549999, -6.8361435, 3.5041518, -17.963095)
 mesh = SubResource("ArrayMesh_k7cw6")
 skeleton = NodePath("")
 
 [node name="Light8" parent="NavigationRegion3D/floorplan/Hallway" instance=ExtResource("7_gmmk2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.209572, 4.2272396, -15.999981)
+transform = Transform3D(-5.9604645e-08, 0, -1, 0, 1, 0, 1, 0, -5.9604645e-08, -7.1985397, 4.2786946, -17.166845)
 light_energy = 0.25
 
 [node name="OmniLight3D" parent="NavigationRegion3D/floorplan/Hallway/Light8" index="0"]
@@ -12402,12 +12419,37 @@ light_energy = 0.25
 omni_range = 1.832
 
 [node name="Light9" parent="NavigationRegion3D/floorplan/Hallway" instance=ExtResource("7_gmmk2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.209572, 4.2272396, -16.823315)
+transform = Transform3D(-5.9604645e-08, 0, -1, 0, 1, 0, 1, 0, -5.9604645e-08, -6.375206, 4.2786946, -17.166845)
 light_energy = 0.25
 
 [node name="OmniLight3D" parent="NavigationRegion3D/floorplan/Hallway/Light9" index="0"]
 light_energy = 0.25
 omni_range = 1.832
+
+[node name="portal" type="Node3D" parent="NavigationRegion3D/floorplan/Hallway"]
+
+[node name="DoorBevel" type="Node3D" parent="NavigationRegion3D/floorplan/Hallway/portal"]
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, -7.869011, 0.80649304, -16.448526)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/portal/DoorBevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0073537827, 1.8235416, -0.0070724487)
+size = Vector3(1.2018433, 0.03466797, 0.123046875)
+material = SubResource("StandardMaterial3D_4ub5o")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/portal/DoorBevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008304596, 0.19442055, -0.0076408386)
+size = Vector3(1.1984482, 0.03466797, 0.123046875)
+material = SubResource("StandardMaterial3D_4ub5o")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/portal/DoorBevel"]
+transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, -0.5777626, 1.0116581, -0.006919861)
+size = Vector3(1.6465425, 0.03125, 0.123046875)
+material = SubResource("StandardMaterial3D_4ub5o")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/portal/DoorBevel"]
+transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, 0.591856, 1.0240107, -0.0070724487)
+size = Vector3(1.6275291, 0.03125, 0.123046875)
+material = SubResource("StandardMaterial3D_4ub5o")
 
 [node name="Beef" parent="NavigationRegion3D" instance=ExtResource("149_3wtca")]
 transform = Transform3D(-0.81604683, 0, -0.5779858, 0, 1, 0, 0.5779858, 0, -0.81604683, -94.11597, -1.4650717, 4.053168)

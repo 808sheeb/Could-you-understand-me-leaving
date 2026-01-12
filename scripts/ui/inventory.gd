@@ -9,7 +9,7 @@ var keysCollected := 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	visible = false
-	GlobalMessenger.connect("KEY_MERRY", goingMerry)
+	GlobalMessenger.connect("KEY_VOID", goingVoid)
 	GlobalMessenger.connect("KEY_WINTER", winterKey)
 	GlobalMessenger.connect("KEY_ISLE", isleKey)
 	GlobalMessenger.connect("KEY_GALLERY", gnomeKey)
@@ -24,7 +24,7 @@ func winterKey():
 	keysCollected += 1
 	xbox.visible = true
 	
-func goingMerry():
+func goingVoid():
 	keysCollected += 1
 	merry.visible = true
 
