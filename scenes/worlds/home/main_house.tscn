@@ -1,4 +1,4 @@
-[gd_scene load_steps=866 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=867 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Script" uid="uid://b6o8f5opu4h3a" path="res://scripts/scene/foyer_basement.gd" id="1_pyu8g"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
@@ -107,6 +107,7 @@
 [ext_resource type="Texture2D" uid="uid://bpjk7leeamhh2" path="res://assets/suburbs/interior objects 02/Textures/Leather_02.jpg" id="79_ridwc"]
 [ext_resource type="Texture2D" uid="uid://5kld4fjkkv2j" path="res://assets/suburbs/interior objects 02/Textures/Fabric_10.jpg" id="81_2gy5m"]
 [ext_resource type="Texture2D" uid="uid://b7a2yrutcd34t" path="res://assets/suburbs/house 02/DoriHome_2-5.png" id="81_xndhq"]
+[ext_resource type="Script" uid="uid://b087d487nkhy1" path="res://scripts/scene/hallway.gd" id="82_qyt41"]
 [ext_resource type="Texture2D" uid="uid://b0cx3cimgg6ld" path="res://assets/suburbs/interior objects 02/Textures/Fabric_20.jpg" id="82_ridwc"]
 [ext_resource type="Texture2D" uid="uid://cnqrhw2q3h108" path="res://assets/suburbs/house 02/DoriHome_10.png" id="82_uti44"]
 [ext_resource type="Texture2D" uid="uid://di8aoev12q0kk" path="res://assets/suburbs/house 02/DoriHome_2.png" id="83_5pukj"]
@@ -565,26 +566,26 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_svu7q")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w4m1g"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qyt41"]
 load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Color.jpg-83679648972d36aec9a9582fa358390b.s3tc.ctex"
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pyu8g"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o53ab"]
 load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Displacement.jpg-8029c8a1b098d9e036c2b659ef40a654.s3tc.ctex"
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w7eew"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4ub5o"]
 load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_NormalGL.jpg-39004d0263f0066b033fab1322c1df86.s3tc.ctex"
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4oe1e"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ca7rj"]
 load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Roughness.jpg-f5e66d150acb635d515b8227e1d48d9c.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ub5o"]
-albedo_texture = SubResource("CompressedTexture2D_w4m1g")
-roughness_texture = SubResource("CompressedTexture2D_4oe1e")
+albedo_texture = SubResource("CompressedTexture2D_qyt41")
+roughness_texture = SubResource("CompressedTexture2D_ca7rj")
 roughness_texture_channel = 4
 normal_enabled = true
-normal_texture = SubResource("CompressedTexture2D_w7eew")
+normal_texture = SubResource("CompressedTexture2D_4ub5o")
 heightmap_scale = 1.0
-heightmap_texture = SubResource("CompressedTexture2D_pyu8g")
+heightmap_texture = SubResource("CompressedTexture2D_o53ab")
 uv1_scale = Vector3(1, 3.24, 1)
 uv1_offset = Vector3(0.66, 1.335, 1.47)
 uv1_triplanar = true
@@ -11989,6 +11990,7 @@ shape = SubResource("BoxShape3D_iwaoi")
 debug_color = Color(18.892157, 11.109755, 0, 1)
 
 [node name="Hallway" type="Node3D" parent="NavigationRegion3D/floorplan"]
+script = ExtResource("82_qyt41")
 
 [node name="Furniture" type="Node3D" parent="NavigationRegion3D/floorplan/Hallway"]
 transform = Transform3D(1.51, 0, 0, 0, 1.51, 0, 0, 0, 1.51, -7.116623, 0, -15.736507)
@@ -12080,6 +12082,7 @@ material = ExtResource("6_ktftv")
 
 [node name="cutter" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls/cubby_backwall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16321564, 0.10546875, 0.0692749)
+visible = false
 operation = 2
 size = Vector3(1, 2.956787, 2.1287842)
 
@@ -12090,7 +12093,7 @@ size = Vector3(0.1, 5, 3)
 material = ExtResource("6_ktftv")
 
 [node name="cubby_backwall3" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.528465, 2.5, -16.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.499489, 2.5, -16.5)
 use_collision = true
 size = Vector3(0.1, 5, 3)
 material = ExtResource("6_ktftv")
@@ -12427,6 +12430,7 @@ light_energy = 0.25
 omni_range = 1.832
 
 [node name="portal" type="Node3D" parent="NavigationRegion3D/floorplan/Hallway"]
+visible = false
 
 [node name="DoorBevel" type="Node3D" parent="NavigationRegion3D/floorplan/Hallway/portal"]
 transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, -7.869011, 0.80649304, -16.448526)

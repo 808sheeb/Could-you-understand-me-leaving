@@ -7,7 +7,7 @@ signal KEY_GNOME
 signal KEY_GNOME_DOWN
 signal KEY_GNOME_LOCK
 signal KEY_GNOME_RESET
-signal KEY_VOID
+signal KEY_VILLAGE
 signal KEY_ISLE
 signal KEY_GALLERY
 

@@ -8,5 +8,6 @@ script = ExtResource("1_xbc4u")
 
 [node name="alarm" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_kosdh")
+volume_db = -4.497
 
 [node name="walking_wood" type="AudioStreamPlayer" parent="."]

@@ -1,7 +1,6 @@
 extends Node3D
 @onready var cutter: CSGBox3D = $"Floors & Walls/shihab_wall_2/Cutter"
 var keyIsActive = false
-var isAlarmGoingOff = false
 
 
 #THERE IS A PROBLEM HERE FIX THIS
