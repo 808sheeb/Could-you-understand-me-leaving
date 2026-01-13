@@ -42,3 +42,4 @@ func get_prompt():
 
 func interact(body):
 	interacted.emit(body)
+	GlobalMessenger.INTERACTED.emit()

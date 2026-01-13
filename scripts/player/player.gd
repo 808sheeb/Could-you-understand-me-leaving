@@ -5,7 +5,10 @@ extends CharacterBody3D
 @onready var standing_collision_shape: CollisionShape3D = $standing_collision_shape
 @onready var crouching_collision_shape: CollisionShape3D = $crouching_collision_shape
 @onready var ray_cast_3d: RayCast3D = $crouch_checker
+@onready var audio: Node = $PlayerAudio
 
+@onready var ap: AnimationPlayer = $head/PSX_First_Person_Arms/AnimationPlayer
+@onready var wood: AudioStreamPlayer = $PlayerAudio/Wood
 
 # Speed variables
 # have this be 3 for actual gameplay
@@ -30,6 +33,9 @@ var crouching_depth = -0.9
 # Constrain mouse to window
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	ap.play("Relax_hands_idle_start")
+	ap.queue("Relax_hands_idle")
+	GlobalMessenger.connect("INTERACTED", animationGrab)
 	
 
 func _input(event: InputEvent) -> void:
@@ -38,8 +44,7 @@ func _input(event: InputEvent) -> void:
 		rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 		head.rotate_x(deg_to_rad(-event.relative.y * mouse_sens))
 		head.rotation.x = clamp(head.rotation.x, deg_to_rad(-89), deg_to_rad(89))
-		
-
+	
 func _physics_process(delta: float) -> void:
 	
 	#if %interact_ray.is_colliding():
@@ -84,5 +89,13 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, CURRENT_SPEED)
 		velocity.z = move_toward(velocity.z, 0, CURRENT_SPEED)
-
+	
 	move_and_slide()
+	
+	if !ap.is_playing():
+		ap.play("Relax_hands_idle")
+
+func animationGrab():
+	ap.play("Collect_something")
+	ap.queue("Relax_hands_idle_start")
+	ap.queue("Relax_hands_idle")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=867 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=864 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Script" uid="uid://b6o8f5opu4h3a" path="res://scripts/scene/foyer_basement.gd" id="1_pyu8g"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
@@ -8678,13 +8678,6 @@ size = Vector3(2.4902344, 1.1998291, 2.1220093)
 [sub_resource type="BoxShape3D" id="BoxShape3D_lnbln"]
 size = Vector3(2.0309753, 2.0680847, 0.6767273)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_48urs"]
-viewport_path = NodePath("Rayah/Walls & Floors/Ledge15/window/SubViewport")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pyu8g"]
-resource_local_to_scene = true
-albedo_texture = SubResource("ViewportTexture_48urs")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mjc21"]
 resource_name = "atlas_mueblesDormitorio1"
 vertex_color_use_as_albedo = true
@@ -9943,12 +9936,8 @@ size = Vector3(1.2677624, 1.8426569, 1.0529814)
 [sub_resource type="BoxShape3D" id="BoxShape3D_vsjin"]
 size = Vector3(1.2082987, 1.3110886, 1.3093243)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_2cmia"]
-viewport_path = NodePath("Parents/Walls & Floors/window/SubViewport")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w4m1g"]
-resource_local_to_scene = true
-albedo_texture = SubResource("ViewportTexture_2cmia")
+[sub_resource type="BoxShape3D" id="BoxShape3D_aoasc"]
+size = Vector3(4.9747925, 2.8686218, 0.18261719)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3wtca"]
 
@@ -13480,25 +13469,10 @@ size = Vector3(2.910553, 0.18024445, 0.39672852)
 material = SubResource("StandardMaterial3D_jjsy1")
 
 [node name="Ledge15" type="CSGBox3D" parent="Rayah/Walls & Floors"]
-transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -8.108383, 2.9168792, -36.97066)
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -8.110977, 2.9168792, -36.97066)
 use_collision = true
 size = Vector3(2.910553, 0.18024445, 0.39672852)
 material = SubResource("StandardMaterial3D_jjsy1")
-
-[node name="window" type="CSGBox3D" parent="Rayah/Walls & Floors/Ledge15"]
-transform = Transform3D(-1.3113416e-07, 1, 3.8213718e-15, 1, 1.3113416e-07, 8.742278e-08, 8.742278e-08, 1.5285484e-14, -1, 0.06443322, -2.503395, 0.15249252)
-lod_bias = 0.001
-use_collision = true
-size = Vector3(5.111354, 3.125557, 0.044921875)
-material = SubResource("StandardMaterial3D_pyu8g")
-
-[node name="SubViewport" type="SubViewport" parent="Rayah/Walls & Floors/Ledge15/window"]
-size = Vector2i(1400, 800)
-
-[node name="Camera3D2" type="Camera3D" parent="Rayah/Walls & Floors/Ledge15/window/SubViewport"]
-transform = Transform3D(-1, 0, 0, 0, 1, 8.742278e-08, 0, -8.742278e-08, 1, -102.43388, 0.95123434, -39.02226)
-fov = 61.2
-far = 283.02
 
 [node name="Ledge16" type="CSGBox3D" parent="Rayah/Walls & Floors"]
 transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, -10.612282, 4.4497986, -36.97066)
@@ -13808,6 +13782,10 @@ shape = SubResource("BoxShape3D_odgee")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0655518, 0.79241127, -6.1039124)
 shape = SubResource("BoxShape3D_vsjin")
 
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Rayah/Colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3040161, 2.952942, -7.196953)
+shape = SubResource("BoxShape3D_aoasc")
+
 [node name="Parents" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.1362457)
 
@@ -13970,21 +13948,6 @@ material = SubResource("StandardMaterial3D_4ub5o")
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
 material = SubResource("StandardMaterial3D_4ub5o")
-
-[node name="window" type="CSGBox3D" parent="Parents/Walls & Floors"]
-transform = Transform3D(1, 8.742278e-08, 8.742278e-08, 8.742278e-08, -1, -7.642742e-15, 8.742278e-08, 1.5285484e-14, -1, 2.4161224, 2.9700966, -36.97066)
-lod_bias = 0.001
-use_collision = true
-size = Vector3(5.1900444, 3.125557, 0.044921875)
-material = SubResource("StandardMaterial3D_w4m1g")
-
-[node name="SubViewport" type="SubViewport" parent="Parents/Walls & Floors/window"]
-size = Vector2i(1400, 800)
-
-[node name="Camera3D2" type="Camera3D" parent="Parents/Walls & Floors/window/SubViewport"]
-transform = Transform3D(-1, 0, 0, 0, 1, 8.742278e-08, 0, -8.742278e-08, 1, -89.86161, 0.95123434, -40.94357)
-fov = 61.2
-far = 283.02
 
 [node name="Lights" type="Node3D" parent="Parents"]
 

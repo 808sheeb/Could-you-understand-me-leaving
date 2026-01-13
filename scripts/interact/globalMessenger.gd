@@ -10,6 +10,7 @@ signal KEY_GNOME_RESET
 signal KEY_VILLAGE
 signal KEY_ISLE
 signal KEY_GALLERY
+signal INTERACTED
 
 signal UI_ITEM
 signal UI_DOOR

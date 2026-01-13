@@ -18,3 +18,4 @@ func get_prompt():
 func interact(body):
 	#print("push")
 	interacted.emit(body)
+	GlobalMessenger.INTERACTED.emit()

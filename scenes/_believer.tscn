@@ -12,7 +12,7 @@
 [ext_resource type="Material" uid="uid://dcfkcyddxkglf" path="res://addons/portals/materials/editor-preview-portal-material.tres" id="7_vwutt"]
 [ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="8_ax3ly"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
-[ext_resource type="PackedScene" uid="uid://c7fx2742nccr" path="res://assets/medieval/town.tscn" id="12_xxq3l"]
+[ext_resource type="PackedScene" uid="uid://c7fx2742nccr" path="res://assets/town/town.tscn" id="12_xxq3l"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xxq3l"]
 
@@ -181,9 +181,9 @@ uv1_offset = Vector3(0.66, 1.335, 1.47)
 uv1_triplanar = true
 
 [sub_resource type="FogMaterial" id="FogMaterial_xxq3l"]
-density = 0.034
+density = 0.028
 emission = Color(0.80078125, 0.7289827, 0.4473114, 1)
-edge_fade = 0.6498014
+edge_fade = 1.6564229
 
 [node name="Believer" type="Node3D"]
 script = ExtResource("1_gmu73")
@@ -436,11 +436,14 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.
 collision_layer = 32769
 collision_mask = 32781
 
-[node name="Camera3D" parent="player/head" index="0"]
+[node name="Camera3D" parent="player/head" index="1"]
 far = 303.14
 
 [node name="FrostgorgeSound" parent="." instance=ExtResource("3_60jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -454.1902, 1797.1227)
+
+[node name="Rock_tall2" parent="FrostgorgeSound/Node3D/TREESOLD" index="3"]
+transform = Transform3D(-1, 3.8941442e-07, 1.7021844e-14, 0, -4.3711392e-08, 1, 3.8941442e-07, 1, 4.3711392e-08, -341.52356, 8.05127, 128.55176)
 
 [node name="WinterPortalHouse" type="Node3D" parent="FrostgorgeSound" node_paths=PackedStringArray("exit_portal") groups=["portals"]]
 process_priority = 100
@@ -573,3 +576,4 @@ material = SubResource("FogMaterial_xxq3l")
 
 [editable path="player"]
 [editable path="player/head/InteractRay"]
+[editable path="FrostgorgeSound"]
