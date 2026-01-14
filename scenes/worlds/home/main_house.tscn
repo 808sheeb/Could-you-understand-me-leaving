@@ -1,4 +1,4 @@
-[gd_scene load_steps=864 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=865 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Script" uid="uid://b6o8f5opu4h3a" path="res://scripts/scene/foyer_basement.gd" id="1_pyu8g"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
@@ -7473,6 +7473,9 @@ size = Vector3(1.027832, 2.4033318, 0.56809235)
 [sub_resource type="BoxShape3D" id="BoxShape3D_luoee"]
 size = Vector3(2.7695313, 0.11828613, 0.9812012)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_wgm77"]
+size = Vector3(1.1414795, 0.11828613, 0.9057617)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j86hv"]
 resource_name = "Metal_02"
 vertex_color_use_as_albedo = true
@@ -12855,6 +12858,10 @@ shape = SubResource("BoxShape3D_86ofb")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2504272, 3.2491093, 2.9371014)
 shape = SubResource("BoxShape3D_luoee")
 
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Washroom/Colliders"]
+transform = Transform3D(1, 0, 0, 0, 2.9802322e-08, -1, 0, 1, 2.9802322e-08, 1.9816895, 3.286829, 2.7040768)
+shape = SubResource("BoxShape3D_wgm77")
+
 [node name="Shihab" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.1362457)
 script = ExtResource("110_tmdxj")
@@ -13159,10 +13166,10 @@ size = Vector3(8.766113, 5, 0.1)
 material = ExtResource("6_ktftv")
 
 [node name="Cutter" type="CSGBox3D" parent="Shihab/Floors & Walls/shihab_wall_2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4959488, -0.65407753, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4959488, 0.10924137, 0)
 visible = false
 operation = 2
-size = Vector3(1.8719497, 3.9467278, 1)
+size = Vector3(2.0097656, 3.7438717, 1)
 
 [node name="shihab_window_wall2" type="CSGBox3D" parent="Shihab/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9464417, 2.3532715, -21.899601)
@@ -13379,8 +13386,7 @@ size = Vector3(0.1, 5, 13)
 material = ExtResource("6_ktftv")
 
 [node name="RayahCutter" type="CSGBox3D" parent="Rayah/Walls & Floors/rayah_wall_back"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6117096, 0.96003914)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.009552598, 0.96003914)
 operation = 2
 size = Vector3(1, 3.7, 1.898211)
 
@@ -13784,6 +13790,10 @@ shape = SubResource("BoxShape3D_vsjin")
 
 [node name="CollisionShape3D13" type="CollisionShape3D" parent="Rayah/Colliders"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3040161, 2.952942, -7.196953)
+shape = SubResource("BoxShape3D_aoasc")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Rayah/Colliders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.751289, 2.952942, -7.196953)
 shape = SubResource("BoxShape3D_aoasc")
 
 [node name="Parents" type="Node3D" parent="."]
