@@ -8,12 +8,14 @@ var e = 2.5
 var light_toggle = true;
 @onready var oLight: OmniLight3D = $OmniLight3D
 @export var light_energy = 1.0
+@export var l_range = 5.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	oLight.set_param(Light3D.PARAM_ENERGY, e)
 	GlobalMessenger.connect("ALARM_TIMEOUT", on_timeout)
 	GlobalMessenger.connect("ALARM_SNOOZE", on_snoozed)
+	oLight.omni_range = l_range
 	pass # Replace with function body.
 
 
@@ -26,6 +28,8 @@ func _process(delta: float) -> void:
 		oLight.set_color(Color.RED)
 		oLight.set_param(Light3D.PARAM_ENERGY,2.5) 
 		emission_lerp(delta)
+	
+
 
 func on_timeout() -> void:
 	snoozed = !snoozed

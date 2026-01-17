@@ -1,6 +1,5 @@
 extends Node3D
 var isAlarmGoingOff := false
-@onready var world: ProceduralSkyMaterial = $WorldEnvironment.get_environment().get_sky().get_material()
 
 func _ready() -> void:
 	GlobalMessenger.connect("ALARM_TIMEOUT", alarmToggle)

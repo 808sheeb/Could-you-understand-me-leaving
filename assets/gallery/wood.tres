@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cw0l88njlqhpb"]
+
+[ext_resource type="Texture2D" uid="uid://dbbxy72boc0tg" path="res://assets/tex/woodFloor/WoodFloor051_1K-JPG_Color.jpg" id="1_mbid6"]
+
+[resource]
+cull_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_mbid6")
+metallic_specular = 0.0
+uv1_scale = Vector3(1, 0.265, 1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 0.025382927
+uv1_world_triplanar = true

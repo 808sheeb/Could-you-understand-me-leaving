@@ -12,13 +12,16 @@ func _ready() -> void:
 	GlobalMessenger.connect("KEY_VILLAGE", villageKey)
 	GlobalMessenger.connect("KEY_WINTER", winterKey)
 	GlobalMessenger.connect("KEY_ISLE", isleKey)
-	GlobalMessenger.connect("KEY_GALLERY", gnomeKey)
+	GlobalMessenger.connect("KEY_GNOME_LOCK", gnomeKey)
+	GlobalMessenger.connect("KEY_GNOME_RESET", gnomeKeyReset)
 	GlobalMessenger.connect("ALARM_SNOOZE", keyReturn)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta) -> void:
 	if keysCollected > 0:
 		visible = true
+	else:
+		visible = false
 
 func winterKey():
 	keysCollected += 1
@@ -35,6 +38,10 @@ func isleKey():
 func gnomeKey():
 	keysCollected += 1
 	gnome.visible = true
+	
+func gnomeKeyReset():
+	keysCollected -= 1
+	gnome.visible = false
 
 func keyReturn():
 	if xbox.visible:
@@ -43,7 +50,4 @@ func keyReturn():
 		merry.visible = false
 	if billi.visible:
 		billi.visible = false
-	if gnome.visible:
-		gnome.visible = false
-	visible = false
-	keysCollected = 0
+	keysCollected -= 3

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dy6obmcyomgbp"]
+
+[ext_resource type="Texture2D" uid="uid://c8k3g8e8342b2" path="res://assets/tex/stucco.png" id="1_31b3w"]
+
+[resource]
+albedo_texture = ExtResource("1_31b3w")
+uv1_scale = Vector3(0.875, 0.875, 0.875)
+uv1_triplanar = true

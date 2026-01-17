@@ -13,6 +13,7 @@ var villagePortalActive = false
 @onready var isle_particles: GPUParticles3D = $main_house/IsleParticles
 @onready var village_particles: GPUParticles3D = $main_house/VillageParticles
 @onready var winter_particles: GPUParticles3D = $main_house/WinterParticles
+@onready var gallery_portal: Portal3D = $main_house/HousePortalGallery
 
 
 func _ready() -> void:
@@ -27,7 +28,7 @@ func _ready() -> void:
 	#on key pickup, do this
 	GlobalMessenger.connect("KEY_WINTER", winterPortal)
 	GlobalMessenger.connect("KEY_ISLE", islePortal)
-	GlobalMessenger.connect("KEY_GALLERY", galleryPortal)
+	GlobalMessenger.connect("KEY_GNOME_LOCK", galleryPortal)
 	GlobalMessenger.connect("KEY_VILLAGE", villagePortal)
 	
 func _process(_delta) -> void:
@@ -49,6 +50,7 @@ func islePortal():
 	
 func galleryPortal():
 	galleryPortalActive = true
+	gallery_portal.activate()
 	
 
 func villagePortal():

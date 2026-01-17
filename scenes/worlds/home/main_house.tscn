@@ -1,4 +1,4 @@
-[gd_scene load_steps=865 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=866 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Script" uid="uid://b6o8f5opu4h3a" path="res://scripts/scene/foyer_basement.gd" id="1_pyu8g"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://psk3nbwd1l05" path="res://scenes/objects/button/scenes/button.tscn" id="5_x4sld"]
 [ext_resource type="Texture2D" uid="uid://tyw4j2hvob37" path="res://assets/tex/256x256/Bricks/Bricks_02-256x256.png" id="6_48urs"]
 [ext_resource type="Texture2D" uid="uid://c63b874d8n060" path="res://assets/suburbs/trailer park/textures/WoodFine_baseColor.jpeg" id="6_f86le"]
-[ext_resource type="Material" uid="uid://dvkms5h3e1p3n" path="res://assets/tex/stucco.tres" id="6_ktftv"]
+[ext_resource type="Material" uid="uid://dy6obmcyomgbp" path="res://assets/gallery/stuccoGallery.tres" id="6_qyt41"]
 [ext_resource type="Texture2D" uid="uid://cm2cemcd0k0kj" path="res://assets/suburbs/interior objects 01/Textures/Gadgets.png" id="6_x0qis"]
 [ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/gui.gd" id="7_63qeg"]
 [ext_resource type="PackedScene" uid="uid://b50gw0kf52kdd" path="res://scenes/objects/light.tscn" id="7_gmmk2"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://bobj4ot6q0u28" path="res://assets/suburbs/trailer park/textures/Vase_01_baseColor.png" id="10_er7s0"]
 [ext_resource type="Material" uid="uid://bi3i1ijjo7bd3" path="res://assets/tex/carpet_02/Fabric045_1K-JPG.tres" id="10_klxp4"]
 [ext_resource type="Texture2D" uid="uid://cv7b67nw2o017" path="res://assets/suburbs/trailer park/textures/TilesSmall_01_baseColor.jpeg" id="11_nmamq"]
+[ext_resource type="Script" uid="uid://d26go22ccrosd" path="res://scripts/scene/basement.gd" id="11_o53ab"]
 [ext_resource type="Texture2D" uid="uid://en1u2t3de2e2" path="res://assets/suburbs/warehouse/textures/Storage_Shelves_baseColor.png" id="12_2r2yk"]
 [ext_resource type="Material" uid="uid://cxfv3lrhnr06i" path="res://assets/tex/washroomTile/Tiles107_1K-JPG.tres" id="12_63qeg"]
 [ext_resource type="Texture2D" uid="uid://u5yx035p0c8v" path="res://assets/suburbs/trailer park/textures/Refrigerator_baseColor.png" id="12_fvr7o"]
@@ -271,6 +272,30 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k6vvr")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qyt41"]
+load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Color.jpg-83679648972d36aec9a9582fa358390b.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o53ab"]
+load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Displacement.jpg-8029c8a1b098d9e036c2b659ef40a654.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4ub5o"]
+load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_NormalGL.jpg-39004d0263f0066b033fab1322c1df86.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ca7rj"]
+load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Roughness.jpg-f5e66d150acb635d515b8227e1d48d9c.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ub5o"]
+albedo_texture = SubResource("CompressedTexture2D_qyt41")
+roughness_texture = SubResource("CompressedTexture2D_ca7rj")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_4ub5o")
+heightmap_scale = 1.0
+heightmap_texture = SubResource("CompressedTexture2D_o53ab")
+uv1_scale = Vector3(1, 3.24, 1)
+uv1_offset = Vector3(0.66, 1.335, 1.47)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o1gsj"]
 resource_name = "Material"
@@ -565,30 +590,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_svu7q")
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qyt41"]
-load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Color.jpg-83679648972d36aec9a9582fa358390b.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o53ab"]
-load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Displacement.jpg-8029c8a1b098d9e036c2b659ef40a654.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4ub5o"]
-load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_NormalGL.jpg-39004d0263f0066b033fab1322c1df86.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ca7rj"]
-load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Roughness.jpg-f5e66d150acb635d515b8227e1d48d9c.s3tc.ctex"
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ub5o"]
-albedo_texture = SubResource("CompressedTexture2D_qyt41")
-roughness_texture = SubResource("CompressedTexture2D_ca7rj")
-roughness_texture_channel = 4
-normal_enabled = true
-normal_texture = SubResource("CompressedTexture2D_4ub5o")
-heightmap_scale = 1.0
-heightmap_texture = SubResource("CompressedTexture2D_o53ab")
-uv1_scale = Vector3(1, 3.24, 1)
-uv1_offset = Vector3(0.66, 1.335, 1.47)
-uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xqtbs"]
 resource_name = "Storage_Shelves"
@@ -10136,7 +10137,7 @@ material = SubResource("StandardMaterial3D_2olvw")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.5, -12.5)
 use_collision = true
 size = Vector3(0.1, 7, 7)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall/foyer_frontdoor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.652859, -0.6066284)
@@ -10152,37 +10153,37 @@ size = Vector3(1, 1.9310303, 5.1610107)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46923828, -3, -15.930647)
 use_collision = true
 size = Vector3(9.061523, 6, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="foyer_sidewall_basement2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -4, -11.930647)
 use_collision = true
 size = Vector3(6, 4, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="foyer_sidewall_basement3" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -1, -11.922483)
 use_collision = true
 size = Vector3(3, 2, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="foyer_sidewall_basement4" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -4, -12.930647)
 use_collision = true
 size = Vector3(6, 4, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="foyer_sidewall_basement5" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall"]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1, -1.05, -12.455061)
 use_collision = true
 size = Vector3(6, 1.0488281, 2)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="foyer_middle_wall" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall"]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.5, 0.5, -12.454193)
 use_collision = true
 size = Vector3(3, 1.0463867, 1.5)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="stairwell_shelves" type="Node3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall"]
 
@@ -10190,7 +10191,7 @@ material = ExtResource("6_ktftv")
 transform = Transform3D(-1, 0, 8.742278e-08, 8.742278e-08, -4.371139e-08, 1, 3.821371e-15, 1, 4.371139e-08, 0.5000002, 4.9411597, -12.431)
 use_collision = true
 size = Vector3(3, 1, 0.0960083)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="pillar_01" type="CSGCylinder3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall/stairwell_shelves"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008055806, 2.9888015, -12.409808)
@@ -10210,13 +10211,13 @@ material = SubResource("StandardMaterial3D_6urhb")
 transform = Transform3D(-1, 0, 8.742278e-08, 8.742278e-08, -4.371139e-08, 1, 3.821371e-15, 1, 4.371139e-08, 0.53720105, 3.9411597, -12.431)
 use_collision = true
 size = Vector3(2.7294312, 0.6777344, 0.0960083)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="shelve_bot" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall/stairwell_shelves"]
 transform = Transform3D(-1, 0, 8.742278e-08, 8.742278e-08, -4.371139e-08, 1, 3.821371e-15, 1, 4.371139e-08, 0.55487823, 2.4467885, -12.431)
 use_collision = true
 size = Vector3(2.6940765, 0.6777344, 0.0960083)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Stairs" type="Node3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Floors & Wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55176544, -0.8217745, -10.530657)
@@ -10332,54 +10333,89 @@ light_indirect_energy = 4.034
 omni_range = 4.332
 
 [node name="Basement" type="Node3D" parent="NavigationRegion3D/floorplan/Foyer_Basement"]
+script = ExtResource("11_o53ab")
+
+[node name="PortalBevel_Gallery" type="Node3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
+transform = Transform3D(-1.8, 0, 5.865145e-07, 0, 1.8, 0, 5.865145e-07, 0, 1.8, -9.65107, -5.0559096, -18.944881)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement/PortalBevel_Gallery"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0690918, 1.9822693, 0)
+size = Vector3(1.2133789, 0.03466797, 0.123046875)
+material = SubResource("StandardMaterial3D_4ub5o")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement/PortalBevel_Gallery"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0769043, -0.041314602, 0)
+size = Vector3(1.2290039, 0.03466797, 0.123046875)
+material = SubResource("StandardMaterial3D_4ub5o")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement/PortalBevel_Gallery"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
+size = Vector3(2.0252075, 0.03125, 0.123046875)
+material = SubResource("StandardMaterial3D_4ub5o")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement/PortalBevel_Gallery"]
+transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, 0.65721893, 0.9880438, -9.536743e-07)
+size = Vector3(2.0245972, 0.03125, 0.123046875)
+material = SubResource("StandardMaterial3D_4ub5o")
 
 [node name="basement_floor" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, -6, -14.95752)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, -6, -15.411865)
 use_collision = true
-size = Vector3(7, 0.1, 8.084961)
+size = Vector3(7, 0.1, 8.993652)
 material = ExtResource("3_x4sld")
 
 [node name="basement_roof" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, -0.28989017, -14.95752)
 use_collision = true
 size = Vector3(7, 0.4777344, 8.084961)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="basement_roof2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5646362, -0.28989017, -14.39801)
 use_collision = true
 size = Vector3(3.1187744, 0.4777344, 2.9779053)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="basement_wall" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.020667, -3, -17.461164)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.020668, -3, -17.928083)
 use_collision = true
-size = Vector3(0.1, 6, 3.0981445)
-material = ExtResource("6_ktftv")
+size = Vector3(0.1, 6, 4.0319824)
+material = ExtResource("6_qyt41")
 
 [node name="basement_wall2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9908752, -3.1268468, -11.930659)
 use_collision = true
 size = Vector3(0.1, 6, 2.1000245)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="basement_doorLeft" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.467835, -3, -10.945442)
 use_collision = true
 size = Vector3(0.1, 6, 7.023926)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="basement_doorRight" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.4678354, -3, -18.945442)
 use_collision = true
 size = Vector3(0.1, 6, 7.023926)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
+
+[node name="basement_cutter" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement/basement_doorRight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.31018782, -2.288887)
+operation = 2
+size = Vector3(1, 3.604126, 2.1237793)
+
+[node name="basement_doorRight2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.4678345, -3, -19.892536)
+use_collision = true
+size = Vector3(0.1, 6, 7.023926)
+material = ExtResource("6_qyt41")
 
 [node name="basement_doorFront" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.94365, -3, -14.956062)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.943649, -3, -15.465553)
 use_collision = true
-size = Vector3(0.1, 6, 7.9733887)
-material = ExtResource("6_ktftv")
+size = Vector3(0.1, 6, 8.992371)
+material = ExtResource("6_qyt41")
 
 [node name="Furniture" type="Node3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.814476, -5.3270764, -14.623547)
@@ -10692,6 +10728,10 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7199097, 1.6557007, 1.1050415)
 shape = SubResource("BoxShape3D_mjc21")
 
+[node name="GalleryTimer" type="Timer" parent="NavigationRegion3D/floorplan/Foyer_Basement/Basement"]
+wait_time = 1200.0
+one_shot = true
+
 [node name="Living Room" type="Node3D" parent="NavigationRegion3D/floorplan"]
 script = ExtResource("4_gmmk2")
 
@@ -10716,32 +10756,32 @@ use_collision = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2.5, 9)
 use_collision = true
 size = Vector3(20, 5, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="window_cutout" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Living Room/Walls & Floors/living_room_window"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 2.4302263, 9)
 operation = 2
 use_collision = true
 size = Vector3(13, 2.5816407, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="living_room_wall" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Living Room/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 0)
 use_collision = true
 size = Vector3(0.1, 5, 18)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="living_room_divider" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Living Room/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.050003, -0.28353882, -8.736845)
 use_collision = true
 size = Vector3(8, 3.5286255, 0.5)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="living_room_divider2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Living Room/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0387726, 1.4541641, -8.736845)
 use_collision = true
 size = Vector3(8.09082, 0.098220825, 0.62402344)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Colliders" type="StaticBody3D" parent="NavigationRegion3D/floorplan/Living Room"]
 
@@ -11770,27 +11810,27 @@ use_collision = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.556749, 2.5, -1.2692327)
 use_collision = true
 size = Vector3(8.945801, 5, 0.5)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="door2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/dining_room"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -12.02692, 2, -1.288599)
 operation = 2
 use_collision = true
 size = Vector3(1.7978516, 4, 2)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="kitchen_dining-room" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.500008, 0, 3.8654785)
 material_override = ExtResource("3_x4sld")
 use_collision = true
 size = Vector3(9, 0.1, 10.269043)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="kitchen_wall" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.000313, 2.5, -4.50546)
 use_collision = true
 size = Vector3(0.1, 5, 27)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="window" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/kitchen_wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49819326, -3.7551603)
@@ -11807,7 +11847,7 @@ material = SubResource("StandardMaterial3D_fbogk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.500008, 2.5, -15)
 use_collision = true
 size = Vector3(9, 5, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="kitchen_doorway" type="CSGCombiner3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0000076, 2.5, -12.519654)
@@ -11817,7 +11857,7 @@ use_collision = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.48486328)
 use_collision = true
 size = Vector3(0.5, 5, 6.0302734)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="door" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/kitchen_doorway"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 2.5)
@@ -11825,13 +11865,13 @@ material_override = ExtResource("4_63qeg")
 operation = 2
 use_collision = true
 size = Vector3(0.5, 4, 2)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="kitchen_divider2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0000076, 0.8734131, 1.955946)
 use_collision = true
 size = Vector3(0.5, 1.7468262, 4)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="kitchen_dining-room2" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -8.1371155)
@@ -11848,13 +11888,13 @@ material = ExtResource("5_2bm56")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.7829182, 0.96259594)
 use_collision = true
 size = Vector3(0.5, 0.087646484, 2)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Shelf_top" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/Shelves/Box"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3.7829182, 0.96259594)
 use_collision = true
 size = Vector3(0.5, 0.087646484, 2)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Free" type="Node3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/Shelves"]
 
@@ -11862,19 +11902,19 @@ material = ExtResource("6_ktftv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.575359, 3.3620007)
 use_collision = true
 size = Vector3(0.5, 0.087646484, 1.9532776)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="shelf_mid_rod" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/Shelves/Free"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3.392238, 2.8287823)
 use_collision = true
 size = Vector3(0.5, 0.087646484, 1.8322754)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="shelf_top_rod" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/Shelves/Free"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4.23691, 3.181587)
 use_collision = true
 size = Vector3(0.5, 0.087646484, 2)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="pillar_01" type="CSGCylinder3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/Shelves/Free"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.001871, 2.9975038, 3.5727706)
@@ -11894,13 +11934,13 @@ material = SubResource("StandardMaterial3D_63qeg")
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6, 3.3704681, 1.8771062)
 use_collision = true
 size = Vector3(0.5, 0.1899414, 3.254547)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Shelves_top" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors/Shelves"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4.957368, 1.9625959)
 use_collision = true
 size = Vector3(0.5, 0.087646484, 4)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="lamp_hanging_tiffany" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Kitchen/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4219055, 5.174894, -7.955822)
@@ -12070,7 +12110,7 @@ material = ExtResource("3_x4sld")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2.5, -16.5)
 use_collision = true
 size = Vector3(0.1, 5, 3)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="cutter" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls/cubby_backwall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16321564, 0.10546875, 0.0692749)
@@ -12082,38 +12122,38 @@ size = Vector3(1, 2.956787, 2.1287842)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.936813, 2.5, -16.5)
 use_collision = true
 size = Vector3(0.1, 5, 3)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="cubby_backwall3" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.499489, 2.5, -16.5)
 use_collision = true
 size = Vector3(0.1, 5, 3)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="coatcloset_backwall" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.050209, 2.4572754, -14.0117035)
 use_collision = true
 size = Vector3(0.1, 5.085449, 3.976593)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="coatcloset_sidewall" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 2.5, -11.992529)
 use_collision = true
 size = Vector3(0.1149414, 5, 2)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="coatcloset_wall" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, -14.443798)
 use_collision = true
 size = Vector3(0.5, 5, 5.015503)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="door" type="CSGBox3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls/coatcloset_wall"]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.10670471, -0.5944824, -0.13925552)
 operation = 2
 use_collision = true
 size = Vector3(0.9458008, 3.8110352, 1.8879395)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Door3" type="Node3D" parent="NavigationRegion3D/floorplan/Hallway/Floors & Walls"]
 transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, 1.509958e-07, 0, 1, -3.1285553, 0.17979288, -14.542179)
@@ -12463,7 +12503,7 @@ script = ExtResource("83_48urs")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 2.5, -19.643677)
 use_collision = true
 size = Vector3(0.1, 5, 3.2873535)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="window" type="CSGBox3D" parent="Washroom/Walls & Floor/washroom_back_wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9935434, -0.5906601)
@@ -12492,20 +12532,20 @@ material = ExtResource("12_63qeg")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2.5, -18)
 use_collision = true
 size = Vector3(9, 5, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="washroom_door_wall" type="CSGBox3D" parent="Washroom/Walls & Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.5, -20.95155)
 use_collision = true
 size = Vector3(0.5, 5, 6)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="door" type="CSGBox3D" parent="Washroom/Walls & Floor/washroom_door_wall"]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.024795532, -0.58862305, 0.8195858)
 operation = 2
 use_collision = true
 size = Vector3(0.62213135, 3.822754, 1.9251709)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="washroom_shower_wall_front" type="CSGBox3D" parent="Washroom/Walls & Floor"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -9.051346, 2.4975586, -22.601427)
@@ -12522,13 +12562,13 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.503418, 2.5, -21.321749)
 use_collision = true
 size = Vector3(3.006836, 5, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="washroom_shower_wall_front3" type="CSGBox3D" parent="Washroom/Walls & Floor"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.95752, 2.5, -22.597322)
 use_collision = true
 size = Vector3(2.6376953, 5, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Wall_TilesSmall_01_0" type="MeshInstance3D" parent="Washroom/Walls & Floor"]
 transform = Transform3D(4.7683716e-07, 4.4059844, 1.497655e-07, -3.0378234e-14, -3.3264257e-07, 1.983704, 2, -1.0504685e-06, -7.0475322e-15, -12.118759, 0.15698075, -21.485407)
@@ -13135,13 +13175,13 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, -19.45155)
 use_collision = true
 size = Vector3(0.5, 5, 5)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="shihab_wall" type="CSGBox3D" parent="Shihab/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2.5, -21.438778)
 use_collision = true
 size = Vector3(0.1, 5, 10.905762)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="window1" type="CSGBox3D" parent="Shihab/Floors & Walls/shihab_wall"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.15465641, 0.5063164, 4.211048)
@@ -13152,7 +13192,7 @@ size = Vector3(1.8149414, 2.9660645, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.5, -15.981546)
 use_collision = true
 size = Vector3(11, 5, 0.20246582)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="window1" type="CSGBox3D" parent="Shihab/Floors & Walls/shihab_window_wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.242548, 0.5063164, 0)
@@ -13163,7 +13203,7 @@ size = Vector3(1.8149414, 2.9660645, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6169434, 2.5, -24.930647)
 use_collision = true
 size = Vector3(8.766113, 5, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Cutter" type="CSGBox3D" parent="Shihab/Floors & Walls/shihab_wall_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4959488, 0.10924137, 0)
@@ -13175,20 +13215,20 @@ size = Vector3(2.0097656, 3.7438717, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9464417, 2.3532715, -21.899601)
 use_collision = true
 size = Vector3(2.394226, 5.293457, 0.11508789)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="shihab_door_wall2" type="CSGBox3D" parent="Shihab/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.5, -24.416393)
 use_collision = true
 size = Vector3(0.5, 5, 5.0703125)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="door" type="CSGBox3D" parent="Shihab/Floors & Walls/shihab_door_wall2"]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.10670471, -0.59030914, 0.9224491)
 operation = 2
 use_collision = true
 size = Vector3(0.9458008, 3.8193817, 1.9389191)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Door" type="Node3D" parent="Shihab/Floors & Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2339783, 0.17979288, -23.446777)
@@ -13383,7 +13423,7 @@ script = ExtResource("135_4oe1e")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 2.5, -30.5)
 use_collision = true
 size = Vector3(0.1, 5, 13)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="RayahCutter" type="CSGBox3D" parent="Rayah/Walls & Floors/rayah_wall_back"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.009552598, 0.96003914)
@@ -13394,32 +13434,32 @@ size = Vector3(1, 3.7, 1.898211)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.811241, 2.5, -30.5)
 use_collision = true
 size = Vector3(0.4381836, 5, 13)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="rayah_wall_back3" type="CSGBox3D" parent="Rayah/Walls & Floors"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -15.559402, 2.5, -24.515564)
 use_collision = true
 size = Vector3(0.1, 5, 1.0311279)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="rayah_wall_back4" type="CSGBox3D" parent="Rayah/Walls & Floors"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -15.559402, 2.5, -36.87184)
 use_collision = true
 size = Vector3(0.1, 5, 1.0311279)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="rayah_door_wall" type="CSGBox3D" parent="Rayah/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.5, -30.45155)
 use_collision = true
 size = Vector3(0.5, 5, 13)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="door" type="CSGBox3D" parent="Rayah/Walls & Floors/rayah_door_wall"]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.10670471, -0.5942993, 4.733017)
 operation = 2
 use_collision = true
 size = Vector3(0.9458008, 3.8114014, 1.9213867)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="rayah_floor2" type="CSGBox3D" parent="Rayah/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.981491, 0, -29.18821)
@@ -13436,7 +13476,7 @@ size = Vector3(5.9919434, 1, 2.4906006)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2.5, -36.93065)
 use_collision = true
 size = Vector3(9, 5, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="window" type="CSGBox3D" parent="Rayah/Walls & Floors/rayah_back_wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11929321, 0.43549347, 0)
@@ -13447,20 +13487,20 @@ size = Vector3(4.9732056, 3.0297852, 1)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.576172, 2.5, -23.903513)
 use_collision = true
 size = Vector3(0.5, 5, 3.0449219)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="door" type="CSGBox3D" parent="Rayah/Walls & Floors/rayah_door_wall2"]
 transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.2264862, -0.5693054, 0.029891968)
 operation = 2
 use_collision = true
 size = Vector3(1.7121582, 3.7721558, 1.9150391)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="rayah_door_wall3" type="CSGBox3D" parent="Rayah/Walls & Floors"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.031311, 2.5, -24.096445)
 use_collision = true
 size = Vector3(0.11413574, 5, 6.08313)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="Ledge13" type="CSGBox3D" parent="Rayah/Walls & Floors"]
 transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, -10.612892, 1.3840666, -36.97066)
@@ -13805,13 +13845,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.136
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2.5, -31.95752)
 use_collision = true
 size = Vector3(0.1, 5, 10.084961)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="parent_back_wall" type="CSGBox3D" parent="Parents/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.5, -36.93065)
 use_collision = true
 size = Vector3(14, 5, 0.1)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="window" type="CSGBox3D" parent="Parents/Walls & Floors/parent_back_wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4358127, 0.43642187, 0)
@@ -13846,20 +13886,20 @@ material = SubResource("StandardMaterial3D_jjsy1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.5, -26.930647)
 use_collision = true
 size = Vector3(14, 5, 0.5)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="door" type="CSGBox3D" parent="Parents/Walls & Floors/parent_door_wall"]
 transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -3.556656, -0.5991821, -0.018598557)
 operation = 2
 use_collision = true
 size = Vector3(0.9458008, 3.8016357, 1.8895264)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="parent_floor" type="CSGBox3D" parent="Parents/Walls & Floors"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.083252, 0, -30.941498)
 use_collision = true
 size = Vector3(13.833496, 0.1, 12.117004)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="cutter" type="CSGBox3D" parent="Parents/Walls & Floors/parent_floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.579666, 0, 5.1399918)
@@ -13995,13 +14035,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.136
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 5.0436487, -13.909161)
 use_collision = true
 size = Vector3(0.1, 24, 46)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="roof2" type="CSGBox3D" parent="Outside_Exterior"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -3.093628, 4.931075, -13.909161)
 use_collision = true
 size = Vector3(0.1, 24, 46)
-material = ExtResource("6_ktftv")
+material = ExtResource("6_qyt41")
 
 [node name="roof3" type="CSGBox3D" parent="Outside_Exterior"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 7.000366, 4.855287, -3.3163872)
@@ -14072,6 +14112,7 @@ script = ExtResource("7_63qeg")
 wait_time = 10.0
 one_shot = true
 
+[connection signal="timeout" from="NavigationRegion3D/floorplan/Foyer_Basement/Basement/GalleryTimer" to="NavigationRegion3D/floorplan/Foyer_Basement/Basement" method="galleryClosed"]
 [connection signal="body_entered" from="NavigationRegion3D/floorplan/Kitchen/Colliders/Area3D" to="NavigationRegion3D/Billi" method="entered_table"]
 [connection signal="body_exited" from="NavigationRegion3D/floorplan/Kitchen/Colliders/Area3D" to="NavigationRegion3D/Billi" method="exited_table"]
 [connection signal="interacted" from="NavigationRegion3D/floorplan/Hallway/Floors & Walls/Door3/door/DoorCollider" to="NavigationRegion3D/floorplan/Hallway/Floors & Walls/Door3/door/DoorCollider" method="_on_interacted"]

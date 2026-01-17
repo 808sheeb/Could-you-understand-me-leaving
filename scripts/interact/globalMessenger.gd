@@ -9,7 +9,6 @@ signal KEY_GNOME_LOCK
 signal KEY_GNOME_RESET
 signal KEY_VILLAGE
 signal KEY_ISLE
-signal KEY_GALLERY
 signal INTERACTED
 
 signal UI_ITEM
@@ -26,7 +25,7 @@ func _ready() -> void:
 
 func _process(_delta) -> void:
 	if gnomeCount == 2:
-		KEY_GALLERY.emit()
+		KEY_GNOME_LOCK.emit()
 		gnomeCount = 0
 
 func gnomeUp():

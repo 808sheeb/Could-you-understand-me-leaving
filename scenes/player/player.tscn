@@ -28,13 +28,13 @@ height = 1.4313965
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6r8jh"]
 resource_name = "arms"
+shading_mode = 0
 specular_mode = 2
 albedo_texture = ExtResource("17_kvlxm")
-emission = Color(0.37890625, 0.18556786, 0.06956482, 1)
-emission_energy_multiplier = 0.1
 texture_filter = 2
 disable_receive_shadows = true
 use_z_clip_scale = true
+z_clip_scale = 0.95
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_uf5tr"]
 resource_name = "PSX_First_Person_Arms_arms"
@@ -5628,7 +5628,7 @@ libraries = {
 
 [node name="Camera3D" type="Camera3D" parent="head"]
 fov = 85.0
-far = 1000.0
+far = 2000.0
 
 [node name="InteractRay" parent="head" instance=ExtResource("2_lvxji")]
 collision_mask = 786433
