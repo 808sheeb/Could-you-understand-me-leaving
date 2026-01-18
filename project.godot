@@ -22,9 +22,10 @@ GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=1024
+window/size/viewport_height=768
 window/size/resizable=false
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
@@ -95,3 +96,19 @@ escape={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=3
+anti_aliasing/screen_space_roughness_limiter/enabled=false
+
+[shader_globals]
+
+psx_bit_depth={
+"type": "int",
+"value": 100
+}
+resolution={
+"type": "vec2",
+"value": Vector2(1280, 960)
+}
+color_depth={
+"type": "float",
+"value": 256.0
+}

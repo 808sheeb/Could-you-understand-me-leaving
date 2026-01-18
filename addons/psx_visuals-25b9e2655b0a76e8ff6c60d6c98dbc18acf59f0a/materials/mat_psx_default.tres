@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://drgm0tmni178j"]
+
+[ext_resource type="Shader" uid="uid://bggae0ebsv0bj" path="res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/shaders/psx_opaque.gdshader" id="1_aefgp"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_aefgp")

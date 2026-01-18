@@ -9303,7 +9303,7 @@ wait_time = 3.0
 one_shot = true
 
 [node name="key_gnome" parent="." instance=ExtResource("24_0p2j5")]
-transform = Transform3D(0.08096439, 0, 0.99671704, 0, 1, 0, -0.99671704, 0, 0.08096439, -113, 49.201897, 145.35565)
+transform = Transform3D(-0.5315431, 0, 0.23208179, 0, 0.5799999, 0, -0.23208179, 0, -0.5315431, -95.41046, -5.3894677, 3.9177704)
 
 [connection signal="body_entered" from="WaterCheck/Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=866 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=867 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Script" uid="uid://b6o8f5opu4h3a" path="res://scripts/scene/foyer_basement.gd" id="1_pyu8g"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
@@ -1681,6 +1681,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_acjho")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ca7rj"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q65pn"]
 resource_name = "Fabric_09"
 vertex_color_use_as_albedo = true
@@ -2501,8 +2503,9 @@ transparency = 2
 alpha_scissor_threshold = 0.9415585
 alpha_antialiasing_mode = 0
 cull_mode = 2
+specular_mode = 2
 albedo_texture = ExtResource("53_jjsy1")
-metallic = 0.3111111
+metallic_specular = 0.0
 roughness = 0.16666667
 texture_filter = 2
 
@@ -10304,8 +10307,9 @@ skeleton = NodePath("")
 [node name="Lights" type="Node3D" parent="NavigationRegion3D/floorplan/Foyer_Basement"]
 
 [node name="Light3" parent="NavigationRegion3D/floorplan/Foyer_Basement/Lights" instance=ExtResource("7_gmmk2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.333618, -0.81641245, -14.37014)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.333618, -1.4391654, -14.37014)
 light_energy = 0.6
+l_range = 3.0
 
 [node name="OmniLight3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Lights/Light3" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.61044383, 0)
@@ -10314,8 +10318,9 @@ light_indirect_energy = 4.034
 omni_range = 1.9
 
 [node name="Light5" parent="NavigationRegion3D/floorplan/Foyer_Basement/Lights" instance=ExtResource("7_gmmk2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.792908, -0.81641245, -14.247557)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.792908, -1.3337221, -14.247557)
 light_energy = 0.6
+l_range = 3.0
 
 [node name="OmniLight3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Lights/Light5" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.61044383, 0)
@@ -10325,7 +10330,8 @@ omni_range = 1.912
 
 [node name="Light4" parent="NavigationRegion3D/floorplan/Foyer_Basement/Lights" instance=ExtResource("7_gmmk2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2862473, 4.7041874, -10.596051)
-light_energy = 0.85
+light_energy = 0.7
+l_range = 8.0
 
 [node name="OmniLight3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Lights/Light4" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.61044383, 0)
@@ -11071,9 +11077,10 @@ mesh = SubResource("ArrayMesh_t1xmb")
 skeleton = NodePath("")
 
 [node name="Armchair_17" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture"]
-transform = Transform3D(-255.89728, 2.7774166e-05, 1.2140474e-12, 0, -8.040272e-06, 183.94, 3.8639413e-05, 183.93999, 8.040273e-06, 1.745903, 0.86640203, -4.0905414)
+transform = Transform3D(-255.89728, 2.7774166e-05, 1.2140474e-12, 0, -8.040272e-06, 183.94, 3.8639413e-05, 183.93999, 8.040273e-06, 1.7514572, 0.86640203, -4.087433)
 mesh = SubResource("ArrayMesh_sdopw")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("ShaderMaterial_ca7rj")
 
 [node name="Armchair_07" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture"]
 transform = Transform3D(63.71982, -171.54819, -7.4986106e-06, 2.8152174e-13, -7.999185e-06, 183.00002, -171.54819, -63.71982, -2.7852823e-06, 3.0814285, 0.9939826, 1.7863722)

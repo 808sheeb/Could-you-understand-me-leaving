@@ -24,12 +24,12 @@ func _ready() -> void:
 	
 
 func _process(_delta) -> void:
-	if gnomeCount == 2:
+	if gnomeCount == 4:
 		KEY_GNOME_LOCK.emit()
 		gnomeCount = 0
 
 func gnomeUp():
-	if gnomeCount < 2:
+	if gnomeCount < 4:
 		gnomeCount += 1
 
 func gnomeDown():
