@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2lev6puy2e0u"
 path.s3tc="res://.godot/imported/SantaClaus_B_baseColor.png-89eaa1cf54c6f206076e990e578d1a21.s3tc.ctex"
+path.etc2="res://.godot/imported/SantaClaus_B_baseColor.png-89eaa1cf54c6f206076e990e578d1a21.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/SantaClaus_B_baseColor.png"
-dest_files=["res://.godot/imported/SantaClaus_B_baseColor.png-89eaa1cf54c6f206076e990e578d1a21.s3tc.ctex"]
+dest_files=["res://.godot/imported/SantaClaus_B_baseColor.png-89eaa1cf54c6f206076e990e578d1a21.s3tc.ctex", "res://.godot/imported/SantaClaus_B_baseColor.png-89eaa1cf54c6f206076e990e578d1a21.etc2.ctex"]
 
 [params]
 

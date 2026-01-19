@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://5k4vj5c1lb2t"
 path.s3tc="res://.godot/imported/Christmas_stocking_baseColor.png-bd4485a15205c93d9c12152d17075d8c.s3tc.ctex"
+path.etc2="res://.godot/imported/Christmas_stocking_baseColor.png-bd4485a15205c93d9c12152d17075d8c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Christmas_stocking_baseColor.png"
-dest_files=["res://.godot/imported/Christmas_stocking_baseColor.png-bd4485a15205c93d9c12152d17075d8c.s3tc.ctex"]
+dest_files=["res://.godot/imported/Christmas_stocking_baseColor.png-bd4485a15205c93d9c12152d17075d8c.s3tc.ctex", "res://.godot/imported/Christmas_stocking_baseColor.png-bd4485a15205c93d9c12152d17075d8c.etc2.ctex"]
 
 [params]
 

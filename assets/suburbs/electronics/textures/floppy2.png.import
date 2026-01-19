@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cja7sxh6i0cvg"
 path.s3tc="res://.godot/imported/floppy2.png-572445dffcca8f98cbc2b1b88ec9e5c7.s3tc.ctex"
+path.etc2="res://.godot/imported/floppy2.png-572445dffcca8f98cbc2b1b88ec9e5c7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/electronics/textures/floppy2.png"
-dest_files=["res://.godot/imported/floppy2.png-572445dffcca8f98cbc2b1b88ec9e5c7.s3tc.ctex"]
+dest_files=["res://.godot/imported/floppy2.png-572445dffcca8f98cbc2b1b88ec9e5c7.s3tc.ctex", "res://.godot/imported/floppy2.png-572445dffcca8f98cbc2b1b88ec9e5c7.etc2.ctex"]
 
 [params]
 

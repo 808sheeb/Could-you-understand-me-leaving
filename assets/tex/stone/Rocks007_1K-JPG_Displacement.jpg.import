@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4nw0dpssh3qa"
 path.s3tc="res://.godot/imported/Rocks007_1K-JPG_Displacement.jpg-5a1076683431e56e6452e99c16f06d4e.s3tc.ctex"
+path.etc2="res://.godot/imported/Rocks007_1K-JPG_Displacement.jpg-5a1076683431e56e6452e99c16f06d4e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tex/stone/Rocks007_1K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/Rocks007_1K-JPG_Displacement.jpg-5a1076683431e56e6452e99c16f06d4e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Rocks007_1K-JPG_Displacement.jpg-5a1076683431e56e6452e99c16f06d4e.s3tc.ctex", "res://.godot/imported/Rocks007_1K-JPG_Displacement.jpg-5a1076683431e56e6452e99c16f06d4e.etc2.ctex"]
 
 [params]
 

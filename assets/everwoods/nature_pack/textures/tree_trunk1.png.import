@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf6pvspv1gcyd"
 path.s3tc="res://.godot/imported/tree_trunk1.png-bc2e34131bc547d384a184ea7cd417a3.s3tc.ctex"
+path.etc2="res://.godot/imported/tree_trunk1.png-bc2e34131bc547d384a184ea7cd417a3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/textures/tree_trunk1.png"
-dest_files=["res://.godot/imported/tree_trunk1.png-bc2e34131bc547d384a184ea7cd417a3.s3tc.ctex"]
+dest_files=["res://.godot/imported/tree_trunk1.png-bc2e34131bc547d384a184ea7cd417a3.s3tc.ctex", "res://.godot/imported/tree_trunk1.png-bc2e34131bc547d384a184ea7cd417a3.etc2.ctex"]
 
 [params]
 

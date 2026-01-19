@@ -70,6 +70,8 @@ func _physics_process(delta: float) -> void:
 			# Walking
 			CURRENT_SPEED = WALKING_SPEED
 
+	if Input.is_action_pressed("escape"):
+		get_tree().quit()
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

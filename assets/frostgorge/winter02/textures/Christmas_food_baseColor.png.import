@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://clcghqpnhc5vo"
 path.s3tc="res://.godot/imported/Christmas_food_baseColor.png-a738bfeefca13e57b8bf04595bc18763.s3tc.ctex"
+path.etc2="res://.godot/imported/Christmas_food_baseColor.png-a738bfeefca13e57b8bf04595bc18763.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Christmas_food_baseColor.png"
-dest_files=["res://.godot/imported/Christmas_food_baseColor.png-a738bfeefca13e57b8bf04595bc18763.s3tc.ctex"]
+dest_files=["res://.godot/imported/Christmas_food_baseColor.png-a738bfeefca13e57b8bf04595bc18763.s3tc.ctex", "res://.godot/imported/Christmas_food_baseColor.png-a738bfeefca13e57b8bf04595bc18763.etc2.ctex"]
 
 [params]
 

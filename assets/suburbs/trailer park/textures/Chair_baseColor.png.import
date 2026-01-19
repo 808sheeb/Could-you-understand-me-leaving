@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfj1ayvr82boa"
 path.s3tc="res://.godot/imported/Chair_baseColor.png-cd1f209b7d96f546f42cd0f234ffdad5.s3tc.ctex"
+path.etc2="res://.godot/imported/Chair_baseColor.png-cd1f209b7d96f546f42cd0f234ffdad5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Chair_baseColor.png"
-dest_files=["res://.godot/imported/Chair_baseColor.png-cd1f209b7d96f546f42cd0f234ffdad5.s3tc.ctex"]
+dest_files=["res://.godot/imported/Chair_baseColor.png-cd1f209b7d96f546f42cd0f234ffdad5.s3tc.ctex", "res://.godot/imported/Chair_baseColor.png-cd1f209b7d96f546f42cd0f234ffdad5.etc2.ctex"]
 
 [params]
 

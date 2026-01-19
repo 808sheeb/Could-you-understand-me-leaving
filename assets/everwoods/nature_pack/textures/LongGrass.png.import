@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bun5xmu2r4os0"
 path.s3tc="res://.godot/imported/LongGrass.png-4a7ab0b1a62b8fc3e98f2c239d5f1dd0.s3tc.ctex"
+path.etc2="res://.godot/imported/LongGrass.png-4a7ab0b1a62b8fc3e98f2c239d5f1dd0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/textures/LongGrass.png"
-dest_files=["res://.godot/imported/LongGrass.png-4a7ab0b1a62b8fc3e98f2c239d5f1dd0.s3tc.ctex"]
+dest_files=["res://.godot/imported/LongGrass.png-4a7ab0b1a62b8fc3e98f2c239d5f1dd0.s3tc.ctex", "res://.godot/imported/LongGrass.png-4a7ab0b1a62b8fc3e98f2c239d5f1dd0.etc2.ctex"]
 
 [params]
 

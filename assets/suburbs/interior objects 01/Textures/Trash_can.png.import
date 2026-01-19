@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bub3r7e3eftxk"
 path.s3tc="res://.godot/imported/Trash_can.png-05b1902c70986f9e76221aa39b89a2eb.s3tc.ctex"
+path.etc2="res://.godot/imported/Trash_can.png-05b1902c70986f9e76221aa39b89a2eb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Trash_can.png"
-dest_files=["res://.godot/imported/Trash_can.png-05b1902c70986f9e76221aa39b89a2eb.s3tc.ctex"]
+dest_files=["res://.godot/imported/Trash_can.png-05b1902c70986f9e76221aa39b89a2eb.s3tc.ctex", "res://.godot/imported/Trash_can.png-05b1902c70986f9e76221aa39b89a2eb.etc2.ctex"]
 
 [params]
 

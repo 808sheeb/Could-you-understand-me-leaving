@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgvi4kruvme1v"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_Mushrooms.png-70fa643a601270b0b410d78274bf2fa9.s3tc.ctex"
+path.etc2="res://.godot/imported/[PSX] Nature Pack_Mushrooms.png-70fa643a601270b0b410d78274bf2fa9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/[PSX] Nature Pack_Mushrooms.png"
-dest_files=["res://.godot/imported/[PSX] Nature Pack_Mushrooms.png-70fa643a601270b0b410d78274bf2fa9.s3tc.ctex"]
+dest_files=["res://.godot/imported/[PSX] Nature Pack_Mushrooms.png-70fa643a601270b0b410d78274bf2fa9.s3tc.ctex", "res://.godot/imported/[PSX] Nature Pack_Mushrooms.png-70fa643a601270b0b410d78274bf2fa9.etc2.ctex"]
 
 [params]
 

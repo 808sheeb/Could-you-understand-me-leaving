@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://rfvsia3aoc2u"
 path.s3tc="res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.s3tc.ctex"
+path.etc2="res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 02/Textures/Marble_02.png"
-dest_files=["res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.s3tc.ctex"]
+dest_files=["res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.s3tc.ctex", "res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://6yco7gqjj6vd"
 path.s3tc="res://.godot/imported/Windows_baseColor.png-6288585ba06b34f153fb323b3a352abe.s3tc.ctex"
+path.etc2="res://.godot/imported/Windows_baseColor.png-6288585ba06b34f153fb323b3a352abe.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Windows_baseColor.png"
-dest_files=["res://.godot/imported/Windows_baseColor.png-6288585ba06b34f153fb323b3a352abe.s3tc.ctex"]
+dest_files=["res://.godot/imported/Windows_baseColor.png-6288585ba06b34f153fb323b3a352abe.s3tc.ctex", "res://.godot/imported/Windows_baseColor.png-6288585ba06b34f153fb323b3a352abe.etc2.ctex"]
 
 [params]
 

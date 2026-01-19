@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bownek3ua8e3u"
 path.s3tc="res://.godot/imported/FabricPlain_baseColor.png-7746df28a7ea60e7c0c1b21bcdbf2b6b.s3tc.ctex"
+path.etc2="res://.godot/imported/FabricPlain_baseColor.png-7746df28a7ea60e7c0c1b21bcdbf2b6b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/FabricPlain_baseColor.png"
-dest_files=["res://.godot/imported/FabricPlain_baseColor.png-7746df28a7ea60e7c0c1b21bcdbf2b6b.s3tc.ctex"]
+dest_files=["res://.godot/imported/FabricPlain_baseColor.png-7746df28a7ea60e7c0c1b21bcdbf2b6b.s3tc.ctex", "res://.godot/imported/FabricPlain_baseColor.png-7746df28a7ea60e7c0c1b21bcdbf2b6b.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqlegvtyshcte"
 path.s3tc="res://.godot/imported/stair_Plaster001_1K-JPG_Color.jpg-63b8e13bc0b29048daaf4f02b0299579.s3tc.ctex"
+path.etc2="res://.godot/imported/stair_Plaster001_1K-JPG_Color.jpg-63b8e13bc0b29048daaf4f02b0299579.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/suburbs/stairs/stair_Plaster001_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/stair_Plaster001_1K-JPG_Color.jpg-63b8e13bc0b29048daaf4f02b0299579.s3tc.ctex"]
+dest_files=["res://.godot/imported/stair_Plaster001_1K-JPG_Color.jpg-63b8e13bc0b29048daaf4f02b0299579.s3tc.ctex", "res://.godot/imported/stair_Plaster001_1K-JPG_Color.jpg-63b8e13bc0b29048daaf4f02b0299579.etc2.ctex"]
 
 [params]
 

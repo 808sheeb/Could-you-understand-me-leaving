@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://r6bq0lh87txn"
 path.s3tc="res://.godot/imported/WoodPlanksClean_baseColor.jpeg-131143d6f1e4ac225920f44790e6d7fb.s3tc.ctex"
+path.etc2="res://.godot/imported/WoodPlanksClean_baseColor.jpeg-131143d6f1e4ac225920f44790e6d7fb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/WoodPlanksClean_baseColor.jpeg"
-dest_files=["res://.godot/imported/WoodPlanksClean_baseColor.jpeg-131143d6f1e4ac225920f44790e6d7fb.s3tc.ctex"]
+dest_files=["res://.godot/imported/WoodPlanksClean_baseColor.jpeg-131143d6f1e4ac225920f44790e6d7fb.s3tc.ctex", "res://.godot/imported/WoodPlanksClean_baseColor.jpeg-131143d6f1e4ac225920f44790e6d7fb.etc2.ctex"]
 
 [params]
 

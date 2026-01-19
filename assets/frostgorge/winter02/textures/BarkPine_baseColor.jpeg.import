@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhexrr65yivar"
 path.s3tc="res://.godot/imported/BarkPine_baseColor.jpeg-d2eac0976adc0ba51d48ecd839e6b9a1.s3tc.ctex"
+path.etc2="res://.godot/imported/BarkPine_baseColor.jpeg-d2eac0976adc0ba51d48ecd839e6b9a1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/BarkPine_baseColor.jpeg"
-dest_files=["res://.godot/imported/BarkPine_baseColor.jpeg-d2eac0976adc0ba51d48ecd839e6b9a1.s3tc.ctex"]
+dest_files=["res://.godot/imported/BarkPine_baseColor.jpeg-d2eac0976adc0ba51d48ecd839e6b9a1.s3tc.ctex", "res://.godot/imported/BarkPine_baseColor.jpeg-d2eac0976adc0ba51d48ecd839e6b9a1.etc2.ctex"]
 
 [params]
 

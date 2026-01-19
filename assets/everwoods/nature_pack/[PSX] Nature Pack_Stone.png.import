@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://e8s23jx0302l"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_Stone.png-ca6fde9b97517f823226d89acb0fb4f5.s3tc.ctex"
+path.etc2="res://.godot/imported/[PSX] Nature Pack_Stone.png-ca6fde9b97517f823226d89acb0fb4f5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/[PSX] Nature Pack_Stone.png"
-dest_files=["res://.godot/imported/[PSX] Nature Pack_Stone.png-ca6fde9b97517f823226d89acb0fb4f5.s3tc.ctex"]
+dest_files=["res://.godot/imported/[PSX] Nature Pack_Stone.png-ca6fde9b97517f823226d89acb0fb4f5.s3tc.ctex", "res://.godot/imported/[PSX] Nature Pack_Stone.png-ca6fde9b97517f823226d89acb0fb4f5.etc2.ctex"]
 
 [params]
 

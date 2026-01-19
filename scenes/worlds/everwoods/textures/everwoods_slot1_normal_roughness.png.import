@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyelkvl3vimet"
 path.s3tc="res://.godot/imported/everwoods_slot1_normal_roughness.png-77a812550295e004c76f31964872e48e.s3tc.ctex"
+path.etc2="res://.godot/imported/everwoods_slot1_normal_roughness.png-77a812550295e004c76f31964872e48e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://scenes/worlds/everwoods/textures/everwoods_slot1_normal_roughness.png"
-dest_files=["res://.godot/imported/everwoods_slot1_normal_roughness.png-77a812550295e004c76f31964872e48e.s3tc.ctex"]
+dest_files=["res://.godot/imported/everwoods_slot1_normal_roughness.png-77a812550295e004c76f31964872e48e.s3tc.ctex", "res://.godot/imported/everwoods_slot1_normal_roughness.png-77a812550295e004c76f31964872e48e.etc2.ctex"]
 
 [params]
 

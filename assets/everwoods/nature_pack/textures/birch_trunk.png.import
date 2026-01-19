@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://lmnif1geg5pc"
 path.s3tc="res://.godot/imported/birch_trunk.png-7bbe3d1e7de8a17abb818a896ea90ab2.s3tc.ctex"
+path.etc2="res://.godot/imported/birch_trunk.png-7bbe3d1e7de8a17abb818a896ea90ab2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/textures/birch_trunk.png"
-dest_files=["res://.godot/imported/birch_trunk.png-7bbe3d1e7de8a17abb818a896ea90ab2.s3tc.ctex"]
+dest_files=["res://.godot/imported/birch_trunk.png-7bbe3d1e7de8a17abb818a896ea90ab2.s3tc.ctex", "res://.godot/imported/birch_trunk.png-7bbe3d1e7de8a17abb818a896ea90ab2.etc2.ctex"]
 
 [params]
 

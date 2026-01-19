@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2as5ta1jri44"
 path.s3tc="res://.godot/imported/Polished_Concrete_New5_baseColor.jpeg-704a62633f164220f8e4e03d7ff7d047.s3tc.ctex"
+path.etc2="res://.godot/imported/Polished_Concrete_New5_baseColor.jpeg-704a62633f164220f8e4e03d7ff7d047.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter_hut_scene/textures/Polished_Concrete_New5_baseColor.jpeg"
-dest_files=["res://.godot/imported/Polished_Concrete_New5_baseColor.jpeg-704a62633f164220f8e4e03d7ff7d047.s3tc.ctex"]
+dest_files=["res://.godot/imported/Polished_Concrete_New5_baseColor.jpeg-704a62633f164220f8e4e03d7ff7d047.s3tc.ctex", "res://.godot/imported/Polished_Concrete_New5_baseColor.jpeg-704a62633f164220f8e4e03d7ff7d047.etc2.ctex"]
 
 [params]
 

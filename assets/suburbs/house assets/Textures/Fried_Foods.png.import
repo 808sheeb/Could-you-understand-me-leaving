@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://clr1qwlrtfnrt"
 path.s3tc="res://.godot/imported/Fried_Foods.png-9571759e0cd440a7920b92f44b298eb5.s3tc.ctex"
+path.etc2="res://.godot/imported/Fried_Foods.png-9571759e0cd440a7920b92f44b298eb5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Fried_Foods.png"
-dest_files=["res://.godot/imported/Fried_Foods.png-9571759e0cd440a7920b92f44b298eb5.s3tc.ctex"]
+dest_files=["res://.godot/imported/Fried_Foods.png-9571759e0cd440a7920b92f44b298eb5.s3tc.ctex", "res://.godot/imported/Fried_Foods.png-9571759e0cd440a7920b92f44b298eb5.etc2.ctex"]
 
 [params]
 

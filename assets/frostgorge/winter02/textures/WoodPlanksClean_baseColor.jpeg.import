@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhotls1k6bmb7"
 path.s3tc="res://.godot/imported/WoodPlanksClean_baseColor.jpeg-5b4bc00614e919adce705aa18d442cc5.s3tc.ctex"
+path.etc2="res://.godot/imported/WoodPlanksClean_baseColor.jpeg-5b4bc00614e919adce705aa18d442cc5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/WoodPlanksClean_baseColor.jpeg"
-dest_files=["res://.godot/imported/WoodPlanksClean_baseColor.jpeg-5b4bc00614e919adce705aa18d442cc5.s3tc.ctex"]
+dest_files=["res://.godot/imported/WoodPlanksClean_baseColor.jpeg-5b4bc00614e919adce705aa18d442cc5.s3tc.ctex", "res://.godot/imported/WoodPlanksClean_baseColor.jpeg-5b4bc00614e919adce705aa18d442cc5.etc2.ctex"]
 
 [params]
 

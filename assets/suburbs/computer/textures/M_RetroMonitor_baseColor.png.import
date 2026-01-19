@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dshvn4wy4ffeq"
 path.s3tc="res://.godot/imported/M_RetroMonitor_baseColor.png-b701756af0e0ff2d8c8b6fab73279898.s3tc.ctex"
+path.etc2="res://.godot/imported/M_RetroMonitor_baseColor.png-b701756af0e0ff2d8c8b6fab73279898.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/computer/textures/M_RetroMonitor_baseColor.png"
-dest_files=["res://.godot/imported/M_RetroMonitor_baseColor.png-b701756af0e0ff2d8c8b6fab73279898.s3tc.ctex"]
+dest_files=["res://.godot/imported/M_RetroMonitor_baseColor.png-b701756af0e0ff2d8c8b6fab73279898.s3tc.ctex", "res://.godot/imported/M_RetroMonitor_baseColor.png-b701756af0e0ff2d8c8b6fab73279898.etc2.ctex"]
 
 [params]
 

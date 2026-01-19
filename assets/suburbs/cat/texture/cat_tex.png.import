@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://clr2y0gqlslsm"
 path.s3tc="res://.godot/imported/cat_tex.png-4de2aef3e34167d14e4e147616c962d7.s3tc.ctex"
+path.etc2="res://.godot/imported/cat_tex.png-4de2aef3e34167d14e4e147616c962d7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/cat/texture/cat_tex.png"
-dest_files=["res://.godot/imported/cat_tex.png-4de2aef3e34167d14e4e147616c962d7.s3tc.ctex"]
+dest_files=["res://.godot/imported/cat_tex.png-4de2aef3e34167d14e4e147616c962d7.s3tc.ctex", "res://.godot/imported/cat_tex.png-4de2aef3e34167d14e4e147616c962d7.etc2.ctex"]
 
 [params]
 

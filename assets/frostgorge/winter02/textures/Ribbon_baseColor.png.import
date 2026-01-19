@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfjgjb0vnw657"
 path.s3tc="res://.godot/imported/Ribbon_baseColor.png-dd260e4201869cfb66b3a17d5c9b1496.s3tc.ctex"
+path.etc2="res://.godot/imported/Ribbon_baseColor.png-dd260e4201869cfb66b3a17d5c9b1496.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Ribbon_baseColor.png"
-dest_files=["res://.godot/imported/Ribbon_baseColor.png-dd260e4201869cfb66b3a17d5c9b1496.s3tc.ctex"]
+dest_files=["res://.godot/imported/Ribbon_baseColor.png-dd260e4201869cfb66b3a17d5c9b1496.s3tc.ctex", "res://.godot/imported/Ribbon_baseColor.png-dd260e4201869cfb66b3a17d5c9b1496.etc2.ctex"]
 
 [params]
 

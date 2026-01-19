@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://f4nqtkahhspk"
 path.s3tc="res://.godot/imported/Cassette_Tape_baseColor.png-387c975c5e5a405adcb61db999661450.s3tc.ctex"
+path.etc2="res://.godot/imported/Cassette_Tape_baseColor.png-387c975c5e5a405adcb61db999661450.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/electronics/textures/Cassette_Tape_baseColor.png"
-dest_files=["res://.godot/imported/Cassette_Tape_baseColor.png-387c975c5e5a405adcb61db999661450.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cassette_Tape_baseColor.png-387c975c5e5a405adcb61db999661450.s3tc.ctex", "res://.godot/imported/Cassette_Tape_baseColor.png-387c975c5e5a405adcb61db999661450.etc2.ctex"]
 
 [params]
 

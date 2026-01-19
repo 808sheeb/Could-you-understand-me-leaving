@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://elajclfatfbs"
 path.s3tc="res://.godot/imported/RooftilesSlate_baseColor.png-c7b14f6570d6f33e91847b991f11dd27.s3tc.ctex"
+path.etc2="res://.godot/imported/RooftilesSlate_baseColor.png-c7b14f6570d6f33e91847b991f11dd27.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/RooftilesSlate_baseColor.png"
-dest_files=["res://.godot/imported/RooftilesSlate_baseColor.png-c7b14f6570d6f33e91847b991f11dd27.s3tc.ctex"]
+dest_files=["res://.godot/imported/RooftilesSlate_baseColor.png-c7b14f6570d6f33e91847b991f11dd27.s3tc.ctex", "res://.godot/imported/RooftilesSlate_baseColor.png-c7b14f6570d6f33e91847b991f11dd27.etc2.ctex"]
 
 [params]
 

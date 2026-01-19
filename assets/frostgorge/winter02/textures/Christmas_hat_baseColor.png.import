@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c68duymt4ybpt"
 path.s3tc="res://.godot/imported/Christmas_hat_baseColor.png-fd6e86059131840470ba99255c7ee876.s3tc.ctex"
+path.etc2="res://.godot/imported/Christmas_hat_baseColor.png-fd6e86059131840470ba99255c7ee876.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Christmas_hat_baseColor.png"
-dest_files=["res://.godot/imported/Christmas_hat_baseColor.png-fd6e86059131840470ba99255c7ee876.s3tc.ctex"]
+dest_files=["res://.godot/imported/Christmas_hat_baseColor.png-fd6e86059131840470ba99255c7ee876.s3tc.ctex", "res://.godot/imported/Christmas_hat_baseColor.png-fd6e86059131840470ba99255c7ee876.etc2.ctex"]
 
 [params]
 

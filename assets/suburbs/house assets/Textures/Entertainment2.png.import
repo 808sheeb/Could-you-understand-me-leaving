@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://sbf0c0dmrqew"
 path.s3tc="res://.godot/imported/Entertainment2.png-90141b4ae844d9490acc23698f8998c7.s3tc.ctex"
+path.etc2="res://.godot/imported/Entertainment2.png-90141b4ae844d9490acc23698f8998c7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Entertainment2.png"
-dest_files=["res://.godot/imported/Entertainment2.png-90141b4ae844d9490acc23698f8998c7.s3tc.ctex"]
+dest_files=["res://.godot/imported/Entertainment2.png-90141b4ae844d9490acc23698f8998c7.s3tc.ctex", "res://.godot/imported/Entertainment2.png-90141b4ae844d9490acc23698f8998c7.etc2.ctex"]
 
 [params]
 

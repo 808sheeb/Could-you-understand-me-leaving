@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba26kdtsnpniy"
 path.s3tc="res://.godot/imported/calathea_baseColor.png-f53a394ecede1dbc5687ae96f1fb4d0f.s3tc.ctex"
+path.etc2="res://.godot/imported/calathea_baseColor.png-f53a394ecede1dbc5687ae96f1fb4d0f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/plants/01/textures/calathea_baseColor.png"
-dest_files=["res://.godot/imported/calathea_baseColor.png-f53a394ecede1dbc5687ae96f1fb4d0f.s3tc.ctex"]
+dest_files=["res://.godot/imported/calathea_baseColor.png-f53a394ecede1dbc5687ae96f1fb4d0f.s3tc.ctex", "res://.godot/imported/calathea_baseColor.png-f53a394ecede1dbc5687ae96f1fb4d0f.etc2.ctex"]
 
 [params]
 

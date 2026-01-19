@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqcebd12s424v"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_tree_trunk2.png-6670efe7d8dd30078685fe62e77e2e95.s3tc.ctex"
+path.etc2="res://.godot/imported/[PSX] Nature Pack_tree_trunk2.png-6670efe7d8dd30078685fe62e77e2e95.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/[PSX] Nature Pack_tree_trunk2.png"
-dest_files=["res://.godot/imported/[PSX] Nature Pack_tree_trunk2.png-6670efe7d8dd30078685fe62e77e2e95.s3tc.ctex"]
+dest_files=["res://.godot/imported/[PSX] Nature Pack_tree_trunk2.png-6670efe7d8dd30078685fe62e77e2e95.s3tc.ctex", "res://.godot/imported/[PSX] Nature Pack_tree_trunk2.png-6670efe7d8dd30078685fe62e77e2e95.etc2.ctex"]
 
 [params]
 
