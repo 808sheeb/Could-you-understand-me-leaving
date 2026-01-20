@@ -50,4 +50,7 @@ func keyReturn():
 		merry.visible = false
 	if billi.visible:
 		billi.visible = false
-	keysCollected -= 3
+	if gnome.visible:
+		keysCollected = 1
+	else: 
+		keysCollected = 0
