@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=4 uid="uid://df7w7xyrweg3t"]
+[gd_scene load_steps=66 format=4 uid="uid://df7w7xyrweg3t"]
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
@@ -73,19 +73,6 @@ size = Vector3(1.9, 3.7, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_xxq3l"]
 size = Vector3(1.9, 3.7, 1)
 
-[sub_resource type="Curve" id="Curve_18mtf"]
-_limits = [-360.0, 360.0, 0.0, 1.0]
-_data = [Vector2(0, -101.1236), 0.0, 0.0, 0, 0, Vector2(0.36138612, 262.9214), 0.0, 0.0, 0, 0, Vector2(0.98019797, 360), 0.0, 0.0, 0, 0]
-point_count = 3
-
-[sub_resource type="CurveTexture" id="CurveTexture_seot8"]
-curve = SubResource("Curve_18mtf")
-
-[sub_resource type="Gradient" id="Gradient_a8erk"]
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_qwap7"]
-gradient = SubResource("Gradient_a8erk")
-
 [sub_resource type="Curve" id="Curve_100eh"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.77739733, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -14.031187, 0.0, 0, 0]
 point_count = 3
@@ -98,25 +85,14 @@ lifetime_randomness = 0.08
 emission_shape_scale = Vector3(0.1, 1.885, 1.24)
 emission_shape = 3
 emission_box_extents = Vector3(1, 1, 1)
-angle_min = -720.0
-angle_max = 349.50003
-angle_curve = SubResource("CurveTexture_seot8")
 direction = Vector3(-1, 0, 0)
-flatness = 1.0
 initial_velocity_max = 0.7
 gravity = Vector3(1.5, -0.5, 0)
-linear_accel_min = -2.2351742e-06
-linear_accel_max = 0.29999775
-radial_accel_min = -0.40000224
-radial_accel_max = 0.39999774
-damping_max = 1.0
 scale_min = 0.049999997
 scale_max = 0.35
 scale_curve = SubResource("CurveTexture_ddpkr")
-color_ramp = SubResource("GradientTexture1D_qwap7")
-hue_variation_min = -0.47
-hue_variation_max = 0.48999998
 turbulence_enabled = true
+turbulence_noise_strength = 0.2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kbif0"]
 transparency = 1
@@ -133,10 +109,10 @@ distance_fade_min_distance = 5.0
 distance_fade_max_distance = 1.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_vaumm"]
-lightmap_size_hint = Vector2i(5, 7)
+lightmap_size_hint = Vector2i(6, 9)
 material = SubResource("StandardMaterial3D_kbif0")
 add_uv2 = true
-size = Vector3(0.1, 0.1, 0.1)
+size = Vector3(0.2, 0.2, 0.2)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a0lqf"]
 _surfaces = [{
@@ -550,8 +526,9 @@ shape = SubResource("BoxShape3D_xxq3l")
 
 [node name="IsleParticles" type="GPUParticles3D" parent="main_house"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.675766, 0.8664881, -31.669025)
+visible = false
 amount = 50
-lifetime = 5.3
+lifetime = 2.5
 preprocess = 10.0
 visibility_aabb = AABB(0.97, -1.365, -1.015, 1, 3, 2)
 transform_align = 1
@@ -599,7 +576,7 @@ shape = SubResource("BoxShape3D_si686")
 [node name="VillageParticles" type="GPUParticles3D" parent="main_house"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.25288, 0.92263436, -18.478386)
 visible = false
-amount = 100
+amount = 50
 lifetime = 2.0
 preprocess = 10.0
 speed_scale = 0.7
@@ -648,7 +625,7 @@ shape = SubResource("BoxShape3D_18mtf")
 
 [node name="WinterParticles" type="GPUParticles3D" parent="main_house"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -89.13363, 0.92263436, -26.731438)
-amount = 50
+amount = 25
 lifetime = 2.3
 preprocess = 10.0
 speed_scale = 0.7
@@ -769,6 +746,7 @@ shape = SubResource("BoxShape3D_ax3ly")
 
 [node name="FrostgorgeSound" parent="." instance=ExtResource("3_60jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -454.1902, 1797.1227)
+visible = false
 
 [node name="FogVolume" parent="FrostgorgeSound" index="9"]
 material = SubResource("FogMaterial_si686")

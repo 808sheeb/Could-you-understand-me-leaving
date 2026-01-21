@@ -14,6 +14,10 @@ var villagePortalActive = false
 @onready var village_particles: GPUParticles3D = $main_house/VillageParticles
 @onready var winter_particles: GPUParticles3D = $main_house/WinterParticles
 @onready var gallery_portal: Portal3D = $main_house/HousePortalGallery
+@onready var frostgorge_sound: Node3D = $FrostgorgeSound
+@onready var everwoods: Node3D = $Everwoods
+@onready var town: Node3D = $Town
+@onready var gallery: Node3D = $Gallery
 
 
 func _ready() -> void:
@@ -22,6 +26,10 @@ func _ready() -> void:
 	village_particles.visible = false
 	isle_particles.visible = false
 	winter_particles.visible = false
+	frostgorge_sound.visible = false
+	everwoods.visible = false
+	town.visible = false
+	gallery.visible = false
 	#on alarm reset, do this
 	GlobalMessenger.connect('ALARM_SNOOZE', resetPortal)
 	
@@ -41,16 +49,19 @@ func winterPortal():
 	winter_border.visible = true
 	winter_particles.visible = true
 	winter_portal.activate()
+	frostgorge_sound.visible = true
 	
 func islePortal():
 	islePortalActive = true
 	isle_border.visible = true
 	isle_particles.visible = true
 	isle_portal.activate()
+	everwoods.visible = true
 	
 func galleryPortal():
 	galleryPortalActive = true
 	gallery_portal.activate()
+	gallery.visible = true
 	
 
 func villagePortal():
@@ -58,6 +69,7 @@ func villagePortal():
 	village_portal.visible = true
 	village_particles.visible = true
 	village_portal.activate()
+	town.visible = true
 
 func resetPortal():
 	#WINTER
@@ -65,13 +77,16 @@ func resetPortal():
 	winter_border.visible = false
 	winter_particles.visible = false
 	winter_portal.deactivate()
+	frostgorge_sound.visible = false
 	#ISLE
 	islePortalActive = false
 	isle_border.visible = false
 	isle_particles.visible = false
 	isle_portal.deactivate()
+	everwoods.visible = false
 	#VILLAGE
 	villagePortalActive = false
 	village_portal.visible = false
 	village_particles.visible = false
 	village_portal.deactivate()
+	town.visible = false
