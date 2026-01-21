@@ -45,9 +45,10 @@ func _process(_delta) -> void:
 		ap.play("Idle_02")
 		
 	if velocity == Vector3.ZERO and move_timer.time_left == 0:
+		look_at(Vector3.ZERO)
 		# get a random number from 0 to 1
-		var r = randf_range(0, 0.6)
-		# if rand is higher than 0.7 , 30% of the time do this
+		var r = randf_range(0, 1)
+		# if rand is higher than 0.7, 30% of the time do this
 		if r > 0.7:
 			target_pos = destination_points[randi_range(0,destination_points.size() - 1)]
 			#print(move_timer.time_left)

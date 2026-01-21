@@ -550,11 +550,9 @@ shape = SubResource("BoxShape3D_xxq3l")
 
 [node name="IsleParticles" type="GPUParticles3D" parent="main_house"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.675766, 0.8664881, -31.669025)
-visible = false
-amount = 300
-lifetime = 5.1899999999999995
+amount = 50
+lifetime = 5.3
 preprocess = 10.0
-speed_scale = 0.7
 visibility_aabb = AABB(0.97, -1.365, -1.015, 1, 3, 2)
 transform_align = 1
 trail_lifetime = 6.699999999999999

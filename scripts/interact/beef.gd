@@ -36,6 +36,7 @@ func _process(_delta) -> void:
 		ap.play("Idle_02")
 		
 	if velocity == Vector3.ZERO and move_timer.time_left == 0:
+		look_at(Vector3.ZERO)
 		has_target = true
 		target_pos = destination_points[randi_range(0,destination_points.size() - 1)]
 		move_timer.start(randf_range(10,100))
