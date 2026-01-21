@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=4 uid="uid://ds87qi8ojohlg"]
+[gd_scene load_steps=64 format=4 uid="uid://ds87qi8ojohlg"]
 
 [ext_resource type="Material" uid="uid://cc1l6wsrgyoc7" path="res://assets/tex/plaster/Plaster001_1K-JPG.tres" id="1_f21w3"]
 [ext_resource type="Material" uid="uid://cw0l88njlqhpb" path="res://assets/gallery/wood.tres" id="3_f21w3"]
@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://dy6obmcyomgbp" path="res://assets/gallery/stuccoGallery.tres" id="4_3pphj"]
 [ext_resource type="PackedScene" uid="uid://b1qwqx5jfqt5t" path="res://scenes/objects/bench.tscn" id="5_rtnw1"]
 [ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="6_rtnw1"]
+[ext_resource type="ArrayOccluder3D" uid="uid://dqolpstbsx5lb" path="res://scenes/worlds/gallery/gallery.occ" id="7_fm7ly"]
 [ext_resource type="PackedScene" uid="uid://b50gw0kf52kdd" path="res://scenes/objects/light.tscn" id="7_p8dl5"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qpgf4"]
@@ -980,6 +981,9 @@ vertical_alignment = 1
 [node name="Sprite3D" type="Sprite3D" parent="int_anime_fbx/RootNode"]
 transform = Transform3D(-5.5598734e-06, -1.5162827e-05, 127.195045, 1.516283e-05, 127.195, 1.5162821e-05, -127.195, 1.5162832e-05, -5.55987e-06, -444.89157, 194.7419, 25.00393)
 texture = SubResource("ViewportTexture_p8dl5")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="int_anime_fbx/RootNode"]
+occluder = ExtResource("7_fm7ly")
 
 [node name="Lights" type="Node3D" parent="int_anime_fbx"]
 

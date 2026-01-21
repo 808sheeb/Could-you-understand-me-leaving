@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 
 GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
 PSXScreenEffects="*res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/scripts/Autoload.gd"
+DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
 
 [display]
 
@@ -30,7 +31,7 @@ window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/csg_mesher/plugin.cfg", "res://addons/portals/plugin.cfg", "res://addons/proton_scatter/plugin.cfg", "res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
+enabled=PackedStringArray("res://addons/csg_mesher/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/portals/plugin.cfg", "res://addons/proton_scatter/plugin.cfg", "res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
 
 [filesystem]
 
