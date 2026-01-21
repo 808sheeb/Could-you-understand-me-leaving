@@ -87,8 +87,8 @@ curve = SubResource("Curve_18mtf")
 gradient = SubResource("Gradient_a8erk")
 
 [sub_resource type="Curve" id="Curve_100eh"]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
-point_count = 2
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.77739733, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -14.031187, 0.0, 0, 0]
+point_count = 3
 
 [sub_resource type="CurveTexture" id="CurveTexture_ddpkr"]
 curve = SubResource("Curve_100eh")
@@ -110,15 +110,13 @@ linear_accel_max = 0.29999775
 radial_accel_min = -0.40000224
 radial_accel_max = 0.39999774
 damping_max = 1.0
-scale_min = 0.01
-scale_max = 0.65
+scale_min = 0.049999997
+scale_max = 0.35
 scale_curve = SubResource("CurveTexture_ddpkr")
 color_ramp = SubResource("GradientTexture1D_qwap7")
 hue_variation_min = -0.47
 hue_variation_max = 0.48999998
 turbulence_enabled = true
-collision_mode = 2
-collision_use_scale = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kbif0"]
 transparency = 1
@@ -172,7 +170,7 @@ curve = SubResource("Curve_si686")
 gradient = SubResource("Gradient_18mtf")
 
 [sub_resource type="Curve" id="Curve_a8erk"]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -7.015602, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CurveTexture" id="CurveTexture_qwap7"]
@@ -258,7 +256,7 @@ curve = SubResource("Curve_a0lqf")
 gradient = SubResource("Gradient_si686")
 
 [sub_resource type="Curve" id="Curve_ltgfj"]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+_data = [Vector2(0, 1), 0.0, 2.6545455, 0, 0, Vector2(1, 0), -13.862652, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CurveTexture" id="CurveTexture_g0eku"]
@@ -302,8 +300,9 @@ billboard_mode = 1
 billboard_keep_scale = true
 proximity_fade_enabled = true
 proximity_fade_distance = 6.0
-distance_fade_min_distance = 5.0
-distance_fade_max_distance = 1.0
+distance_fade_mode = 2
+distance_fade_min_distance = 2.0
+distance_fade_max_distance = 6.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_ltgfj"]
 lightmap_size_hint = Vector2i(5, 7)
@@ -446,6 +445,7 @@ script = ExtResource("2_a0lqf")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="env"]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 light_specular = 0.0
+light_bake_mode = 1
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="env"]
@@ -551,11 +551,11 @@ shape = SubResource("BoxShape3D_xxq3l")
 [node name="IsleParticles" type="GPUParticles3D" parent="main_house"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.675766, 0.8664881, -31.669025)
 visible = false
-amount = 500
+amount = 300
 lifetime = 5.1899999999999995
 preprocess = 10.0
 speed_scale = 0.7
-visibility_aabb = AABB(-250, -95.057, -414.42, 600, 130.113, 600)
+visibility_aabb = AABB(0.97, -1.365, -1.015, 1, 3, 2)
 transform_align = 1
 trail_lifetime = 6.699999999999999
 process_material = SubResource("ParticleProcessMaterial_l4jtg")
@@ -601,11 +601,11 @@ shape = SubResource("BoxShape3D_si686")
 [node name="VillageParticles" type="GPUParticles3D" parent="main_house"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.25288, 0.92263436, -18.478386)
 visible = false
-amount = 200
+amount = 100
 lifetime = 2.0
 preprocess = 10.0
 speed_scale = 0.7
-visibility_aabb = AABB(-250, -95.057, -414.42, 600, 130.113, 600)
+visibility_aabb = AABB(1.31, -1.495, -1.23, 1, 3, 2)
 transform_align = 1
 trail_lifetime = 6.699999999999999
 process_material = SubResource("ParticleProcessMaterial_100eh")
@@ -655,7 +655,7 @@ amount = 200
 lifetime = 2.0
 preprocess = 10.0
 speed_scale = 0.7
-visibility_aabb = AABB(-250, -95.057, -414.42, 600, 130.113, 600)
+visibility_aabb = AABB(0.435, -1.52, -1.07, 1, 3, 2)
 transform_align = 1
 trail_lifetime = 6.699999999999999
 process_material = SubResource("ParticleProcessMaterial_a0lqf")
@@ -697,6 +697,17 @@ mesh = SubResource("ArrayMesh_seot8")
 
 [node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalGallery/TeleportArea"]
 shape = SubResource("BoxShape3D_a8erk")
+
+[node name="player" parent="." instance=ExtResource("2_oaoh5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.88255, -3.5526738, -12.868246)
+collision_layer = 32769
+collision_mask = 32781
+
+[node name="Camera3D" parent="player/head" index="1"]
+far = 303.14
+
+[node name="UI" parent="player" index="4"]
+visible = true
 
 [node name="Everwoods" parent="." instance=ExtResource("7_ax3ly")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2460.5654, 0, 0)
@@ -758,17 +769,6 @@ mesh = SubResource("ArrayMesh_vwutt")
 
 [node name="Collider" type="CollisionShape3D" parent="Everwoods/EverwoodPortalHouse/TeleportArea"]
 shape = SubResource("BoxShape3D_ax3ly")
-
-[node name="player" parent="." instance=ExtResource("2_oaoh5")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.88255, -3.5526738, -12.868246)
-collision_layer = 32769
-collision_mask = 32781
-
-[node name="Camera3D" parent="player/head" index="1"]
-far = 303.14
-
-[node name="UI" parent="player" index="4"]
-visible = true
 
 [node name="FrostgorgeSound" parent="." instance=ExtResource("3_60jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -454.1902, 1797.1227)
@@ -838,8 +838,6 @@ mesh = SubResource("ArrayMesh_18mtf")
 
 [node name="Collider" type="CollisionShape3D" parent="FrostgorgeSound/WinterPortalHouse/TeleportArea"]
 shape = SubResource("BoxShape3D_seot8")
-
-[node name="AudioController" parent="." instance=ExtResource("9_ymoqr")]
 
 [node name="Town" type="Node3D" parent="."]
 
@@ -949,6 +947,8 @@ mesh = SubResource("ArrayMesh_a8erk")
 
 [node name="Collider" type="CollisionShape3D" parent="Gallery/GalleryPortalHouse/TeleportArea"]
 shape = SubResource("BoxShape3D_qwap7")
+
+[node name="AudioController" parent="." instance=ExtResource("9_ymoqr")]
 
 [editable path="player"]
 [editable path="player/head/InteractRay"]

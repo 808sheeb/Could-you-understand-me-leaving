@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://celmha118kao6"]
+[gd_scene load_steps=12 format=4 uid="uid://celmha118kao6"]
 
 [ext_resource type="Script" uid="uid://dy6l5wgllx48c" path="res://scripts/interact/key.gd" id="1_ruipk"]
 [ext_resource type="Texture2D" uid="uid://mj02qnsr4l85" path="res://assets/suburbs/xbox/textures/M_Xbox_baseColor.png" id="2_ssuva"]
@@ -9,7 +9,11 @@ size = Vector3(0.32641602, 0.1430664, 0.27197266)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1mt1d"]
 resource_name = "M_Xbox"
 cull_mode = 2
+specular_mode = 2
 albedo_texture = ExtResource("2_ssuva")
+metallic_specular = 0.0
+emission = Color(0.08471489, 0.10546875, 0.08404541, 1)
+emission_energy_multiplier = 4.01
 texture_filter = 0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ds7oe"]
@@ -46,6 +50,44 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ds7oe")
 
+[sub_resource type="Curve" id="Curve_ssuva"]
+_data = [Vector2(0.03767124, 0), 0.0, 0.0, 0, 0, Vector2(0.5034247, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_5souc"]
+curve = SubResource("Curve_ssuva")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_spkm1"]
+lifetime_randomness = 0.16
+emission_shape_offset = Vector3(0.025, 0.05, -0.04)
+emission_shape_scale = Vector3(0.18, 0.08, 0.17)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+angular_velocity_min = -1.6093254e-05
+angular_velocity_max = 371.91998
+orbit_velocity_min = 9.49949e-08
+orbit_velocity_max = 0.5560001
+gravity = Vector3(0.1, 1, 0.1)
+scale_min = 0.099999994
+scale_max = 1.1999999
+scale_curve = SubResource("CurveTexture_5souc")
+turbulence_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3flxl"]
+specular_mode = 2
+albedo_color = Color(0.48742676, 1, 0.13671875, 1)
+emission_enabled = true
+emission = Color(0.3803711, 1, 0.15625, 1)
+emission_energy_multiplier = 1.8
+billboard_mode = 1
+billboard_keep_scale = true
+proximity_fade_enabled = true
+proximity_fade_distance = 2.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_u1lmc"]
+material = SubResource("StandardMaterial3D_3flxl")
+size = Vector2(0.1, 0.1)
+
 [node name="KEY_WINTER" type="Node3D"]
 
 [node name="winter_key" type="StaticBody3D" parent="."]
@@ -61,5 +103,25 @@ shape = SubResource("BoxShape3D_gmmk2")
 transform = Transform3D(1.3599998, 0, 0, 0, -5.9447473e-08, 1.36, 0, -1.3599997, -5.9447487e-08, 0, 0, 0)
 mesh = SubResource("ArrayMesh_5souc")
 skeleton = NodePath("")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="winter_key"]
+amount = 3
+lifetime = 2.0
+explosiveness = 0.69
+randomness = 0.35
+visibility_aabb = AABB(-0.15, -0.04, -0.175, 0.405, 0.27, 0.32)
+process_material = SubResource("ParticleProcessMaterial_spkm1")
+draw_pass_1 = SubResource("QuadMesh_u1lmc")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="winter_key"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3816785, 0)
+light_color = Color(0.7467041, 1, 0.67578125, 1)
+light_energy = 0.4
+light_indirect_energy = 6.69
+light_volumetric_fog_energy = 2.768
+light_size = 0.331
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 0.3988776
 
 [connection signal="interacted" from="winter_key" to="winter_key" method="_on_interacted"]
