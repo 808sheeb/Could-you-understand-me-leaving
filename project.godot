@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
+PSXScreenEffects="*res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/scripts/Autoload.gd"
 
 [display]
 
@@ -29,7 +30,7 @@ window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/portals/plugin.cfg", "res://addons/proton_scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
+enabled=PackedStringArray("res://addons/csg_mesher/plugin.cfg", "res://addons/portals/plugin.cfg", "res://addons/proton_scatter/plugin.cfg", "res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
 
 [filesystem]
 
@@ -111,13 +112,33 @@ occlusion_culling/use_occlusion_culling=true
 
 psx_bit_depth={
 "type": "int",
-"value": 100
+"value": 4
 }
 resolution={
 "type": "vec2",
-"value": Vector2(1280, 960)
+"value": Vector2(1024, 768)
 }
 color_depth={
 "type": "float",
 "value": 256.0
+}
+psx_affine_strength={
+"type": "float",
+"value": 1.0
+}
+psx_fog_color={
+"type": "color",
+"value": Color(0.5, 0.5, 0.5, 0)
+}
+psx_fog_near={
+"type": "float",
+"value": 20.0
+}
+psx_fog_far={
+"type": "float",
+"value": 10.0
+}
+psx_snap_size={
+"type": "float",
+"value": 0.025
 }

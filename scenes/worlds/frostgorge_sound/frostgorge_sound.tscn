@@ -14077,8 +14077,8 @@ curve = SubResource("Curve_rpx35")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cmdkh"]
 lifetime_randomness = 0.08
-emission_shape_offset = Vector3(-18.075, -34.33, 39.07)
-emission_shape_scale = Vector3(123.24, 5, 42.135)
+emission_shape_offset = Vector3(-20.115, -34.33, 52.82)
+emission_shape_scale = Vector3(54.88, 5, 42.135)
 emission_shape = 1
 emission_sphere_radius = 1.0
 angle_min = 1.0728835e-05
@@ -14109,8 +14109,6 @@ shading_mode = 0
 diffuse_mode = 1
 specular_mode = 2
 disable_specular_occlusion = true
-uv1_scale = Vector3(3, 2, 2)
-billboard_mode = 1
 billboard_keep_scale = true
 distance_fade_mode = 1
 distance_fade_max_distance = 5.0
@@ -14118,7 +14116,6 @@ distance_fade_max_distance = 5.0
 [sub_resource type="BoxMesh" id="BoxMesh_rpx35"]
 lightmap_size_hint = Vector2i(5, 7)
 material = SubResource("StandardMaterial3D_74k34")
-add_uv2 = true
 size = Vector3(0.1, 0.1, 0.1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5otws"]
@@ -33238,13 +33235,13 @@ transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0,
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1007, 57.10788, -11.22467)
-amount = 90000
+amount = 15000
 lifetime = 8.0
 preprocess = 10.0
 speed_scale = 0.5
 randomness = 0.23
 collision_base_size = 1.0
-visibility_aabb = AABB(-100, -46.945, 0, 200, 15, 100)
+visibility_aabb = AABB(-87.64, -48.195, 14.595, 136.375, 18.465, 84.195)
 transform_align = 1
 process_material = SubResource("ParticleProcessMaterial_cmdkh")
 draw_pass_1 = SubResource("BoxMesh_rpx35")
