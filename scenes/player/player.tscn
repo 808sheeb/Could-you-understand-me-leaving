@@ -1,10 +1,9 @@
-[gd_scene load_steps=40 format=4 uid="uid://brpnlbf5j2yec"]
+[gd_scene load_steps=36 format=4 uid="uid://brpnlbf5j2yec"]
 
 [ext_resource type="Script" uid="uid://c4cil2ki6d5kn" path="res://scripts/player/player.gd" id="1_gmlin"]
 [ext_resource type="PackedScene" uid="uid://cxtpglx1dkimv" path="res://scenes/player/InteractRay.tscn" id="2_lvxji"]
 [ext_resource type="Script" uid="uid://cecfklyph86yo" path="res://scripts/ui/panel_sizing.gd" id="3_5gtgg"]
 [ext_resource type="Script" uid="uid://vljj2uieem77" path="res://scripts/ui/inventory.gd" id="3_je7p5"]
-[ext_resource type="Shader" uid="uid://dgfj234f1vyp6" path="res://assets/shaders/KimiRetro.gdshader" id="3_lvxji"]
 [ext_resource type="Texture2D" uid="uid://b75iag0h1qf2b" path="res://scenes/player/crosshair043.png" id="3_p47bc"]
 [ext_resource type="Texture2D" uid="uid://bqes7kttxafsl" path="res://assets/ui/billi.png" id="3_qek5x"]
 [ext_resource type="Texture2D" uid="uid://cx2nmutqd6s7f" path="res://assets/ui/merry.png" id="4_5gtgg"]
@@ -12,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://b1wdjh86hm3ar" path="res://assets/ui/gnome.png" id="6_je7p5"]
 [ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="10_h17s1"]
 [ext_resource type="Script" uid="uid://civ04amcchtb6" path="res://scripts/ui/narration.gd" id="12_fm80t"]
-[ext_resource type="Shader" uid="uid://f30u05sxx1vk" path="res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/shaders/psx_postprocess.gdshader" id="12_kvlxm"]
 [ext_resource type="AudioStream" uid="uid://cd7ymquox1rgq" path="res://assets/audio/walking/Concrete 1.wav" id="13_myrg7"]
 [ext_resource type="AudioStream" uid="uid://86wt3cw6beek" path="res://assets/audio/walking/Gravel - Run.wav" id="14_kvlxm"]
 [ext_resource type="AudioStream" uid="uid://dx4w12h8q7ate" path="res://assets/audio/walking/Sand.wav" id="15_uf5tr"]
@@ -5231,22 +5229,6 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 expand_margin_bottom = 8.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_lgqa7"]
-shader = ExtResource("3_lvxji")
-shader_parameter/resolution_x = 640
-shader_parameter/resolution_y = 360
-shader_parameter/color_bit_depth = 4
-shader_parameter/dither_strength = 0.03
-shader_parameter/jitter_amount = 0.002
-shader_parameter/jitter_speed = 1.0
-shader_parameter/jitter_frequency = 180.0
-shader_parameter/chromatic_aberration_strength = 0.0050000002375
-shader_parameter/vignette_strength = 0.0
-shader_parameter/vignette_radius = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_p47bc"]
-shader = ExtResource("12_kvlxm")
-
 [node name="player" type="CharacterBody3D"]
 collision_layer = 13
 collision_mask = 13
@@ -5730,26 +5712,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_p47bc")
 expand_mode = 1
-
-[node name="ColorRect2" type="ColorRect" parent="UI"]
-visible = false
-material = SubResource("ShaderMaterial_lgqa7")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="UI"]
-z_index = -1
-material = SubResource("ShaderMaterial_p47bc")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="Narration" type="Label" parent="UI"]
 layout_mode = 1

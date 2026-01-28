@@ -136,7 +136,7 @@ resolution={
 }
 color_depth={
 "type": "float",
-"value": 256.0
+"value": 100.0
 }
 psx_affine_strength={
 "type": "float",
