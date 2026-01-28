@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://epjjkxuh8yfd"
 path.s3tc="res://.godot/imported/DoriHome_6.png-6e7fa3071675f24e54ee26fdd994aa45.s3tc.ctex"
-path.etc2="res://.godot/imported/DoriHome_6.png-6e7fa3071675f24e54ee26fdd994aa45.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/suburbs/house 02/DoriHome_6.png"
-dest_files=["res://.godot/imported/DoriHome_6.png-6e7fa3071675f24e54ee26fdd994aa45.s3tc.ctex", "res://.godot/imported/DoriHome_6.png-6e7fa3071675f24e54ee26fdd994aa45.etc2.ctex"]
+dest_files=["res://.godot/imported/DoriHome_6.png-6e7fa3071675f24e54ee26fdd994aa45.s3tc.ctex"]
 
 [params]
 

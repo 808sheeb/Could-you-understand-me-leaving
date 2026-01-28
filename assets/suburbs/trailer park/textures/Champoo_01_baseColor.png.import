@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://day6fv6ljtvns"
 path.s3tc="res://.godot/imported/Champoo_01_baseColor.png-eb20ede58081da45599fd20e0db5337e.s3tc.ctex"
-path.etc2="res://.godot/imported/Champoo_01_baseColor.png-eb20ede58081da45599fd20e0db5337e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Champoo_01_baseColor.png"
-dest_files=["res://.godot/imported/Champoo_01_baseColor.png-eb20ede58081da45599fd20e0db5337e.s3tc.ctex", "res://.godot/imported/Champoo_01_baseColor.png-eb20ede58081da45599fd20e0db5337e.etc2.ctex"]
+dest_files=["res://.godot/imported/Champoo_01_baseColor.png-eb20ede58081da45599fd20e0db5337e.s3tc.ctex"]
 
 [params]
 

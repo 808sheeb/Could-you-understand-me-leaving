@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvsbovvy88k0a"
 path.s3tc="res://.godot/imported/BarkDecidious_baseColor.jpeg-e6ced8d3cb235f81d9d355c26d2e897f.s3tc.ctex"
-path.etc2="res://.godot/imported/BarkDecidious_baseColor.jpeg-e6ced8d3cb235f81d9d355c26d2e897f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/BarkDecidious_baseColor.jpeg"
-dest_files=["res://.godot/imported/BarkDecidious_baseColor.jpeg-e6ced8d3cb235f81d9d355c26d2e897f.s3tc.ctex", "res://.godot/imported/BarkDecidious_baseColor.jpeg-e6ced8d3cb235f81d9d355c26d2e897f.etc2.ctex"]
+dest_files=["res://.godot/imported/BarkDecidious_baseColor.jpeg-e6ced8d3cb235f81d9d355c26d2e897f.s3tc.ctex"]
 
 [params]
 

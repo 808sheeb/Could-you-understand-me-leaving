@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cll2rw0n8kast"
 path.s3tc="res://.godot/imported/Metal_Embossed_2_baseColor.jpeg-9f8b1d89505de9511876121081db1f13.s3tc.ctex"
-path.etc2="res://.godot/imported/Metal_Embossed_2_baseColor.jpeg-9f8b1d89505de9511876121081db1f13.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter_hut_scene/textures/Metal_Embossed_2_baseColor.jpeg"
-dest_files=["res://.godot/imported/Metal_Embossed_2_baseColor.jpeg-9f8b1d89505de9511876121081db1f13.s3tc.ctex", "res://.godot/imported/Metal_Embossed_2_baseColor.jpeg-9f8b1d89505de9511876121081db1f13.etc2.ctex"]
+dest_files=["res://.godot/imported/Metal_Embossed_2_baseColor.jpeg-9f8b1d89505de9511876121081db1f13.s3tc.ctex"]
 
 [params]
 

@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfg1rr24520vu"
 path.s3tc="res://.godot/imported/toilet_paper_baseColor.png-d8ee220c9e3784358b866d7917bd2cab.s3tc.ctex"
-path.etc2="res://.godot/imported/toilet_paper_baseColor.png-d8ee220c9e3784358b866d7917bd2cab.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/toilet_paper_baseColor.png"
-dest_files=["res://.godot/imported/toilet_paper_baseColor.png-d8ee220c9e3784358b866d7917bd2cab.s3tc.ctex", "res://.godot/imported/toilet_paper_baseColor.png-d8ee220c9e3784358b866d7917bd2cab.etc2.ctex"]
+dest_files=["res://.godot/imported/toilet_paper_baseColor.png-d8ee220c9e3784358b866d7917bd2cab.s3tc.ctex"]
 
 [params]
 

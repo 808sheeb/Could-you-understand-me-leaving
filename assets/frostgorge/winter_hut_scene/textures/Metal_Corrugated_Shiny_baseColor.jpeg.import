@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ulesfrt4ie4j"
 path.s3tc="res://.godot/imported/Metal_Corrugated_Shiny_baseColor.jpeg-4c3e890ba47dadf2d237ea15c1fd313f.s3tc.ctex"
-path.etc2="res://.godot/imported/Metal_Corrugated_Shiny_baseColor.jpeg-4c3e890ba47dadf2d237ea15c1fd313f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter_hut_scene/textures/Metal_Corrugated_Shiny_baseColor.jpeg"
-dest_files=["res://.godot/imported/Metal_Corrugated_Shiny_baseColor.jpeg-4c3e890ba47dadf2d237ea15c1fd313f.s3tc.ctex", "res://.godot/imported/Metal_Corrugated_Shiny_baseColor.jpeg-4c3e890ba47dadf2d237ea15c1fd313f.etc2.ctex"]
+dest_files=["res://.godot/imported/Metal_Corrugated_Shiny_baseColor.jpeg-4c3e890ba47dadf2d237ea15c1fd313f.s3tc.ctex"]
 
 [params]
 

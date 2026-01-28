@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgf4xpc6p53i3"
 path.s3tc="res://.godot/imported/Alarm_clock.png-9d54de56679e66399e1e0e3fc3be927a.s3tc.ctex"
-path.etc2="res://.godot/imported/Alarm_clock.png-9d54de56679e66399e1e0e3fc3be927a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Alarm_clock.png"
-dest_files=["res://.godot/imported/Alarm_clock.png-9d54de56679e66399e1e0e3fc3be927a.s3tc.ctex", "res://.godot/imported/Alarm_clock.png-9d54de56679e66399e1e0e3fc3be927a.etc2.ctex"]
+dest_files=["res://.godot/imported/Alarm_clock.png-9d54de56679e66399e1e0e3fc3be927a.s3tc.ctex"]
 
 [params]
 

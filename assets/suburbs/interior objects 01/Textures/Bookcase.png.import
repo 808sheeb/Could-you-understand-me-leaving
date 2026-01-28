@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvgla1btpljao"
 path.s3tc="res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.s3tc.ctex"
-path.etc2="res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Bookcase.png"
-dest_files=["res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.s3tc.ctex", "res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.etc2.ctex"]
+dest_files=["res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.s3tc.ctex"]
 
 [params]
 

@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs7x76rmnlpiq"
 path.s3tc="res://.godot/imported/Tiles107_1K-JPG_Roughness.jpg-f10661cc963a3532f6139d5cf63e3702.s3tc.ctex"
-path.etc2="res://.godot/imported/Tiles107_1K-JPG_Roughness.jpg-f10661cc963a3532f6139d5cf63e3702.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tex/washroomTile/Tiles107_1K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/Tiles107_1K-JPG_Roughness.jpg-f10661cc963a3532f6139d5cf63e3702.s3tc.ctex", "res://.godot/imported/Tiles107_1K-JPG_Roughness.jpg-f10661cc963a3532f6139d5cf63e3702.etc2.ctex"]
+dest_files=["res://.godot/imported/Tiles107_1K-JPG_Roughness.jpg-f10661cc963a3532f6139d5cf63e3702.s3tc.ctex"]
 
 [params]
 

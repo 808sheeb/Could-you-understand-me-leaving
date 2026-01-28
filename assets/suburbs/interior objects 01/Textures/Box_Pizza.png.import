@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdd5js51vn6m4"
 path.s3tc="res://.godot/imported/Box_Pizza.png-1746fb2af915ce58ff5ae77736c30c9d.s3tc.ctex"
-path.etc2="res://.godot/imported/Box_Pizza.png-1746fb2af915ce58ff5ae77736c30c9d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Box_Pizza.png"
-dest_files=["res://.godot/imported/Box_Pizza.png-1746fb2af915ce58ff5ae77736c30c9d.s3tc.ctex", "res://.godot/imported/Box_Pizza.png-1746fb2af915ce58ff5ae77736c30c9d.etc2.ctex"]
+dest_files=["res://.godot/imported/Box_Pizza.png-1746fb2af915ce58ff5ae77736c30c9d.s3tc.ctex"]
 
 [params]
 

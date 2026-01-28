@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgb17h8q7thf3"
 path.s3tc="res://.godot/imported/Ventilator_01.png-746aa1079cc99d33fdf5e328bbf50eef.s3tc.ctex"
-path.etc2="res://.godot/imported/Ventilator_01.png-746aa1079cc99d33fdf5e328bbf50eef.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Ventilator_01.png"
-dest_files=["res://.godot/imported/Ventilator_01.png-746aa1079cc99d33fdf5e328bbf50eef.s3tc.ctex", "res://.godot/imported/Ventilator_01.png-746aa1079cc99d33fdf5e328bbf50eef.etc2.ctex"]
+dest_files=["res://.godot/imported/Ventilator_01.png-746aa1079cc99d33fdf5e328bbf50eef.s3tc.ctex"]
 
 [params]
 

@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy1suqhad87mi"
 path.s3tc="res://.godot/imported/Meat.png-a3887834cc962231f713392503b15d48.s3tc.ctex"
-path.etc2="res://.godot/imported/Meat.png-a3887834cc962231f713392503b15d48.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Meat.png"
-dest_files=["res://.godot/imported/Meat.png-a3887834cc962231f713392503b15d48.s3tc.ctex", "res://.godot/imported/Meat.png-a3887834cc962231f713392503b15d48.etc2.ctex"]
+dest_files=["res://.godot/imported/Meat.png-a3887834cc962231f713392503b15d48.s3tc.ctex"]
 
 [params]
 

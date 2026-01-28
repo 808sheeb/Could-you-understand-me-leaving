@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqc0f78e5qebv"
 path.s3tc="res://.godot/imported/Trees_02_baseColor.png-b71ccf8a614f843420791e76d36dff25.s3tc.ctex"
-path.etc2="res://.godot/imported/Trees_02_baseColor.png-b71ccf8a614f843420791e76d36dff25.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Trees_02_baseColor.png"
-dest_files=["res://.godot/imported/Trees_02_baseColor.png-b71ccf8a614f843420791e76d36dff25.s3tc.ctex", "res://.godot/imported/Trees_02_baseColor.png-b71ccf8a614f843420791e76d36dff25.etc2.ctex"]
+dest_files=["res://.godot/imported/Trees_02_baseColor.png-b71ccf8a614f843420791e76d36dff25.s3tc.ctex"]
 
 [params]
 

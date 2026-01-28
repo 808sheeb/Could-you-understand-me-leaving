@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnph1qti606i0"
 path.s3tc="res://.godot/imported/Tree_Leaves1.png-df4a4693f66264f6e9bfc41e24fb3bbb.s3tc.ctex"
-path.etc2="res://.godot/imported/Tree_Leaves1.png-df4a4693f66264f6e9bfc41e24fb3bbb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/textures/Tree_Leaves1.png"
-dest_files=["res://.godot/imported/Tree_Leaves1.png-df4a4693f66264f6e9bfc41e24fb3bbb.s3tc.ctex", "res://.godot/imported/Tree_Leaves1.png-df4a4693f66264f6e9bfc41e24fb3bbb.etc2.ctex"]
+dest_files=["res://.godot/imported/Tree_Leaves1.png-df4a4693f66264f6e9bfc41e24fb3bbb.s3tc.ctex"]
 
 [params]
 

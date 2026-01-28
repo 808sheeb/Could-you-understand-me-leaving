@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxwp1k7pqulvp"
 path.s3tc="res://.godot/imported/plants_flowers.png-c0ec3f6608d86b959ec7bad521c8990d.s3tc.ctex"
-path.etc2="res://.godot/imported/plants_flowers.png-c0ec3f6608d86b959ec7bad521c8990d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/plants_flowers.png"
-dest_files=["res://.godot/imported/plants_flowers.png-c0ec3f6608d86b959ec7bad521c8990d.s3tc.ctex", "res://.godot/imported/plants_flowers.png-c0ec3f6608d86b959ec7bad521c8990d.etc2.ctex"]
+dest_files=["res://.godot/imported/plants_flowers.png-c0ec3f6608d86b959ec7bad521c8990d.s3tc.ctex"]
 
 [params]
 

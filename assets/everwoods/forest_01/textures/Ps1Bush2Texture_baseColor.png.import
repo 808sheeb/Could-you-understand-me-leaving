@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://y3jqe2phmrig"
 path.s3tc="res://.godot/imported/Ps1Bush2Texture_baseColor.png-9c338adad4cb0da362bc296e48f58149.s3tc.ctex"
-path.etc2="res://.godot/imported/Ps1Bush2Texture_baseColor.png-9c338adad4cb0da362bc296e48f58149.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/forest_01/textures/Ps1Bush2Texture_baseColor.png"
-dest_files=["res://.godot/imported/Ps1Bush2Texture_baseColor.png-9c338adad4cb0da362bc296e48f58149.s3tc.ctex", "res://.godot/imported/Ps1Bush2Texture_baseColor.png-9c338adad4cb0da362bc296e48f58149.etc2.ctex"]
+dest_files=["res://.godot/imported/Ps1Bush2Texture_baseColor.png-9c338adad4cb0da362bc296e48f58149.s3tc.ctex"]
 
 [params]
 

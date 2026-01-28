@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bprnryb1qv7w0"
 path.s3tc="res://.godot/imported/WoodPlanksOverlapping_baseColor.jpeg-b15b802d2dc4622bfd6d61403df57162.s3tc.ctex"
-path.etc2="res://.godot/imported/WoodPlanksOverlapping_baseColor.jpeg-b15b802d2dc4622bfd6d61403df57162.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/WoodPlanksOverlapping_baseColor.jpeg"
-dest_files=["res://.godot/imported/WoodPlanksOverlapping_baseColor.jpeg-b15b802d2dc4622bfd6d61403df57162.s3tc.ctex", "res://.godot/imported/WoodPlanksOverlapping_baseColor.jpeg-b15b802d2dc4622bfd6d61403df57162.etc2.ctex"]
+dest_files=["res://.godot/imported/WoodPlanksOverlapping_baseColor.jpeg-b15b802d2dc4622bfd6d61403df57162.s3tc.ctex"]
 
 [params]
 

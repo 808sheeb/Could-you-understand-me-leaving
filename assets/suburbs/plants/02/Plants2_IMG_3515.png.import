@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ww1x7ilycc2n"
 path.s3tc="res://.godot/imported/Plants2_IMG_3515.png-b08b9ac20c284b78280651e20e091e4a.s3tc.ctex"
-path.etc2="res://.godot/imported/Plants2_IMG_3515.png-b08b9ac20c284b78280651e20e091e4a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/suburbs/plants/02/Plants2_IMG_3515.png"
-dest_files=["res://.godot/imported/Plants2_IMG_3515.png-b08b9ac20c284b78280651e20e091e4a.s3tc.ctex", "res://.godot/imported/Plants2_IMG_3515.png-b08b9ac20c284b78280651e20e091e4a.etc2.ctex"]
+dest_files=["res://.godot/imported/Plants2_IMG_3515.png-b08b9ac20c284b78280651e20e091e4a.s3tc.ctex"]
 
 [params]
 

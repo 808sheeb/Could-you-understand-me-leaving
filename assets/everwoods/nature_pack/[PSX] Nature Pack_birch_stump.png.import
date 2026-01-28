@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2qrn4467q4s1"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_birch_stump.png-3a8d0397926b29da5562d4653e941b08.s3tc.ctex"
-path.etc2="res://.godot/imported/[PSX] Nature Pack_birch_stump.png-3a8d0397926b29da5562d4653e941b08.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/[PSX] Nature Pack_birch_stump.png"
-dest_files=["res://.godot/imported/[PSX] Nature Pack_birch_stump.png-3a8d0397926b29da5562d4653e941b08.s3tc.ctex", "res://.godot/imported/[PSX] Nature Pack_birch_stump.png-3a8d0397926b29da5562d4653e941b08.etc2.ctex"]
+dest_files=["res://.godot/imported/[PSX] Nature Pack_birch_stump.png-3a8d0397926b29da5562d4653e941b08.s3tc.ctex"]
 
 [params]
 

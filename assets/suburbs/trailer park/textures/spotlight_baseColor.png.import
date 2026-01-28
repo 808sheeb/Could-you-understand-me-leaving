@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://k58mx68n3laq"
 path.s3tc="res://.godot/imported/spotlight_baseColor.png-b9a0d2d4b0a61c22f3c287507bb58a0e.s3tc.ctex"
-path.etc2="res://.godot/imported/spotlight_baseColor.png-b9a0d2d4b0a61c22f3c287507bb58a0e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/spotlight_baseColor.png"
-dest_files=["res://.godot/imported/spotlight_baseColor.png-b9a0d2d4b0a61c22f3c287507bb58a0e.s3tc.ctex", "res://.godot/imported/spotlight_baseColor.png-b9a0d2d4b0a61c22f3c287507bb58a0e.etc2.ctex"]
+dest_files=["res://.godot/imported/spotlight_baseColor.png-b9a0d2d4b0a61c22f3c287507bb58a0e.s3tc.ctex"]
 
 [params]
 

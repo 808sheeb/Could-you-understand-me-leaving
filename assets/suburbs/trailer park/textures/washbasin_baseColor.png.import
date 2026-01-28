@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cslmkpeki3trt"
 path.s3tc="res://.godot/imported/washbasin_baseColor.png-1fce4b1afba80673fab918a8866c4cb6.s3tc.ctex"
-path.etc2="res://.godot/imported/washbasin_baseColor.png-1fce4b1afba80673fab918a8866c4cb6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/washbasin_baseColor.png"
-dest_files=["res://.godot/imported/washbasin_baseColor.png-1fce4b1afba80673fab918a8866c4cb6.s3tc.ctex", "res://.godot/imported/washbasin_baseColor.png-1fce4b1afba80673fab918a8866c4cb6.etc2.ctex"]
+dest_files=["res://.godot/imported/washbasin_baseColor.png-1fce4b1afba80673fab918a8866c4cb6.s3tc.ctex"]
 
 [params]
 

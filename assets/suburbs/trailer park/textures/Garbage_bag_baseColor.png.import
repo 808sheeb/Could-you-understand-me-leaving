@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://blcs7tbhrxub3"
 path.s3tc="res://.godot/imported/Garbage_bag_baseColor.png-eda442cc1d061b236522083ff929ca71.s3tc.ctex"
-path.etc2="res://.godot/imported/Garbage_bag_baseColor.png-eda442cc1d061b236522083ff929ca71.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Garbage_bag_baseColor.png"
-dest_files=["res://.godot/imported/Garbage_bag_baseColor.png-eda442cc1d061b236522083ff929ca71.s3tc.ctex", "res://.godot/imported/Garbage_bag_baseColor.png-eda442cc1d061b236522083ff929ca71.etc2.ctex"]
+dest_files=["res://.godot/imported/Garbage_bag_baseColor.png-eda442cc1d061b236522083ff929ca71.s3tc.ctex"]
 
 [params]
 

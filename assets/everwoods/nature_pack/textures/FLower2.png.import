@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsnv6vu7w8kw"
 path.s3tc="res://.godot/imported/FLower2.png-dbb7c0c6670f24eda557a1899ec6d84e.s3tc.ctex"
-path.etc2="res://.godot/imported/FLower2.png-dbb7c0c6670f24eda557a1899ec6d84e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/textures/FLower2.png"
-dest_files=["res://.godot/imported/FLower2.png-dbb7c0c6670f24eda557a1899ec6d84e.s3tc.ctex", "res://.godot/imported/FLower2.png-dbb7c0c6670f24eda557a1899ec6d84e.etc2.ctex"]
+dest_files=["res://.godot/imported/FLower2.png-dbb7c0c6670f24eda557a1899ec6d84e.s3tc.ctex"]
 
 [params]
 

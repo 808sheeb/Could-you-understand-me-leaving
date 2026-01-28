@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgkqxer1d477y"
 path.s3tc="res://.godot/imported/None_baseColor.png-5b12102def9fd40fa2cc0dbdaadd47f2.s3tc.ctex"
-path.etc2="res://.godot/imported/None_baseColor.png-5b12102def9fd40fa2cc0dbdaadd47f2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/going_merry/textures/None_baseColor.png"
-dest_files=["res://.godot/imported/None_baseColor.png-5b12102def9fd40fa2cc0dbdaadd47f2.s3tc.ctex", "res://.godot/imported/None_baseColor.png-5b12102def9fd40fa2cc0dbdaadd47f2.etc2.ctex"]
+dest_files=["res://.godot/imported/None_baseColor.png-5b12102def9fd40fa2cc0dbdaadd47f2.s3tc.ctex"]
 
 [params]
 

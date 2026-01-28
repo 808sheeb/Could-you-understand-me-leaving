@@ -366,16 +366,12 @@ size = Vector3(2.14, 3.055, 1)
 size = Vector3(2.14, 3.055, 1)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w4m1g"]
-load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Color.jpg-83679648972d36aec9a9582fa358390b.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pyu8g"]
-load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Displacement.jpg-8029c8a1b098d9e036c2b659ef40a654.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w7eew"]
-load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_NormalGL.jpg-39004d0263f0066b033fab1322c1df86.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4oe1e"]
-load_path = "res://.godot/imported/PaintedWood009C_1K-JPG_Roughness.jpg-f5e66d150acb635d515b8227e1d48d9c.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xxq3l"]
 albedo_texture = SubResource("CompressedTexture2D_w4m1g")

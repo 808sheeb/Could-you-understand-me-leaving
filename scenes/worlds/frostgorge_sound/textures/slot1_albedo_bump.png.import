@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw81gn1gc35fa"
 path.s3tc="res://.godot/imported/slot1_albedo_bump.png-10ab99a384d3e5838808e473cc123f52.s3tc.ctex"
-path.etc2="res://.godot/imported/slot1_albedo_bump.png-10ab99a384d3e5838808e473cc123f52.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://scenes/worlds/frostgorge_sound/textures/slot1_albedo_bump.png"
-dest_files=["res://.godot/imported/slot1_albedo_bump.png-10ab99a384d3e5838808e473cc123f52.s3tc.ctex", "res://.godot/imported/slot1_albedo_bump.png-10ab99a384d3e5838808e473cc123f52.etc2.ctex"]
+dest_files=["res://.godot/imported/slot1_albedo_bump.png-10ab99a384d3e5838808e473cc123f52.s3tc.ctex"]
 
 [params]
 

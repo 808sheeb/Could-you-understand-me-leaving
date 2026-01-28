@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwswvoua3bo3a"
 path.s3tc="res://.godot/imported/Hygiene.jpg-3b2afa20b1726ab047f5051651f79044.s3tc.ctex"
-path.etc2="res://.godot/imported/Hygiene.jpg-3b2afa20b1726ab047f5051651f79044.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Hygiene.jpg"
-dest_files=["res://.godot/imported/Hygiene.jpg-3b2afa20b1726ab047f5051651f79044.s3tc.ctex", "res://.godot/imported/Hygiene.jpg-3b2afa20b1726ab047f5051651f79044.etc2.ctex"]
+dest_files=["res://.godot/imported/Hygiene.jpg-3b2afa20b1726ab047f5051651f79044.s3tc.ctex"]
 
 [params]
 

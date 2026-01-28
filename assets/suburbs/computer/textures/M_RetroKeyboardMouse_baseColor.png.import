@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg0lyrvtd6oky"
 path.s3tc="res://.godot/imported/M_RetroKeyboardMouse_baseColor.png-a2bd1d7ec5d78bb33ecdce84413ec1e4.s3tc.ctex"
-path.etc2="res://.godot/imported/M_RetroKeyboardMouse_baseColor.png-a2bd1d7ec5d78bb33ecdce84413ec1e4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/computer/textures/M_RetroKeyboardMouse_baseColor.png"
-dest_files=["res://.godot/imported/M_RetroKeyboardMouse_baseColor.png-a2bd1d7ec5d78bb33ecdce84413ec1e4.s3tc.ctex", "res://.godot/imported/M_RetroKeyboardMouse_baseColor.png-a2bd1d7ec5d78bb33ecdce84413ec1e4.etc2.ctex"]
+dest_files=["res://.godot/imported/M_RetroKeyboardMouse_baseColor.png-a2bd1d7ec5d78bb33ecdce84413ec1e4.s3tc.ctex"]
 
 [params]
 

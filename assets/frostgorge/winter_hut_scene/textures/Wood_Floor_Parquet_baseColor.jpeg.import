@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv8bowpb3lpes"
 path.s3tc="res://.godot/imported/Wood_Floor_Parquet_baseColor.jpeg-e04ab43aa514d3b0abdcf0a9139bbb48.s3tc.ctex"
-path.etc2="res://.godot/imported/Wood_Floor_Parquet_baseColor.jpeg-e04ab43aa514d3b0abdcf0a9139bbb48.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter_hut_scene/textures/Wood_Floor_Parquet_baseColor.jpeg"
-dest_files=["res://.godot/imported/Wood_Floor_Parquet_baseColor.jpeg-e04ab43aa514d3b0abdcf0a9139bbb48.s3tc.ctex", "res://.godot/imported/Wood_Floor_Parquet_baseColor.jpeg-e04ab43aa514d3b0abdcf0a9139bbb48.etc2.ctex"]
+dest_files=["res://.godot/imported/Wood_Floor_Parquet_baseColor.jpeg-e04ab43aa514d3b0abdcf0a9139bbb48.s3tc.ctex"]
 
 [params]
 

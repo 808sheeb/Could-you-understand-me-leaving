@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cadthef4wj1oe"
 path.s3tc="res://.godot/imported/MetalPlates_baseColor.jpeg-516a1959f54ac854e4a9be0a5833e930.s3tc.ctex"
-path.etc2="res://.godot/imported/MetalPlates_baseColor.jpeg-516a1959f54ac854e4a9be0a5833e930.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/MetalPlates_baseColor.jpeg"
-dest_files=["res://.godot/imported/MetalPlates_baseColor.jpeg-516a1959f54ac854e4a9be0a5833e930.s3tc.ctex", "res://.godot/imported/MetalPlates_baseColor.jpeg-516a1959f54ac854e4a9be0a5833e930.etc2.ctex"]
+dest_files=["res://.godot/imported/MetalPlates_baseColor.jpeg-516a1959f54ac854e4a9be0a5833e930.s3tc.ctex"]
 
 [params]
 

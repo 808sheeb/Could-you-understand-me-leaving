@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj1stebd60771"
 path.s3tc="res://.godot/imported/knife__holder_baseColor.png-7f1d5f61da76143b8498f0df504b94a3.s3tc.ctex"
-path.etc2="res://.godot/imported/knife__holder_baseColor.png-7f1d5f61da76143b8498f0df504b94a3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/knife__holder_baseColor.png"
-dest_files=["res://.godot/imported/knife__holder_baseColor.png-7f1d5f61da76143b8498f0df504b94a3.s3tc.ctex", "res://.godot/imported/knife__holder_baseColor.png-7f1d5f61da76143b8498f0df504b94a3.etc2.ctex"]
+dest_files=["res://.godot/imported/knife__holder_baseColor.png-7f1d5f61da76143b8498f0df504b94a3.s3tc.ctex"]
 
 [params]
 

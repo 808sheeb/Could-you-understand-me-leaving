@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0jfo0rybgxl8"
 path.s3tc="res://.godot/imported/Cutting_board_baseColor.png-928fa6c69a1a841a4929b7ed67993376.s3tc.ctex"
-path.etc2="res://.godot/imported/Cutting_board_baseColor.png-928fa6c69a1a841a4929b7ed67993376.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Cutting_board_baseColor.png"
-dest_files=["res://.godot/imported/Cutting_board_baseColor.png-928fa6c69a1a841a4929b7ed67993376.s3tc.ctex", "res://.godot/imported/Cutting_board_baseColor.png-928fa6c69a1a841a4929b7ed67993376.etc2.ctex"]
+dest_files=["res://.godot/imported/Cutting_board_baseColor.png-928fa6c69a1a841a4929b7ed67993376.s3tc.ctex"]
 
 [params]
 

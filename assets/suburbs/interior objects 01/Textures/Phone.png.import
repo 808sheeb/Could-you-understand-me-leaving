@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://hsi7quy7kghk"
 path.s3tc="res://.godot/imported/Phone.png-daab2e5393655ca91897ac8135ea27c5.s3tc.ctex"
-path.etc2="res://.godot/imported/Phone.png-daab2e5393655ca91897ac8135ea27c5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Phone.png"
-dest_files=["res://.godot/imported/Phone.png-daab2e5393655ca91897ac8135ea27c5.s3tc.ctex", "res://.godot/imported/Phone.png-daab2e5393655ca91897ac8135ea27c5.etc2.ctex"]
+dest_files=["res://.godot/imported/Phone.png-daab2e5393655ca91897ac8135ea27c5.s3tc.ctex"]
 
 [params]
 

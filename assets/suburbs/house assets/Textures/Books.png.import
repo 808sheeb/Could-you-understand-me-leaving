@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkp6gxwy2fj3a"
 path.s3tc="res://.godot/imported/Books.png-4a190017517dc0f0a36b115d83703262.s3tc.ctex"
-path.etc2="res://.godot/imported/Books.png-4a190017517dc0f0a36b115d83703262.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Books.png"
-dest_files=["res://.godot/imported/Books.png-4a190017517dc0f0a36b115d83703262.s3tc.ctex", "res://.godot/imported/Books.png-4a190017517dc0f0a36b115d83703262.etc2.ctex"]
+dest_files=["res://.godot/imported/Books.png-4a190017517dc0f0a36b115d83703262.s3tc.ctex"]
 
 [params]
 

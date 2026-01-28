@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6b25278u4o63"
 path.s3tc="res://.godot/imported/Flowers_baseColor.png-de84a87e56011b93cf0ba224d9698409.s3tc.ctex"
-path.etc2="res://.godot/imported/Flowers_baseColor.png-de84a87e56011b93cf0ba224d9698409.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Flowers_baseColor.png"
-dest_files=["res://.godot/imported/Flowers_baseColor.png-de84a87e56011b93cf0ba224d9698409.s3tc.ctex", "res://.godot/imported/Flowers_baseColor.png-de84a87e56011b93cf0ba224d9698409.etc2.ctex"]
+dest_files=["res://.godot/imported/Flowers_baseColor.png-de84a87e56011b93cf0ba224d9698409.s3tc.ctex"]
 
 [params]
 

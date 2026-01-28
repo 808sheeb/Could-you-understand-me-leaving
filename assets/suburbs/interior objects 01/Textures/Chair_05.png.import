@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8kmv3cv00hb0"
 path.s3tc="res://.godot/imported/Chair_05.png-034a32103f6239cd5e2d9ab714bfeaad.s3tc.ctex"
-path.etc2="res://.godot/imported/Chair_05.png-034a32103f6239cd5e2d9ab714bfeaad.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Chair_05.png"
-dest_files=["res://.godot/imported/Chair_05.png-034a32103f6239cd5e2d9ab714bfeaad.s3tc.ctex", "res://.godot/imported/Chair_05.png-034a32103f6239cd5e2d9ab714bfeaad.etc2.ctex"]
+dest_files=["res://.godot/imported/Chair_05.png-034a32103f6239cd5e2d9ab714bfeaad.s3tc.ctex"]
 
 [params]
 

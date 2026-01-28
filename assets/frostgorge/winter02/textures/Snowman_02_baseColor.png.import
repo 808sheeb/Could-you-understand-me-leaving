@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv5hr412ntvnd"
 path.s3tc="res://.godot/imported/Snowman_02_baseColor.png-2a78d199afaa4084ea89dc7955b4d5e5.s3tc.ctex"
-path.etc2="res://.godot/imported/Snowman_02_baseColor.png-2a78d199afaa4084ea89dc7955b4d5e5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Snowman_02_baseColor.png"
-dest_files=["res://.godot/imported/Snowman_02_baseColor.png-2a78d199afaa4084ea89dc7955b4d5e5.s3tc.ctex", "res://.godot/imported/Snowman_02_baseColor.png-2a78d199afaa4084ea89dc7955b4d5e5.etc2.ctex"]
+dest_files=["res://.godot/imported/Snowman_02_baseColor.png-2a78d199afaa4084ea89dc7955b4d5e5.s3tc.ctex"]
 
 [params]
 

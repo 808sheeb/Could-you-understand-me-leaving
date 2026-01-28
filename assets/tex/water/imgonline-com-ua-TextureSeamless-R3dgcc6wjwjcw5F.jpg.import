@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://badeaq5iv3auc"
 path.s3tc="res://.godot/imported/imgonline-com-ua-TextureSeamless-R3dgcc6wjwjcw5F.jpg-71a441aa5e44c428a662f394471d7b64.s3tc.ctex"
-path.etc2="res://.godot/imported/imgonline-com-ua-TextureSeamless-R3dgcc6wjwjcw5F.jpg-71a441aa5e44c428a662f394471d7b64.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tex/water/imgonline-com-ua-TextureSeamless-R3dgcc6wjwjcw5F.jpg"
-dest_files=["res://.godot/imported/imgonline-com-ua-TextureSeamless-R3dgcc6wjwjcw5F.jpg-71a441aa5e44c428a662f394471d7b64.s3tc.ctex", "res://.godot/imported/imgonline-com-ua-TextureSeamless-R3dgcc6wjwjcw5F.jpg-71a441aa5e44c428a662f394471d7b64.etc2.ctex"]
+dest_files=["res://.godot/imported/imgonline-com-ua-TextureSeamless-R3dgcc6wjwjcw5F.jpg-71a441aa5e44c428a662f394471d7b64.s3tc.ctex"]
 
 [params]
 

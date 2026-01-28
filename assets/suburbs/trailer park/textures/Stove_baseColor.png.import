@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvtat3b2q0wvl"
 path.s3tc="res://.godot/imported/Stove_baseColor.png-cbabec643fde3411c4e12e399ed323fc.s3tc.ctex"
-path.etc2="res://.godot/imported/Stove_baseColor.png-cbabec643fde3411c4e12e399ed323fc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Stove_baseColor.png"
-dest_files=["res://.godot/imported/Stove_baseColor.png-cbabec643fde3411c4e12e399ed323fc.s3tc.ctex", "res://.godot/imported/Stove_baseColor.png-cbabec643fde3411c4e12e399ed323fc.etc2.ctex"]
+dest_files=["res://.godot/imported/Stove_baseColor.png-cbabec643fde3411c4e12e399ed323fc.s3tc.ctex"]
 
 [params]
 

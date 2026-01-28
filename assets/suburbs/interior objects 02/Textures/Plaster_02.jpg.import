@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ikjjb4w8v8e4"
 path.s3tc="res://.godot/imported/Plaster_02.jpg-d455eaf263cc01420ce8b6dd59dca318.s3tc.ctex"
-path.etc2="res://.godot/imported/Plaster_02.jpg-d455eaf263cc01420ce8b6dd59dca318.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 02/Textures/Plaster_02.jpg"
-dest_files=["res://.godot/imported/Plaster_02.jpg-d455eaf263cc01420ce8b6dd59dca318.s3tc.ctex", "res://.godot/imported/Plaster_02.jpg-d455eaf263cc01420ce8b6dd59dca318.etc2.ctex"]
+dest_files=["res://.godot/imported/Plaster_02.jpg-d455eaf263cc01420ce8b6dd59dca318.s3tc.ctex"]
 
 [params]
 

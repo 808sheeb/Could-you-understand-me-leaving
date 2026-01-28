@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2s8s6jellfja"
 path.bptc="res://.godot/imported/winter_lake_01_1k.exr-5f3f01b12035d8ee43d9434a5f4b045e.bptc.ctex"
-path.astc="res://.godot/imported/winter_lake_01_1k.exr-5f3f01b12035d8ee43d9434a5f4b045e.astc.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tex/hdri/winter_lake_01_1k.exr"
-dest_files=["res://.godot/imported/winter_lake_01_1k.exr-5f3f01b12035d8ee43d9434a5f4b045e.bptc.ctex", "res://.godot/imported/winter_lake_01_1k.exr-5f3f01b12035d8ee43d9434a5f4b045e.astc.ctex"]
+dest_files=["res://.godot/imported/winter_lake_01_1k.exr-5f3f01b12035d8ee43d9434a5f4b045e.bptc.ctex"]
 
 [params]
 

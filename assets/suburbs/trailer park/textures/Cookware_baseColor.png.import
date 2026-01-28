@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c30h38uypiaxf"
 path.s3tc="res://.godot/imported/Cookware_baseColor.png-eb54ee878a65d99ce9930afca0e4cef7.s3tc.ctex"
-path.etc2="res://.godot/imported/Cookware_baseColor.png-eb54ee878a65d99ce9930afca0e4cef7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Cookware_baseColor.png"
-dest_files=["res://.godot/imported/Cookware_baseColor.png-eb54ee878a65d99ce9930afca0e4cef7.s3tc.ctex", "res://.godot/imported/Cookware_baseColor.png-eb54ee878a65d99ce9930afca0e4cef7.etc2.ctex"]
+dest_files=["res://.godot/imported/Cookware_baseColor.png-eb54ee878a65d99ce9930afca0e4cef7.s3tc.ctex"]
 
 [params]
 

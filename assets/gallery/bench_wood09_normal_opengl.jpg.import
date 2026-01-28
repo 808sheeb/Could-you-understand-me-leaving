@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://wtnuajkuutet"
 path.s3tc="res://.godot/imported/bench_wood09_normal_opengl.jpg-f28aef156b374e04fdcad2a5f8da58cd.s3tc.ctex"
-path.etc2="res://.godot/imported/bench_wood09_normal_opengl.jpg-f28aef156b374e04fdcad2a5f8da58cd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/gallery/bench_wood09_normal_opengl.jpg"
-dest_files=["res://.godot/imported/bench_wood09_normal_opengl.jpg-f28aef156b374e04fdcad2a5f8da58cd.s3tc.ctex", "res://.godot/imported/bench_wood09_normal_opengl.jpg-f28aef156b374e04fdcad2a5f8da58cd.etc2.ctex"]
+dest_files=["res://.godot/imported/bench_wood09_normal_opengl.jpg-f28aef156b374e04fdcad2a5f8da58cd.s3tc.ctex"]
 
 [params]
 

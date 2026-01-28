@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqvt7mjg1uil8"
 path.s3tc="res://.godot/imported/Door_baseColor.jpeg-2b5238f7e1248c9a144efdfa6f5c5418.s3tc.ctex"
-path.etc2="res://.godot/imported/Door_baseColor.jpeg-2b5238f7e1248c9a144efdfa6f5c5418.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Door_baseColor.jpeg"
-dest_files=["res://.godot/imported/Door_baseColor.jpeg-2b5238f7e1248c9a144efdfa6f5c5418.s3tc.ctex", "res://.godot/imported/Door_baseColor.jpeg-2b5238f7e1248c9a144efdfa6f5c5418.etc2.ctex"]
+dest_files=["res://.godot/imported/Door_baseColor.jpeg-2b5238f7e1248c9a144efdfa6f5c5418.s3tc.ctex"]
 
 [params]
 

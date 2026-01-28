@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://di0h2h2dy82ex"
 path.s3tc="res://.godot/imported/pots_baseColor.png-bbfec332809790a521d655107a327a25.s3tc.ctex"
-path.etc2="res://.godot/imported/pots_baseColor.png-bbfec332809790a521d655107a327a25.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/plants/01/textures/pots_baseColor.png"
-dest_files=["res://.godot/imported/pots_baseColor.png-bbfec332809790a521d655107a327a25.s3tc.ctex", "res://.godot/imported/pots_baseColor.png-bbfec332809790a521d655107a327a25.etc2.ctex"]
+dest_files=["res://.godot/imported/pots_baseColor.png-bbfec332809790a521d655107a327a25.s3tc.ctex"]
 
 [params]
 

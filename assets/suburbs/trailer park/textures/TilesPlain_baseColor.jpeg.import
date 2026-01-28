@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bux2h7u5q6arb"
 path.s3tc="res://.godot/imported/TilesPlain_baseColor.jpeg-1fc1b1c87bf4a61fd5ed07fd63165e28.s3tc.ctex"
-path.etc2="res://.godot/imported/TilesPlain_baseColor.jpeg-1fc1b1c87bf4a61fd5ed07fd63165e28.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/TilesPlain_baseColor.jpeg"
-dest_files=["res://.godot/imported/TilesPlain_baseColor.jpeg-1fc1b1c87bf4a61fd5ed07fd63165e28.s3tc.ctex", "res://.godot/imported/TilesPlain_baseColor.jpeg-1fc1b1c87bf4a61fd5ed07fd63165e28.etc2.ctex"]
+dest_files=["res://.godot/imported/TilesPlain_baseColor.jpeg-1fc1b1c87bf4a61fd5ed07fd63165e28.s3tc.ctex"]
 
 [params]
 

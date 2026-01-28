@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs3tpjgtivi07"
 path.s3tc="res://.godot/imported/Tree_Leaves1_Autumn.png-1b12b8671be9f87f97f73ebb0fb7b174.s3tc.ctex"
-path.etc2="res://.godot/imported/Tree_Leaves1_Autumn.png-1b12b8671be9f87f97f73ebb0fb7b174.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/textures/Tree_Leaves1_Autumn.png"
-dest_files=["res://.godot/imported/Tree_Leaves1_Autumn.png-1b12b8671be9f87f97f73ebb0fb7b174.s3tc.ctex", "res://.godot/imported/Tree_Leaves1_Autumn.png-1b12b8671be9f87f97f73ebb0fb7b174.etc2.ctex"]
+dest_files=["res://.godot/imported/Tree_Leaves1_Autumn.png-1b12b8671be9f87f97f73ebb0fb7b174.s3tc.ctex"]
 
 [params]
 

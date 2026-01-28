@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://6kn42w3ntjuk"
 path.s3tc="res://.godot/imported/Asphalt_Stamped_Brick5_7_baseColor.jpeg-43a4e789963624ffa01dbf245a14753c.s3tc.ctex"
-path.etc2="res://.godot/imported/Asphalt_Stamped_Brick5_7_baseColor.jpeg-43a4e789963624ffa01dbf245a14753c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter_hut_scene/textures/Asphalt_Stamped_Brick5_7_baseColor.jpeg"
-dest_files=["res://.godot/imported/Asphalt_Stamped_Brick5_7_baseColor.jpeg-43a4e789963624ffa01dbf245a14753c.s3tc.ctex", "res://.godot/imported/Asphalt_Stamped_Brick5_7_baseColor.jpeg-43a4e789963624ffa01dbf245a14753c.etc2.ctex"]
+dest_files=["res://.godot/imported/Asphalt_Stamped_Brick5_7_baseColor.jpeg-43a4e789963624ffa01dbf245a14753c.s3tc.ctex"]
 
 [params]
 

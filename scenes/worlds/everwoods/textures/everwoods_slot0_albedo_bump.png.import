@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://djrwgeva5sh1g"
 path.s3tc="res://.godot/imported/everwoods_slot0_albedo_bump.png-5bf9fff4c435aac1c002425fd9d405ad.s3tc.ctex"
-path.etc2="res://.godot/imported/everwoods_slot0_albedo_bump.png-5bf9fff4c435aac1c002425fd9d405ad.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://scenes/worlds/everwoods/textures/everwoods_slot0_albedo_bump.png"
-dest_files=["res://.godot/imported/everwoods_slot0_albedo_bump.png-5bf9fff4c435aac1c002425fd9d405ad.s3tc.ctex", "res://.godot/imported/everwoods_slot0_albedo_bump.png-5bf9fff4c435aac1c002425fd9d405ad.etc2.ctex"]
+dest_files=["res://.godot/imported/everwoods_slot0_albedo_bump.png-5bf9fff4c435aac1c002425fd9d405ad.s3tc.ctex"]
 
 [params]
 

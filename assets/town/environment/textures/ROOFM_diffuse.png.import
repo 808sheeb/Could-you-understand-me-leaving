@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmfm2u0wdplsr"
 path.s3tc="res://.godot/imported/ROOFM_diffuse.png-1dbba8c30b0a98a16aaf80f3f237dfee.s3tc.ctex"
-path.etc2="res://.godot/imported/ROOFM_diffuse.png-1dbba8c30b0a98a16aaf80f3f237dfee.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/town/environment/textures/ROOFM_diffuse.png"
-dest_files=["res://.godot/imported/ROOFM_diffuse.png-1dbba8c30b0a98a16aaf80f3f237dfee.s3tc.ctex", "res://.godot/imported/ROOFM_diffuse.png-1dbba8c30b0a98a16aaf80f3f237dfee.etc2.ctex"]
+dest_files=["res://.godot/imported/ROOFM_diffuse.png-1dbba8c30b0a98a16aaf80f3f237dfee.s3tc.ctex"]
 
 [params]
 

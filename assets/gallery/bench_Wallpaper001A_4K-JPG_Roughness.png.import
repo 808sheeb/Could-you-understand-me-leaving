@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://lk4qyblamsnq"
 path.s3tc="res://.godot/imported/bench_Wallpaper001A_4K-JPG_Roughness.png-5847c4c691ac12fea80019bb8f6c1daf.s3tc.ctex"
-path.etc2="res://.godot/imported/bench_Wallpaper001A_4K-JPG_Roughness.png-5847c4c691ac12fea80019bb8f6c1daf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/gallery/bench_Wallpaper001A_4K-JPG_Roughness.png"
-dest_files=["res://.godot/imported/bench_Wallpaper001A_4K-JPG_Roughness.png-5847c4c691ac12fea80019bb8f6c1daf.s3tc.ctex", "res://.godot/imported/bench_Wallpaper001A_4K-JPG_Roughness.png-5847c4c691ac12fea80019bb8f6c1daf.etc2.ctex"]
+dest_files=["res://.godot/imported/bench_Wallpaper001A_4K-JPG_Roughness.png-5847c4c691ac12fea80019bb8f6c1daf.s3tc.ctex"]
 
 [params]
 

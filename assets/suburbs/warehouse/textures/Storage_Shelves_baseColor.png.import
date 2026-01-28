@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://en1u2t3de2e2"
 path.s3tc="res://.godot/imported/Storage_Shelves_baseColor.png-63cd37eb5c06427a1bcc3b2fca111378.s3tc.ctex"
-path.etc2="res://.godot/imported/Storage_Shelves_baseColor.png-63cd37eb5c06427a1bcc3b2fca111378.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/warehouse/textures/Storage_Shelves_baseColor.png"
-dest_files=["res://.godot/imported/Storage_Shelves_baseColor.png-63cd37eb5c06427a1bcc3b2fca111378.s3tc.ctex", "res://.godot/imported/Storage_Shelves_baseColor.png-63cd37eb5c06427a1bcc3b2fca111378.etc2.ctex"]
+dest_files=["res://.godot/imported/Storage_Shelves_baseColor.png-63cd37eb5c06427a1bcc3b2fca111378.s3tc.ctex"]
 
 [params]
 

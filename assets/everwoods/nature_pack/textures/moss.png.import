@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dui8bndwyxujk"
 path.s3tc="res://.godot/imported/moss.png-f1fcb2b169f32737dd11f7a326a29937.s3tc.ctex"
-path.etc2="res://.godot/imported/moss.png-f1fcb2b169f32737dd11f7a326a29937.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/textures/moss.png"
-dest_files=["res://.godot/imported/moss.png-f1fcb2b169f32737dd11f7a326a29937.s3tc.ctex", "res://.godot/imported/moss.png-f1fcb2b169f32737dd11f7a326a29937.etc2.ctex"]
+dest_files=["res://.godot/imported/moss.png-f1fcb2b169f32737dd11f7a326a29937.s3tc.ctex"]
 
 [params]
 

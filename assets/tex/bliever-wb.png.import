@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://7kjbvh6484ge"
 path.s3tc="res://.godot/imported/bliever-wb.png-4165edf72106edf78a592a480f27ff72.s3tc.ctex"
-path.etc2="res://.godot/imported/bliever-wb.png-4165edf72106edf78a592a480f27ff72.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tex/bliever-wb.png"
-dest_files=["res://.godot/imported/bliever-wb.png-4165edf72106edf78a592a480f27ff72.s3tc.ctex", "res://.godot/imported/bliever-wb.png-4165edf72106edf78a592a480f27ff72.etc2.ctex"]
+dest_files=["res://.godot/imported/bliever-wb.png-4165edf72106edf78a592a480f27ff72.s3tc.ctex"]
 
 [params]
 

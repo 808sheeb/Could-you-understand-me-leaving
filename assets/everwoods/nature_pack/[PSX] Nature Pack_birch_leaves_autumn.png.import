@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://glw7ksa0ddhy"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_birch_leaves_autumn.png-53063b63e67b5542f621bd5870d952e9.s3tc.ctex"
-path.etc2="res://.godot/imported/[PSX] Nature Pack_birch_leaves_autumn.png-53063b63e67b5542f621bd5870d952e9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/[PSX] Nature Pack_birch_leaves_autumn.png"
-dest_files=["res://.godot/imported/[PSX] Nature Pack_birch_leaves_autumn.png-53063b63e67b5542f621bd5870d952e9.s3tc.ctex", "res://.godot/imported/[PSX] Nature Pack_birch_leaves_autumn.png-53063b63e67b5542f621bd5870d952e9.etc2.ctex"]
+dest_files=["res://.godot/imported/[PSX] Nature Pack_birch_leaves_autumn.png-53063b63e67b5542f621bd5870d952e9.s3tc.ctex"]
 
 [params]
 

@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhghq7t2ajkoa"
 path.s3tc="res://.godot/imported/Blank_VHS_Tape_baseColor.png-cacd0ee375c1e416d4ed86cf2332f35b.s3tc.ctex"
-path.etc2="res://.godot/imported/Blank_VHS_Tape_baseColor.png-cacd0ee375c1e416d4ed86cf2332f35b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/electronics/textures/Blank_VHS_Tape_baseColor.png"
-dest_files=["res://.godot/imported/Blank_VHS_Tape_baseColor.png-cacd0ee375c1e416d4ed86cf2332f35b.s3tc.ctex", "res://.godot/imported/Blank_VHS_Tape_baseColor.png-cacd0ee375c1e416d4ed86cf2332f35b.etc2.ctex"]
+dest_files=["res://.godot/imported/Blank_VHS_Tape_baseColor.png-cacd0ee375c1e416d4ed86cf2332f35b.s3tc.ctex"]
 
 [params]
 

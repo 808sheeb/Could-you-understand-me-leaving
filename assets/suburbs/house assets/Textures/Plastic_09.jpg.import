@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://0p1dx0pati01"
 path.s3tc="res://.godot/imported/Plastic_09.jpg-665ca5263ee4dc90de5cfd2b2672669a.s3tc.ctex"
-path.etc2="res://.godot/imported/Plastic_09.jpg-665ca5263ee4dc90de5cfd2b2672669a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Plastic_09.jpg"
-dest_files=["res://.godot/imported/Plastic_09.jpg-665ca5263ee4dc90de5cfd2b2672669a.s3tc.ctex", "res://.godot/imported/Plastic_09.jpg-665ca5263ee4dc90de5cfd2b2672669a.etc2.ctex"]
+dest_files=["res://.godot/imported/Plastic_09.jpg-665ca5263ee4dc90de5cfd2b2672669a.s3tc.ctex"]
 
 [params]
 

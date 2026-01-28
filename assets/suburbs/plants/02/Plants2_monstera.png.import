@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3uucgu1mgbef"
 path.s3tc="res://.godot/imported/Plants2_monstera.png-4583fb3ce243c8c843b226b94fd40451.s3tc.ctex"
-path.etc2="res://.godot/imported/Plants2_monstera.png-4583fb3ce243c8c843b226b94fd40451.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/suburbs/plants/02/Plants2_monstera.png"
-dest_files=["res://.godot/imported/Plants2_monstera.png-4583fb3ce243c8c843b226b94fd40451.s3tc.ctex", "res://.godot/imported/Plants2_monstera.png-4583fb3ce243c8c843b226b94fd40451.etc2.ctex"]
+dest_files=["res://.godot/imported/Plants2_monstera.png-4583fb3ce243c8c843b226b94fd40451.s3tc.ctex"]
 
 [params]
 

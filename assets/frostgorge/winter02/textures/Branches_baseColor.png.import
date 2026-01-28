@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://sptmojgp0hd8"
 path.s3tc="res://.godot/imported/Branches_baseColor.png-1520f6480699823e7edf06764a46032f.s3tc.ctex"
-path.etc2="res://.godot/imported/Branches_baseColor.png-1520f6480699823e7edf06764a46032f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Branches_baseColor.png"
-dest_files=["res://.godot/imported/Branches_baseColor.png-1520f6480699823e7edf06764a46032f.s3tc.ctex", "res://.godot/imported/Branches_baseColor.png-1520f6480699823e7edf06764a46032f.etc2.ctex"]
+dest_files=["res://.godot/imported/Branches_baseColor.png-1520f6480699823e7edf06764a46032f.s3tc.ctex"]
 
 [params]
 

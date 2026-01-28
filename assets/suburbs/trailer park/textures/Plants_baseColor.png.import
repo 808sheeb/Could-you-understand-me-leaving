@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cehydsnmxiwmc"
 path.s3tc="res://.godot/imported/Plants_baseColor.png-8e02e9fec628c892feba80d23c22dfbe.s3tc.ctex"
-path.etc2="res://.godot/imported/Plants_baseColor.png-8e02e9fec628c892feba80d23c22dfbe.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Plants_baseColor.png"
-dest_files=["res://.godot/imported/Plants_baseColor.png-8e02e9fec628c892feba80d23c22dfbe.s3tc.ctex", "res://.godot/imported/Plants_baseColor.png-8e02e9fec628c892feba80d23c22dfbe.etc2.ctex"]
+dest_files=["res://.godot/imported/Plants_baseColor.png-8e02e9fec628c892feba80d23c22dfbe.s3tc.ctex"]
 
 [params]
 

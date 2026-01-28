@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8rkp8oj45eia"
 path.s3tc="res://.godot/imported/Christmas_wreath_01_baseColor.png-54efbb0f8a6955c2b29720d3d15f9178.s3tc.ctex"
-path.etc2="res://.godot/imported/Christmas_wreath_01_baseColor.png-54efbb0f8a6955c2b29720d3d15f9178.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Christmas_wreath_01_baseColor.png"
-dest_files=["res://.godot/imported/Christmas_wreath_01_baseColor.png-54efbb0f8a6955c2b29720d3d15f9178.s3tc.ctex", "res://.godot/imported/Christmas_wreath_01_baseColor.png-54efbb0f8a6955c2b29720d3d15f9178.etc2.ctex"]
+dest_files=["res://.godot/imported/Christmas_wreath_01_baseColor.png-54efbb0f8a6955c2b29720d3d15f9178.s3tc.ctex"]
 
 [params]
 

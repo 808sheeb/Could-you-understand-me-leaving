@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8ineqtv5juqo"
 path.s3tc="res://.godot/imported/lamppost_baseColor.png-1fc65d19651e5310ae0af655d816a392.s3tc.ctex"
-path.etc2="res://.godot/imported/lamppost_baseColor.png-1fc65d19651e5310ae0af655d816a392.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/lamppost_baseColor.png"
-dest_files=["res://.godot/imported/lamppost_baseColor.png-1fc65d19651e5310ae0af655d816a392.s3tc.ctex", "res://.godot/imported/lamppost_baseColor.png-1fc65d19651e5310ae0af655d816a392.etc2.ctex"]
+dest_files=["res://.godot/imported/lamppost_baseColor.png-1fc65d19651e5310ae0af655d816a392.s3tc.ctex"]
 
 [params]
 

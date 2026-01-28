@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo7rk4guseb5s"
 path.s3tc="res://.godot/imported/Tool_Cabinet.png-757a078ae24393e9b862a5f0f0692ccf.s3tc.ctex"
-path.etc2="res://.godot/imported/Tool_Cabinet.png-757a078ae24393e9b862a5f0f0692ccf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Tool_Cabinet.png"
-dest_files=["res://.godot/imported/Tool_Cabinet.png-757a078ae24393e9b862a5f0f0692ccf.s3tc.ctex", "res://.godot/imported/Tool_Cabinet.png-757a078ae24393e9b862a5f0f0692ccf.etc2.ctex"]
+dest_files=["res://.godot/imported/Tool_Cabinet.png-757a078ae24393e9b862a5f0f0692ccf.s3tc.ctex"]
 
 [params]
 

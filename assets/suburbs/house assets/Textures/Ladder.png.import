@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkwqtqj7inab4"
 path.s3tc="res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.s3tc.ctex"
-path.etc2="res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Ladder.png"
-dest_files=["res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.s3tc.ctex", "res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.etc2.ctex"]
+dest_files=["res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.s3tc.ctex"]
 
 [params]
 

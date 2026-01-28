@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhntutfc5pdk"
 path.s3tc="res://.godot/imported/Cupboard_01.png-52ef80a2e4be64517b87155489e5a55a.s3tc.ctex"
-path.etc2="res://.godot/imported/Cupboard_01.png-52ef80a2e4be64517b87155489e5a55a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Cupboard_01.png"
-dest_files=["res://.godot/imported/Cupboard_01.png-52ef80a2e4be64517b87155489e5a55a.s3tc.ctex", "res://.godot/imported/Cupboard_01.png-52ef80a2e4be64517b87155489e5a55a.etc2.ctex"]
+dest_files=["res://.godot/imported/Cupboard_01.png-52ef80a2e4be64517b87155489e5a55a.s3tc.ctex"]
 
 [params]
 

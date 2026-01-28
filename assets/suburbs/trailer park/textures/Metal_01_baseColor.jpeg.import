@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbktpyl3ea4hp"
 path.s3tc="res://.godot/imported/Metal_01_baseColor.jpeg-9af64fa764d263898d3020286c523e4f.s3tc.ctex"
-path.etc2="res://.godot/imported/Metal_01_baseColor.jpeg-9af64fa764d263898d3020286c523e4f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Metal_01_baseColor.jpeg"
-dest_files=["res://.godot/imported/Metal_01_baseColor.jpeg-9af64fa764d263898d3020286c523e4f.s3tc.ctex", "res://.godot/imported/Metal_01_baseColor.jpeg-9af64fa764d263898d3020286c523e4f.etc2.ctex"]
+dest_files=["res://.godot/imported/Metal_01_baseColor.jpeg-9af64fa764d263898d3020286c523e4f.s3tc.ctex"]
 
 [params]
 

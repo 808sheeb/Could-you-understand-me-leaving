@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://domih0rymkdpr"
 path.s3tc="res://.godot/imported/Rooftiles.png-bf4354cc9c29b25f985b7a65a6de3776.s3tc.ctex"
-path.etc2="res://.godot/imported/Rooftiles.png-bf4354cc9c29b25f985b7a65a6de3776.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Rooftiles.png"
-dest_files=["res://.godot/imported/Rooftiles.png-bf4354cc9c29b25f985b7a65a6de3776.s3tc.ctex", "res://.godot/imported/Rooftiles.png-bf4354cc9c29b25f985b7a65a6de3776.etc2.ctex"]
+dest_files=["res://.godot/imported/Rooftiles.png-bf4354cc9c29b25f985b7a65a6de3776.s3tc.ctex"]
 
 [params]
 
