@@ -8,3 +8,4 @@ func _ready() -> void:
 func rotateFull():
 	var tween = create_tween()
 	tween.tween_property(self, "rotation_degrees", rotation_degrees+Vector3(0,360,0), 20)
+	tween.tween_callback(rotateFull)
