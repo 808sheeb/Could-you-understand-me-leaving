@@ -1,4 +1,4 @@
-[gd_scene load_steps=886 format=4 uid="uid://2nr7svv4u1cy"]
+[gd_scene load_steps=889 format=4 uid="uid://2nr7svv4u1cy"]
 
 [ext_resource type="Script" uid="uid://b6o8f5opu4h3a" path="res://scripts/scene/foyer_basement.gd" id="1_pyu8g"]
 [ext_resource type="Texture2D" uid="uid://buk2ajnpchux5" path="res://assets/texture_07.png" id="3_5e3qg"]
@@ -156,6 +156,7 @@
 [ext_resource type="Script" uid="uid://3ssnjabo10ur" path="res://scripts/scene/shihab_room.gd" id="110_tmdxj"]
 [ext_resource type="Texture2D" uid="uid://ca71eq6v586bf" path="res://assets/tex/hockey.png" id="125_ktftv"]
 [ext_resource type="Script" uid="uid://y01em3wljs7g" path="res://scripts/scene/rayah_room.gd" id="135_4oe1e"]
+[ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="139_4m4r0"]
 [ext_resource type="Script" uid="uid://crr0jslgqurv6" path="res://scripts/scene/ceiling_fan_blades.gd" id="147_2cmia"]
 [ext_resource type="Script" uid="uid://duepedk1hbqjh" path="res://scripts/interact/door_special.gd" id="148_w7eew"]
 [ext_resource type="PackedScene" uid="uid://dogf07em8akg3" path="res://assets/suburbs/cat/beef.tscn" id="149_3wtca"]
@@ -8740,6 +8741,9 @@ size = Vector3(1.7722168, 3.116211, 0.07324219)
 [sub_resource type="BoxShape3D" id="BoxShape3D_1i36b"]
 size = Vector3(1.6719971, 2.5321655, 0.4638672)
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_puu7y"]
+viewport_path = NodePath("int_anime_fbx/RootNode/SubViewport")
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_44vpe"]
 size = Vector3(2.4902344, 0.08026123, 4.025818)
 
@@ -8763,6 +8767,9 @@ size = Vector3(2.4902344, 1.1998291, 2.1220093)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lnbln"]
 size = Vector3(2.0309753, 2.0680847, 0.6767273)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_4m4r0"]
+viewport_path = NodePath("Shihab/SubViewport")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ocg8k"]
 _surfaces = [{
@@ -13365,6 +13372,10 @@ use_collision = true
 size = Vector3(2.9865723, 0.14569855, 0.39672852)
 material = SubResource("StandardMaterial3D_jjsy1")
 
+[node name="Sprite3D" type="Sprite3D" parent="Shihab/Floors & Walls"]
+transform = Transform3D(-5.5598734e-06, -1.5162827e-05, 127.195045, 1.516283e-05, 127.195, 1.5162821e-05, -127.195, 1.5162832e-05, -5.55987e-06, -444.89157, 194.7419, 25.00393)
+texture = SubResource("ViewportTexture_puu7y")
+
 [node name="Lights" type="Node3D" parent="Shihab"]
 
 [node name="Light8" parent="Shihab/Lights" instance=ExtResource("7_gmmk2")]
@@ -13418,6 +13429,33 @@ shape = SubResource("BoxShape3D_1j2to")
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Shihab/Colliders"]
 transform = Transform3D(0.98741114, 0, -0.15817533, -0.029845165, 0.98203784, -0.18630876, 0.15533417, 0.18868412, 0.9696751, 1.6882324, 1.0928583, 5.188223)
 shape = SubResource("BoxShape3D_lnbln")
+
+[node name="SubViewport" type="SubViewport" parent="Shihab"]
+transparent_bg = true
+size = Vector2i(400, 100)
+
+[node name="Label" type="Label" parent="Shihab/SubViewport"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -103.0
+offset_top = -24.5
+offset_right = 103.0
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.73333335, 0.22352941, 0, 1)
+theme_override_fonts/font = ExtResource("139_4m4r0")
+theme_override_font_sizes/font_size = 32
+text = "If at first you don't suceed,
+try, try again."
+
+[node name="Sprite3D" type="Sprite3D" parent="Shihab"]
+transform = Transform3D(0.335, 0, 0, 0, 0.335, 0, 0, 0, 0.335, 3.1441956, 4.673468, -24.812815)
+texture = SubResource("ViewportTexture_4m4r0")
 
 [node name="Rayah" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.1362457)
