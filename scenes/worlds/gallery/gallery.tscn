@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=4 uid="uid://ds87qi8ojohlg"]
+[gd_scene load_steps=65 format=4 uid="uid://ds87qi8ojohlg"]
 
 [ext_resource type="Material" uid="uid://cc1l6wsrgyoc7" path="res://assets/tex/plaster/Plaster001_1K-JPG.tres" id="1_f21w3"]
 [ext_resource type="Material" uid="uid://cw0l88njlqhpb" path="res://assets/gallery/wood.tres" id="3_f21w3"]
@@ -8,6 +8,7 @@
 [ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="6_rtnw1"]
 [ext_resource type="ArrayOccluder3D" uid="uid://dqolpstbsx5lb" path="res://scenes/worlds/gallery/gallery.occ" id="7_fm7ly"]
 [ext_resource type="PackedScene" uid="uid://b50gw0kf52kdd" path="res://scenes/objects/light.tscn" id="7_p8dl5"]
+[ext_resource type="PackedScene" uid="uid://b03wm4on1coac" path="res://scenes/worlds/gallery/desire lines.tscn" id="9_ohy8r"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qpgf4"]
 _surfaces = [{
@@ -1018,3 +1019,15 @@ l_range = 15.0
 [node name="Light9" parent="int_anime_fbx/Lights" instance=ExtResource("7_p8dl5")]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 7.81597e-14, 0, -7.81597e-14, 1, -328.31097, 712.096, -956.9351)
 l_range = 15.0
+
+[node name="Node3D" parent="." instance=ExtResource("9_ohy8r")]
+transform = Transform3D(-1.4752594e-07, 0, -3.375, 0, 3.375, 0, 3.375, 0, -1.4752594e-07, -3.6402633, -0.63136524, -2.4116642)
+
+[node name="Node3D2" parent="." instance=ExtResource("9_ohy8r")]
+transform = Transform3D(-1.4752594e-07, 0, -3.375, 0, 3.375, 0, 3.375, 0, -1.4752594e-07, -3.6402633, -1.249031, 0.54542303)
+
+[node name="Node3D3" parent="." instance=ExtResource("9_ohy8r")]
+transform = Transform3D(-1.4752594e-07, 0, -3.375, 0, 3.375, 0, 3.375, 0, -1.4752594e-07, -3.6402633, -0.29026312, -0.1784237)
+
+[node name="Node3D4" parent="." instance=ExtResource("9_ohy8r")]
+transform = Transform3D(-1.4752594e-07, 0, -3.375, 0, 3.375, 0, 3.375, 0, -1.4752594e-07, -3.6402633, -1.6049985, -1.6748564)

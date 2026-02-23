@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=4 uid="uid://df7w7xyrweg3t"]
+[gd_scene load_steps=62 format=4 uid="uid://df7w7xyrweg3t"]
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="8_ax3ly"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
 [ext_resource type="PackedScene" uid="uid://c7fx2742nccr" path="res://assets/town/town.tscn" id="12_xxq3l"]
+[ext_resource type="Material" uid="uid://qcmiw8pm4h2e" path="res://assets/tex/wood.tres" id="14_18mtf"]
 [ext_resource type="PackedScene" uid="uid://ds87qi8ojohlg" path="res://scenes/worlds/gallery/gallery.tscn" id="14_si686"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_18mtf"]
@@ -365,26 +366,6 @@ size = Vector3(2.14, 3.055, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ltgfj"]
 size = Vector3(2.14, 3.055, 1)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w4m1g"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pyu8g"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w7eew"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4oe1e"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xxq3l"]
-albedo_texture = SubResource("CompressedTexture2D_w4m1g")
-roughness_texture = SubResource("CompressedTexture2D_4oe1e")
-roughness_texture_channel = 4
-normal_enabled = true
-normal_texture = SubResource("CompressedTexture2D_w7eew")
-heightmap_scale = 1.0
-heightmap_texture = SubResource("CompressedTexture2D_pyu8g")
-uv1_scale = Vector3(1, 3.24, 1)
-uv1_offset = Vector3(0.66, 1.335, 1.47)
-uv1_triplanar = true
-
 [sub_resource type="FogMaterial" id="FogMaterial_xxq3l"]
 density = 0.028
 emission = Color(0.80078125, 0.7289827, 0.4473114, 1)
@@ -691,18 +672,22 @@ transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 
 [node name="CSGBox3D" type="CSGBox3D" parent="Everwoods/PortalBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("14_18mtf")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Everwoods/PortalBorder/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("14_18mtf")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Everwoods/PortalBorder/DoorBevel"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
 size = Vector3(2.0252075, 0.03125, 0.123046875)
+material = ExtResource("14_18mtf")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Everwoods/PortalBorder/DoorBevel"]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
+material = ExtResource("14_18mtf")
 
 [node name="EverwoodPortalHouse" type="Node3D" parent="Everwoods" node_paths=PackedStringArray("exit_portal") groups=["portals"]]
 process_priority = 100
@@ -857,22 +842,22 @@ transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 
 [node name="CSGBox3D" type="CSGBox3D" parent="Town/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0073537827, 1.8235416, -0.0070724487)
 size = Vector3(1.2018433, 0.03466797, 0.123046875)
-material = SubResource("StandardMaterial3D_xxq3l")
+material = ExtResource("14_18mtf")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Town/DoorBevel"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008300781, 0.16379666, -0.0076408386)
 size = Vector3(1.1984482, 0.03466797, 0.123046875)
-material = SubResource("StandardMaterial3D_xxq3l")
+material = ExtResource("14_18mtf")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Town/DoorBevel"]
 transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, -0.5777588, 0.9906765, -0.006919861)
 size = Vector3(1.6885056, 0.03125, 0.123046875)
-material = SubResource("StandardMaterial3D_xxq3l")
+material = ExtResource("14_18mtf")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Town/DoorBevel"]
 transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, 0.5917969, 0.9917561, -0.0070724487)
 size = Vector3(1.6920385, 0.03125, 0.123046875)
-material = SubResource("StandardMaterial3D_xxq3l")
+material = ExtResource("14_18mtf")
 
 [node name="FogVolume" type="FogVolume" parent="Town"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.216682, 4.2250977, -1877.2506)
