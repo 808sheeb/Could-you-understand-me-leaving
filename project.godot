@@ -23,8 +23,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
-PSXScreenEffects="*res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/scripts/Autoload.gd"
 DebugMenu="*uid://cggqb75a8w8r"
+Autoload="*uid://u3y0jxl0vtmg"
 
 [display]
 

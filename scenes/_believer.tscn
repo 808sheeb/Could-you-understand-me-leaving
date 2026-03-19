@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://dsj0s6uwet7if" path="res://scenes/worlds/meadow/meadow.tscn" id="17_seot8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ltgfj"]
-sky_top_color = Color(0.5412581, 0.42508513, 0.28845283, 1)
+sky_top_color = Color(0.91163933, 0.8026655, 0.86719376, 1)
 sky_horizon_color = Color(0.5780319, 0.6557206, 0.8129941, 1)
 sky_curve = 0.11367873
 ground_bottom_color = Color(0.4619218, 0.62440026, 0.6712608, 1)
@@ -673,10 +673,10 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.
 collision_layer = 32769
 collision_mask = 32781
 
-[node name="Camera3D" parent="player/head" index="1"]
+[node name="Camera3D" parent="player/head" parent_id_path=PackedInt32Array(1561527512, 1733346251) index="1" unique_id=1404271733]
 far = 303.14
 
-[node name="UI" parent="player" index="4"]
+[node name="UI" parent="player" index="4" unique_id=1148642993]
 visible = true
 
 [node name="FrostgorgeSound" parent="." unique_id=1381277873 instance=ExtResource("3_60jeo")]

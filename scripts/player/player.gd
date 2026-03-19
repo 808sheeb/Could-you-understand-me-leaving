@@ -8,7 +8,6 @@ extends CharacterBody3D
 @onready var audio: Node = $PlayerAudio
 
 @onready var ap: AnimationPlayer = $head/PSX_First_Person_Arms/AnimationPlayer
-@onready var wood: AudioStreamPlayer = $PlayerAudio/Wood
 
 # Speed variables
 # have this be 3 for actual gameplay
@@ -29,6 +28,12 @@ var direction = Vector3.ZERO
 var lerp_speed = 10.0
 const JUMP_VELOCITY = 5.2
 var crouching_depth = -0.9
+
+
+# Audio
+@onready var wood: AudioStreamPlayer = $PlayerAudio/Wood
+@onready var snow: AudioStreamPlayer = $PlayerAudio/Snow
+
 
 # Constrain mouse to window
 func _ready() -> void:
@@ -91,7 +96,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, CURRENT_SPEED)
 		velocity.z = move_toward(velocity.z, 0, CURRENT_SPEED)
-	
+		
 	move_and_slide()
 	
 	if !ap.is_playing():

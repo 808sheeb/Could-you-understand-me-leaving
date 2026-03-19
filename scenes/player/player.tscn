@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://brpnlbf5j2yec"]
+[gd_scene format=4 uid="uid://brpnlbf5j2yec"]
 
 [ext_resource type="Script" uid="uid://c4cil2ki6d5kn" path="res://scripts/player/player.gd" id="1_gmlin"]
 [ext_resource type="PackedScene" uid="uid://cxtpglx1dkimv" path="res://scenes/player/InteractRay.tscn" id="2_lvxji"]
@@ -12,8 +12,6 @@
 [ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="10_h17s1"]
 [ext_resource type="Script" uid="uid://civ04amcchtb6" path="res://scripts/ui/narration.gd" id="12_fm80t"]
 [ext_resource type="AudioStream" uid="uid://cd7ymquox1rgq" path="res://assets/audio/walking/Concrete 1.wav" id="13_myrg7"]
-[ext_resource type="AudioStream" uid="uid://86wt3cw6beek" path="res://assets/audio/walking/Gravel - Run.wav" id="14_kvlxm"]
-[ext_resource type="AudioStream" uid="uid://dx4w12h8q7ate" path="res://assets/audio/walking/Sand.wav" id="15_uf5tr"]
 [ext_resource type="AudioStream" uid="uid://dlbxfkrkyseux" path="res://assets/audio/walking/Snow.wav" id="16_lgqa7"]
 [ext_resource type="Texture2D" uid="uid://b5s5uci8xbr6c" path="res://assets/player/hands/PSX_First_Person_Arms_arms.png" id="17_kvlxm"]
 
@@ -5229,30 +5227,29 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 expand_margin_bottom = 8.0
 
-[node name="player" type="CharacterBody3D"]
+[node name="player" type="CharacterBody3D" unique_id=578974006]
 collision_layer = 13
 collision_mask = 13
 script = ExtResource("1_gmlin")
 
-[node name="standing_collision_shape" type="CollisionShape3D" parent="."]
+[node name="standing_collision_shape" type="CollisionShape3D" parent="." unique_id=1724284337]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9376221, 0)
 shape = SubResource("CapsuleShape3D_0wfyh")
 
-[node name="crouching_collision_shape" type="CollisionShape3D" parent="."]
+[node name="crouching_collision_shape" type="CollisionShape3D" parent="." unique_id=578291634]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72252345, 0)
 shape = SubResource("CapsuleShape3D_sugp2")
 disabled = true
 
-[node name="head" type="Node3D" parent="."]
+[node name="head" type="Node3D" parent="." unique_id=1733346251]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5806551, 0)
 
-[node name="PSX_First_Person_Arms" type="Node3D" parent="head"]
+[node name="PSX_First_Person_Arms" type="Node3D" parent="head" unique_id=232161326]
 transform = Transform3D(-1.32, 0, 1.9931447e-07, 0, 1.32, 0, -1.9931447e-07, 0, -1.32, 0, -2.3291092, 0.06483966)
-visible = false
 
-[node name="arms_armature" type="Node3D" parent="head/PSX_First_Person_Arms"]
+[node name="arms_armature" type="Node3D" parent="head/PSX_First_Person_Arms" unique_id=1966372746]
 
-[node name="Skeleton3D" type="Skeleton3D" parent="head/PSX_First_Person_Arms/arms_armature"]
+[node name="Skeleton3D" type="Skeleton3D" parent="head/PSX_First_Person_Arms/arms_armature" unique_id=1332740756]
 bones/0/name = "spine.002"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 0.999494, 0.03181248, 0, -0.03181248, 0.9994939, -4.2338972e-09, 1.2929, -0.0004)
@@ -5604,31 +5601,29 @@ bones/49/position = Vector3(-2.6077032e-08, 0.022986807, -4.0978193e-08)
 bones/49/rotation = Quaternion(0.07193565, 0.014044516, -0.024588736, 0.9970073)
 bones/49/scale = Vector3(1, 1.0000001, 1)
 
-[node name="arms" type="MeshInstance3D" parent="head/PSX_First_Person_Arms/arms_armature/Skeleton3D"]
+[node name="arms" type="MeshInstance3D" parent="head/PSX_First_Person_Arms/arms_armature/Skeleton3D" unique_id=369057636]
 cast_shadow = 0
 gi_mode = 0
 mesh = SubResource("ArrayMesh_uf5tr")
 skin = SubResource("Skin_lgqa7")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="head/PSX_First_Person_Arms"]
-libraries = {
-&"": SubResource("AnimationLibrary_kjdoh")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="head/PSX_First_Person_Arms" unique_id=1306467387]
+libraries/ = SubResource("AnimationLibrary_kjdoh")
 
-[node name="Camera3D" type="Camera3D" parent="head"]
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=1404271733]
 fov = 85.0
 far = 2000.0
 
-[node name="InteractRay" parent="head" instance=ExtResource("2_lvxji")]
+[node name="InteractRay" parent="head" unique_id=629465107 instance=ExtResource("2_lvxji")]
 collision_mask = 786433
 
 [node name="prompt" parent="head/InteractRay" index="0"]
 theme_override_font_sizes/font_size = 18
 
-[node name="crouch_checker" type="RayCast3D" parent="."]
+[node name="crouch_checker" type="RayCast3D" parent="." unique_id=29947425]
 target_position = Vector3(0, 2, 0)
 
-[node name="UI" type="Control" parent="."]
+[node name="UI" type="Control" parent="." unique_id=1148642993]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -5637,7 +5632,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Inventory" type="Control" parent="UI"]
+[node name="Inventory" type="Control" parent="UI" unique_id=1736042319]
 z_index = 1
 layout_mode = 1
 anchors_preset = 0
@@ -5645,12 +5640,12 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("3_je7p5")
 
-[node name="Panel" type="Panel" parent="UI/Inventory"]
+[node name="Panel" type="Panel" parent="UI/Inventory" unique_id=294377619]
 layout_mode = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_h17s1")
 script = ExtResource("3_5gtgg")
 
-[node name="Inventory-HBOX" type="HBoxContainer" parent="UI/Inventory"]
+[node name="Inventory-HBOX" type="HBoxContainer" parent="UI/Inventory" unique_id=1902916696]
 layout_mode = 1
 offset_left = 10.0
 offset_top = 28.0
@@ -5658,36 +5653,36 @@ offset_right = 324.0
 offset_bottom = 99.0
 theme_override_constants/separation = 10
 
-[node name="Xbox" type="TextureRect" parent="UI/Inventory/Inventory-HBOX"]
+[node name="Xbox" type="TextureRect" parent="UI/Inventory/Inventory-HBOX" unique_id=146785651]
 visible = false
 layout_mode = 2
 texture = ExtResource("5_h17s1")
 expand_mode = 3
 
-[node name="Merry" type="TextureRect" parent="UI/Inventory/Inventory-HBOX"]
+[node name="Merry" type="TextureRect" parent="UI/Inventory/Inventory-HBOX" unique_id=160030882]
 visible = false
 layout_mode = 2
 texture = ExtResource("4_5gtgg")
 expand_mode = 3
 
-[node name="Billi" type="TextureRect" parent="UI/Inventory/Inventory-HBOX"]
+[node name="Billi" type="TextureRect" parent="UI/Inventory/Inventory-HBOX" unique_id=271735690]
 visible = false
 layout_mode = 2
 texture = ExtResource("3_qek5x")
 expand_mode = 3
 
-[node name="Gnome" type="TextureRect" parent="UI/Inventory/Inventory-HBOX"]
+[node name="Gnome" type="TextureRect" parent="UI/Inventory/Inventory-HBOX" unique_id=1204009333]
 visible = false
 layout_mode = 2
 texture = ExtResource("6_je7p5")
 expand_mode = 3
 
-[node name="Panel2" type="Panel" parent="UI/Inventory"]
+[node name="Panel2" type="Panel" parent="UI/Inventory" unique_id=1938374326]
 layout_mode = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_5gtgg")
 script = ExtResource("3_5gtgg")
 
-[node name="Label" type="Label" parent="UI/Inventory"]
+[node name="Label" type="Label" parent="UI/Inventory" unique_id=1860908995]
 layout_mode = 1
 offset_left = 10.0
 offset_top = 10.0
@@ -5697,7 +5692,7 @@ theme_override_fonts/font = ExtResource("10_h17s1")
 theme_override_font_sizes/font_size = 15
 text = "Keys Obtained:"
 
-[node name="CrossHair" type="TextureRect" parent="UI"]
+[node name="CrossHair" type="TextureRect" parent="UI" unique_id=33422145]
 z_index = 1
 layout_mode = 1
 anchors_preset = 8
@@ -5714,7 +5709,7 @@ grow_vertical = 2
 texture = ExtResource("3_p47bc")
 expand_mode = 1
 
-[node name="Narration" type="Label" parent="UI"]
+[node name="Narration" type="Label" parent="UI" unique_id=1012636346]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -5732,23 +5727,19 @@ horizontal_alignment = 1
 autowrap_mode = 2
 script = ExtResource("12_fm80t")
 
-[node name="Timer" type="Timer" parent="UI/Narration"]
+[node name="Timer" type="Timer" parent="UI/Narration" unique_id=781184389]
 wait_time = 3.5
 one_shot = true
 
-[node name="PlayerAudio" type="Node" parent="."]
+[node name="PlayerAudio" type="Node" parent="." unique_id=508069166]
 
-[node name="Wood" type="AudioStreamPlayer" parent="PlayerAudio"]
+[node name="Wood" type="AudioStreamPlayer" parent="PlayerAudio" unique_id=961441937]
 stream = ExtResource("13_myrg7")
+volume_db = -18.289
 
-[node name="Gravel" type="AudioStreamPlayer" parent="PlayerAudio"]
-stream = ExtResource("14_kvlxm")
-
-[node name="Sand" type="AudioStreamPlayer" parent="PlayerAudio"]
-stream = ExtResource("15_uf5tr")
-
-[node name="Snow" type="AudioStreamPlayer" parent="PlayerAudio"]
+[node name="Snow" type="AudioStreamPlayer" parent="PlayerAudio" unique_id=1809130886]
 stream = ExtResource("16_lgqa7")
+volume_db = -17.234
 
 [connection signal="timeout" from="UI/Narration/Timer" to="UI/Narration" method="textTimeout"]
 
