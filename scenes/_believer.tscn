@@ -317,6 +317,12 @@ edge_fade = 0.47568443
 viewport_path = NodePath("CSGBox3D/Sprite3D/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_18mtf"]
+viewport_path = NodePath("CSGBox3D3/Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_qwap7"]
+viewport_path = NodePath("CSGBox3D4/Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_100eh"]
 viewport_path = NodePath("CSGBox3D2/Sprite3D/SubViewport")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_18mtf"]
@@ -682,8 +688,14 @@ material = SubResource("FogMaterial_si686")
 [node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D" parent_id_path=PackedInt32Array(1381277873, 207302882) index="0" unique_id=296165150]
 texture = SubResource("ViewportTexture_ltgfj")
 
-[node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D2" parent_id_path=PackedInt32Array(1381277873, 454856884) index="0" unique_id=533292651]
+[node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D3" parent_id_path=PackedInt32Array(1381277873, 23983598) index="0" unique_id=853267237]
 texture = SubResource("ViewportTexture_18mtf")
+
+[node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D4" parent_id_path=PackedInt32Array(1381277873, 457549837) index="0" unique_id=65557123]
+texture = SubResource("ViewportTexture_qwap7")
+
+[node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D2" parent_id_path=PackedInt32Array(1381277873, 454856884) index="0" unique_id=533292651]
+texture = SubResource("ViewportTexture_100eh")
 
 [node name="WinterBorder" type="Node3D" parent="FrostgorgeSound" unique_id=371345923]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.514254, 4.982025, 47.598267)
