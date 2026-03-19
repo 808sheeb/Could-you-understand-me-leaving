@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpyx1bu2rhbyc"]
+[gd_scene format=3 uid="uid://cpyx1bu2rhbyc"]
 
 [ext_resource type="Script" uid="uid://crqc8lt4sdrr" path="res://scripts/audio_controller.gd" id="1_xbc4u"]
 [ext_resource type="AudioStream" uid="uid://dnbx2qcjx8v34" path="res://assets/audio/Alarm Sound.wav" id="2_xbc4u"]
+[ext_resource type="AudioStream" uid="uid://d15vob7wi3ii3" path="res://assets/audio/bg/couldyouunderstandmeleaving_track1.wav" id="3_xve6g"]
 
-[node name="AudioController" type="Node"]
+[node name="AudioController" type="Node" unique_id=224731946]
 script = ExtResource("1_xbc4u")
 
-[node name="alarm" type="AudioStreamPlayer" parent="."]
+[node name="alarm" type="AudioStreamPlayer" parent="." unique_id=532366176]
 stream = ExtResource("2_xbc4u")
+
+[node name="bg1" type="AudioStreamPlayer" parent="." unique_id=1214388401]
+stream = ExtResource("3_xve6g")

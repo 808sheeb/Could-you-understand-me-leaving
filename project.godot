@@ -8,19 +8,23 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="couldyouunderstandmeleaving"
 config/description="could you understand me leaving? is a walking-simulator about repetitive patterns and agency"
 run/main_scene="uid://df7w7xyrweg3t"
-config/features=PackedStringArray("4.5", "Mobile")
+config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
 PSXScreenEffects="*res://addons/psx_visuals-25b9e2655b0a76e8ff6c60d6c98dbc18acf59f0a/scripts/Autoload.gd"
-DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
+DebugMenu="*uid://cggqb75a8w8r"
 
 [display]
 
@@ -97,8 +101,8 @@ escape={
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
-textures/vram_compression/import_s3tc_bptc=true
+occlusion_culling/jitter_projection=false
+textures/canvas_textures/default_texture_filter=2
 lights_and_shadows/directional_shadow/size=2048
 lights_and_shadows/directional_shadow/size.mobile=1024
 lights_and_shadows/directional_shadow/soft_shadow_filter_quality=0
@@ -107,6 +111,7 @@ reflections/sky_reflections/roughness_layers=4
 reflections/sky_reflections/ggx_samples=16
 reflections/sky_reflections/ggx_samples.mobile=8
 global_illumination/gi/use_half_resolution=true
+textures/default_filters/use_nearest_mipmap_filter=true
 textures/default_filters/anisotropic_filtering_level=0
 environment/ssao/quality=0
 environment/ssao/fadeout_from=35.0
@@ -114,18 +119,16 @@ environment/ssil/quality=0
 anti_aliasing/quality/msaa_2d=1
 anti_aliasing/quality/msaa_3d=1
 anti_aliasing/screen_space_roughness_limiter/enabled=false
-textures/decals/filter=0
-textures/light_projectors/filter=0
+textures/default_filters/texture_mipmap_bias=-0.21099999999999983
 occlusion_culling/occlusion_rays_per_thread=300
 environment/glow/upscale_mode=0
-environment/screen_space_reflection/roughness_quality=0
 environment/subsurface_scattering/subsurface_scattering_quality=0
 global_illumination/sdfgi/frames_to_converge=0
 environment/volumetric_fog/volume_depth=32
 environment/volumetric_fog/use_filter=0
 anti_aliasing/quality/screen_space_aa=1
-occlusion_culling/use_occlusion_culling=true
-mesh_lod/lod_change/threshold_pixels=10.0
+mesh_lod/lod_change/threshold_pixels=4.0
+environment/screen_space_reflection/roughness_quality=0
 
 [shader_globals]
 

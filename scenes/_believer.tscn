@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=4 uid="uid://df7w7xyrweg3t"]
+[gd_scene format=4 uid="uid://df7w7xyrweg3t"]
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
@@ -33,14 +33,13 @@ sky = SubResource("Sky_ltgfj")
 ambient_light_sky_contribution = 0.13
 ambient_light_energy = 2.95
 tonemap_mode = 3
-tonemap_exposure = 1.47
 tonemap_white = 5.64
 glow_enabled = true
 glow_levels/6 = 1.05
 glow_normalized = true
-glow_intensity = 1.55
-glow_strength = 1.3
-glow_bloom = 0.05
+glow_intensity = 1.39
+glow_strength = 1.16
+glow_bloom = 0.06
 fog_mode = 1
 fog_light_color = Color(0.6509804, 0.96727943, 1, 1)
 fog_density = 0.6641
@@ -54,7 +53,7 @@ adjustment_contrast = 0.67
 adjustment_saturation = 0.76
 
 [sub_resource type="FogMaterial" id="FogMaterial_a0lqf"]
-density = 0.035
+density = 0.01
 emission = Color(0.72265625, 1, 0.7789917, 1)
 edge_fade = 0.36050007
 
@@ -314,6 +313,12 @@ emission = Color(0.4751587, 0.6461334, 0.703125, 1)
 height_falloff = 1e-05
 edge_fade = 0.47568443
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_ltgfj"]
+viewport_path = NodePath("CSGBox3D/Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_18mtf"]
+viewport_path = NodePath("CSGBox3D2/Sprite3D/SubViewport")
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_18mtf"]
 _surfaces = [{
 "aabb": AABB(-1.125, -1.8675, -1, 2.25, 3.735, 1),
@@ -351,9 +356,15 @@ size = Vector3(2.14, 3.055, 1)
 size = Vector3(2.14, 3.055, 1)
 
 [sub_resource type="FogMaterial" id="FogMaterial_xxq3l"]
-density = 0.028
+density = 0.02
 emission = Color(0.80078125, 0.7289827, 0.4473114, 1)
 edge_fade = 1.6564229
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_a8erk"]
+viewport_path = NodePath("Town/CSGBox3D2/Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_seot8"]
+viewport_path = NodePath("Town/CSGBox3D3/Sprite3D/SubViewport")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a8erk"]
 _surfaces = [{
@@ -391,83 +402,83 @@ size = Vector3(1.9, 3.7, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ax3ly"]
 size = Vector3(1.9, 3.7, 1)
 
-[node name="Believer" type="Node3D"]
+[node name="Believer" type="Node3D" unique_id=832010330]
 script = ExtResource("1_gmu73")
 
-[node name="env" type="Node3D" parent="."]
+[node name="env" type="Node3D" parent="." unique_id=1288774618]
 script = ExtResource("2_a0lqf")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="env"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="env" unique_id=42690156]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 light_specular = 0.0
 light_bake_mode = 1
 shadow_enabled = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="env"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="env" unique_id=2081447880]
 environment = SubResource("Environment_a0lqf")
 
-[node name="main_house" parent="." instance=ExtResource("1_np6k1")]
+[node name="main_house" parent="." unique_id=1765579625 instance=ExtResource("1_np6k1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0022422075, -0.048403382, -0.017375946)
 
-[node name="WinterBorder" type="Node3D" parent="main_house"]
+[node name="WinterBorder" type="Node3D" parent="main_house" unique_id=686318147]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.02922, 0.78782713, -26.860548)
 
-[node name="DoorBevel" type="Node3D" parent="main_house/WinterBorder"]
+[node name="DoorBevel" type="Node3D" parent="main_house/WinterBorder" unique_id=1644220724]
 transform = Transform3D(-1.8, 0, 1.57361e-07, 0, 1.8, 0, -1.57361e-07, 0, -1.8, -0.016204834, -1.6650283, -0.043052673)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel"]
+[node name="CSGBox3D" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel" unique_id=1922472401]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010040283, 2.0171404, 0)
 size = Vector3(1.2622681, 0.03466797, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel"]
+[node name="CSGBox3D4" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel" unique_id=1246849585]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0071258545, -0.04131514, 0)
 size = Vector3(1.2675476, 0.03466797, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel" unique_id=596197117]
 transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, -0.6114273, 1.0048741, 6.67572e-06)
 size = Vector3(2.0609436, 0.03125, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="main_house/WinterBorder/DoorBevel" unique_id=378813675]
 transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, 0.625576, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="EverwoodsBorder" type="Node3D" parent="main_house"]
+[node name="EverwoodsBorder" type="Node3D" parent="main_house" unique_id=1889579249]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -106.96404, 0.6694705, -31.723154)
 
-[node name="DoorBevel" type="Node3D" parent="main_house/EverwoodsBorder"]
+[node name="DoorBevel" type="Node3D" parent="main_house/EverwoodsBorder" unique_id=1226775748]
 transform = Transform3D(-1.8, 0, 1.57361e-07, 0, 1.8, 0, -1.57361e-07, 0, -1.8, -0.016204834, -1.6650283, -0.043052673)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel"]
+[node name="CSGBox3D" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel" unique_id=1422112661]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel"]
+[node name="CSGBox3D4" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel" unique_id=570539808]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel" unique_id=425278319]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
 size = Vector3(2.0252075, 0.03125, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="main_house/EverwoodsBorder/DoorBevel" unique_id=1812779169]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="FogVolume" type="FogVolume" parent="main_house"]
+[node name="FogVolume" type="FogVolume" parent="main_house" unique_id=1382595641]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.35823, -5.665756, -7.418762)
 size = Vector3(47.349182, 21.831268, 73.59021)
 material = SubResource("FogMaterial_a0lqf")
 script = ExtResource("4_a0lqf")
 
-[node name="HousePortalEverwoods" type="Node3D" parent="main_house" node_paths=PackedStringArray("exit_portal") groups=["portals"]]
+[node name="HousePortalEverwoods" type="Node3D" parent="main_house" unique_id=1940603057 node_paths=PackedStringArray("exit_portal") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -106.98594, 0.80090153, -31.697474)
@@ -491,19 +502,19 @@ start_deactivated = true
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/HousePortalEverwoods"]
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/HousePortalEverwoods" unique_id=588267607]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
 layers = 524288
 material_override = ExtResource("7_vwutt")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_ax3ly")
 
-[node name="TeleportArea" type="Area3D" parent="main_house/HousePortalEverwoods"]
+[node name="TeleportArea" type="Area3D" parent="main_house/HousePortalEverwoods" unique_id=339284325]
 
-[node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalEverwoods/TeleportArea"]
+[node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalEverwoods/TeleportArea" unique_id=1397559994]
 shape = SubResource("BoxShape3D_xxq3l")
 
-[node name="IsleParticles" type="GPUParticles3D" parent="main_house"]
+[node name="IsleParticles" type="GPUParticles3D" parent="main_house" unique_id=2111189754]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.675766, 0.8664881, -31.669025)
 visible = false
 amount = 50
@@ -515,7 +526,7 @@ trail_lifetime = 6.699999999999999
 process_material = SubResource("ParticleProcessMaterial_l4jtg")
 draw_pass_1 = SubResource("BoxMesh_vaumm")
 
-[node name="HousePortalVillage" type="Node3D" parent="main_house" node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
+[node name="HousePortalVillage" type="Node3D" parent="main_house" unique_id=1714994582 node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -100.08136, 0.8989085, -18.582676)
@@ -540,19 +551,19 @@ start_deactivated = true
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/HousePortalVillage"]
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/HousePortalVillage" unique_id=659063576]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
 layers = 524288
 material_override = ExtResource("7_vwutt")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_a0lqf")
 
-[node name="TeleportArea" type="Area3D" parent="main_house/HousePortalVillage"]
+[node name="TeleportArea" type="Area3D" parent="main_house/HousePortalVillage" unique_id=1875782879]
 
-[node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalVillage/TeleportArea"]
+[node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalVillage/TeleportArea" unique_id=299337786]
 shape = SubResource("BoxShape3D_si686")
 
-[node name="VillageParticles" type="GPUParticles3D" parent="main_house"]
+[node name="VillageParticles" type="GPUParticles3D" parent="main_house" unique_id=1429840148]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.25288, 0.92263436, -18.478386)
 visible = false
 amount = 50
@@ -565,7 +576,7 @@ trail_lifetime = 6.699999999999999
 process_material = SubResource("ParticleProcessMaterial_100eh")
 draw_pass_1 = SubResource("BoxMesh_a8erk")
 
-[node name="HousePortalWinter" type="Node3D" parent="main_house" node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
+[node name="HousePortalWinter" type="Node3D" parent="main_house" unique_id=664033245 node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.05987, 0.9140477, -26.973383)
@@ -590,19 +601,19 @@ start_deactivated = true
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/HousePortalWinter"]
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/HousePortalWinter" unique_id=546807330]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
 layers = 524288
 material_override = ExtResource("7_vwutt")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_ltgfj")
 
-[node name="TeleportArea" type="Area3D" parent="main_house/HousePortalWinter"]
+[node name="TeleportArea" type="Area3D" parent="main_house/HousePortalWinter" unique_id=1648939087]
 
-[node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalWinter/TeleportArea"]
+[node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalWinter/TeleportArea" unique_id=29149963]
 shape = SubResource("BoxShape3D_18mtf")
 
-[node name="WinterParticles" type="GPUParticles3D" parent="main_house"]
+[node name="WinterParticles" type="GPUParticles3D" parent="main_house" unique_id=274063025]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -89.13363, 0.92263436, -26.731438)
 amount = 25
 lifetime = 2.3
@@ -614,7 +625,7 @@ trail_lifetime = 6.699999999999999
 process_material = SubResource("ParticleProcessMaterial_a0lqf")
 draw_pass_1 = SubResource("BoxMesh_ltgfj")
 
-[node name="HousePortalGallery" type="Node3D" parent="main_house" node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
+[node name="HousePortalGallery" type="Node3D" parent="main_house" unique_id=467602066 node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -101.84043, -5.0541615, -21.03098)
@@ -639,19 +650,19 @@ start_deactivated = true
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/HousePortalGallery"]
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="main_house/HousePortalGallery" unique_id=153533409]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
 layers = 524288
 material_override = ExtResource("7_vwutt")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_seot8")
 
-[node name="TeleportArea" type="Area3D" parent="main_house/HousePortalGallery"]
+[node name="TeleportArea" type="Area3D" parent="main_house/HousePortalGallery" unique_id=97847110]
 
-[node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalGallery/TeleportArea"]
+[node name="Collider" type="CollisionShape3D" parent="main_house/HousePortalGallery/TeleportArea" unique_id=643810250]
 shape = SubResource("BoxShape3D_a8erk")
 
-[node name="player" parent="." instance=ExtResource("2_oaoh5")]
+[node name="player" parent="." unique_id=1561527512 instance=ExtResource("2_oaoh5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.88255, -3.5526738, -12.868246)
 collision_layer = 32769
 collision_mask = 32781
@@ -662,40 +673,45 @@ far = 303.14
 [node name="UI" parent="player" index="4"]
 visible = true
 
-[node name="FrostgorgeSound" parent="." instance=ExtResource("3_60jeo")]
+[node name="FrostgorgeSound" parent="." unique_id=1381277873 instance=ExtResource("3_60jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -454.1902, 1797.1227)
-visible = false
 
-[node name="FogVolume" parent="FrostgorgeSound" index="9"]
+[node name="FogVolume" parent="FrostgorgeSound" index="10" unique_id=974936444]
 material = SubResource("FogMaterial_si686")
 
-[node name="WinterBorder" type="Node3D" parent="FrostgorgeSound"]
+[node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D" parent_id_path=PackedInt32Array(1381277873, 207302882) index="0" unique_id=296165150]
+texture = SubResource("ViewportTexture_ltgfj")
+
+[node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D2" parent_id_path=PackedInt32Array(1381277873, 454856884) index="0" unique_id=533292651]
+texture = SubResource("ViewportTexture_18mtf")
+
+[node name="WinterBorder" type="Node3D" parent="FrostgorgeSound" unique_id=371345923]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.514254, 4.982025, 47.598267)
 
-[node name="DoorBevel" type="Node3D" parent="FrostgorgeSound/WinterBorder"]
+[node name="DoorBevel" type="Node3D" parent="FrostgorgeSound/WinterBorder" unique_id=1816933493]
 transform = Transform3D(-1.8, 0, 1.57361e-07, 0, 1.8, 0, -1.57361e-07, 0, -1.8, -0.016204834, -1.6650283, -0.043052673)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="FrostgorgeSound/WinterBorder/DoorBevel"]
+[node name="CSGBox3D" type="CSGBox3D" parent="FrostgorgeSound/WinterBorder/DoorBevel" unique_id=1650198618]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010040283, 2.0171404, 0)
 size = Vector3(1.2622681, 0.03466797, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="FrostgorgeSound/WinterBorder/DoorBevel"]
+[node name="CSGBox3D4" type="CSGBox3D" parent="FrostgorgeSound/WinterBorder/DoorBevel" unique_id=970720089]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0071258545, -0.04131514, 0)
 size = Vector3(1.2675476, 0.03466797, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="FrostgorgeSound/WinterBorder/DoorBevel"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="FrostgorgeSound/WinterBorder/DoorBevel" unique_id=2047562224]
 transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, -0.6114273, 1.0048741, 6.67572e-06)
 size = Vector3(2.0609436, 0.03125, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="FrostgorgeSound/WinterBorder/DoorBevel"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="FrostgorgeSound/WinterBorder/DoorBevel" unique_id=868406696]
 transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, 0.625576, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
 material = ExtResource("3_ax3ly")
 
-[node name="WinterPortalHouse" type="Node3D" parent="FrostgorgeSound" node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
+[node name="WinterPortalHouse" type="Node3D" parent="FrostgorgeSound" unique_id=1644292955 node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.545946, 5.095703, 47.557983)
@@ -720,27 +736,28 @@ start_deactivated = false
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="FrostgorgeSound/WinterPortalHouse"]
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="FrostgorgeSound/WinterPortalHouse" unique_id=96698545]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
 layers = 524288
 material_override = ExtResource("7_vwutt")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_18mtf")
 
-[node name="TeleportArea" type="Area3D" parent="FrostgorgeSound/WinterPortalHouse"]
+[node name="TeleportArea" type="Area3D" parent="FrostgorgeSound/WinterPortalHouse" unique_id=1716206168]
 
-[node name="Collider" type="CollisionShape3D" parent="FrostgorgeSound/WinterPortalHouse/TeleportArea"]
+[node name="Collider" type="CollisionShape3D" parent="FrostgorgeSound/WinterPortalHouse/TeleportArea" unique_id=1536269503]
 shape = SubResource("BoxShape3D_seot8")
 
-[node name="Town" type="Node3D" parent="."]
+[node name="Town" type="Node3D" parent="." unique_id=1932365854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1950.2949)
 
-[node name="town" parent="Town" instance=ExtResource("12_xxq3l")]
-transform = Transform3D(2, 0, 0, 0, -8.742278e-08, 2, 0, -2, -8.742278e-08, 39.38196, 0, -1878.5098)
+[node name="town" parent="Town" unique_id=247096640 instance=ExtResource("12_xxq3l")]
+transform = Transform3D(2, 0, 0, 0, -8.742278e-08, 2, 0, -2, -8.742278e-08, 39.38196, 0, -14.78064)
 
-[node name="TownPortalHouse" type="Node3D" parent="Town" node_paths=PackedStringArray("exit_portal") groups=["portals"]]
+[node name="TownPortalHouse" type="Node3D" parent="Town" unique_id=416155339 node_paths=PackedStringArray("exit_portal") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 86.1309, 2.2326698, -1876.4377)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 86.1309, 2.2326698, -12.708618)
 script = ExtResource("6_ymoqr")
 _portal_mesh_path = NodePath("Portal3D_Mesh")
 _teleport_area_path = NodePath("TeleportArea")
@@ -761,50 +778,100 @@ start_deactivated = false
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Town/TownPortalHouse"]
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Town/TownPortalHouse" unique_id=8258106]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
 layers = 524288
 material_override = ExtResource("7_vwutt")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_si686")
 
-[node name="TeleportArea" type="Area3D" parent="Town/TownPortalHouse"]
+[node name="TeleportArea" type="Area3D" parent="Town/TownPortalHouse" unique_id=842561366]
 
-[node name="Collider" type="CollisionShape3D" parent="Town/TownPortalHouse/TeleportArea"]
+[node name="Collider" type="CollisionShape3D" parent="Town/TownPortalHouse/TeleportArea" unique_id=765300804]
 shape = SubResource("BoxShape3D_ltgfj")
 
-[node name="DoorBevel" type="Node3D" parent="Town"]
-transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 86.138885, 0.43669808, -1876.4526)
+[node name="DoorBevel" type="Node3D" parent="Town" unique_id=1086573975]
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 86.138885, 0.43669808, -12.723511)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Town/DoorBevel"]
+[node name="CSGBox3D" type="CSGBox3D" parent="Town/DoorBevel" unique_id=1264421191]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0073537827, 1.8235416, -0.0070724487)
 size = Vector3(1.2018433, 0.03466797, 0.123046875)
 material = ExtResource("14_18mtf")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="Town/DoorBevel"]
+[node name="CSGBox3D4" type="CSGBox3D" parent="Town/DoorBevel" unique_id=119608106]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008300781, 0.16379666, -0.0076408386)
 size = Vector3(1.1984482, 0.03466797, 0.123046875)
 material = ExtResource("14_18mtf")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="Town/DoorBevel"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="Town/DoorBevel" unique_id=1460446651]
 transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, -0.5777588, 0.9906765, -0.006919861)
 size = Vector3(1.6885056, 0.03125, 0.123046875)
 material = ExtResource("14_18mtf")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="Town/DoorBevel"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="Town/DoorBevel" unique_id=1947740957]
 transform = Transform3D(-4.3711392e-08, -1, 0, 1, -4.3711392e-08, 0, 0, 0, 1, 0.5917969, 0.9917561, -0.0070724487)
 size = Vector3(1.6920385, 0.03125, 0.123046875)
 material = ExtResource("14_18mtf")
 
-[node name="FogVolume" type="FogVolume" parent="Town"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.216682, 4.2250977, -1877.2506)
+[node name="FogVolume" type="FogVolume" parent="Town" unique_id=2118166909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.216682, 4.2250977, -13.521484)
 size = Vector3(95.64798, 10.450195, 59.115906)
 material = SubResource("FogMaterial_xxq3l")
 
-[node name="Gallery" parent="." instance=ExtResource("14_si686")]
+[node name="CSGBox3D2" type="CSGBox3D" parent="Town" unique_id=1171468227]
+transform = Transform3D(-0.32343853, 0, 0.31591707, 0, 0.45212403, 0, -0.31591707, 0, -0.32343853, 60.39539, 0.6754515, -16.678345)
+size = Vector3(0.546875, 9.178497, 12.295944)
+
+[node name="Sprite3D" type="Sprite3D" parent="Town/CSGBox3D2" unique_id=1360498708]
+transform = Transform3D(-5.9604645e-08, 0, -1.03695, 0, 1.0369501, 0, 1.03695, 0, -5.9604645e-08, -0.6386719, 1.3648667, 0.7368164)
+texture = SubResource("ViewportTexture_a8erk")
+
+[node name="SubViewport" type="SubViewport" parent="Town/CSGBox3D2/Sprite3D" unique_id=160528713]
+transparent_bg = true
+size = Vector2i(1065, 191)
+
+[node name="Label" type="Label" parent="Town/CSGBox3D2/Sprite3D/SubViewport" unique_id=2066883177]
+offset_right = 40.0
+offset_bottom = 23.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.73333335, 0.22352941, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "i wish i hadn't blinded myself,
+i want to see your face."
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Town" unique_id=827258272]
+transform = Transform3D(-0.32343853, 0, 0.31591707, 0, 0.45212403, 0, -0.31591707, 0, -0.32343853, 52.87452, 0.6754515, -16.678345)
+size = Vector3(0.546875, 9.178497, 12.295944)
+
+[node name="Sprite3D" type="Sprite3D" parent="Town/CSGBox3D3" unique_id=2023765961]
+transform = Transform3D(-5.9604645e-08, 0, -1.03695, 0, 1.0369501, 0, 1.03695, 0, -5.9604645e-08, -0.5402832, 1.3648667, 0.2163086)
+texture = SubResource("ViewportTexture_seot8")
+
+[node name="SubViewport" type="SubViewport" parent="Town/CSGBox3D3/Sprite3D" unique_id=590282108]
+transparent_bg = true
+size = Vector2i(598, 91)
+
+[node name="Label" type="Label" parent="Town/CSGBox3D3/Sprite3D/SubViewport" unique_id=1708137800]
+offset_right = 40.0
+offset_bottom = 23.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.73333335, 0.22352941, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "I bet you look kind."
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Town" unique_id=254452657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.29325, 1.6268842, -15.130737)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Town" unique_id=1288951026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.365456, 1.6268842, -15.550171)
+light_energy = 0.5
+light_indirect_energy = 4.457
+omni_range = 3.4919634
+
+[node name="Gallery" parent="." unique_id=2129912509 instance=ExtResource("14_si686")]
 transform = Transform3D(1.68, 0, 0, 0, 1.68, 0, 0, 0, 1.68, 0, 316.68054, 165.88193)
 
-[node name="GalleryPortalHouse" type="Node3D" parent="Gallery" node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
+[node name="GalleryPortalHouse" type="Node3D" parent="Gallery" unique_id=1326632082 node_paths=PackedStringArray("exit_portal", "player_camera") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
 transform = Transform3D(7.805606e-08, 0, -0.59523815, 0, 0.59523815, 0, 0.59523815, 0, 7.805606e-08, 0.5788822, -0.8203125, -0.9758682)
@@ -829,50 +896,50 @@ start_deactivated = false
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Gallery/GalleryPortalHouse"]
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Gallery/GalleryPortalHouse" unique_id=1853209050]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
 layers = 524288
 material_override = ExtResource("7_vwutt")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_a8erk")
 
-[node name="TeleportArea" type="Area3D" parent="Gallery/GalleryPortalHouse"]
+[node name="TeleportArea" type="Area3D" parent="Gallery/GalleryPortalHouse" unique_id=902473372]
 
-[node name="Collider" type="CollisionShape3D" parent="Gallery/GalleryPortalHouse/TeleportArea"]
+[node name="Collider" type="CollisionShape3D" parent="Gallery/GalleryPortalHouse/TeleportArea" unique_id=1774017625]
 shape = SubResource("BoxShape3D_qwap7")
 
-[node name="AudioController" parent="." instance=ExtResource("9_ymoqr")]
+[node name="AudioController" parent="." unique_id=1228426800 instance=ExtResource("9_ymoqr")]
 
-[node name="Meadow" parent="." instance=ExtResource("17_seot8")]
+[node name="Meadow" parent="." unique_id=1047031754 instance=ExtResource("17_seot8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1401.7241, 492.43976, 12.979649)
 
-[node name="PortalBorder" type="Node3D" parent="Meadow"]
+[node name="PortalBorder" type="Node3D" parent="Meadow" unique_id=313345646]
 transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -1.6008301, 0.25457764, -77.53229)
 
-[node name="DoorBevel" type="Node3D" parent="Meadow/PortalBorder"]
+[node name="DoorBevel" type="Node3D" parent="Meadow/PortalBorder" unique_id=1883132775]
 transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 0, 0, 0)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel"]
+[node name="CSGBox3D" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel" unique_id=976849095]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
 material = ExtResource("14_18mtf")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel"]
+[node name="CSGBox3D4" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel" unique_id=1803788254]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
 size = Vector3(1.0751953, 0.03466797, 0.123046875)
 material = ExtResource("14_18mtf")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel" unique_id=1133999862]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
 size = Vector3(2.0252075, 0.03125, 0.123046875)
 material = ExtResource("14_18mtf")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel" unique_id=564552824]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
 size = Vector3(2.0245972, 0.03125, 0.123046875)
 material = ExtResource("14_18mtf")
 
-[node name="EverwoodPortalHouse" type="Node3D" parent="Meadow" node_paths=PackedStringArray("exit_portal") groups=["portals"]]
+[node name="EverwoodPortalHouse" type="Node3D" parent="Meadow" unique_id=1320427565 node_paths=PackedStringArray("exit_portal") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1.6171875, 2.036316, -77.57013)
@@ -896,16 +963,16 @@ start_deactivated = false
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Meadow/EverwoodPortalHouse"]
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Meadow/EverwoodPortalHouse" unique_id=263062794]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
 layers = 524288
 material_override = ExtResource("7_vwutt")
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_vwutt")
 
-[node name="TeleportArea" type="Area3D" parent="Meadow/EverwoodPortalHouse"]
+[node name="TeleportArea" type="Area3D" parent="Meadow/EverwoodPortalHouse" unique_id=489396822]
 
-[node name="Collider" type="CollisionShape3D" parent="Meadow/EverwoodPortalHouse/TeleportArea"]
+[node name="Collider" type="CollisionShape3D" parent="Meadow/EverwoodPortalHouse/TeleportArea" unique_id=1732693959]
 shape = SubResource("BoxShape3D_ax3ly")
 
 [editable path="player"]
