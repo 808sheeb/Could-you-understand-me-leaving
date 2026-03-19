@@ -1,5 +1,6 @@
 extends Node3D
 @onready var cutter: CSGBox3D = $"Floors & Walls/shihab_wall_2/Cutter"
+@onready var flavor_text: Sprite3D = $FlavorText
 var keyIsActive = false
 
 
@@ -12,9 +13,11 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if keyIsActive:
 		cutter.visible = true
+		flavor_text.visible = true
 		#print("key active")
 	else:
 		cutter.visible = false
+		flavor_text.visible = false
 		#print("key inactive")
 
 func activeToggle():

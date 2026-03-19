@@ -13453,8 +13453,9 @@ theme_override_font_sizes/font_size = 32
 text = "If at first you don't suceed,
 try, try again."
 
-[node name="Sprite3D" type="Sprite3D" parent="Shihab"]
-transform = Transform3D(0.335, 0, 0, 0, 0.335, 0, 0, 0, 0.335, 3.1441956, 4.673468, -24.812815)
+[node name="FlavorText" type="Sprite3D" parent="Shihab"]
+transform = Transform3D(-4.6771188e-08, 0, -1.07, 0, 1.07, 0, 1.07, 0, -4.6771188e-08, 7.9202957, 3.4508836, -20.40586)
+visible = false
 texture = SubResource("ViewportTexture_4m4r0")
 
 [node name="Rayah" type="Node3D" parent="."]

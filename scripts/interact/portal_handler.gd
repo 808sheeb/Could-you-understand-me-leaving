@@ -15,7 +15,6 @@ var villagePortalActive = false
 @onready var winter_particles: GPUParticles3D = $main_house/WinterParticles
 @onready var gallery_portal: Portal3D = $main_house/HousePortalGallery
 @onready var frostgorge_sound: Node3D = $FrostgorgeSound
-@onready var everwoods: Node3D = $Everwoods
 @onready var town: Node3D = $Town
 @onready var gallery: Node3D = $Gallery
 
@@ -27,7 +26,6 @@ func _ready() -> void:
 	isle_particles.visible = false
 	winter_particles.visible = false
 	frostgorge_sound.visible = false
-	everwoods.visible = false
 	town.visible = false
 	gallery.visible = false
 	#on alarm reset, do this
@@ -56,7 +54,6 @@ func islePortal():
 	isle_border.visible = true
 	isle_particles.visible = true
 	isle_portal.activate()
-	everwoods.visible = true
 	
 func galleryPortal():
 	galleryPortalActive = true
@@ -83,7 +80,6 @@ func resetPortal():
 	isle_border.visible = false
 	isle_particles.visible = false
 	isle_portal.deactivate()
-	everwoods.visible = false
 	#VILLAGE
 	villagePortalActive = false
 	village_portal.visible = false

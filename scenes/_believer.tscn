@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=4 uid="uid://df7w7xyrweg3t"]
+[gd_scene load_steps=61 format=4 uid="uid://df7w7xyrweg3t"]
 
 [ext_resource type="Script" uid="uid://drr4bx24qfsda" path="res://scripts/interact/portal_handler.gd" id="1_gmu73"]
 [ext_resource type="PackedScene" uid="uid://2nr7svv4u1cy" path="res://scenes/worlds/home/main_house.tscn" id="1_np6k1"]
@@ -6,23 +6,25 @@
 [ext_resource type="PackedScene" uid="uid://brpnlbf5j2yec" path="res://scenes/player/player.tscn" id="2_oaoh5"]
 [ext_resource type="PackedScene" uid="uid://c3s1f6jqgx5cb" path="res://scenes/worlds/frostgorge_sound/frostgorge_sound.tscn" id="3_60jeo"]
 [ext_resource type="Material" uid="uid://qs515fr0c26f" path="res://assets/tex/woodFloor/WoodFloor051_1K-JPG.tres" id="3_ax3ly"]
-[ext_resource type="Texture2D" uid="uid://c2s8s6jellfja" path="res://assets/tex/hdri/winter_lake_01_1k.exr" id="3_ltgfj"]
 [ext_resource type="Script" uid="uid://3us3vbt02r78" path="res://scripts/scene/house_fog.gd" id="4_a0lqf"]
 [ext_resource type="Script" uid="uid://cw1r4c1d7beyv" path="res://addons/portals/scripts/portal_3d.gd" id="6_ymoqr"]
-[ext_resource type="PackedScene" uid="uid://gm3tdyml46ae" path="res://scenes/worlds/everwoods/everwood isle.tscn" id="7_ax3ly"]
 [ext_resource type="Material" uid="uid://dcfkcyddxkglf" path="res://addons/portals/materials/editor-preview-portal-material.tres" id="7_vwutt"]
 [ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="8_ax3ly"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
 [ext_resource type="PackedScene" uid="uid://c7fx2742nccr" path="res://assets/town/town.tscn" id="12_xxq3l"]
 [ext_resource type="Material" uid="uid://qcmiw8pm4h2e" path="res://assets/tex/wood.tres" id="14_18mtf"]
 [ext_resource type="PackedScene" uid="uid://ds87qi8ojohlg" path="res://scenes/worlds/gallery/gallery.tscn" id="14_si686"]
+[ext_resource type="PackedScene" uid="uid://dsj0s6uwet7if" path="res://scenes/worlds/meadow/meadow.tscn" id="17_seot8"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_18mtf"]
-panorama = ExtResource("3_ltgfj")
-energy_multiplier = 0.4
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ltgfj"]
+sky_top_color = Color(0.5412581, 0.42508513, 0.28845283, 1)
+sky_horizon_color = Color(0.5780319, 0.6557206, 0.8129941, 1)
+sky_curve = 0.11367873
+ground_bottom_color = Color(0.4619218, 0.62440026, 0.6712608, 1)
+ground_horizon_color = Color(0.6593446, 0.6670543, 0.6824737, 1)
 
 [sub_resource type="Sky" id="Sky_ltgfj"]
-sky_material = SubResource("PanoramaSkyMaterial_18mtf")
+sky_material = SubResource("ProceduralSkyMaterial_ltgfj")
 
 [sub_resource type="Environment" id="Environment_a0lqf"]
 background_mode = 2
@@ -101,7 +103,7 @@ shading_mode = 0
 diffuse_mode = 1
 specular_mode = 2
 disable_specular_occlusion = true
-albedo_color = Color(0, 0.6953125, 1, 1)
+albedo_color = Color(0.78120005, 0.84, 0.13440003, 1)
 billboard_mode = 1
 billboard_keep_scale = true
 proximity_fade_enabled = true
@@ -187,7 +189,7 @@ shading_mode = 0
 diffuse_mode = 1
 specular_mode = 2
 disable_specular_occlusion = true
-albedo_color = Color(0.580503, 0.7734375, 0.3685913, 1)
+albedo_color = Color(0.9664841, 0.5351268, 0.78556234, 1)
 billboard_mode = 1
 billboard_keep_scale = true
 proximity_fade_enabled = true
@@ -305,24 +307,6 @@ size = Vector3(2.125, 3.68, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_a8erk"]
 size = Vector3(2.125, 3.68, 1)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_vwutt"]
-_surfaces = [{
-"aabb": AABB(-0.95, -1.85, -1, 1.9, 3.7, 1),
-"attribute_data": PackedByteArray("AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAIA/AACAPw=="),
-"format": 34359742487,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAQABAABAAUAAQADAAUABQADAAcAAwACAAcABwACAAYAAgAAAAYABgAAAAQABAAFAAYABgAFAAcAAAABAAIAAgABAAMA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("MzNzv83M7D8AAAAAMzNzP83M7D8AAAAAMzNzv83M7L8AAAAAMzNzP83M7L8AAAAAMzNzv83M7D8AAIC/MzNzP83M7D8AAIC/MzNzv83M7L8AAIC/MzNzP83M7L8AAIC//3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgA==")
-}]
-script = ExtResource("8_ax3ly")
-size = Vector3(1.9, 3.7, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ax3ly"]
-size = Vector3(1.9, 3.7, 1)
-
 [sub_resource type="FogMaterial" id="FogMaterial_si686"]
 density = 0.017
 albedo = Color(0.56862736, 0, 1, 1)
@@ -388,6 +372,24 @@ size = Vector3(2.125, 3.68, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qwap7"]
 size = Vector3(2.125, 3.68, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vwutt"]
+_surfaces = [{
+"aabb": AABB(-0.95, -1.85, -1, 1.9, 3.7, 1),
+"attribute_data": PackedByteArray("AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAIA/AACAPw=="),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAQABAABAAUAAQADAAUABQADAAcAAwACAAcABwACAAYAAgAAAAYABgAAAAQABAAFAAYABgAFAAcAAAABAAIAAgABAAMA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("MzNzv83M7D8AAAAAMzNzP83M7D8AAAAAMzNzv83M7L8AAAAAMzNzP83M7L8AAAAAMzNzv83M7D8AAIC/MzNzP83M7D8AAIC/MzNzv83M7L8AAIC/MzNzP83M7L8AAIC//3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgA==")
+}]
+script = ExtResource("8_ax3ly")
+size = Vector3(1.9, 3.7, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ax3ly"]
+size = Vector3(1.9, 3.7, 1)
 
 [node name="Believer" type="Node3D"]
 script = ExtResource("1_gmu73")
@@ -474,7 +476,7 @@ _portal_mesh_path = NodePath("Portal3D_Mesh")
 _teleport_area_path = NodePath("TeleportArea")
 _teleport_collider_path = NodePath("TeleportArea/Collider")
 portal_size = Vector2(1.9, 3.7)
-exit_portal = NodePath("../../Everwoods/EverwoodPortalHouse")
+exit_portal = NodePath("../../Meadow/EverwoodPortalHouse")
 portal_frame_width = 0.0
 viewport_size_mode = 0
 view_direction = 1
@@ -660,71 +662,6 @@ far = 303.14
 [node name="UI" parent="player" index="4"]
 visible = true
 
-[node name="Everwoods" parent="." instance=ExtResource("7_ax3ly")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2460.5654, 0, 0)
-
-[node name="PortalBorder" type="Node3D" parent="Everwoods"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -154.0896, 5.4530435, 13.276908)
-
-[node name="DoorBevel" type="Node3D" parent="Everwoods/PortalBorder"]
-transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 0, 0, 0)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Everwoods/PortalBorder/DoorBevel"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
-size = Vector3(1.0751953, 0.03466797, 0.123046875)
-material = ExtResource("14_18mtf")
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="Everwoods/PortalBorder/DoorBevel"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
-size = Vector3(1.0751953, 0.03466797, 0.123046875)
-material = ExtResource("14_18mtf")
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="Everwoods/PortalBorder/DoorBevel"]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
-size = Vector3(2.0252075, 0.03125, 0.123046875)
-material = ExtResource("14_18mtf")
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="Everwoods/PortalBorder/DoorBevel"]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
-size = Vector3(2.0245972, 0.03125, 0.123046875)
-material = ExtResource("14_18mtf")
-
-[node name="EverwoodPortalHouse" type="Node3D" parent="Everwoods" node_paths=PackedStringArray("exit_portal") groups=["portals"]]
-process_priority = 100
-process_physics_priority = 100
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -154.12744, 7.2347703, 13.293284)
-script = ExtResource("6_ymoqr")
-_portal_mesh_path = NodePath("Portal3D_Mesh")
-_teleport_area_path = NodePath("TeleportArea")
-_teleport_collider_path = NodePath("TeleportArea/Collider")
-portal_size = Vector2(1.9, 3.7)
-exit_portal = NodePath("../../main_house/HousePortalEverwoods")
-portal_frame_width = 0.0
-viewport_size_mode = 0
-view_direction = 1
-portal_render_layer = 524288
-is_teleport = true
-teleport_direction = 0
-rigidbody_boost = 0.0
-teleport_tolerance = 0.5
-teleport_interactions = 3
-teleport_collision_mask = 32768
-start_deactivated = false
-metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
-metadata/_edit_group_ = true
-
-[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Everwoods/EverwoodPortalHouse"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
-layers = 524288
-material_override = ExtResource("7_vwutt")
-cast_shadow = 0
-mesh = SubResource("ArrayMesh_vwutt")
-
-[node name="TeleportArea" type="Area3D" parent="Everwoods/EverwoodPortalHouse"]
-
-[node name="Collider" type="CollisionShape3D" parent="Everwoods/EverwoodPortalHouse/TeleportArea"]
-shape = SubResource("BoxShape3D_ax3ly")
-
 [node name="FrostgorgeSound" parent="." instance=ExtResource("3_60jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -454.1902, 1797.1227)
 visible = false
@@ -905,6 +842,71 @@ mesh = SubResource("ArrayMesh_a8erk")
 shape = SubResource("BoxShape3D_qwap7")
 
 [node name="AudioController" parent="." instance=ExtResource("9_ymoqr")]
+
+[node name="Meadow" parent="." instance=ExtResource("17_seot8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1401.7241, 492.43976, 12.979649)
+
+[node name="PortalBorder" type="Node3D" parent="Meadow"]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -1.6008301, 0.25457764, -77.53229)
+
+[node name="DoorBevel" type="Node3D" parent="Meadow/PortalBorder"]
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 0, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0171404, 0)
+size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("14_18mtf")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04131499, 0)
+size = Vector3(1.0751953, 0.03466797, 0.123046875)
+material = ExtResource("14_18mtf")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.522248, 0.98700607, 0)
+size = Vector3(2.0252075, 0.03125, 0.123046875)
+material = ExtResource("14_18mtf")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Meadow/PortalBorder/DoorBevel"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5218951, 0.98804367, 0)
+size = Vector3(2.0245972, 0.03125, 0.123046875)
+material = ExtResource("14_18mtf")
+
+[node name="EverwoodPortalHouse" type="Node3D" parent="Meadow" node_paths=PackedStringArray("exit_portal") groups=["portals"]]
+process_priority = 100
+process_physics_priority = 100
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1.6171875, 2.036316, -77.57013)
+script = ExtResource("6_ymoqr")
+_portal_mesh_path = NodePath("Portal3D_Mesh")
+_teleport_area_path = NodePath("TeleportArea")
+_teleport_collider_path = NodePath("TeleportArea/Collider")
+portal_size = Vector2(1.9, 3.7)
+exit_portal = NodePath("../../main_house/HousePortalEverwoods")
+portal_frame_width = 0.0
+viewport_size_mode = 0
+view_direction = 1
+portal_render_layer = 524288
+is_teleport = true
+teleport_direction = 0
+rigidbody_boost = 0.0
+teleport_tolerance = 0.5
+teleport_interactions = 3
+teleport_collision_mask = 32768
+start_deactivated = false
+metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
+metadata/_edit_group_ = true
+
+[node name="Portal3D_Mesh" type="MeshInstance3D" parent="Meadow/EverwoodPortalHouse"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.05, 0, 0, 0)
+layers = 524288
+material_override = ExtResource("7_vwutt")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_vwutt")
+
+[node name="TeleportArea" type="Area3D" parent="Meadow/EverwoodPortalHouse"]
+
+[node name="Collider" type="CollisionShape3D" parent="Meadow/EverwoodPortalHouse/TeleportArea"]
+shape = SubResource("BoxShape3D_ax3ly")
 
 [editable path="player"]
 [editable path="player/head/InteractRay"]
