@@ -920,6 +920,29 @@ mesh = SubResource("ArrayMesh_a8erk")
 [node name="Collider" type="CollisionShape3D" parent="Gallery/GalleryPortalHouse/TeleportArea" unique_id=1774017625]
 shape = SubResource("BoxShape3D_qwap7")
 
+[node name="DoorBevel" type="Node3D" parent="Gallery" unique_id=1971723295]
+transform = Transform3D(-4.3711395e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711395e-08, 0.6067173, -1.5757446, -0.9627304)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Gallery/DoorBevel" unique_id=686929355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013679504, 1.8414459, -0.0070724487)
+size = Vector3(1.2714081, 0.03466797, 0.123046875)
+material = ExtResource("14_18mtf")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Gallery/DoorBevel" unique_id=598565164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008026123, -0.33502197, -0.0076408386)
+size = Vector3(1.2632351, 0.03466797, 0.123046875)
+material = ExtResource("14_18mtf")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Gallery/DoorBevel" unique_id=255643705]
+transform = Transform3D(-4.3711395e-08, -1, 0, 1, -4.3711395e-08, 0, -1.5458351e-20, 0, 1, -0.6307144, 0.74043274, -0.006919861)
+size = Vector3(2.1889794, 0.03125, 0.123046875)
+material = ExtResource("14_18mtf")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Gallery/DoorBevel" unique_id=2052264345]
+transform = Transform3D(-4.3711395e-08, -1, 0, 1, -4.3711395e-08, 0, -2.4140439e-20, 0, 1, 0.6100693, 0.75737, -0.0070724487)
+size = Vector3(2.1608026, 0.03125, 0.123046875)
+material = ExtResource("14_18mtf")
+
 [node name="AudioController" parent="." unique_id=1228426800 instance=ExtResource("9_ymoqr")]
 
 [node name="Meadow" parent="." unique_id=1047031754 instance=ExtResource("17_seot8")]

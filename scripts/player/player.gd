@@ -9,19 +9,23 @@ extends CharacterBody3D
 
 @onready var ap: AnimationPlayer = $head/PSX_First_Person_Arms/AnimationPlayer
 
+
+var gV
+var newV
+
 # Speed variables
 # have this be 3 for actual gameplay
 # be 7 - 10 for debug
 var CURRENT_SPEED = 4.0
 
 # defaults are 3, 5, & 2
-const WALKING_SPEED = 3.5
-const SPRINTING_SPEED = 6.0
-const CROUCHING_SPEED = 3.0
+const WALKING_SPEED = 3.0
+const SPRINTING_SPEED = 5.0
+const CROUCHING_SPEED = 2.0
 
 
 # Input variables
-const mouse_sens = 0.1
+const mouse_sens = 0.08
 var direction = Vector3.ZERO
 
 # Movement Variables
@@ -31,8 +35,8 @@ var crouching_depth = -0.9
 
 
 # Audio
-@onready var wood: AudioStreamPlayer = $PlayerAudio/Wood
 @onready var snow: AudioStreamPlayer = $PlayerAudio/Snow
+@onready var wood: AnimationPlayer = $PlayerAudio/WoodSound
 
 
 # Constrain mouse to window
@@ -51,7 +55,8 @@ func _input(event: InputEvent) -> void:
 		head.rotation.x = clamp(head.rotation.x, deg_to_rad(-89), deg_to_rad(89))
 	
 func _physics_process(delta: float) -> void:
-	
+	gV = get_real_velocity()
+	newV = gV.x + gV.y + gV.z
 	#if %interact_ray.is_colliding():
 		#var target = %interact_ray.get_collider()
 		#print(target)
@@ -98,6 +103,15 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, CURRENT_SPEED)
 		
 	move_and_slide()
+
+
+	var moving = isMoving()
+	
+	if is_on_floor() && moving :
+		wood.play("Audio")
+	else:
+		wood.stop()
+		
 	
 	if !ap.is_playing():
 		ap.play("Relax_hands_idle")
@@ -106,3 +120,12 @@ func animationGrab():
 	ap.play("Collect_something")
 	ap.queue("Relax_hands_idle_start")
 	ap.queue("Relax_hands_idle")
+	
+func isMoving():
+	print(newV)
+	if newV > 0.32:
+		return true
+	elif newV < -0.32:
+		return true
+	else:
+		return false

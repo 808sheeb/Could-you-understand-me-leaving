@@ -14,7 +14,9 @@ func _ready() -> void:
 func play_alarm() -> void:
 	if not mute:
 		$alarm.play()
+		$bg1.stream_paused = true
 		
 func stop_alarm():
 	if not mute:
 		$alarm.stop()
+		$bg1.stream_paused = false

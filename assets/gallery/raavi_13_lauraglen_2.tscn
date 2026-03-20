@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://bc1i0x7j611rq"]
+
+[ext_resource type="PackedScene" uid="uid://owgty1nwhawr" path="res://assets/gallery/raavi_13lauraglen_2.glb" id="1_2vd22"]
+[ext_resource type="Material" uid="uid://qs515fr0c26f" path="res://assets/tex/woodFloor/WoodFloor051_1K-JPG.tres" id="2_bkjpd"]
+[ext_resource type="ArrayMesh" uid="uid://51rnuhl2bl3u" path="res://assets/gallery/raavi/layer1.tres" id="3_fkrxr"]
+[ext_resource type="Material" uid="uid://dxmwaameno6l6" path="res://assets/gallery/steel.tres" id="4_k82uw"]
+[ext_resource type="ArrayMesh" uid="uid://bksutbxyr11a4" path="res://assets/gallery/raavi/layer2.tres" id="5_nd4e4"]
+[ext_resource type="ArrayMesh" uid="uid://cc4bmga6u78aj" path="res://assets/gallery/raavi/layer3.tres" id="6_tlmjp"]
+
+[sub_resource type="Animation" id="Animation_fkrxr"]
+resource_name = "Scale"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k82uw"]
+_data = {
+&"Scale": SubResource("Animation_fkrxr")
+}
+
+[node name="raavi_13lauraglen_2" unique_id=2078057481 instance=ExtResource("1_2vd22")]
+
+[node name="Plane" parent="." index="0" unique_id=545360451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0, -0.042)
+visible = false
+
+[node name="Plane_002" parent="." index="1" unique_id=215378119]
+transform = Transform3D(1.532, 0, 0, 0, 1.532, 0, 0, 0, 1.532, 0.41784528, -0.15, 1.7270669)
+visible = false
+
+[node name="Plane_003" parent="." index="2" unique_id=1702219593]
+transform = Transform3D(2.131, 0, 0, 0, 1.796, 0, 0, 0, 1.796, 0.045748472, -0.3, 0)
+visible = false
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." index="3" unique_id=21061918]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0564392, 0, 0.65719604)
+size = Vector3(0.13867188, 1, 9.249695)
+material = ExtResource("2_bkjpd")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." index="4" unique_id=2043899643]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.5127423, 0, -3.8935528)
+size = Vector3(0.13867188, 1, 9.249695)
+material = ExtResource("2_bkjpd")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." index="5" unique_id=2059187850]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.5127423, 0, 5.2074766)
+size = Vector3(0.13867188, 1, 9.249695)
+material = ExtResource("2_bkjpd")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." index="6" unique_id=1581345452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0597725, 0, 0.65719604)
+size = Vector3(0.13867188, 1, 9.249695)
+material = ExtResource("2_bkjpd")
+
+[node name="Layer1" type="Node3D" parent="." index="7" unique_id=1119670028]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0.44623232, -0.042)
+
+[node name="Plane2" type="MeshInstance3D" parent="Layer1" index="0" unique_id=608454487]
+mesh = ExtResource("3_fkrxr")
+skeleton = NodePath("")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Layer1" index="1" unique_id=1732817722]
+transform = Transform3D(0.8191721, -0.57354784, -2.5070573e-08, 0, -4.371139e-08, 1, -0.57354784, -0.8191721, -3.5807147e-08, -1.9826835, 5.575977e-10, -2.9125502)
+radius = 0.005
+height = 2.232544
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Layer1" index="2" unique_id=1632422879]
+transform = Transform3D(0.7536896, -0.65723056, -2.872846e-08, 0, -4.371139e-08, 1, -0.65723056, -0.7536896, -3.2944815e-08, 3.855443, 1.8251984e-09, 4.2914705)
+radius = 0.005
+height = 2.388504
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Layer1" index="3" unique_id=830793999]
+transform = Transform3D(0.3815222, 0.9243598, 4.0405048e-08, 1.6053765e-15, -4.371139e-08, 1, 0.9243598, -0.3815222, -1.667686e-08, -2.1397808, 3.4432407e-08, 1.4822445)
+radius = 0.005
+height = 1.088459
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Layer1" index="4" unique_id=1056792708]
+transform = Transform3D(0.6161291, 0.7876454, 3.442907e-08, -3.6616387e-17, -4.371139e-08, 1, 0.7876454, -0.6161291, -2.693185e-08, 3.8772578, -3.2019116e-08, -2.3965695)
+radius = 0.005
+height = 4.540059
+material = ExtResource("4_k82uw")
+
+[node name="Layer2" type="Node3D" parent="." index="8" unique_id=444661682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+
+[node name="Plane_004" type="MeshInstance3D" parent="Layer2" index="0" unique_id=966063786]
+transform = Transform3D(1.532, 0, 0, 0, 1.532, 0, 0, 0, 1.532, 0.41784528, -0.15, 1.7270669)
+mesh = ExtResource("5_nd4e4")
+skeleton = NodePath("")
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Layer2" index="1" unique_id=296326582]
+transform = Transform3D(0.6836433, -0.7298163, -3.1901283e-08, 0, -4.371139e-08, 1, -0.7298163, -0.6836433, -2.9882994e-08, -2.5803218, -0.15000002, -1.0414642)
+radius = 0.005
+height = 1.1992493
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Layer2" index="2" unique_id=1551523597]
+transform = Transform3D(-0.594107, -0.804386, -3.5160827e-08, -1.3138905e-15, -4.371139e-08, 1, -0.804386, 0.594107, 2.5969241e-08, -2.5910277, -0.15000002, 4.5203156)
+radius = 0.005
+height = 1.0295486
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="Layer2" index="3" unique_id=766208157]
+transform = Transform3D(-0.9994305, -0.03374827, -1.4751791e-09, -2.7427672e-15, -4.371139e-08, 1, -0.03374827, 0.9994305, 4.368649e-08, 0.23468912, -0.15000002, 4.668027)
+radius = 0.005
+height = 0.9768696
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="Layer2" index="4" unique_id=165215719]
+transform = Transform3D(-0.8194223, 0.57319033, 2.5054948e-08, -2.8537262e-15, -4.371139e-08, 1, 0.57319033, 0.8194223, 3.5818083e-08, 4.1869926, -0.15000004, 4.334244)
+radius = 0.005
+height = 1.9864817
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="Layer2" index="5" unique_id=885832011]
+transform = Transform3D(-0.8635187, -0.5043167, -2.2044379e-08, -1.3981398e-15, -4.371139e-08, 1, -0.5043167, 0.8635187, 3.7745604e-08, 5.0026107, -0.15000004, -2.434353)
+radius = 0.005
+height = 3.229145
+material = ExtResource("4_k82uw")
+
+[node name="Layer3" type="Node3D" parent="." index="9" unique_id=1714034954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.13292971, 0)
+
+[node name="Plane_004" type="MeshInstance3D" parent="Layer3" index="0" unique_id=2054738501]
+transform = Transform3D(2.131, 0, 0, 0, 1.796, 0, 0, 0, 1.796, 0.045748472, -0.3, 0)
+mesh = ExtResource("6_tlmjp")
+skeleton = NodePath("")
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="Layer3" index="1" unique_id=919280256]
+transform = Transform3D(0.72206223, -0.69182813, -3.0240766e-08, 0, -4.371139e-08, 1, -0.69182813, -0.72206223, -3.1562337e-08, -1.7204268, -0.3, -3.5990791)
+radius = 0.005
+height = 0.69776154
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="Layer3" index="2" unique_id=1200125329]
+transform = Transform3D(0.9601718, 0.2794102, 1.2213405e-08, 0, -4.371139e-08, 1, 0.2794102, -0.9601718, -4.1970445e-08, 3.2268918, -0.3, -3.4755309)
+radius = 0.005
+height = 0.7253456
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="Layer3" index="3" unique_id=1362930882]
+transform = Transform3D(0.9601718, 0.2794102, 1.2213405e-08, 0, -4.371139e-08, 1, 0.2794102, -0.9601718, -4.1970445e-08, 0.46390972, -0.3, 4.8247075)
+radius = 0.005
+height = 0.7010517
+material = ExtResource("4_k82uw")
+
+[node name="CSGCylinder3D13" type="CSGCylinder3D" parent="Layer3" index="4" unique_id=1734200938]
+transform = Transform3D(0.57630414, -0.81723565, -3.57225e-08, -3.244881e-15, -4.3711385e-08, 1, -0.81723565, -0.57630414, -2.5191042e-08, 5.835095, -0.3, 2.6867473)
+radius = 0.005
+height = 0.37789965
+material = ExtResource("4_k82uw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="10" unique_id=1538479069]
+libraries/ = SubResource("AnimationLibrary_k82uw")

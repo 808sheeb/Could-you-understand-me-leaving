@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://323crdj21nkj"]
+
+[resource]
+resource_name = "layer 2"
+transparency = 1
+blend_mode = 4
+cull_mode = 2
+depth_draw_mode = 1
+albedo_color = Color(0.8917674, 0.7752344, 0.28701878, 0.7058824)
+roughness = 0.5

@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://b1wdjh86hm3ar" path="res://assets/ui/gnome.png" id="6_je7p5"]
 [ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="10_h17s1"]
 [ext_resource type="Script" uid="uid://civ04amcchtb6" path="res://scripts/ui/narration.gd" id="12_fm80t"]
-[ext_resource type="AudioStream" uid="uid://cd7ymquox1rgq" path="res://assets/audio/walking/Concrete 1.wav" id="13_myrg7"]
+[ext_resource type="AudioStream" uid="uid://pwjsi410m6ck" path="res://assets/audio/walking/wood02.ogg" id="13_ugbui"]
 [ext_resource type="AudioStream" uid="uid://dlbxfkrkyseux" path="res://assets/audio/walking/Snow.wav" id="16_lgqa7"]
 [ext_resource type="Texture2D" uid="uid://b5s5uci8xbr6c" path="res://assets/player/hands/PSX_First_Person_Arms_arms.png" id="17_kvlxm"]
 
@@ -5227,6 +5227,27 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 expand_margin_bottom = 8.0
 
+[sub_resource type="Animation" id="Animation_ugbui"]
+resource_name = "Audio"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Wood:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.26666668),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fcs02"]
+_data = {
+&"Audio": SubResource("Animation_ugbui")
+}
+
 [node name="player" type="CharacterBody3D" unique_id=578974006]
 collision_layer = 13
 collision_mask = 13
@@ -5734,12 +5755,15 @@ one_shot = true
 [node name="PlayerAudio" type="Node" parent="." unique_id=508069166]
 
 [node name="Wood" type="AudioStreamPlayer" parent="PlayerAudio" unique_id=961441937]
-stream = ExtResource("13_myrg7")
-volume_db = -18.289
+stream = ExtResource("13_ugbui")
+volume_db = -5.203
 
 [node name="Snow" type="AudioStreamPlayer" parent="PlayerAudio" unique_id=1809130886]
 stream = ExtResource("16_lgqa7")
 volume_db = -17.234
+
+[node name="WoodSound" type="AnimationPlayer" parent="PlayerAudio" unique_id=243741961]
+libraries/ = SubResource("AnimationLibrary_fcs02")
 
 [connection signal="timeout" from="UI/Narration/Timer" to="UI/Narration" method="textTimeout"]
 

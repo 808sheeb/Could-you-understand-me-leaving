@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dokbndg6gyiw2"]
+
+[resource]
+resource_name = "layer1"
+transparency = 1
+blend_mode = 4
+cull_mode = 2
+depth_draw_mode = 1
+albedo_color = Color(0.57508004, 0.88, 0.3256, 0.7058824)
+roughness = 0.5
+emission = Color(0.9451897, 1.42922, 0.54916483, 1)

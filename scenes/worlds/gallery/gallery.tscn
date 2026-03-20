@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://dy6obmcyomgbp" path="res://assets/gallery/stuccoGallery.tres" id="4_3pphj"]
 [ext_resource type="PackedScene" uid="uid://b1qwqx5jfqt5t" path="res://scenes/objects/bench.tscn" id="5_rtnw1"]
 [ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="6_rtnw1"]
+[ext_resource type="PackedScene" uid="uid://bc1i0x7j611rq" path="res://assets/gallery/raavi_13_lauraglen_2.tscn" id="7_5renq"]
 [ext_resource type="PackedScene" uid="uid://b50gw0kf52kdd" path="res://scenes/objects/light.tscn" id="7_p8dl5"]
 [ext_resource type="PackedScene" uid="uid://b03wm4on1coac" path="res://scenes/worlds/gallery/desire lines.tscn" id="9_ohy8r"]
 [ext_resource type="Script" uid="uid://cxe3rdn2xwgcr" path="res://scripts/scene/spinner.gd" id="10_5renq"]
@@ -797,10 +798,16 @@ size = Vector3(2693.6543, 827.0851, 26.213379)
 size = Vector2(5000, 5000)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_p8dl5"]
-viewport_path = NodePath("int_anime_fbx/RootNode/Sprite3D/SubViewport")
+viewport_path = NodePath("gallery2/Inner/Sprite3D/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ohy8r"]
-viewport_path = NodePath("int_anime_fbx/RootNode/Sprite3D2/SubViewport")
+viewport_path = NodePath("gallery2/Inner/Sprite3D2/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_5renq"]
+viewport_path = NodePath("Sprite3D3/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_83vi4"]
+viewport_path = NodePath("Sprite3D4/SubViewport")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_id8q6"]
 resource_name = "blue"
@@ -879,6 +886,9 @@ shadow_mesh = SubResource("ArrayMesh_mkple")
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_5renq"]
 radius = 1.065918
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_51fdt"]
+viewport_path = NodePath("Speciation/CSGBox3D/Sprite3D4/SubViewport")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6bbr6"]
 resource_name = "red"
 transparency = 4
@@ -953,180 +963,176 @@ shadow_mesh = SubResource("ArrayMesh_ajx24")
 
 [node name="Gallery" type="Node3D" unique_id=1341487125]
 
-[node name="int_anime_fbx" type="Node3D" parent="." unique_id=1342477377]
+[node name="gallery2" type="Node3D" parent="." unique_id=1342477377]
 transform = Transform3D(0.0065573393, 0, 0, 0, 0.0065573403, 7.816956e-10, 0, -7.816956e-10, 0.0065573403, 0, -2.2392073, -0.058956146)
 
-[node name="RootNode" type="Node3D" parent="int_anime_fbx" unique_id=1204741647]
+[node name="Inner" type="Node3D" parent="gallery2" unique_id=1204741647]
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 7.1054274e-15, 0, -7.1054274e-15, 1, 0, 1.3871422e-05, -116.36197)
 
-[node name="Plane" type="MeshInstance3D" parent="int_anime_fbx/RootNode" unique_id=1673516602]
+[node name="Plane" type="MeshInstance3D" parent="gallery2/Inner" unique_id=1673516602]
 transform = Transform3D(0, -152.50087, 0, 152.50085, 0, 0, 0, 0, 152.50085, -2442.6233, 362.80655, 0)
 mesh = SubResource("ArrayMesh_3pphj")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="int_anime_fbx/RootNode/Plane" unique_id=1940802930]
+[node name="StaticBody3D" type="StaticBody3D" parent="gallery2/Inner/Plane" unique_id=1940802930]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="int_anime_fbx/RootNode/Plane/StaticBody3D" unique_id=1455729757]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="gallery2/Inner/Plane/StaticBody3D" unique_id=1455729757]
 shape = SubResource("ConcavePolygonShape3D_f21w3")
 
-[node name="Plane_000" type="Node3D" parent="int_anime_fbx/RootNode" unique_id=965673986]
+[node name="Plane_000" type="Node3D" parent="gallery2/Inner" unique_id=965673986]
 transform = Transform3D(100, -4.1039243e-06, -4.3711393e-06, 4.371138e-06, -3.357656e-05, 99.99999, 4.3711398e-06, 93.88686, 3.5762787e-05, -498.00473, 0.064832196, -0.57244927)
 
-[node name="Plane_000_concrete_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_000" unique_id=755182757]
+[node name="Plane_000_concrete_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_000" unique_id=755182757]
 mesh = SubResource("ArrayMesh_rtnw1")
 skeleton = NodePath("")
 
-[node name="Plane_000_frame_wind_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_000" unique_id=1704900675]
+[node name="Plane_000_frame_wind_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_000" unique_id=1704900675]
 mesh = SubResource("ArrayMesh_p8dl5")
 skeleton = NodePath("")
 
-[node name="Plane_000_wall_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_000" unique_id=2034224350]
+[node name="Plane_000_wall_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_000" unique_id=2034224350]
 mesh = SubResource("ArrayMesh_fm7ly")
 skeleton = NodePath("")
 
-[node name="Plane_000_wind_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_000" unique_id=1210055756]
+[node name="Plane_000_wind_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_000" unique_id=1210055756]
 mesh = SubResource("ArrayMesh_ohy8r")
 skeleton = NodePath("")
 
-[node name="Plane_000_wood_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_000" unique_id=1405654651]
+[node name="Plane_000_wood_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_000" unique_id=1405654651]
 mesh = SubResource("ArrayMesh_5renq")
 skeleton = NodePath("")
 
-[node name="Plane_001" type="Node3D" parent="int_anime_fbx/RootNode" unique_id=1498400587]
+[node name="Plane_001" type="Node3D" parent="gallery2/Inner" unique_id=1498400587]
 transform = Transform3D(100, -4.1039243e-06, -4.3711393e-06, 4.371138e-06, -3.357656e-05, 99.99999, 4.3711398e-06, 93.88686, 3.5762787e-05, 149.43056, 0.064832196, -0.57244927)
 
-[node name="Plane_001_concrete_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_001" unique_id=795484958]
+[node name="Plane_001_concrete_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_001" unique_id=795484958]
 mesh = SubResource("ArrayMesh_51fdt")
 skeleton = NodePath("")
 
-[node name="Plane_001_floor_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_001" unique_id=1059573680]
+[node name="Plane_001_floor_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_001" unique_id=1059573680]
 transform = Transform3D(4.363564, 0, 0, 0, 1, 0, 0, 0, 1, 1.5343486, 0, 0)
 mesh = SubResource("ArrayMesh_ccirv")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="int_anime_fbx/RootNode/Plane_001/Plane_001_floor_0" unique_id=108690548]
+[node name="StaticBody3D" type="StaticBody3D" parent="gallery2/Inner/Plane_001/Plane_001_floor_0" unique_id=108690548]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="int_anime_fbx/RootNode/Plane_001/Plane_001_floor_0/StaticBody3D" unique_id=1073088074]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="gallery2/Inner/Plane_001/Plane_001_floor_0/StaticBody3D" unique_id=1073088074]
 shape = SubResource("ConcavePolygonShape3D_ww88h")
 
-[node name="Plane_001_frame_wind_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_001" unique_id=382352209]
+[node name="Plane_001_frame_wind_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_001" unique_id=382352209]
 mesh = SubResource("ArrayMesh_f0pe5")
 skeleton = NodePath("")
 
-[node name="Plane_001_wind_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_001" unique_id=2136756654]
+[node name="Plane_001_wind_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_001" unique_id=2136756654]
 mesh = SubResource("ArrayMesh_clgn3")
 skeleton = NodePath("")
 
-[node name="Plane_001_wood_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_001" unique_id=864889632]
+[node name="Plane_001_wood_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_001" unique_id=864889632]
 mesh = SubResource("ArrayMesh_nelc7")
 skeleton = NodePath("")
 
-[node name="Plane_002" type="Node3D" parent="int_anime_fbx/RootNode" unique_id=816948880]
+[node name="Plane_002" type="Node3D" parent="gallery2/Inner" unique_id=816948880]
 transform = Transform3D(100, -4.1039243e-06, -4.3711393e-06, 4.371138e-06, -3.357656e-05, 99.99999, 4.3711398e-06, 93.88686, 3.5762787e-05, -1145.3214, 0.064832196, -0.57244927)
 
-[node name="Plane_002_concrete_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_002" unique_id=1776232066]
+[node name="Plane_002_concrete_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_002" unique_id=1776232066]
 mesh = SubResource("ArrayMesh_xqfiv")
 skeleton = NodePath("")
 
-[node name="Plane_002_frame_wind_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_002" unique_id=741698421]
+[node name="Plane_002_frame_wind_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_002" unique_id=741698421]
 mesh = SubResource("ArrayMesh_27qds")
 skeleton = NodePath("")
 
-[node name="Plane_002_wall_0_001" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_002" unique_id=1436120075]
+[node name="Plane_002_wall_0_001" type="MeshInstance3D" parent="gallery2/Inner/Plane_002" unique_id=1436120075]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4429817, 0, 0)
 mesh = SubResource("ArrayMesh_rp8g8")
 skeleton = NodePath("")
 
-[node name="Plane_002_wall_0_002" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_002" unique_id=1109116279]
+[node name="Plane_002_wall_0_002" type="MeshInstance3D" parent="gallery2/Inner/Plane_002" unique_id=1109116279]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.012905121, 0, 0)
 mesh = SubResource("ArrayMesh_33x4d")
 skeleton = NodePath("")
 
-[node name="Plane_002_wall_0_003" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_002" unique_id=1906287730]
+[node name="Plane_002_wall_0_003" type="MeshInstance3D" parent="gallery2/Inner/Plane_002" unique_id=1906287730]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.966466, 0, 0)
 mesh = SubResource("ArrayMesh_3sqsk")
 skeleton = NodePath("")
 
-[node name="Plane_002_wind_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_002" unique_id=1767746044]
+[node name="Plane_002_wind_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_002" unique_id=1767746044]
 mesh = SubResource("ArrayMesh_08q5o")
 skeleton = NodePath("")
 
-[node name="Plane_002_wood_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_002" unique_id=1877170726]
+[node name="Plane_002_wood_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_002" unique_id=1877170726]
 mesh = SubResource("ArrayMesh_3aopd")
 skeleton = NodePath("")
 
-[node name="Plane_003" type="Node3D" parent="int_anime_fbx/RootNode" unique_id=2062185203]
+[node name="Plane_003" type="Node3D" parent="gallery2/Inner" unique_id=2062185203]
 transform = Transform3D(100, -4.1039243e-06, -4.3711393e-06, 4.371138e-06, -3.357656e-05, 99.99999, 4.3711398e-06, 93.88686, 3.5762787e-05, -1792.3158, 0.064832196, -0.57244927)
 
-[node name="Plane_003_concrete_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_003" unique_id=221444103]
+[node name="Plane_003_concrete_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_003" unique_id=221444103]
 mesh = SubResource("ArrayMesh_58i5s")
 skeleton = NodePath("")
 
-[node name="Plane_003_concrete_0_001" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_003" unique_id=423880417]
+[node name="Plane_003_concrete_0_001" type="MeshInstance3D" parent="gallery2/Inner/Plane_003" unique_id=423880417]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4515076, 0, 0)
 mesh = SubResource("ArrayMesh_sacty")
 skeleton = NodePath("")
 
-[node name="Plane_003_frame_wind_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_003" unique_id=220772741]
+[node name="Plane_003_frame_wind_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_003" unique_id=220772741]
 mesh = SubResource("ArrayMesh_f4knq")
 skeleton = NodePath("")
 
-[node name="Plane_003_wind_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_003" unique_id=1356080345]
+[node name="Plane_003_wind_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_003" unique_id=1356080345]
 mesh = SubResource("ArrayMesh_jdxmb")
 skeleton = NodePath("")
 
-[node name="Plane_003_wood_0" type="MeshInstance3D" parent="int_anime_fbx/RootNode/Plane_003" unique_id=973490184]
+[node name="Plane_003_wood_0" type="MeshInstance3D" parent="gallery2/Inner/Plane_003" unique_id=973490184]
 mesh = SubResource("ArrayMesh_20sln")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="int_anime_fbx/RootNode" unique_id=1023290803]
+[node name="StaticBody3D" type="StaticBody3D" parent="gallery2/Inner" unique_id=1023290803]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="int_anime_fbx/RootNode/StaticBody3D" unique_id=764641634]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="gallery2/Inner/StaticBody3D" unique_id=764641634]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 7.81597e-14, 0, -7.81597e-14, 1, -1127.3268, 413.0428, -751.1627)
 shape = SubResource("BoxShape3D_f21w3")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="int_anime_fbx/RootNode/StaticBody3D" unique_id=439677063]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="gallery2/Inner/StaticBody3D" unique_id=439677063]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 7.81597e-14, 0, -7.81597e-14, 1, -1127.3268, 413.04257, 947.0044)
 shape = SubResource("BoxShape3D_f21w3")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="int_anime_fbx/RootNode" unique_id=1511123806]
+[node name="CSGBox3D" type="CSGBox3D" parent="gallery2/Inner" unique_id=1511123806]
 transform = Transform3D(1.0000002, 0, 0, 0, 1, -9.663381e-13, 0, 9.663381e-13, 1, -478.15106, 193.28465, 108.407936)
 use_collision = true
 size = Vector3(32.683594, 387.56952, 861.8283)
 material = ExtResource("4_3pphj")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="int_anime_fbx/RootNode" unique_id=98847677]
+[node name="CSGBox3D2" type="CSGBox3D" parent="gallery2/Inner" unique_id=98847677]
 transform = Transform3D(1.0000002, 0, 0, 0, 1, -9.80549e-13, 0, 9.80549e-13, 1, -1852.0734, 193.28464, 108.407936)
 use_collision = true
 size = Vector3(32.683594, 387.56952, 861.8283)
 material = ExtResource("4_3pphj")
 
-[node name="bench" parent="int_anime_fbx/RootNode" unique_id=748072465 instance=ExtResource("5_rtnw1")]
-transform = Transform3D(-1.999808e-06, 0, 45.75027, 5.4538546e-06, 45.75025, 2.3839557e-13, -45.75025, 5.4538546e-06, -1.9998072e-06, -1478.3938, -3.7299564e-05, 312.89142)
+[node name="bench2" parent="gallery2/Inner" unique_id=1513632191 instance=ExtResource("5_rtnw1")]
+transform = Transform3D(-1.9998085e-06, 0, 45.750275, 5.453856e-06, 45.75025, 2.3839557e-13, -45.75025, 5.453856e-06, -1.9998072e-06, -1191.5398, -3.0517578e-05, 312.89142)
 
-[node name="bench2" parent="int_anime_fbx/RootNode" unique_id=1513632191 instance=ExtResource("5_rtnw1")]
-transform = Transform3D(-1.9998083e-06, 0, 45.750275, 5.453855e-06, 45.75025, 2.3839557e-13, -45.75025, 5.453855e-06, -1.9998072e-06, -814.0042, -3.7299564e-05, 312.89142)
-
-[node name="bench3" parent="int_anime_fbx/RootNode" unique_id=722497726 instance=ExtResource("5_rtnw1")]
+[node name="bench3" parent="gallery2/Inner" unique_id=722497726 instance=ExtResource("5_rtnw1")]
 transform = Transform3D(-45.750263, 2.7089607e-12, -3.9996166e-06, 2.7739599e-12, 45.75026, 5.453858e-06, 3.999616e-06, 5.453855e-06, -45.750282, 8.037407, 7.143461e-05, -599.23694)
 
-[node name="bench4" parent="int_anime_fbx/RootNode" unique_id=1080910262 instance=ExtResource("5_rtnw1")]
+[node name="bench4" parent="gallery2/Inner" unique_id=1080910262 instance=ExtResource("5_rtnw1")]
 transform = Transform3D(-45.750267, 2.7089609e-12, -3.999617e-06, 2.7739599e-12, 45.75026, 5.453858e-06, 3.999616e-06, 5.4538555e-06, -45.750282, -1883.7847, 7.143462e-05, -599.23694)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="int_anime_fbx/RootNode" unique_id=307026655]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="gallery2/Inner" unique_id=307026655]
 transform = Transform3D(1.0000002, 0, 0, 0, 1, -1.2079227e-13, 0, 1.2079227e-13, 1, -1232.7167, 1173.6672, -1508.8577)
-visible = false
 mesh = SubResource("PlaneMesh_3pphj")
 
-[node name="Sprite3D" type="Sprite3D" parent="int_anime_fbx/RootNode" unique_id=2028382252]
+[node name="Sprite3D" type="Sprite3D" parent="gallery2/Inner" unique_id=2028382252]
 transform = Transform3D(-5.5598734e-06, -1.5162828e-05, 127.19506, 1.5162832e-05, 127.195, 1.5162821e-05, -127.195, 1.5162834e-05, -5.55987e-06, -444.8916, 194.74188, 81.564926)
 texture = SubResource("ViewportTexture_p8dl5")
 
-[node name="SubViewport" type="SubViewport" parent="int_anime_fbx/RootNode/Sprite3D" unique_id=1779558070]
+[node name="SubViewport" type="SubViewport" parent="gallery2/Inner/Sprite3D" unique_id=1779558070]
 transparent_bg = true
 size = Vector2i(502, 37)
 
-[node name="Label" type="Label" parent="int_anime_fbx/RootNode/Sprite3D/SubViewport" unique_id=1358113220]
+[node name="Label" type="Label" parent="gallery2/Inner/Sprite3D/SubViewport" unique_id=1358113220]
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
@@ -1136,15 +1142,15 @@ text = "Hey there! We've been waiting for you."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Sprite3D2" type="Sprite3D" parent="int_anime_fbx/RootNode" unique_id=1863043398]
+[node name="Sprite3D2" type="Sprite3D" parent="gallery2/Inner" unique_id=1863043398]
 transform = Transform3D(1.6679614e-05, 1.516283e-05, -127.19508, -1.5162812e-05, 127.195, 1.5162818e-05, 127.195, 1.5162811e-05, 1.667962e-05, -1880.493, 194.74188, 119.92544)
 texture = SubResource("ViewportTexture_ohy8r")
 
-[node name="SubViewport" type="SubViewport" parent="int_anime_fbx/RootNode/Sprite3D2" unique_id=787648569]
+[node name="SubViewport" type="SubViewport" parent="gallery2/Inner/Sprite3D2" unique_id=787648569]
 transparent_bg = true
 size = Vector2i(344, 37)
 
-[node name="Label" type="Label" parent="int_anime_fbx/RootNode/Sprite3D2/SubViewport" unique_id=241804547]
+[node name="Label" type="Label" parent="gallery2/Inner/Sprite3D2/SubViewport" unique_id=241804547]
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
@@ -1154,37 +1160,40 @@ text = "Maybe it was here all along."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Lights" type="Node3D" parent="int_anime_fbx" unique_id=1184580001]
+[node name="raavi_13lauraglen_2" parent="gallery2/Inner" unique_id=2078057481 instance=ExtResource("7_5renq")]
+transform = Transform3D(-1.8358784e-06, 42.000004, -1.8358784e-06, 4.5474735e-13, -1.8358784e-06, -42, -42, -1.8358783e-06, -4.5474735e-13, -1790.9294, 221.23955, 180.6306)
 
-[node name="Light" parent="int_anime_fbx/Lights" unique_id=453148265 instance=ExtResource("7_p8dl5")]
+[node name="Lights" type="Node3D" parent="gallery2" unique_id=1184580001]
+
+[node name="Light" parent="gallery2/Lights" unique_id=453148265 instance=ExtResource("7_p8dl5")]
 transform = Transform3D(0.9999998, 0, 0, 0, 1, 2.1316282e-14, 0, -2.1316282e-14, 1, -293.66153, 385.91757, 4.673004e-05)
 l_range = 15.0
 
-[node name="Light2" parent="int_anime_fbx/Lights" unique_id=1337861967 instance=ExtResource("7_p8dl5")]
+[node name="Light2" parent="gallery2/Lights" unique_id=1337861967 instance=ExtResource("7_p8dl5")]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 4.973799e-14, 0, -4.973799e-14, 1, -676.53577, 385.91757, 4.9591064e-05)
 l_range = 15.0
 
-[node name="Light3" parent="int_anime_fbx/Lights" unique_id=1556944084 instance=ExtResource("7_p8dl5")]
-transform = Transform3D(0.99999976, 0, 0, 0, 1, 4.2632564e-14, 0, -4.2632564e-14, 1, -1747.8661, 385.91757, 4.863739e-05)
+[node name="Light3" parent="gallery2/Lights" unique_id=1556944084 instance=ExtResource("7_p8dl5")]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 7.81597e-14, 0, -7.81597e-14, 1, -1539.9014, 428.68167, 5.531311e-05)
 l_range = 15.0
 
-[node name="Light4" parent="int_anime_fbx/Lights" unique_id=2014976119 instance=ExtResource("7_p8dl5")]
+[node name="Light4" parent="gallery2/Lights" unique_id=2014976119 instance=ExtResource("7_p8dl5")]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 6.3948846e-14, 0, -6.3948846e-14, 1, -1974.7891, 385.91757, 5.054474e-05)
 l_range = 15.0
 
-[node name="Light5" parent="int_anime_fbx/Lights" unique_id=707872672 instance=ExtResource("7_p8dl5")]
+[node name="Light5" parent="gallery2/Lights" unique_id=707872672 instance=ExtResource("7_p8dl5")]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 7.81597e-14, 0, -7.81597e-14, 1, -2094.1006, 712.0958, 574.08)
 l_range = 15.0
 
-[node name="Light6" parent="int_anime_fbx/Lights" unique_id=2077220787 instance=ExtResource("7_p8dl5")]
+[node name="Light6" parent="gallery2/Lights" unique_id=2077220787 instance=ExtResource("7_p8dl5")]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 7.81597e-14, 0, -7.81597e-14, 1, -328.31097, 712.0958, 574.0798)
 l_range = 15.0
 
-[node name="Light8" parent="int_anime_fbx/Lights" unique_id=1096378320 instance=ExtResource("7_p8dl5")]
+[node name="Light8" parent="gallery2/Lights" unique_id=1096378320 instance=ExtResource("7_p8dl5")]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 7.81597e-14, 0, -7.81597e-14, 1, -2094.1006, 712.096, -956.9351)
 l_range = 15.0
 
-[node name="Light9" parent="int_anime_fbx/Lights" unique_id=1559538623 instance=ExtResource("7_p8dl5")]
+[node name="Light9" parent="gallery2/Lights" unique_id=1559538623 instance=ExtResource("7_p8dl5")]
 transform = Transform3D(0.99999976, 0, 0, 0, 1, 7.81597e-14, 0, -7.81597e-14, 1, -328.31097, 712.096, -956.9351)
 l_range = 15.0
 
@@ -1207,6 +1216,42 @@ transform = Transform3D(-1.2720014e-07, 0, -2.91, 0, 2.91, 0, 2.91, 0, -1.272001
 
 [node name="Node3D6" parent="DesireLines" unique_id=220163034 instance=ExtResource("9_ohy8r")]
 transform = Transform3D(-1.2720014e-07, 0, -2.91, 0, 2.91, 0, 2.91, 0, -1.2720014e-07, -3.6402633, -1.2783972, 1.0986192)
+
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=1478658988]
+transform = Transform3D(-8.228744e-09, 2.2441357e-08, -0.18825182, 1.6037312e-14, 0.18825178, 2.244135e-08, 0.18825178, -1.5679158e-14, -8.228748e-09, -3.2497466, -0.9399971, -2.3745327)
+texture = SubResource("ViewportTexture_5renq")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D3" unique_id=1669099189]
+transparent_bg = true
+size = Vector2i(428, 76)
+
+[node name="Label" type="Label" parent="Sprite3D3/SubViewport" unique_id=114199365]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
+theme_override_fonts/font = ExtResource("6_rtnw1")
+theme_override_font_sizes/font_size = 32
+text = "Through My Cracked Screen, 2024
+Tristan Sauer"
+vertical_alignment = 1
+
+[node name="Sprite3D4" type="Sprite3D" parent="." unique_id=1989542095]
+transform = Transform3D(2.4686237e-08, -2.2441357e-08, 0.18825182, 1.6037308e-14, 0.18825176, 2.2441347e-08, -0.18825176, 1.3717268e-14, 2.4686242e-08, -12.022479, -0.9399971, 2.0427258)
+texture = SubResource("ViewportTexture_83vi4")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D4" unique_id=929523226]
+transparent_bg = true
+size = Vector2i(522, 76)
+
+[node name="Label" type="Label" parent="Sprite3D4/SubViewport" unique_id=1047176725]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
+theme_override_fonts/font = ExtResource("6_rtnw1")
+theme_override_font_sizes/font_size = 32
+text = "13 Lauraglen Crescent, Brampton II (2022)
+Raavi Dhillon"
+vertical_alignment = 1
 
 [node name="Speciation" type="Node3D" parent="." unique_id=354561169]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.621984, 0, 3.5697343)
@@ -1234,6 +1279,33 @@ omni_attenuation = 1.58
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Speciation/StaticBody3D" unique_id=385325651]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06457996, -1.1921289, 0)
 shape = SubResource("CylinderShape3D_5renq")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Speciation" unique_id=1556486813]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7707028, -1.757332, -7.65263)
+size = Vector3(0.62890625, 1.0541992, 0.047912598)
+
+[node name="Sprite3D4" type="Sprite3D" parent="Speciation/CSGBox3D" unique_id=1805175455]
+transform = Transform3D(0.18825178, -1.7997709e-14, 0, 1.6037308e-14, 0.18825176, 2.2441347e-08, -3.5527137e-15, -2.2441354e-08, 0.18825181, 0.007631302, 0.34075177, 0.03978157)
+texture = SubResource("ViewportTexture_51fdt")
+
+[node name="SubViewport" type="SubViewport" parent="Speciation/CSGBox3D/Sprite3D4" unique_id=1929241290]
+transparent_bg = true
+size = Vector2i(211, 76)
+
+[node name="Label" type="Label" parent="Speciation/CSGBox3D/Sprite3D4/SubViewport" unique_id=1707958597]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
+theme_override_fonts/font = ExtResource("6_rtnw1")
+theme_override_font_sizes/font_size = 32
+text = "Speciation, 2025
+Mads Brimble"
+vertical_alignment = 1
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Speciation" unique_id=1953055902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7533431, -1.4087491, -6.867775)
+light_energy = 0.901
+omni_range = 1.072
 
 [node name="Speciation2" type="Node3D" parent="." unique_id=685252316]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.621984, 0, -4.082513)

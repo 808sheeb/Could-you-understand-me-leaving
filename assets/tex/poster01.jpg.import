@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlw3emmom0o8w"
-path.s3tc="res://.godot/imported/pegah_watermelon.png-14182276ce48390106ade0ea0b16a04e.s3tc.ctex"
+uid="uid://c8fra3miqljtd"
+path.s3tc="res://.godot/imported/poster01.jpg-422386ebf6e08c6458c4f9a3bd4921d5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/pegah_watermelon.png"
-dest_files=["res://.godot/imported/pegah_watermelon.png-14182276ce48390106ade0ea0b16a04e.s3tc.ctex"]
+source_file="res://assets/tex/poster01.jpg"
+dest_files=["res://.godot/imported/poster01.jpg-422386ebf6e08c6458c4f9a3bd4921d5.s3tc.ctex"]
 
 [params]
 

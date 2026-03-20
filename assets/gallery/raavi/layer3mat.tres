@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://codhwcvn7txel"]
+
+[resource]
+resource_name = "layer3"
+transparency = 1
+blend_mode = 4
+cull_mode = 2
+depth_draw_mode = 1
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+albedo_color = Color(0.87291205, 0.519674, 0.74223775, 0.7058824)
+roughness = 0.5

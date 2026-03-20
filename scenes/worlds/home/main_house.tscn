@@ -45,10 +45,13 @@
 [ext_resource type="Texture2D" uid="uid://d2hlwttan84uk" path="res://assets/suburbs/interior objects 01/Textures/Garbage_bags.png" id="22_viobu"]
 [ext_resource type="Texture2D" uid="uid://bub3r7e3eftxk" path="res://assets/suburbs/interior objects 01/Textures/Trash_can.png" id="23_2l44h"]
 [ext_resource type="Texture2D" uid="uid://cdxw18voj63ae" path="res://assets/suburbs/interior objects 01/Textures/Table.png" id="24_fdi1n"]
-[ext_resource type="Texture2D" uid="uid://dlw3emmom0o8w" path="res://assets/pegah_watermelon.png" id="24_puu7y"]
+[ext_resource type="Texture2D" uid="uid://dlw3emmom0o8w" path="res://assets/tex/pegah_watermelon.png" id="24_puu7y"]
 [ext_resource type="PackedScene" uid="uid://dbcang1ea2n86" path="res://scenes/worlds/home/jeffcoat_copy.tscn" id="24_wjckd"]
+[ext_resource type="Texture2D" uid="uid://umju2wqru5lh" path="res://assets/tex/poster03.jpg" id="24_x2ut5"]
+[ext_resource type="Texture2D" uid="uid://bq6sgpw61kdqs" path="res://assets/tex/poster02.jpg" id="25_hfj31"]
 [ext_resource type="Texture2D" uid="uid://skuv6xsi4ym5" path="res://assets/suburbs/interior objects 01/Textures/Chair_04.png" id="25_itjl3"]
 [ext_resource type="Texture2D" uid="uid://ba72bu4e4jaki" path="res://assets/suburbs/interior objects 01/Textures/Chicken.png" id="26_5iecd"]
+[ext_resource type="Texture2D" uid="uid://c8fra3miqljtd" path="res://assets/tex/poster01.jpg" id="26_tyrs5"]
 [ext_resource type="Texture2D" uid="uid://k31hi48lcwhk" path="res://assets/suburbs/interior objects 01/Textures/Cake_01.png" id="27_2aolg"]
 [ext_resource type="Texture2D" uid="uid://cnbftl6b5d3jn" path="res://assets/suburbs/interior objects 01/Textures/Flower_Table.png" id="28_0avnb"]
 [ext_resource type="Texture2D" uid="uid://beoc0y2dfdkwg" path="res://assets/suburbs/interior objects 01/Textures/Flower_Table_01.png" id="29_p8g65"]
@@ -69,7 +72,6 @@
 [ext_resource type="Texture2D" uid="uid://bexwtt75jdyg6" path="res://assets/suburbs/interior objects 02/Textures/Wood_16.jpg" id="39_ojviy"]
 [ext_resource type="Texture2D" uid="uid://7t0meqbd7rbu" path="res://assets/suburbs/interior objects 02/Textures/Fabric_09.jpg" id="41_sewag"]
 [ext_resource type="Texture2D" uid="uid://dhk5c781kgsay" path="res://assets/suburbs/interior objects 02/Textures/Wood_05.jpg" id="43_0p0rp"]
-[ext_resource type="Texture2D" uid="uid://bilpgbrsi0kr3" path="res://assets/suburbs/interior objects 01/Textures/Paintings.jpg" id="43_akmxu"]
 [ext_resource type="Texture2D" uid="uid://ikjjb4w8v8e4" path="res://assets/suburbs/interior objects 02/Textures/Plaster_02.jpg" id="45_24t7k"]
 [ext_resource type="Texture2D" uid="uid://cslb3mprfxi4y" path="res://assets/suburbs/interior objects 02/Textures/Plants.png" id="46_5igkr"]
 [ext_resource type="Texture2D" uid="uid://di0h2h2dy82ex" path="res://assets/suburbs/plants/01/textures/pots_baseColor.png" id="49_d4kom"]
@@ -197,44 +199,6 @@ uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6urhb"]
 albedo_color = Color(0.9741034, 0.9524768, 0.8875311, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8ug6"]
-resource_name = "Paintings"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("43_akmxu")
-emission_enabled = true
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_mrpbt"]
-_surfaces = [{
-"aabb": AABB(-0.01, 0.00014588093, -0.010270711, 0.02037865, 0.0012786784, 0.020616107),
-"format": 34359742465,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
-"name": "Paintings",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("CtcjvEi4ujq8fyk8CtcjvJ33GDm8fyk8CtcjvJ33GDl8Rii8CtcjvEi4ujp8Rii8NwsqPEi4ujq8fyk8NwsqPJ33GDl8Rii8NwsqPJ33GDm8fyk8NwsqPEi4ujp8Rii8")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_sewag"]
-resource_name = "Painting_03"
-_surfaces = [{
-"aabb": AABB(-0.01, 0.00014588093, -0.010270711, 0.02037865, 0.0012786784, 0.020616107),
-"attribute_data": PackedByteArray("KBJ7PuJSsD7Il3g+4lKwPsiXeD5I5cI+KBJ7Pkjlwj4bMoA+6FKwPhTmWD7oUrA+FOZYPk7lwj4bMoA+UuXCPsiXeD7oUrA+KBJ7PuhSsD4oEns+TuXCPsiXeD5O5cI+oOqWO/btqz49vrE+/O2rPj2+sT4AcSg/oOqWOwBxKD8bMoA+tDa0PhsygD7UD7M+FOZYPtQPsz4U5lg+uDa0PhTmWD64NrQ+FOZYPtQPsz4bMoA+1A+zPhsygD60NrQ+"),
-"format": 34359742487,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
-"material": SubResource("StandardMaterial3D_k8ug6"),
-"name": "Paintings",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("CtcjvEi4ujq8fyk8CtcjvJ33GDm8fyk8CtcjvJ33GDl8Rii8CtcjvEi4ujp8Rii8NwsqPEi4ujq8fyk8CtcjvEi4ujq8fyk8CtcjvEi4ujp8Rii8NwsqPEi4ujp8Rii8NwsqPJ33GDm8fyk8NwsqPEi4ujq8fyk8NwsqPEi4ujp8Rii8NwsqPJ33GDl8Rii8CtcjvJ33GDm8fyk8NwsqPJ33GDm8fyk8NwsqPJ33GDl8Rii8CtcjvJ33GDl8Rii8NwsqPJ33GDl8Rii8NwsqPEi4ujp8Rii8CtcjvEi4ujp8Rii8CtcjvJ33GDl8Rii8CtcjvJ33GDm8fyk8CtcjvEi4ujq8fyk8NwsqPEi4ujq8fyk8NwsqPJ33GDm8fyk8AAD/f/9/AAAAAP9//38AAAAA/3//fwAAAAD/f/9/AAD/f////v//P/9///////8//3////7//z//f////v//P////3//f///////f/9///////9//3///////3//f////38AAP7//7//fwAA/v//v/9/AAD+//+//38AAP///7///////v//P/////////8///////7//z///////v//P/9//3/+//+//3//f////7//f/9//v//v/9//3/+//+/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_mrpbt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uh6ri"]
 resource_name = "2"
@@ -1140,6 +1104,30 @@ uv1_scale = Vector3(2.99, 2, 0)
 [sub_resource type="BoxMesh" id="BoxMesh_x2ut5"]
 material = SubResource("StandardMaterial3D_o3f03")
 size = Vector3(0, 1.23, -1.94)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f6t1q"]
+albedo_texture = ExtResource("24_x2ut5")
+uv1_scale = Vector3(2.99, 2, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_twyho"]
+material = SubResource("StandardMaterial3D_f6t1q")
+size = Vector3(0, 2.565, -1.94)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xrc4o"]
+albedo_texture = ExtResource("25_hfj31")
+uv1_scale = Vector3(2.99, 2, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q58be"]
+material = SubResource("StandardMaterial3D_xrc4o")
+size = Vector3(0, 2.565, -1.94)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4m4r0"]
+albedo_texture = ExtResource("26_tyrs5")
+uv1_scale = Vector3(2.99, 2, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_puu7y"]
+material = SubResource("StandardMaterial3D_4m4r0")
+size = Vector3(0, 2.64, -1.94)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s8l4k"]
 _surfaces = [{
@@ -10493,11 +10481,6 @@ transform = Transform3D(-1.8025794e-08, 0, 0.2629626, 0, 0.23338795, 0, -0.41238
 
 [node name="Furniture" type="Node3D" parent="NavigationRegion3D/floorplan/Foyer_Basement" unique_id=32317785]
 
-[node name="Painting_03" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Furniture" unique_id=1419708707]
-transform = Transform3D(97.112, 0, 0, 0, -4.2449005e-06, 97.112, 0, -97.112, -4.2449005e-06, 2.8909073, 2.0543017, -15.7512665)
-mesh = SubResource("ArrayMesh_sewag")
-skeleton = NodePath("")
-
 [node name="ceiling_lightB" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Foyer_Basement/Furniture" unique_id=941662359]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.323883, 4.8983507, -10.5784445)
 mesh = SubResource("ArrayMesh_hvjqa")
@@ -11076,9 +11059,24 @@ transform = Transform3D(-1.5048519e-06, -44.202, -1.5623325e-06, 0, -1.9321308e-
 mesh = SubResource("ArrayMesh_084f5")
 skeleton = NodePath("")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture" unique_id=1961993435]
+[node name="Poster" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture" unique_id=1961993435]
 transform = Transform3D(1.9106857e-15, 8.742278e-08, -1, -4.371139e-08, -1, -8.742278e-08, -1, 4.371139e-08, 1.9106855e-15, -2.117813, 3.0702596, -11.9320545)
 mesh = SubResource("BoxMesh_x2ut5")
+skeleton = NodePath("../Paintings_09")
+
+[node name="Poster3" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture" unique_id=1297948943]
+transform = Transform3D(-0.75842285, 3.3151714e-08, 3.3151718e-08, 3.3151714e-08, 0.75842285, 0, -3.3151714e-08, 0, -0.75842285, -5.7394867, 3.0702596, -4.685062)
+mesh = SubResource("BoxMesh_twyho")
+skeleton = NodePath("../Paintings_09")
+
+[node name="Poster4" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture" unique_id=277435715]
+transform = Transform3D(-0.75842285, 3.3151714e-08, 3.3151718e-08, 3.3151714e-08, 0.75842285, 0, -3.3151714e-08, 0, -0.75842285, -6.258423, 3.5067701, -4.685062)
+mesh = SubResource("BoxMesh_q58be")
+skeleton = NodePath("../Paintings_09")
+
+[node name="Poster2" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture" unique_id=2018047972]
+transform = Transform3D(4.4150283e-09, 0.101004034, 0.994886, 4.3487848e-08, 0.994886, -0.101004034, -1, 4.371139e-08, 1.9106857e-15, 3.2991104, 1.8919672, -15.850103)
+mesh = SubResource("BoxMesh_puu7y")
 skeleton = NodePath("../Paintings_09")
 
 [node name="Paintings_02" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture" unique_id=41283825]
@@ -14152,7 +14150,7 @@ one_shot = true
 transform = Transform3D(-0.75, -6.556708e-08, -2.866028e-15, 0, -3.278354e-08, 0.75, -6.556708e-08, 0.75, 3.278354e-08, -102.1961, -0.1814943, 0.464554)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Quran" unique_id=514678222]
-transform = Transform3D(1.3333334, 0, 0, 0, 1.3333334, 7.1054274e-15, 0, -7.1054274e-15, 1.3333334, 0, 0, 0.528799)
+transform = Transform3D(1.3333334, 7.1054274e-15, 0, -7.1054274e-15, 1.3333334, 1.4210855e-14, 0, -1.4210855e-14, 1.3333334, 0, 0, 0.71455276)
 light_energy = 4.851
 light_indirect_energy = 7.617
 light_volumetric_fog_energy = 3.568
