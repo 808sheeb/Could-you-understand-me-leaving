@@ -28,6 +28,7 @@ func _ready() -> void:
 	frostgorge_sound.visible = false
 	town.visible = false
 	gallery.visible = false
+	
 	#on alarm reset, do this
 	GlobalMessenger.connect('ALARM_SNOOZE', resetPortal)
 	

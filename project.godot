@@ -28,10 +28,16 @@ Autoload="*uid://u3y0jxl0vtmg"
 
 [display]
 
-window/size/viewport_width=1024
-window/size/viewport_height=768
-window/size/resizable=false
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/mode=4
+window/size/borderless=true
+window/size/extend_to_title=true
+window/size/minimize_disabled=true
+window/size/maximize_disabled=true
+window/subwindows/embed_subwindows=false
 window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [editor_plugins]
 

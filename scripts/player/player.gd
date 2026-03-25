@@ -16,10 +16,10 @@ var newV
 # Speed variables
 # have this be 3 for actual gameplay
 # be 7 - 10 for debug
-var CURRENT_SPEED = 4.0
+var CURRENT_SPEED = 2.5
 
 # defaults are 3, 5, & 2
-const WALKING_SPEED = 3.0
+const WALKING_SPEED = 2.5
 const SPRINTING_SPEED = 5.0
 const CROUCHING_SPEED = 2.0
 
@@ -107,10 +107,10 @@ func _physics_process(delta: float) -> void:
 
 	var moving = isMoving()
 	
-	if is_on_floor() && moving :
-		wood.play("Audio")
-	else:
-		wood.stop()
+	#if is_on_floor() && moving :
+		#wood.play("Audio")
+	#else:
+		#wood.stop()
 		
 	
 	if !ap.is_playing():
@@ -122,7 +122,7 @@ func animationGrab():
 	ap.queue("Relax_hands_idle")
 	
 func isMoving():
-	print(newV)
+	#print(newV)
 	if newV > 0.32:
 		return true
 	elif newV < -0.32:

@@ -11075,7 +11075,7 @@ mesh = SubResource("BoxMesh_q58be")
 skeleton = NodePath("../Paintings_09")
 
 [node name="Poster2" type="MeshInstance3D" parent="NavigationRegion3D/floorplan/Living Room/Furniture" unique_id=2018047972]
-transform = Transform3D(4.4150283e-09, 0.101004034, 0.994886, 4.3487848e-08, 0.994886, -0.101004034, -1, 4.371139e-08, 1.9106857e-15, 3.2991104, 1.8919672, -15.850103)
+transform = Transform3D(-1.1825738e-10, -0.0027054325, 0.9999965, 4.371123e-08, 0.9999965, 0.0027054325, -1, 4.371139e-08, 2.0540987e-15, 3.2991104, 1.8919672, -15.850103)
 mesh = SubResource("BoxMesh_puu7y")
 skeleton = NodePath("../Paintings_09")
 
@@ -12111,6 +12111,18 @@ debug_color = Color(18.892157, 13.50434, 0, 1)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.908775, 1.2855098, 16.042318)
 shape = SubResource("BoxShape3D_iwaoi")
 debug_color = Color(18.892157, 11.109755, 0, 1)
+
+[node name="Quran" parent="NavigationRegion3D/floorplan/Kitchen" unique_id=780916056 instance=ExtResource("162_4m4r0")]
+transform = Transform3D(-0.75, -6.556708e-08, -2.866028e-15, 0, -3.278354e-08, 0.75, -6.556708e-08, 0.75, 3.278354e-08, -10.035431, 1.5277143, 2.6007998)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/floorplan/Kitchen/Quran" unique_id=514678222]
+transform = Transform3D(1.3333334, 7.1054274e-15, 0, -7.1054274e-15, 1.3333334, 1.4210855e-14, 0, -1.4210855e-14, 1.3333334, 0, 0, 0.71455276)
+light_energy = 4.851
+light_indirect_energy = 7.617
+light_volumetric_fog_energy = 3.568
+light_size = 0.222
+omni_range = 0.774
+omni_attenuation = -1.249
 
 [node name="Hallway" type="Node3D" parent="NavigationRegion3D/floorplan" unique_id=1736445860]
 script = ExtResource("82_qyt41")
@@ -13968,7 +13980,7 @@ mesh = SubResource("ArrayMesh_4k5e2")
 skeleton = NodePath("")
 
 [node name="door" type="Node3D" parent="Parents/Walls & Floors/Door3/door/DoorCollider" unique_id=501559020]
-transform = Transform3D(0.5055269, 4.478423e-16, -4.371139e-08, 2.209728e-08, -1.024544e-08, 1, 0, -0.062886044, -1.6292068e-07, 0.5140295, 0.5925129, 0.05810643)
+transform = Transform3D(0.5055269, 4.440892e-16, -4.371139e-08, 2.2097282e-08, -1.0245441e-08, 1, 0, -0.062886044, -1.6292068e-07, 0.5250282, 0.5925129, 0.058107376)
 
 [node name="Cube_Material_0" type="MeshInstance3D" parent="Parents/Walls & Floors/Door3/door/DoorCollider/door" unique_id=376421101]
 transform = Transform3D(1, 0, 0, 0, 1, 9.094947e-13, 0, 0, 1, 0, 0, 0)
@@ -13998,7 +14010,7 @@ mesh = SubResource("ArrayMesh_ufg4w")
 skeleton = NodePath("")
 
 [node name="DoorBevel" type="Node3D" parent="Parents/Walls & Floors/Door3" unique_id=881234271]
-transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 0.075416565, -0.016265154, -0.04304886)
+transform = Transform3D(-7.86805e-08, 0, -1.8, -2.5410988e-21, 1.8, 0, 1.8, -5.0821977e-21, -7.86805e-08, 0.075416565, -0.016265154, -0.014190674)
 
 [node name="Output" type="Node3D" parent="Parents/Walls & Floors/Door3/DoorBevel" unique_id=1224329828]
 transform = Transform3D(1, 4.2351647e-22, 0, 4.2351647e-22, 1, 1.4210855e-14, 0, -1.4210855e-14, 1, 0, 0, 0)
@@ -14145,18 +14157,6 @@ script = ExtResource("7_63qeg")
 [node name="Alarm" type="Timer" parent="GUI" unique_id=1399998251]
 wait_time = 10.0
 one_shot = true
-
-[node name="Quran" parent="." unique_id=780916056 instance=ExtResource("162_4m4r0")]
-transform = Transform3D(-0.75, -6.556708e-08, -2.866028e-15, 0, -3.278354e-08, 0.75, -6.556708e-08, 0.75, 3.278354e-08, -102.1961, -0.1814943, 0.464554)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="Quran" unique_id=514678222]
-transform = Transform3D(1.3333334, 7.1054274e-15, 0, -7.1054274e-15, 1.3333334, 1.4210855e-14, 0, -1.4210855e-14, 1.3333334, 0, 0, 0.71455276)
-light_energy = 4.851
-light_indirect_energy = 7.617
-light_volumetric_fog_energy = 3.568
-light_size = 0.222
-omni_range = 0.774
-omni_attenuation = -1.249
 
 [connection signal="timeout" from="NavigationRegion3D/floorplan/Foyer_Basement/Basement/GalleryTimer" to="NavigationRegion3D/floorplan/Foyer_Basement/Basement" method="galleryClosed"]
 [connection signal="body_entered" from="NavigationRegion3D/floorplan/Kitchen/Colliders/Area3D" to="NavigationRegion3D/Billi" method="entered_table"]
