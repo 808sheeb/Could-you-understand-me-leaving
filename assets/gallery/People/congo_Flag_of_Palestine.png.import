@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://boph2rsmbf58y"
 path.s3tc="res://.godot/imported/congo_Flag_of_Palestine.png-65334cb7198d517689e721ffda39a420.s3tc.ctex"
+path.etc2="res://.godot/imported/congo_Flag_of_Palestine.png-65334cb7198d517689e721ffda39a420.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/gallery/People/congo_Flag_of_Palestine.png"
-dest_files=["res://.godot/imported/congo_Flag_of_Palestine.png-65334cb7198d517689e721ffda39a420.s3tc.ctex"]
+dest_files=["res://.godot/imported/congo_Flag_of_Palestine.png-65334cb7198d517689e721ffda39a420.s3tc.ctex", "res://.godot/imported/congo_Flag_of_Palestine.png-65334cb7198d517689e721ffda39a420.etc2.ctex"]
 
 [params]
 

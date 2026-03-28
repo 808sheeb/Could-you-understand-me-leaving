@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6twcn5feoapp"
 path.s3tc="res://.godot/imported/slot1_normal_roughness.png-560b395eeca005e081489d20b708f266.s3tc.ctex"
+path.etc2="res://.godot/imported/slot1_normal_roughness.png-560b395eeca005e081489d20b708f266.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://scenes/worlds/frostgorge_sound/textures/slot1_normal_roughness.png"
-dest_files=["res://.godot/imported/slot1_normal_roughness.png-560b395eeca005e081489d20b708f266.s3tc.ctex"]
+dest_files=["res://.godot/imported/slot1_normal_roughness.png-560b395eeca005e081489d20b708f266.s3tc.ctex", "res://.godot/imported/slot1_normal_roughness.png-560b395eeca005e081489d20b708f266.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4iqqo6rhcb6j"
 path.s3tc="res://.godot/imported/Toolbox.png-5573cdce8fcdf34dbbbe3ffd6a8c5603.s3tc.ctex"
+path.etc2="res://.godot/imported/Toolbox.png-5573cdce8fcdf34dbbbe3ffd6a8c5603.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Toolbox.png"
-dest_files=["res://.godot/imported/Toolbox.png-5573cdce8fcdf34dbbbe3ffd6a8c5603.s3tc.ctex"]
+dest_files=["res://.godot/imported/Toolbox.png-5573cdce8fcdf34dbbbe3ffd6a8c5603.s3tc.ctex", "res://.godot/imported/Toolbox.png-5573cdce8fcdf34dbbbe3ffd6a8c5603.etc2.ctex"]
 
 [params]
 

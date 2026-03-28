@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://csaf1gjtdhlo"
 path.s3tc="res://.godot/imported/Material.004_baseColor.png-bae0821e3bdb4b8adb10a3d3b9fc60aa.s3tc.ctex"
+path.etc2="res://.godot/imported/Material.004_baseColor.png-bae0821e3bdb4b8adb10a3d3b9fc60aa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/quran/textures/Material.004_baseColor.png"
-dest_files=["res://.godot/imported/Material.004_baseColor.png-bae0821e3bdb4b8adb10a3d3b9fc60aa.s3tc.ctex"]
+dest_files=["res://.godot/imported/Material.004_baseColor.png-bae0821e3bdb4b8adb10a3d3b9fc60aa.s3tc.ctex", "res://.godot/imported/Material.004_baseColor.png-bae0821e3bdb4b8adb10a3d3b9fc60aa.etc2.ctex"]
 
 [params]
 

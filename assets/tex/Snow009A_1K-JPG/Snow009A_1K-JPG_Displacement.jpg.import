@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccc8wrbtpvcdb"
 path.s3tc="res://.godot/imported/Snow009A_1K-JPG_Displacement.jpg-fc9e3313ea06f08734e4a4a54ebc5cbb.s3tc.ctex"
+path.etc2="res://.godot/imported/Snow009A_1K-JPG_Displacement.jpg-fc9e3313ea06f08734e4a4a54ebc5cbb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tex/Snow009A_1K-JPG/Snow009A_1K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/Snow009A_1K-JPG_Displacement.jpg-fc9e3313ea06f08734e4a4a54ebc5cbb.s3tc.ctex"]
+dest_files=["res://.godot/imported/Snow009A_1K-JPG_Displacement.jpg-fc9e3313ea06f08734e4a4a54ebc5cbb.s3tc.ctex", "res://.godot/imported/Snow009A_1K-JPG_Displacement.jpg-fc9e3313ea06f08734e4a4a54ebc5cbb.etc2.ctex"]
 
 [params]
 

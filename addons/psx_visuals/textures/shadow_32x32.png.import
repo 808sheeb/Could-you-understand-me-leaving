@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://t6c0bgmve63x"
 path.s3tc="res://.godot/imported/shadow_32x32.png-0951da134e85c62c0f6b5a4862480ef5.s3tc.ctex"
+path.etc2="res://.godot/imported/shadow_32x32.png-0951da134e85c62c0f6b5a4862480ef5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/psx_visuals/textures/shadow_32x32.png"
-dest_files=["res://.godot/imported/shadow_32x32.png-0951da134e85c62c0f6b5a4862480ef5.s3tc.ctex"]
+dest_files=["res://.godot/imported/shadow_32x32.png-0951da134e85c62c0f6b5a4862480ef5.s3tc.ctex", "res://.godot/imported/shadow_32x32.png-0951da134e85c62c0f6b5a4862480ef5.etc2.ctex"]
 
 [params]
 

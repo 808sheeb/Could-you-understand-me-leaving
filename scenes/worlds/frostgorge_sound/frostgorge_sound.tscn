@@ -33029,7 +33029,7 @@ transform = Transform3D(0.035970494, 0, 0.749137, 0, 0.75, 0, -0.749137, 0, 0.03
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D2" unique_id=533292651]
-transform = Transform3D(-5.9604645e-08, 0, -1.6750002, 0, 1.675, 0, 1.6750002, 0, -5.9604645e-08, -0.7875366, 3.100687, 0.80081177)
+transform = Transform3D(-6.7055225e-08, 0, -1.6750004, 0, 1.6750001, 0, 1.6750004, 0, -6.7055225e-08, -0.7875347, 3.1006873, 0.80081177)
 texture = SubResource("ViewportTexture_0xkdp")
 
 [node name="SubViewport" type="SubViewport" parent="CSGBox3D2/Sprite3D" unique_id=2097060550]
@@ -33042,11 +33042,11 @@ offset_bottom = 23.0
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.73333335, 0.22352941, 0, 1)
 theme_override_font_sizes/font_size = 64
-text = "what if i called it off today,
-might all just be one big nothing"
+text = "maybe, i wanna go away
+it's not enough for me to stay"
 
 [node name="OmniLight3D" type="OmniLight3D" parent="CSGBox3D2" unique_id=1449072851]
-transform = Transform3D(-1.035931, 0, -0.8394194, 0, 1.3333335, 0, 0.8394194, 0, -1.035931, -3.8434129, 4.8828278, 0.5363786)
+transform = Transform3D(-0.7769483, 0, -0.62956446, 0, 1, 0, 0.62956446, 0, -0.7769483, -3.8434129, 4.8828278, 0.5363786)
 light_energy = 2.58
 light_indirect_energy = 3.765
 omni_range = 10.271296

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d002jhcil5aan"
 path.s3tc="res://.godot/imported/trash_can_metallicRoughness.png-383ae75ba28f196d54826a364796c111.s3tc.ctex"
+path.etc2="res://.godot/imported/trash_can_metallicRoughness.png-383ae75ba28f196d54826a364796c111.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/trash_can_metallicRoughness.png"
-dest_files=["res://.godot/imported/trash_can_metallicRoughness.png-383ae75ba28f196d54826a364796c111.s3tc.ctex"]
+dest_files=["res://.godot/imported/trash_can_metallicRoughness.png-383ae75ba28f196d54826a364796c111.s3tc.ctex", "res://.godot/imported/trash_can_metallicRoughness.png-383ae75ba28f196d54826a364796c111.etc2.ctex"]
 
 [params]
 

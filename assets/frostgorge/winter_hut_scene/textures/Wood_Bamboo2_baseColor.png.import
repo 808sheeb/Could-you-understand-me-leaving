@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqiab4pu32xb2"
 path.s3tc="res://.godot/imported/Wood_Bamboo2_baseColor.png-ef38679380283b674e14dc0d552693e9.s3tc.ctex"
+path.etc2="res://.godot/imported/Wood_Bamboo2_baseColor.png-ef38679380283b674e14dc0d552693e9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter_hut_scene/textures/Wood_Bamboo2_baseColor.png"
-dest_files=["res://.godot/imported/Wood_Bamboo2_baseColor.png-ef38679380283b674e14dc0d552693e9.s3tc.ctex"]
+dest_files=["res://.godot/imported/Wood_Bamboo2_baseColor.png-ef38679380283b674e14dc0d552693e9.s3tc.ctex", "res://.godot/imported/Wood_Bamboo2_baseColor.png-ef38679380283b674e14dc0d552693e9.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://daxni64ouq4eo"
 path.s3tc="res://.godot/imported/alarm_clock_baseColor.png-ea5b6b1b3129efc2614684d6685a8861.s3tc.ctex"
+path.etc2="res://.godot/imported/alarm_clock_baseColor.png-ea5b6b1b3129efc2614684d6685a8861.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/alarm_clock_baseColor.png"
-dest_files=["res://.godot/imported/alarm_clock_baseColor.png-ea5b6b1b3129efc2614684d6685a8861.s3tc.ctex"]
+dest_files=["res://.godot/imported/alarm_clock_baseColor.png-ea5b6b1b3129efc2614684d6685a8861.s3tc.ctex", "res://.godot/imported/alarm_clock_baseColor.png-ea5b6b1b3129efc2614684d6685a8861.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://rk0o7gdvfihj"
 path.s3tc="res://.godot/imported/Carpet_baseColor.jpeg-3dbed07e8a13dcf506f0a0f44c7845ed.s3tc.ctex"
+path.etc2="res://.godot/imported/Carpet_baseColor.jpeg-3dbed07e8a13dcf506f0a0f44c7845ed.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Carpet_baseColor.jpeg"
-dest_files=["res://.godot/imported/Carpet_baseColor.jpeg-3dbed07e8a13dcf506f0a0f44c7845ed.s3tc.ctex"]
+dest_files=["res://.godot/imported/Carpet_baseColor.jpeg-3dbed07e8a13dcf506f0a0f44c7845ed.s3tc.ctex", "res://.godot/imported/Carpet_baseColor.jpeg-3dbed07e8a13dcf506f0a0f44c7845ed.etc2.ctex"]
 
 [params]
 

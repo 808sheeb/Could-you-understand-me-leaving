@@ -12113,7 +12113,7 @@ shape = SubResource("BoxShape3D_iwaoi")
 debug_color = Color(18.892157, 11.109755, 0, 1)
 
 [node name="Quran" parent="NavigationRegion3D/floorplan/Kitchen" unique_id=780916056 instance=ExtResource("162_4m4r0")]
-transform = Transform3D(-0.75, -6.556708e-08, -2.866028e-15, 0, -3.278354e-08, 0.75, -6.556708e-08, 0.75, 3.278354e-08, -10.035431, 1.5277143, 2.6007998)
+transform = Transform3D(-0.75, -6.556708e-08, -2.866028e-15, 0, -3.278354e-08, 0.75, -6.556708e-08, 0.75, 3.278354e-08, -10.035431, 1.4537643, 2.6007998)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/floorplan/Kitchen/Quran" unique_id=514678222]
 transform = Transform3D(1.3333334, 7.1054274e-15, 0, -7.1054274e-15, 1.3333334, 1.4210855e-14, 0, -1.4210855e-14, 1.3333334, 0, 0, 0.71455276)

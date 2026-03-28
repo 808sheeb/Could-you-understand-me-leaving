@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ey31y3coyi38"
 path.s3tc="res://.godot/imported/Aluminum4_baseColor.jpeg-3a86c9748fd1c80c5c8cfab590142098.s3tc.ctex"
+path.etc2="res://.godot/imported/Aluminum4_baseColor.jpeg-3a86c9748fd1c80c5c8cfab590142098.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter_hut_scene/textures/Aluminum4_baseColor.jpeg"
-dest_files=["res://.godot/imported/Aluminum4_baseColor.jpeg-3a86c9748fd1c80c5c8cfab590142098.s3tc.ctex"]
+dest_files=["res://.godot/imported/Aluminum4_baseColor.jpeg-3a86c9748fd1c80c5c8cfab590142098.s3tc.ctex", "res://.godot/imported/Aluminum4_baseColor.jpeg-3a86c9748fd1c80c5c8cfab590142098.etc2.ctex"]
 
 [params]
 

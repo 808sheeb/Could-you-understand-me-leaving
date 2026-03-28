@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwyu5e2wariux"
 path.s3tc="res://.godot/imported/Ponche_baseColor.png-5f3785ac1438873c025fd1040d612337.s3tc.ctex"
+path.etc2="res://.godot/imported/Ponche_baseColor.png-5f3785ac1438873c025fd1040d612337.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Ponche_baseColor.png"
-dest_files=["res://.godot/imported/Ponche_baseColor.png-5f3785ac1438873c025fd1040d612337.s3tc.ctex"]
+dest_files=["res://.godot/imported/Ponche_baseColor.png-5f3785ac1438873c025fd1040d612337.s3tc.ctex", "res://.godot/imported/Ponche_baseColor.png-5f3785ac1438873c025fd1040d612337.etc2.ctex"]
 
 [params]
 

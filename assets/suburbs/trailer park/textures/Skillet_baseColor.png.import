@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkx6w71wl080c"
 path.s3tc="res://.godot/imported/Skillet_baseColor.png-33f9fcc4a6c54e2938d90a353688e70a.s3tc.ctex"
+path.etc2="res://.godot/imported/Skillet_baseColor.png-33f9fcc4a6c54e2938d90a353688e70a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Skillet_baseColor.png"
-dest_files=["res://.godot/imported/Skillet_baseColor.png-33f9fcc4a6c54e2938d90a353688e70a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Skillet_baseColor.png-33f9fcc4a6c54e2938d90a353688e70a.s3tc.ctex", "res://.godot/imported/Skillet_baseColor.png-33f9fcc4a6c54e2938d90a353688e70a.etc2.ctex"]
 
 [params]
 

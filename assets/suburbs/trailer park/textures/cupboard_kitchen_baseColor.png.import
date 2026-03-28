@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cc86h4j26aq0x"
 path.s3tc="res://.godot/imported/cupboard_kitchen_baseColor.png-48874f66cce526a6c2b0e2b9b7ca16e2.s3tc.ctex"
+path.etc2="res://.godot/imported/cupboard_kitchen_baseColor.png-48874f66cce526a6c2b0e2b9b7ca16e2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/cupboard_kitchen_baseColor.png"
-dest_files=["res://.godot/imported/cupboard_kitchen_baseColor.png-48874f66cce526a6c2b0e2b9b7ca16e2.s3tc.ctex"]
+dest_files=["res://.godot/imported/cupboard_kitchen_baseColor.png-48874f66cce526a6c2b0e2b9b7ca16e2.s3tc.ctex", "res://.godot/imported/cupboard_kitchen_baseColor.png-48874f66cce526a6c2b0e2b9b7ca16e2.etc2.ctex"]
 
 [params]
 

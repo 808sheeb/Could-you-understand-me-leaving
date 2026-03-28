@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh3lam1x5msna"
 path.s3tc="res://.godot/imported/Mirror_01_baseColor.jpeg-c79d8d4ff8ae45a8c5eaf19ba6b35921.s3tc.ctex"
+path.etc2="res://.godot/imported/Mirror_01_baseColor.jpeg-c79d8d4ff8ae45a8c5eaf19ba6b35921.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter_hut_scene/textures/Mirror_01_baseColor.jpeg"
-dest_files=["res://.godot/imported/Mirror_01_baseColor.jpeg-c79d8d4ff8ae45a8c5eaf19ba6b35921.s3tc.ctex"]
+dest_files=["res://.godot/imported/Mirror_01_baseColor.jpeg-c79d8d4ff8ae45a8c5eaf19ba6b35921.s3tc.ctex", "res://.godot/imported/Mirror_01_baseColor.jpeg-c79d8d4ff8ae45a8c5eaf19ba6b35921.etc2.ctex"]
 
 [params]
 

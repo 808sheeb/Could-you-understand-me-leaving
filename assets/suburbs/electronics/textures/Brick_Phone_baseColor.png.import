@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cg5ah2os8uo8e"
 path.s3tc="res://.godot/imported/Brick_Phone_baseColor.png-f3796e863761e84a51c371dc69b77cc8.s3tc.ctex"
+path.etc2="res://.godot/imported/Brick_Phone_baseColor.png-f3796e863761e84a51c371dc69b77cc8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/electronics/textures/Brick_Phone_baseColor.png"
-dest_files=["res://.godot/imported/Brick_Phone_baseColor.png-f3796e863761e84a51c371dc69b77cc8.s3tc.ctex"]
+dest_files=["res://.godot/imported/Brick_Phone_baseColor.png-f3796e863761e84a51c371dc69b77cc8.s3tc.ctex", "res://.godot/imported/Brick_Phone_baseColor.png-f3796e863761e84a51c371dc69b77cc8.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ceiqbo56se768"
 path.s3tc="res://.godot/imported/birch_leaves_purple.png-c2f6173ee9c6acf185f243963e8fd1be.s3tc.ctex"
+path.etc2="res://.godot/imported/birch_leaves_purple.png-c2f6173ee9c6acf185f243963e8fd1be.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/nature_pack/textures/birch_leaves_purple.png"
-dest_files=["res://.godot/imported/birch_leaves_purple.png-c2f6173ee9c6acf185f243963e8fd1be.s3tc.ctex"]
+dest_files=["res://.godot/imported/birch_leaves_purple.png-c2f6173ee9c6acf185f243963e8fd1be.s3tc.ctex", "res://.godot/imported/birch_leaves_purple.png-c2f6173ee9c6acf185f243963e8fd1be.etc2.ctex"]
 
 [params]
 

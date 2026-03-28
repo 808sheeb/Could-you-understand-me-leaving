@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0o8yyhgxr4am"
 path.s3tc="res://.godot/imported/Christmas_cookies_02_baseColor.png-0ff573d4d1b8c52d2107c76b1ab11c56.s3tc.ctex"
+path.etc2="res://.godot/imported/Christmas_cookies_02_baseColor.png-0ff573d4d1b8c52d2107c76b1ab11c56.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/frostgorge/winter02/textures/Christmas_cookies_02_baseColor.png"
-dest_files=["res://.godot/imported/Christmas_cookies_02_baseColor.png-0ff573d4d1b8c52d2107c76b1ab11c56.s3tc.ctex"]
+dest_files=["res://.godot/imported/Christmas_cookies_02_baseColor.png-0ff573d4d1b8c52d2107c76b1ab11c56.s3tc.ctex", "res://.godot/imported/Christmas_cookies_02_baseColor.png-0ff573d4d1b8c52d2107c76b1ab11c56.etc2.ctex"]
 
 [params]
 

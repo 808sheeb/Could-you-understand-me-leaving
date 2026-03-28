@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7n678fm5vs4l"
 path.s3tc="res://.godot/imported/RockMaterial2_baseColor.png-4a99db28050b533600ad36421ff530f8.s3tc.ctex"
+path.etc2="res://.godot/imported/RockMaterial2_baseColor.png-4a99db28050b533600ad36421ff530f8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/everwoods/forest_01/textures/RockMaterial2_baseColor.png"
-dest_files=["res://.godot/imported/RockMaterial2_baseColor.png-4a99db28050b533600ad36421ff530f8.s3tc.ctex"]
+dest_files=["res://.godot/imported/RockMaterial2_baseColor.png-4a99db28050b533600ad36421ff530f8.s3tc.ctex", "res://.godot/imported/RockMaterial2_baseColor.png-4a99db28050b533600ad36421ff530f8.etc2.ctex"]
 
 [params]
 

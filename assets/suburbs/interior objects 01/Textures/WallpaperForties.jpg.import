@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmvw7p56bc86v"
 path.s3tc="res://.godot/imported/WallpaperForties.jpg-b72753f4fa7d7d7d60d8295e38698846.s3tc.ctex"
+path.etc2="res://.godot/imported/WallpaperForties.jpg-b72753f4fa7d7d7d60d8295e38698846.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/WallpaperForties.jpg"
-dest_files=["res://.godot/imported/WallpaperForties.jpg-b72753f4fa7d7d7d60d8295e38698846.s3tc.ctex"]
+dest_files=["res://.godot/imported/WallpaperForties.jpg-b72753f4fa7d7d7d60d8295e38698846.s3tc.ctex", "res://.godot/imported/WallpaperForties.jpg-b72753f4fa7d7d7d60d8295e38698846.etc2.ctex"]
 
 [params]
 

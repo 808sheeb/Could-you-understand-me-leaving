@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c512ajckm2f3"
 path.s3tc="res://.godot/imported/MossNRock.001_diffuse.png-38c382b77b7a81eae67ac3ac169a0e16.s3tc.ctex"
+path.etc2="res://.godot/imported/MossNRock.001_diffuse.png-38c382b77b7a81eae67ac3ac169a0e16.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/town/environment/textures/MossNRock.001_diffuse.png"
-dest_files=["res://.godot/imported/MossNRock.001_diffuse.png-38c382b77b7a81eae67ac3ac169a0e16.s3tc.ctex"]
+dest_files=["res://.godot/imported/MossNRock.001_diffuse.png-38c382b77b7a81eae67ac3ac169a0e16.s3tc.ctex", "res://.godot/imported/MossNRock.001_diffuse.png-38c382b77b7a81eae67ac3ac169a0e16.etc2.ctex"]
 
 [params]
 

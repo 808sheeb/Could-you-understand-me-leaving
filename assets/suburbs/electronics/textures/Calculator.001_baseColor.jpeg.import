@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bglater3e55w1"
 path.s3tc="res://.godot/imported/Calculator.001_baseColor.jpeg-b57369b4286491aa830e4abe7bc0eb56.s3tc.ctex"
+path.etc2="res://.godot/imported/Calculator.001_baseColor.jpeg-b57369b4286491aa830e4abe7bc0eb56.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/electronics/textures/Calculator.001_baseColor.jpeg"
-dest_files=["res://.godot/imported/Calculator.001_baseColor.jpeg-b57369b4286491aa830e4abe7bc0eb56.s3tc.ctex"]
+dest_files=["res://.godot/imported/Calculator.001_baseColor.jpeg-b57369b4286491aa830e4abe7bc0eb56.s3tc.ctex", "res://.godot/imported/Calculator.001_baseColor.jpeg-b57369b4286491aa830e4abe7bc0eb56.etc2.ctex"]
 
 [params]
 

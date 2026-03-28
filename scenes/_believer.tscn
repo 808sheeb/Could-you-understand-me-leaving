@@ -676,9 +676,6 @@ collision_mask = 32781
 [node name="Camera3D" parent="player/head" parent_id_path=PackedInt32Array(1561527512, 1733346251) index="1" unique_id=1404271733]
 far = 303.14
 
-[node name="UI" parent="player" index="4" unique_id=1148642993]
-visible = true
-
 [node name="FrostgorgeSound" parent="." unique_id=1381277873 instance=ExtResource("3_60jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -454.1902, 1797.1227)
 

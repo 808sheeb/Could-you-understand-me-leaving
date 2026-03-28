@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://biiuradyg01u0"
 path.s3tc="res://.godot/imported/Bush.png-3145bf367a4c0288e60da0bb3dbf070c.s3tc.ctex"
+path.etc2="res://.godot/imported/Bush.png-3145bf367a4c0288e60da0bb3dbf070c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/house assets/Textures/Bush.png"
-dest_files=["res://.godot/imported/Bush.png-3145bf367a4c0288e60da0bb3dbf070c.s3tc.ctex"]
+dest_files=["res://.godot/imported/Bush.png-3145bf367a4c0288e60da0bb3dbf070c.s3tc.ctex", "res://.godot/imported/Bush.png-3145bf367a4c0288e60da0bb3dbf070c.etc2.ctex"]
 
 [params]
 

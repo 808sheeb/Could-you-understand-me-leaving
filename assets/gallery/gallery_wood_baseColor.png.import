@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7ywyiw22bwmg"
 path.s3tc="res://.godot/imported/gallery_wood_baseColor.png-4042d47c0f5b9c957d1780500bc32737.s3tc.ctex"
+path.etc2="res://.godot/imported/gallery_wood_baseColor.png-4042d47c0f5b9c957d1780500bc32737.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/gallery/gallery_wood_baseColor.png"
-dest_files=["res://.godot/imported/gallery_wood_baseColor.png-4042d47c0f5b9c957d1780500bc32737.s3tc.ctex"]
+dest_files=["res://.godot/imported/gallery_wood_baseColor.png-4042d47c0f5b9c957d1780500bc32737.s3tc.ctex", "res://.godot/imported/gallery_wood_baseColor.png-4042d47c0f5b9c957d1780500bc32737.etc2.ctex"]
 
 [params]
 

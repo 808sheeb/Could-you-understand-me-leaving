@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdifdrhg3qbm6"
 path.s3tc="res://.godot/imported/Cereal_02_baseColor.png-9292af26b8a0704127299b43a8bfc78a.s3tc.ctex"
+path.etc2="res://.godot/imported/Cereal_02_baseColor.png-9292af26b8a0704127299b43a8bfc78a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/trailer park/textures/Cereal_02_baseColor.png"
-dest_files=["res://.godot/imported/Cereal_02_baseColor.png-9292af26b8a0704127299b43a8bfc78a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cereal_02_baseColor.png-9292af26b8a0704127299b43a8bfc78a.s3tc.ctex", "res://.godot/imported/Cereal_02_baseColor.png-9292af26b8a0704127299b43a8bfc78a.etc2.ctex"]
 
 [params]
 

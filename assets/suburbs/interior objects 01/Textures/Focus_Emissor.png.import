@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbt7nynkvm7lj"
 path.s3tc="res://.godot/imported/Focus_Emissor.png-cfbca0daef75cc3a618a0c5de841a473.s3tc.ctex"
+path.etc2="res://.godot/imported/Focus_Emissor.png-cfbca0daef75cc3a618a0c5de841a473.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/suburbs/interior objects 01/Textures/Focus_Emissor.png"
-dest_files=["res://.godot/imported/Focus_Emissor.png-cfbca0daef75cc3a618a0c5de841a473.s3tc.ctex"]
+dest_files=["res://.godot/imported/Focus_Emissor.png-cfbca0daef75cc3a618a0c5de841a473.s3tc.ctex", "res://.godot/imported/Focus_Emissor.png-cfbca0daef75cc3a618a0c5de841a473.etc2.ctex"]
 
 [params]
 
