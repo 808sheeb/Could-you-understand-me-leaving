@@ -14103,20 +14103,20 @@ collision_friction = 0.15
 collision_bounce = 0.3
 collision_use_scale = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_74k34"]
-transparency = 1
-shading_mode = 0
-diffuse_mode = 1
-specular_mode = 2
-disable_specular_occlusion = true
-billboard_keep_scale = true
-distance_fade_mode = 1
-distance_fade_max_distance = 5.0
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lou4f"]
+albedo_color = Color(4.165, 4.165, 4.165, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_rpx35"]
-lightmap_size_hint = Vector2i(5, 7)
-material = SubResource("StandardMaterial3D_74k34")
-size = Vector3(0.1, 0.1, 0.1)
+[sub_resource type="QuadMesh" id="QuadMesh_0xkdp"]
+material = SubResource("StandardMaterial3D_lou4f")
+size = Vector2(0.3, 0.3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xkdp"]
+shading_mode = 0
+albedo_color = Color(3.2944162, 3.2944162, 3.2944162, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_11dlb"]
+material = SubResource("StandardMaterial3D_0xkdp")
+size = Vector2(0.3, 0.3)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5otws"]
 size = Vector3(3.876587, 20.419922, 110.37222)
@@ -32874,7 +32874,7 @@ transform = Transform3D(0.16464508, 0, 0, 0, 0.16464508, 0, 0, 0, 0.16464508, 0,
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=818426534]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1007, 57.10788, -11.22467)
-amount = 15000
+amount = 5000
 lifetime = 8.0
 preprocess = 10.0
 speed_scale = 0.5
@@ -32883,7 +32883,7 @@ collision_base_size = 1.0
 visibility_aabb = AABB(-87.64, -48.195, 14.595, 136.375, 18.465, 84.195)
 transform_align = 1
 process_material = SubResource("ParticleProcessMaterial_cmdkh")
-draw_pass_1 = SubResource("BoxMesh_rpx35")
+draw_pass_1 = SubResource("QuadMesh_0xkdp")
 
 [node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="GPUParticles3D" unique_id=1089247548]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3553982, -51.36526, 81.53018)
@@ -32891,7 +32891,7 @@ size = Vector3(12.056375, 7.876193, 8.725172)
 
 [node name="GPUParticles3D2" type="GPUParticles3D" parent="." unique_id=2038074141]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 141.715, 63.99266, -34.10559)
-amount = 20000
+amount = 1000
 lifetime = 8.0
 preprocess = 25.0
 speed_scale = 0.5
@@ -32901,7 +32901,7 @@ collision_base_size = 1.0
 visibility_aabb = AABB(-104.09, -65.125, 14.595, 136.375, 39.175, 84.195)
 transform_align = 1
 process_material = SubResource("ParticleProcessMaterial_cmdkh")
-draw_pass_1 = SubResource("BoxMesh_rpx35")
+draw_pass_1 = SubResource("QuadMesh_11dlb")
 
 [node name="WALLS" type="StaticBody3D" parent="." unique_id=883107200]
 
@@ -32953,6 +32953,7 @@ material = SubResource("FogMaterial_mcq4g")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=207302882]
 transform = Transform3D(0.4436828, 0, -0.6046864, 0, 0.75, 0, 0.6046864, 0, 0.4436828, 75.00223, 4.1074677, 56.787796)
+use_collision = true
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D" unique_id=296165150]
@@ -32974,6 +32975,7 @@ to say the things i need to say"
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=23983598]
 transform = Transform3D(0.6783023, 0, 0.3200094, 0, 0.75, 0, -0.3200094, 0, 0.6783023, 102.02718, 11.866386, 15.957173)
+use_collision = true
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D3" unique_id=853267237]
@@ -33000,6 +33002,7 @@ omni_range = 14.771744
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=457549837]
 transform = Transform3D(0.27302375, 0, 0.69854, 0, 0.75, 0, -0.69854, 0, 0.27302375, -90.88402, 53.125423, -306.15137)
+use_collision = true
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D4" unique_id=65557123]
@@ -33026,6 +33029,7 @@ omni_range = 14.771744
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=454856884]
 transform = Transform3D(0.035970494, 0, 0.749137, 0, 0.75, 0, -0.749137, 0, 0.035970494, 43.06233, 2.1581726, 24.445171)
+use_collision = true
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D2" unique_id=533292651]

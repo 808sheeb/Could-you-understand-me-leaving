@@ -105,7 +105,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-	var moving = isMoving()
+	#var moving = isMoving()
 	
 	#if is_on_floor() && moving :
 		#wood.play("Audio")

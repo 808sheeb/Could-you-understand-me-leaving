@@ -17,6 +17,7 @@ var villagePortalActive = false
 @onready var frostgorge_sound: Node3D = $FrostgorgeSound
 @onready var town: Node3D = $Town
 @onready var gallery: Node3D = $Gallery
+@onready var meadow: Node3D = $Meadow
 
 
 func _ready() -> void:
@@ -28,6 +29,7 @@ func _ready() -> void:
 	frostgorge_sound.visible = false
 	town.visible = false
 	gallery.visible = false
+	meadow.visible = false
 	
 	#on alarm reset, do this
 	GlobalMessenger.connect('ALARM_SNOOZE', resetPortal)
@@ -76,11 +78,6 @@ func resetPortal():
 	winter_particles.visible = false
 	winter_portal.deactivate()
 	frostgorge_sound.visible = false
-	#ISLE
-	islePortalActive = false
-	isle_border.visible = false
-	isle_particles.visible = false
-	isle_portal.deactivate()
 	#VILLAGE
 	villagePortalActive = false
 	village_portal.visible = false

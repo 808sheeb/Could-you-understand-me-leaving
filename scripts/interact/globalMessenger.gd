@@ -11,6 +11,8 @@ signal KEY_VILLAGE
 signal KEY_ISLE
 signal INTERACTED
 
+signal SPAWN_KEYS
+
 signal UI_ITEM
 signal UI_DOOR
 signal UI_WORLD

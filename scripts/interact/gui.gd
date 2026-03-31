@@ -1,12 +1,13 @@
 extends Node2D
 @onready var alarm: Timer = $Alarm
+@onready var init: Timer = $Init
 var rng = RandomNumberGenerator.new()
 @export var snooze = true
 
 signal snoozed
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	startAlarm()
+	initGame()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -27,3 +28,10 @@ func startAlarm():
 	#print(snoozeTime)
 	alarm.start(snoozeTime)
 	snooze = true
+
+func initGame():
+	var initTime = 120
+	init.start(initTime)
+	
+func _on_init_timeout() -> void:
+	startAlarm()

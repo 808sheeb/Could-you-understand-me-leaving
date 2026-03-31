@@ -5273,6 +5273,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5806551, 0)
 
 [node name="PSX_First_Person_Arms" type="Node3D" parent="head" unique_id=232161326]
 transform = Transform3D(-1.32, 0, 1.9931447e-07, 0, 1.32, 0, -1.9931447e-07, 0, -1.32, 0, -2.3291092, 0.06483966)
+visible = false
 
 [node name="arms_armature" type="Node3D" parent="head/PSX_First_Person_Arms" unique_id=1966372746]
 

@@ -829,6 +829,7 @@ material = SubResource("FogMaterial_xxq3l")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Town" unique_id=1171468227]
 transform = Transform3D(-0.32343853, 0, 0.31591707, 0, 0.45212403, 0, -0.31591707, 0, -0.32343853, 60.39539, 0.6754515, -16.678345)
+use_collision = true
 size = Vector3(0.546875, 9.178497, 12.295944)
 
 [node name="Sprite3D" type="Sprite3D" parent="Town/CSGBox3D2" unique_id=1360498708]
@@ -850,6 +851,7 @@ i want to see your face."
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Town" unique_id=827258272]
 transform = Transform3D(-0.32343853, 0, 0.31591707, 0, 0.45212403, 0, -0.31591707, 0, -0.32343853, 52.87452, 0.6754515, -16.678345)
+use_collision = true
 size = Vector3(0.546875, 9.178497, 12.295944)
 
 [node name="Sprite3D" type="Sprite3D" parent="Town/CSGBox3D3" unique_id=2023765961]
@@ -901,7 +903,7 @@ rigidbody_boost = 0.0
 teleport_tolerance = 0.5
 teleport_interactions = 3
 teleport_collision_mask = 32768
-start_deactivated = true
+start_deactivated = false
 metadata/_custom_type_script = "uid://cw1r4c1d7beyv"
 metadata/_edit_group_ = true
 
@@ -946,7 +948,7 @@ material = ExtResource("14_18mtf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1401.7241, 492.43976, 12.979649)
 
 [node name="PortalBorder" type="Node3D" parent="Meadow" unique_id=313345646]
-transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -1.6008301, 0.25457764, -77.53229)
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -0.041137695, 0.25457764, -75.81108)
 
 [node name="DoorBevel" type="Node3D" parent="Meadow/PortalBorder" unique_id=1883132775]
 transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 0, 0, 0)
@@ -974,7 +976,7 @@ material = ExtResource("14_18mtf")
 [node name="EverwoodPortalHouse" type="Node3D" parent="Meadow" unique_id=1320427565 node_paths=PackedStringArray("exit_portal") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
-transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1.6171875, 2.036316, -77.57013)
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -0.057495117, 2.036316, -75.84892)
 script = ExtResource("6_ymoqr")
 _portal_mesh_path = NodePath("Portal3D_Mesh")
 _teleport_area_path = NodePath("TeleportArea")
