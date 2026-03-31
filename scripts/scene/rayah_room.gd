@@ -2,9 +2,12 @@ extends Node3D
 @onready var cutter: CSGBox3D = $"Walls & Floors/rayah_wall_back/RayahCutter"
 var keyIsActive = false
 
+var keym = preload("uid://1ekusom52y8c").instantiate()
+
 func _ready() -> void:
-	GlobalMessenger.connect("KEY_ISLE", activeToggle)
+	GlobalMessenger.connect("KEY_MEADOW", activeToggle)
 	GlobalMessenger.connect("ALARM_SNOOZE", alarmSnooze)
+	GlobalMessenger.connect("SPAWN_KEYS", spawn)
 	
 func _process(_delta: float) -> void:
 	if keyIsActive:
@@ -20,3 +23,10 @@ func activeToggle():
 	
 func alarmSnooze():
 	keyIsActive = false
+	
+func spawn():
+	if keyIsActive:
+		keym.transform.origin = Vector3(-8.1,1.364,-35.983)
+		keym.rotation_degrees = Vector3(0, -34.2, 0)
+		keym.scale = Vector3(0.495, 0.495, 0.495)
+		self.add_child(keym)

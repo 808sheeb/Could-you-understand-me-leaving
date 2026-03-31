@@ -10,7 +10,6 @@ var keyw = preload("uid://celmha118kao6").instantiate()
 func _ready() -> void:
 	GlobalMessenger.connect("KEY_WINTER", activeToggle)
 	GlobalMessenger.connect("ALARM_SNOOZE", alarmSnooze)
-	
 	GlobalMessenger.connect("SPAWN_KEYS", spawn)
 	
 func _process(_delta: float) -> void:

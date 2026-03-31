@@ -12523,6 +12523,7 @@ transform = Transform3D(-0.81604683, 0, -0.5779858, 0, 1, 0, 0.5779858, 0, -0.81
 
 [node name="Billi" parent="NavigationRegion3D" unique_id=579343695 instance=ExtResource("93_pyu8g")]
 transform = Transform3D(-0.70474565, 0, -0.70946, 0, 1, 0, 0.70946, 0, -0.70474565, -94.73996, -1.605757, -25.348612)
+SPEED = 1.5
 
 [node name="Washroom" type="Node3D" parent="." unique_id=578187161]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.16067, -1.7092085, -2.1362457)

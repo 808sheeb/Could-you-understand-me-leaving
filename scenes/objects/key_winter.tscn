@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://celmha118kao6"]
+[gd_scene format=4 uid="uid://celmha118kao6"]
 
 [ext_resource type="Script" uid="uid://dy6l5wgllx48c" path="res://scripts/interact/key.gd" id="1_ruipk"]
 [ext_resource type="Texture2D" uid="uid://mj02qnsr4l85" path="res://assets/suburbs/xbox/textures/M_Xbox_baseColor.png" id="2_ssuva"]
@@ -54,7 +54,7 @@ shadow_mesh = SubResource("ArrayMesh_ds7oe")
 _data = [Vector2(0.03767124, 0), 0.0, 0.0, 0, 0, Vector2(0.5034247, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
 
-[sub_resource type="CurveTexture" id="CurveTexture_5souc"]
+[sub_resource type="CurveTexture" id="CurveTexture_ssuva"]
 curve = SubResource("Curve_ssuva")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_spkm1"]
@@ -70,10 +70,10 @@ orbit_velocity_max = 0.5560001
 gravity = Vector3(0.1, 1, 0.1)
 scale_min = 0.099999994
 scale_max = 1.1999999
-scale_curve = SubResource("CurveTexture_5souc")
+scale_curve = SubResource("CurveTexture_ssuva")
 turbulence_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3flxl"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5souc"]
 specular_mode = 2
 albedo_color = Color(0.48742676, 1, 0.13671875, 1)
 emission_enabled = true
@@ -85,26 +85,26 @@ proximity_fade_enabled = true
 proximity_fade_distance = 2.0
 
 [sub_resource type="QuadMesh" id="QuadMesh_u1lmc"]
-material = SubResource("StandardMaterial3D_3flxl")
+material = SubResource("StandardMaterial3D_5souc")
 size = Vector2(0.1, 0.1)
 
-[node name="KEY_WINTER" type="Node3D"]
+[node name="KEY_WINTER" type="Node3D" unique_id=315732678]
 
-[node name="winter_key" type="StaticBody3D" parent="."]
+[node name="winter_key" type="StaticBody3D" parent="." unique_id=1396074766]
 script = ExtResource("1_ruipk")
 keyName = "winter"
 prompt_message = "Pick Up"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="winter_key"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="winter_key" unique_id=1694374780]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0715332, 0.010498047)
 shape = SubResource("BoxShape3D_gmmk2")
 
-[node name="XboxController_M_Xbox_0" type="MeshInstance3D" parent="winter_key"]
+[node name="XboxController_M_Xbox_0" type="MeshInstance3D" parent="winter_key" unique_id=1478039651]
 transform = Transform3D(1.3599998, 0, 0, 0, -5.9447473e-08, 1.36, 0, -1.3599997, -5.9447487e-08, 0, 0, 0)
 mesh = SubResource("ArrayMesh_5souc")
 skeleton = NodePath("")
 
-[node name="GPUParticles3D" type="GPUParticles3D" parent="winter_key"]
+[node name="GPUParticles3D" type="GPUParticles3D" parent="winter_key" unique_id=747525124]
 amount = 3
 lifetime = 2.0
 explosiveness = 0.69
@@ -113,7 +113,7 @@ visibility_aabb = AABB(-0.15, -0.04, -0.175, 0.405, 0.27, 0.32)
 process_material = SubResource("ParticleProcessMaterial_spkm1")
 draw_pass_1 = SubResource("QuadMesh_u1lmc")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="winter_key"]
+[node name="OmniLight3D" type="OmniLight3D" parent="winter_key" unique_id=218773931]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3816785, 0)
 light_color = Color(0.7467041, 1, 0.67578125, 1)
 light_energy = 0.4

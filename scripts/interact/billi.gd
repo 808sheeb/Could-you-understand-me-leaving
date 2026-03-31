@@ -2,12 +2,6 @@ extends Cat
 @onready var move_timer: Timer = $moveTimer
 @onready var player: CharacterBody3D = $"../../../player"
 var keyDestinations := [Vector3(-94, -1.5, 5.2), Vector3(-91.5, -1.5, 5.6), Vector3(-100, -1.5, -8.1), Vector3(-99, -1.5, -5.5), Vector3(-100.87, -1.5, -7.4)]
-var isPickable := false
-var pickedUp := false
-
-var keyBody = null
-var keyParent = null
-var isAlarmGoingOff = false
 
 #func _input(event: InputEvent) -> void:
 	###move units
@@ -35,8 +29,6 @@ var isAlarmGoingOff = false
 func _ready() -> void:
 	has_target = true
 	target_pos = destination_points[randi_range(0, destination_points.size()-1)]
-	GlobalMessenger.connect("ALARM_TIMEOUT", alarmTimedOut)
-	GlobalMessenger.connect("ALARM_SNOOZE", reset_key)
 	
 func _process(_delta) -> void:
 	if has_target:
@@ -61,38 +53,3 @@ func _process(_delta) -> void:
 		
 	if velocity == Vector3.ZERO:
 		look_at(player.get_global_position(), Vector3.UP, true)
-		
-	if isPickable:
-		prompt_message = "Pick Up"
-	elif !isPickable:
-		prompt_message = "Pet"
-
-func _on_interacted(_body) -> void:
-	if isPickable and !isAlarmGoingOff:
-		keyBody = _body.get_parent_node_3d()
-		keyParent = keyBody.get_parent_node_3d()
-		keyBody.remove_child(self)
-		pickedUp = true
-		GlobalMessenger.KEY_ISLE.emit()
-	elif isAlarmGoingOff:
-		GlobalMessenger.UI_ITEM.emit()
-
-func entered_table(_body):
-	isPickable = true
-	#print("entered")
-	
-func exited_table(_body):
-	isPickable = false
-	#print("exited")
-
-func reset_key():
-	isAlarmGoingOff = false
-	if pickedUp:
-		keyParent.add_child(self)
-		self.set_position(Vector3(-94.4, -1.5, -24.98))
-		pickedUp = false
-		isPickable = false
-
-func alarmTimedOut():
-	isAlarmGoingOff = true
-	

@@ -22,6 +22,8 @@ func _on_interacted(_body):
 			GlobalMessenger.KEY_WINTER.emit()
 		elif keyName == "merry":
 			GlobalMessenger.KEY_VILLAGE.emit()
+		elif keyName == "meadow":
+			GlobalMessenger.KEY_MEADOW.emit()
 	elif isAlarmGoingOff:
 		GlobalMessenger.UI_ITEM.emit()
 
@@ -35,6 +37,10 @@ func reset_key():
 			self.transform.origin = Vector3(-8.228,3.28,-18.314)
 			self.rotation_degrees = Vector3(-73.6, 0, -11.1)
 			self.scale = Vector3(0.095, 0.095, 0.095)
+		if keyName == "meadow":
+			self.transform.origin = Vector3(-8.1,1.364,-35.983)
+			self.rotation_degrees = Vector3(0, -34.2, 0)
+			self.scale = Vector3(0.495, 0.495, 0.495)
 		pickedUp = false
 	isAlarmGoingOff = false
 

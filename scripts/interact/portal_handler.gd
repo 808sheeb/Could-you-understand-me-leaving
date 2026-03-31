@@ -1,16 +1,16 @@
 extends Node3D
 
 var winterPortalActive =  false
-var islePortalActive = false
+var meadowPortalActive = false
 var galleryPortalActive = false
 var villagePortalActive = false
 @onready var winter_portal: Portal3D = $main_house/HousePortalWinter
 @onready var winter_border: Node3D = $main_house/WinterBorder
-@onready var isle_border: Node3D = $main_house/EverwoodsBorder
-@onready var isle_portal: Portal3D = $main_house/HousePortalEverwoods
+@onready var meadow_border: Node3D = $main_house/meadowBorder
+@onready var meadow_portal: Portal3D = $main_house/HousePortalMeadow
+@onready var meadow_particles: GPUParticles3D = $main_house/MeadowParticles
 @onready var village_portal: Portal3D = $main_house/HousePortalVillage
 @onready var player: CharacterBody3D = $player
-@onready var isle_particles: GPUParticles3D = $main_house/IsleParticles
 @onready var village_particles: GPUParticles3D = $main_house/VillageParticles
 @onready var winter_particles: GPUParticles3D = $main_house/WinterParticles
 @onready var gallery_portal: Portal3D = $main_house/HousePortalGallery
@@ -22,9 +22,9 @@ var villagePortalActive = false
 
 func _ready() -> void:
 	winter_border.visible = false
-	isle_border.visible = false
+	meadow_border.visible = false
 	village_particles.visible = false
-	isle_particles.visible = false
+	meadow_particles.visible = false
 	winter_particles.visible = false
 	frostgorge_sound.visible = false
 	town.visible = false
@@ -36,7 +36,7 @@ func _ready() -> void:
 	
 	#on key pickup, do this
 	GlobalMessenger.connect("KEY_WINTER", winterPortal)
-	GlobalMessenger.connect("KEY_ISLE", islePortal)
+	GlobalMessenger.connect("KEY_MEADOW", meadowPortal)
 	GlobalMessenger.connect("KEY_GNOME_LOCK", galleryPortal)
 	GlobalMessenger.connect("KEY_VILLAGE", villagePortal)
 	
@@ -52,11 +52,12 @@ func winterPortal():
 	winter_portal.activate()
 	frostgorge_sound.visible = true
 	
-func islePortal():
-	islePortalActive = true
-	isle_border.visible = true
-	isle_particles.visible = true
-	isle_portal.activate()
+func meadowPortal():
+	meadow.visible = true
+	meadowPortalActive = true
+	meadow_border.visible = true
+	meadow_particles.visible = true
+	meadow_portal.activate()
 	
 func galleryPortal():
 	galleryPortalActive = true
@@ -84,3 +85,9 @@ func resetPortal():
 	village_particles.visible = false
 	village_portal.deactivate()
 	town.visible = false
+	#MEADOW
+	meadowPortalActive = false
+	meadow_border.visible = false
+	meadow_particles.visible = false
+	meadow_portal.deactivate()
+	meadow.visible = false

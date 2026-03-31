@@ -8,7 +8,7 @@ signal KEY_GNOME_DOWN
 signal KEY_GNOME_LOCK
 signal KEY_GNOME_RESET
 signal KEY_VILLAGE
-signal KEY_ISLE
+signal KEY_MEADOW
 signal INTERACTED
 
 signal SPAWN_KEYS
