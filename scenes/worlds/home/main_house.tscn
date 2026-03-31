@@ -13114,7 +13114,7 @@ mesh = SubResource("ArrayMesh_pwkoc")
 skeleton = NodePath("")
 
 [node name="Chair_17" type="MeshInstance3D" parent="Shihab/Furniture" unique_id=2116814983]
-transform = Transform3D(129.90382, -74.99999, -3.278354e-06, 0, -6.5567083e-06, 150, -74.99999, -129.90382, -5.678276e-06, 5.2194824, 0.6952069, -17.386246)
+transform = Transform3D(129.90382, -74.99999, -3.278354e-06, 0, -6.5567083e-06, 150, -74.99999, -129.90382, -5.678276e-06, 5.4460907, 0.6952069, -18.203308)
 mesh = SubResource("ArrayMesh_rw1o6")
 skeleton = NodePath("")
 
@@ -13407,11 +13407,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5414047, 1.2226053, 0.04067
 shape = SubResource("BoxShape3D_jsrns")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Shihab/Colliders" unique_id=440635970]
-transform = Transform3D(0.86075085, 0, 0.5090264, 0, 1, 0, -0.5090264, 0, 0.86075085, 5.3249283, 0.8600094, 4.252001)
+transform = Transform3D(0.86075085, 0, 0.5090264, 0, 1, 0, -0.5090264, 0, 0.86075085, 5.597725, 0.8600094, 3.410986)
 shape = SubResource("BoxShape3D_kwoif")
 
 [node name="CollisionShape3D7" type="CollisionShape3D" parent="Shihab/Colliders" unique_id=773913102]
-transform = Transform3D(0.85134727, -0.14741237, 0.50346535, 0.12688532, 0.9890751, 0.0750368, -0.5090264, 0, 0.86075085, 4.8917007, 1.3999877, 4.512329)
+transform = Transform3D(0.85134727, -0.14741237, 0.50346535, 0.12688532, 0.9890751, 0.0750368, -0.5090264, 0, 0.86075085, 5.1200714, 1.3999877, 3.660715)
 shape = SubResource("BoxShape3D_76a6i")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Shihab/Colliders" unique_id=239923013]
