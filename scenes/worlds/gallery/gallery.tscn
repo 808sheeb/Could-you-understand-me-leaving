@@ -798,16 +798,16 @@ size = Vector3(2693.6543, 827.0851, 26.213379)
 size = Vector2(5000, 5000)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_p8dl5"]
-viewport_path = NodePath("gallery2/Inner/SubViewport2")
+viewport_path = NodePath("gallery2/Inner/Sprite3D/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ohy8r"]
-viewport_path = NodePath("gallery2/Inner/SubViewport")
+viewport_path = NodePath("gallery2/Inner/Sprite3D2/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_5renq"]
-viewport_path = NodePath("SubViewport")
+viewport_path = NodePath("Sprite3D3/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_83vi4"]
-viewport_path = NodePath("SubViewport2")
+viewport_path = NodePath("Sprite3D4/SubViewport")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_id8q6"]
 resource_name = "blue"
@@ -887,7 +887,7 @@ shadow_mesh = SubResource("ArrayMesh_mkple")
 radius = 1.065918
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_51fdt"]
-viewport_path = NodePath("Speciation/CSGBox3D/madsSubViewport")
+viewport_path = NodePath("Speciation/CSGBox3D/Sprite3D4/SubViewport")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6bbr6"]
 resource_name = "red"
@@ -1124,11 +1124,15 @@ transform = Transform3D(-45.750267, 2.7089609e-12, -3.999617e-06, 2.7739599e-12,
 transform = Transform3D(1.0000002, 0, 0, 0, 1, -1.2079227e-13, 0, 1.2079227e-13, 1, -1232.7167, 1173.6672, -1508.8577)
 mesh = SubResource("PlaneMesh_3pphj")
 
-[node name="SubViewport2" type="SubViewport" parent="gallery2/Inner" unique_id=1779558070]
+[node name="Sprite3D" type="Sprite3D" parent="gallery2/Inner" unique_id=2028382252]
+transform = Transform3D(-5.5598734e-06, -1.5162828e-05, 127.19506, 1.5162832e-05, 127.195, 1.5162821e-05, -127.195, 1.5162834e-05, -5.55987e-06, -444.8916, 194.74188, 81.564926)
+texture = SubResource("ViewportTexture_p8dl5")
+
+[node name="SubViewport" type="SubViewport" parent="gallery2/Inner/Sprite3D" unique_id=1779558070]
 transparent_bg = true
 size = Vector2i(502, 37)
 
-[node name="Label" type="Label" parent="gallery2/Inner/SubViewport2" unique_id=1358113220]
+[node name="Label" type="Label" parent="gallery2/Inner/Sprite3D/SubViewport" unique_id=1358113220]
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
@@ -1138,15 +1142,15 @@ text = "Hey there! We've been waiting for you."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HeyThere" type="Sprite3D" parent="gallery2/Inner" unique_id=2028382252]
-transform = Transform3D(-5.5598734e-06, -1.5162828e-05, 127.19506, 1.5162832e-05, 127.195, 1.5162821e-05, -127.195, 1.5162834e-05, -5.55987e-06, -444.8916, 194.74188, 81.564926)
-texture = SubResource("ViewportTexture_p8dl5")
+[node name="Sprite3D2" type="Sprite3D" parent="gallery2/Inner" unique_id=1863043398]
+transform = Transform3D(1.6679614e-05, 1.516283e-05, -127.19508, -1.5162812e-05, 127.195, 1.5162818e-05, 127.195, 1.5162811e-05, 1.667962e-05, -1880.493, 194.74188, 119.92544)
+texture = SubResource("ViewportTexture_ohy8r")
 
-[node name="SubViewport" type="SubViewport" parent="gallery2/Inner" unique_id=787648569]
+[node name="SubViewport" type="SubViewport" parent="gallery2/Inner/Sprite3D2" unique_id=787648569]
 transparent_bg = true
 size = Vector2i(344, 37)
 
-[node name="Label" type="Label" parent="gallery2/Inner/SubViewport" unique_id=241804547]
+[node name="Label" type="Label" parent="gallery2/Inner/Sprite3D2/SubViewport" unique_id=241804547]
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
@@ -1155,10 +1159,6 @@ theme_override_font_sizes/font_size = 32
 text = "Maybe it was here all along."
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Maybe" type="Sprite3D" parent="gallery2/Inner" unique_id=1863043398]
-transform = Transform3D(1.6679614e-05, 1.516283e-05, -127.19508, -1.5162812e-05, 127.195, 1.5162818e-05, 127.195, 1.5162811e-05, 1.667962e-05, -1880.493, 194.74188, 119.92544)
-texture = SubResource("ViewportTexture_ohy8r")
 
 [node name="raavi_13lauraglen_2" parent="gallery2/Inner" unique_id=2078057481 instance=ExtResource("7_5renq")]
 transform = Transform3D(-1.8358784e-06, 42.000004, -1.8358784e-06, 4.5474735e-13, -1.8358784e-06, -42, -42, -1.8358783e-06, -4.5474735e-13, -1790.9294, 221.23955, 180.6306)
@@ -1217,11 +1217,15 @@ transform = Transform3D(-1.2720014e-07, 0, -2.91, 0, 2.91, 0, 2.91, 0, -1.272001
 [node name="Node3D6" parent="DesireLines" unique_id=220163034 instance=ExtResource("9_ohy8r")]
 transform = Transform3D(-1.2720014e-07, 0, -2.91, 0, 2.91, 0, 2.91, 0, -1.2720014e-07, -3.6402633, -1.2783972, 1.0986192)
 
-[node name="SubViewport" type="SubViewport" parent="." unique_id=1669099189]
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=1478658988]
+transform = Transform3D(-8.228744e-09, 2.2441357e-08, -0.18825182, 1.6037312e-14, 0.18825178, 2.244135e-08, 0.18825178, -1.5679158e-14, -8.228748e-09, -3.2497466, -0.9399971, -2.3745327)
+texture = SubResource("ViewportTexture_5renq")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D3" unique_id=1669099189]
 transparent_bg = true
 size = Vector2i(428, 76)
 
-[node name="Label" type="Label" parent="SubViewport" unique_id=114199365]
+[node name="Label" type="Label" parent="Sprite3D3/SubViewport" unique_id=114199365]
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
@@ -1231,15 +1235,15 @@ text = "Through My Cracked Screen, 2024
 Tristan Sauer"
 vertical_alignment = 1
 
-[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=1478658988]
-transform = Transform3D(-8.228744e-09, 2.2441357e-08, -0.18825182, 1.6037312e-14, 0.18825178, 2.244135e-08, 0.18825178, -1.5679158e-14, -8.228748e-09, -3.2497466, -0.9399971, -2.3745327)
-texture = SubResource("ViewportTexture_5renq")
+[node name="Sprite3D4" type="Sprite3D" parent="." unique_id=1989542095]
+transform = Transform3D(2.4686237e-08, -2.2441357e-08, 0.18825182, 1.6037308e-14, 0.18825176, 2.2441347e-08, -0.18825176, 1.3717268e-14, 2.4686242e-08, -12.022479, -0.9399971, 2.0427258)
+texture = SubResource("ViewportTexture_83vi4")
 
-[node name="SubViewport2" type="SubViewport" parent="." unique_id=929523226]
+[node name="SubViewport" type="SubViewport" parent="Sprite3D4" unique_id=929523226]
 transparent_bg = true
 size = Vector2i(522, 76)
 
-[node name="Label" type="Label" parent="SubViewport2" unique_id=1047176725]
+[node name="Label" type="Label" parent="Sprite3D4/SubViewport" unique_id=1047176725]
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
@@ -1248,10 +1252,6 @@ theme_override_font_sizes/font_size = 32
 text = "13 Lauraglen Crescent, Brampton II (2022)
 Raavi Dhillon"
 vertical_alignment = 1
-
-[node name="Sprite3D4" type="Sprite3D" parent="." unique_id=1989542095]
-transform = Transform3D(2.4686237e-08, -2.2441357e-08, 0.18825182, 1.6037308e-14, 0.18825176, 2.2441347e-08, -0.18825176, 1.3717268e-14, 2.4686242e-08, -12.022479, -0.9399971, 2.0427258)
-texture = SubResource("ViewportTexture_83vi4")
 
 [node name="Speciation" type="Node3D" parent="." unique_id=354561169]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.621984, 0, 3.5697343)
@@ -1284,11 +1284,15 @@ shape = SubResource("CylinderShape3D_5renq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7707028, -1.757332, -7.65263)
 size = Vector3(0.62890625, 1.0541992, 0.047912598)
 
-[node name="madsSubViewport" type="SubViewport" parent="Speciation/CSGBox3D" unique_id=1929241290]
+[node name="Sprite3D4" type="Sprite3D" parent="Speciation/CSGBox3D" unique_id=1805175455]
+transform = Transform3D(0.18825178, -1.7997709e-14, 0, 1.6037308e-14, 0.18825176, 2.2441347e-08, -3.5527137e-15, -2.2441354e-08, 0.18825181, 0.007631302, 0.34075177, 0.03978157)
+texture = SubResource("ViewportTexture_51fdt")
+
+[node name="SubViewport" type="SubViewport" parent="Speciation/CSGBox3D/Sprite3D4" unique_id=1929241290]
 transparent_bg = true
 size = Vector2i(211, 76)
 
-[node name="Label" type="Label" parent="Speciation/CSGBox3D/madsSubViewport" unique_id=1707958597]
+[node name="Label" type="Label" parent="Speciation/CSGBox3D/Sprite3D4/SubViewport" unique_id=1707958597]
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0.734375, 0.22375488, 0, 1)
@@ -1297,10 +1301,6 @@ theme_override_font_sizes/font_size = 32
 text = "Speciation, 2025
 Mads Brimble"
 vertical_alignment = 1
-
-[node name="Speciation" type="Sprite3D" parent="Speciation/CSGBox3D" unique_id=1805175455]
-transform = Transform3D(0.18825178, -1.7997709e-14, 0, 1.6037308e-14, 0.18825176, 2.2441347e-08, -3.5527137e-15, -2.2441354e-08, 0.18825181, 0.007631302, 0.34075177, 0.03978157)
-texture = SubResource("ViewportTexture_51fdt")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Speciation" unique_id=1953055902]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7533431, -1.4087491, -6.867775)

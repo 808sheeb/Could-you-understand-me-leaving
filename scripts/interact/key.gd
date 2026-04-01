@@ -8,9 +8,8 @@ var pickedUp = false
 var isAlarmGoingOff = false
 
 func _ready() -> void:
-	GlobalMessenger.connect('SPAWN_KEYS', reset_key)
+	GlobalMessenger.connect('ALARM_SNOOZE', reset_key)
 	GlobalMessenger.connect('ALARM_TIMEOUT', alarming)
-	GlobalMessenger.connect('ALARM_SNOOZE', snooze)
 
 func _on_interacted(_body):
 	if !isAlarmGoingOff:
@@ -28,24 +27,22 @@ func _on_interacted(_body):
 	elif isAlarmGoingOff:
 		GlobalMessenger.UI_ITEM.emit()
 
-func snooze():
-	isAlarmGoingOff = false
-
 func reset_key():
 	if pickedUp:
-		keyBody.add_child(self)
-		#if keyName == "winter":
-			#self.transform.origin = Vector3(6.256,1.711,-18.685)
-			#self.rotation_degrees = Vector3(0, -62.6, 0)
-		#if keyName == "merry":
-			#self.transform.origin = Vector3(-8.228,3.28,-18.314)
-			#self.rotation_degrees = Vector3(-73.6, 0, -11.1)
-			#self.scale = Vector3(0.095, 0.095, 0.095)
-		#if keyName == "meadow":
-			#self.transform.origin = Vector3(-8.1,1.364,-35.983)
-			#self.rotation_degrees = Vector3(0, -34.2, 0)
-			#self.scale = Vector3(0.495, 0.495, 0.495)
+		keyParent.add_child(self)
+		if keyName == "winter":
+			self.transform.origin = Vector3(-1.164,0.939,0.336)
+			self.rotation_degrees = Vector3(0, 56.5, 0)
+		if keyName == "merry":
+			self.transform.origin = Vector3(-8.228,3.28,-18.314)
+			self.rotation_degrees = Vector3(-73.6, 0, -11.1)
+			self.scale = Vector3(0.095, 0.095, 0.095)
+		if keyName == "meadow":
+			self.transform.origin = Vector3(-8.1,1.364,-35.983)
+			self.rotation_degrees = Vector3(0, -34.2, 0)
+			self.scale = Vector3(0.495, 0.495, 0.495)
 		pickedUp = false
+	isAlarmGoingOff = false
 
 func alarming():
 	isAlarmGoingOff = true

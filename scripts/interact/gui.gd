@@ -21,20 +21,17 @@ func _on_button_interacted(_body):
 	if !snooze:
 		startAlarm()
 		GlobalMessenger.ALARM_SNOOZE.emit()
-		GlobalMessenger.SPAWN_KEYS.emit()
 		snoozed.emit()
 
 func startAlarm():
-	var snoozeTime = rng.randi_range(20, 30)
-	#var snoozeTime = rng.randi_range(240,470)
+	var snoozeTime = rng.randi_range(240,470)
 	#print(snoozeTime)
 	alarm.start(snoozeTime)
 	snooze = true
 
 func initGame():
-	var initTime = 1
+	var initTime = 120
 	init.start(initTime)
 	
 func _on_init_timeout() -> void:
 	startAlarm()
-	GlobalMessenger.SPAWN_KEYS.emit()

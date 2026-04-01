@@ -11,7 +11,7 @@ func _ready() -> void:
 	visible = false
 	GlobalMessenger.connect("KEY_VILLAGE", villageKey)
 	GlobalMessenger.connect("KEY_WINTER", winterKey)
-	GlobalMessenger.connect("KEY_MEADOW", meadowKey)
+	GlobalMessenger.connect("KEY_ISLE", isleKey)
 	GlobalMessenger.connect("KEY_GNOME_LOCK", gnomeKey)
 	GlobalMessenger.connect("KEY_GNOME_RESET", gnomeKeyReset)
 	GlobalMessenger.connect("ALARM_SNOOZE", keyReturn)
@@ -31,7 +31,7 @@ func villageKey():
 	keysCollected += 1
 	merry.visible = true
 
-func meadowKey():
+func isleKey():
 	keysCollected += 1
 	billi.visible = true
 

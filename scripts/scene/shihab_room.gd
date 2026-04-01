@@ -2,7 +2,6 @@ extends Node3D
 @onready var cutter: CSGBox3D = $"Floors & Walls/shihab_wall_2/Cutter"
 @onready var flavor_text: Sprite3D = $FlavorText
 var keyIsActive = false
-var inWorld = false
 
 var keyw = preload("uid://celmha118kao6").instantiate()
 
@@ -25,16 +24,12 @@ func _process(_delta: float) -> void:
 
 func activeToggle():
 	keyIsActive = true
-	inWorld = false
 
 func alarmSnooze():
 	keyIsActive = false
-	inWorld = true
 	
 func spawn():
-	if !inWorld:
+	if keyIsActive:
 		keyw.transform.origin = Vector3(6.256,1.711,-18.685)
 		keyw.rotation_degrees = Vector3(0, -62.6, 0)
 		self.add_child(keyw)
-		print("Winter Key Spawned")
-		inWorld = true
