@@ -367,10 +367,10 @@ emission = Color(0.80078125, 0.7289827, 0.4473114, 1)
 edge_fade = 1.6564229
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_a8erk"]
-viewport_path = NodePath("Town/CSGBox3D2/Sprite3D/SubViewport")
+viewport_path = NodePath("Town/townCSGBox3D2/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_seot8"]
-viewport_path = NodePath("Town/CSGBox3D3/Sprite3D/SubViewport")
+viewport_path = NodePath("Town/townCSGBox3D3/SubViewport")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a8erk"]
 _surfaces = [{
@@ -827,20 +827,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.216682, 4.2250977, -13.521
 size = Vector3(95.64798, 10.450195, 59.115906)
 material = SubResource("FogMaterial_xxq3l")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="Town" unique_id=1171468227]
+[node name="townCSGBox3D2" type="CSGBox3D" parent="Town" unique_id=1171468227]
 transform = Transform3D(-0.32343853, 0, 0.31591707, 0, 0.45212403, 0, -0.31591707, 0, -0.32343853, 60.39539, 0.6754515, -16.678345)
 use_collision = true
 size = Vector3(0.546875, 9.178497, 12.295944)
 
-[node name="Sprite3D" type="Sprite3D" parent="Town/CSGBox3D2" unique_id=1360498708]
-transform = Transform3D(-5.9604645e-08, 0, -1.03695, 0, 1.0369501, 0, 1.03695, 0, -5.9604645e-08, -0.6386719, 1.3648667, 0.7368164)
+[node name="Sprite3D" type="Sprite3D" parent="Town/townCSGBox3D2" unique_id=1360498708]
+transform = Transform3D(-5.9604645e-08, 0, -1.03695, 0, 1.0369501, 0, 1.03695, 0, -5.9604645e-08, -0.6386719, 1.3648667, 0.73706055)
 texture = SubResource("ViewportTexture_a8erk")
 
-[node name="SubViewport" type="SubViewport" parent="Town/CSGBox3D2/Sprite3D" unique_id=160528713]
+[node name="SubViewport" type="SubViewport" parent="Town/townCSGBox3D2" unique_id=160528713]
 transparent_bg = true
 size = Vector2i(1065, 191)
 
-[node name="Label" type="Label" parent="Town/CSGBox3D2/Sprite3D/SubViewport" unique_id=2066883177]
+[node name="Label" type="Label" parent="Town/townCSGBox3D2/SubViewport" unique_id=2066883177]
 offset_right = 40.0
 offset_bottom = 23.0
 size_flags_horizontal = 4
@@ -849,20 +849,20 @@ theme_override_font_sizes/font_size = 64
 text = "i wish i hadn't blinded myself,
 i want to see your face."
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="Town" unique_id=827258272]
+[node name="townCSGBox3D3" type="CSGBox3D" parent="Town" unique_id=827258272]
 transform = Transform3D(-0.32343853, 0, 0.31591707, 0, 0.45212403, 0, -0.31591707, 0, -0.32343853, 52.87452, 0.6754515, -16.678345)
 use_collision = true
 size = Vector3(0.546875, 9.178497, 12.295944)
 
-[node name="Sprite3D" type="Sprite3D" parent="Town/CSGBox3D3" unique_id=2023765961]
+[node name="Sprite3D" type="Sprite3D" parent="Town/townCSGBox3D3" unique_id=2023765961]
 transform = Transform3D(-5.9604645e-08, 0, -1.03695, 0, 1.0369501, 0, 1.03695, 0, -5.9604645e-08, -0.5402832, 1.3648667, 0.2163086)
 texture = SubResource("ViewportTexture_seot8")
 
-[node name="SubViewport" type="SubViewport" parent="Town/CSGBox3D3/Sprite3D" unique_id=590282108]
+[node name="SubViewport" type="SubViewport" parent="Town/townCSGBox3D3" unique_id=590282108]
 transparent_bg = true
 size = Vector2i(598, 91)
 
-[node name="Label" type="Label" parent="Town/CSGBox3D3/Sprite3D/SubViewport" unique_id=1708137800]
+[node name="Label" type="Label" parent="Town/townCSGBox3D3/SubViewport" unique_id=1708137800]
 offset_right = 40.0
 offset_bottom = 23.0
 size_flags_horizontal = 4

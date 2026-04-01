@@ -32957,7 +32957,7 @@ use_collision = true
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D" unique_id=296165150]
-transform = Transform3D(-5.9604645e-08, 0, -1.6750002, 0, 1.675, 0, 1.6750002, 0, -5.9604645e-08, -0.7875366, 3.100687, 0.80081177)
+transform = Transform3D(-5.9604645e-08, 0, -1.6750002, 0, 1.675, 0, 1.6750002, 0, -5.9604645e-08, -0.78754425, 3.100687, 0.80081177)
 texture = SubResource("ViewportTexture_lou4f")
 
 [node name="SubViewport" type="SubViewport" parent="CSGBox3D/Sprite3D" unique_id=516694773]
@@ -32979,7 +32979,7 @@ use_collision = true
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D3" unique_id=853267237]
-transform = Transform3D(-5.9604645e-08, 0, -1.6750002, 0, 1.675, 0, 1.6750002, 0, -5.9604645e-08, -0.7875366, 3.100687, 1.4205145)
+transform = Transform3D(-1.1920929e-07, 0, -1.6750002, 0, 1.675, 0, 1.6750002, 0, -1.1920929e-07, -0.7875366, 3.100688, 1.4205093)
 texture = SubResource("ViewportTexture_11dlb")
 
 [node name="SubViewport" type="SubViewport" parent="CSGBox3D3/Sprite3D" unique_id=601443884]
@@ -33006,7 +33006,7 @@ use_collision = true
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D4" unique_id=65557123]
-transform = Transform3D(-5.9604645e-08, 0, -1.6750002, 0, 1.675, 0, 1.6750002, 0, -5.9604645e-08, -0.7875366, 3.100687, 1.4205145)
+transform = Transform3D(-5.9604645e-08, 0, -1.6750002, 0, 1.675, 0, 1.6750002, 0, -5.9604645e-08, -0.7875061, 3.1006851, 1.4205322)
 texture = SubResource("ViewportTexture_t78yt")
 
 [node name="SubViewport" type="SubViewport" parent="CSGBox3D4/Sprite3D" unique_id=1961446873]
@@ -33033,7 +33033,7 @@ use_collision = true
 size = Vector3(1, 18.408203, 28.699402)
 
 [node name="Sprite3D" type="Sprite3D" parent="CSGBox3D2" unique_id=533292651]
-transform = Transform3D(-6.7055225e-08, 0, -1.6750004, 0, 1.6750001, 0, 1.6750004, 0, -6.7055225e-08, -0.7875347, 3.1006873, 0.80081177)
+transform = Transform3D(-7.4505806e-08, 0, -1.6750005, 0, 1.6750002, 0, 1.6750005, 0, -7.4505806e-08, -0.7875347, 3.1006882, 0.80081177)
 texture = SubResource("ViewportTexture_0xkdp")
 
 [node name="SubViewport" type="SubViewport" parent="CSGBox3D2/Sprite3D" unique_id=2097060550]
@@ -33041,8 +33041,8 @@ transparent_bg = true
 size = Vector2i(1065, 191)
 
 [node name="Label" type="Label" parent="CSGBox3D2/Sprite3D/SubViewport" unique_id=1019290423]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 908.0
+offset_bottom = 179.0
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.73333335, 0.22352941, 0, 1)
 theme_override_font_sizes/font_size = 64
@@ -33050,7 +33050,7 @@ text = "maybe, i wanna go away
 it's not enough for me to stay"
 
 [node name="OmniLight3D" type="OmniLight3D" parent="CSGBox3D2" unique_id=1449072851]
-transform = Transform3D(-0.7769483, 0, -0.62956446, 0, 1, 0, 0.62956446, 0, -0.7769483, -3.8434129, 4.8828278, 0.5363786)
-light_energy = 2.58
+transform = Transform3D(-0.7769483, 0, -0.62956446, 0, 1, 0, 0.62956446, 0, -0.7769483, -16.560867, 4.8828278, 1.1938515)
+light_energy = 5.51
 light_indirect_energy = 3.765
-omni_range = 10.271296
+omni_range = 17.867538
