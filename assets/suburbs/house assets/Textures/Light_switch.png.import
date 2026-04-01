@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dolsd56a7jopc"
-path.s3tc="res://.godot/imported/Light_switch.png-7b52891c2a87e5af4ad85f3d33a29812.s3tc.ctex"
-path.etc2="res://.godot/imported/Light_switch.png-7b52891c2a87e5af4ad85f3d33a29812.etc2.ctex"
+uid="uid://bo2qg83ps1bbl"
+path.s3tc="res://.godot/imported/Light_switch.png-a85dfe1a59a88feb90f5335eb0346dd5.s3tc.ctex"
+path.etc2="res://.godot/imported/Light_switch.png-a85dfe1a59a88feb90f5335eb0346dd5.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Light_switch.png"
-dest_files=["res://.godot/imported/Light_switch.png-7b52891c2a87e5af4ad85f3d33a29812.s3tc.ctex", "res://.godot/imported/Light_switch.png-7b52891c2a87e5af4ad85f3d33a29812.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Light_switch.png"
+dest_files=["res://.godot/imported/Light_switch.png-a85dfe1a59a88feb90f5335eb0346dd5.s3tc.ctex", "res://.godot/imported/Light_switch.png-a85dfe1a59a88feb90f5335eb0346dd5.etc2.ctex"]
 
 [params]
 

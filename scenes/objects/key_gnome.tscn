@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bklk2f6g44260"]
 
 [ext_resource type="Script" uid="uid://dudy6w5r16p2j" path="res://scripts/interact/gnome.gd" id="1_pa8gb"]
-[ext_resource type="Texture2D" uid="uid://d3vqd5wmyicvu" path="res://assets/suburbs/gnome/textures/Material_baseColor.png" id="2_8w746"]
+[ext_resource type="Texture2D" uid="uid://di0k4mtw0tkhe" path="res://assets/suburbs/gnome/textures/Material_baseColor.png" id="2_8w746"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pa8gb"]
 resource_name = "Material"

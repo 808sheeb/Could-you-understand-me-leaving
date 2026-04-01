@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bye1m108y5qap"
+uid="uid://1kkfojvqurc2"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_Stone_Moss.png-81ff140c8fbd1260e649ece301021334.s3tc.ctex"
 path.etc2="res://.godot/imported/[PSX] Nature Pack_Stone_Moss.png-81ff140c8fbd1260e649ece301021334.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "7fec69713957fb1dd6e91c8271b5b750"
 }
 
 [deps]

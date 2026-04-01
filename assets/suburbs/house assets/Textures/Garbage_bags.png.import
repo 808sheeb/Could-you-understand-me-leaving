@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfwiv78vd4flx"
-path.s3tc="res://.godot/imported/Garbage_bags.png-68c95b40f92e00b523cff273cd732754.s3tc.ctex"
-path.etc2="res://.godot/imported/Garbage_bags.png-68c95b40f92e00b523cff273cd732754.etc2.ctex"
+uid="uid://cn1pf8bn8t67f"
+path.s3tc="res://.godot/imported/Garbage_bags.png-21b90a5953c90a1edd2ac4690608fd7a.s3tc.ctex"
+path.etc2="res://.godot/imported/Garbage_bags.png-21b90a5953c90a1edd2ac4690608fd7a.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Garbage_bags.png"
-dest_files=["res://.godot/imported/Garbage_bags.png-68c95b40f92e00b523cff273cd732754.s3tc.ctex", "res://.godot/imported/Garbage_bags.png-68c95b40f92e00b523cff273cd732754.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Garbage_bags.png"
+dest_files=["res://.godot/imported/Garbage_bags.png-21b90a5953c90a1edd2ac4690608fd7a.s3tc.ctex", "res://.godot/imported/Garbage_bags.png-21b90a5953c90a1edd2ac4690608fd7a.etc2.ctex"]
 
 [params]
 

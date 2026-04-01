@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwl68ne406w40"
-path.s3tc="res://.godot/imported/Windows.jpg-57cb37a59836103a6931b911f0ae404f.s3tc.ctex"
-path.etc2="res://.godot/imported/Windows.jpg-57cb37a59836103a6931b911f0ae404f.etc2.ctex"
+uid="uid://cmhxvh5e5odc4"
+path.s3tc="res://.godot/imported/Windows.jpg-3739437c318849f12655238cd1733819.s3tc.ctex"
+path.etc2="res://.godot/imported/Windows.jpg-3739437c318849f12655238cd1733819.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Windows.jpg"
-dest_files=["res://.godot/imported/Windows.jpg-57cb37a59836103a6931b911f0ae404f.s3tc.ctex", "res://.godot/imported/Windows.jpg-57cb37a59836103a6931b911f0ae404f.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Windows.jpg"
+dest_files=["res://.godot/imported/Windows.jpg-3739437c318849f12655238cd1733819.s3tc.ctex", "res://.godot/imported/Windows.jpg-3739437c318849f12655238cd1733819.etc2.ctex"]
 
 [params]
 

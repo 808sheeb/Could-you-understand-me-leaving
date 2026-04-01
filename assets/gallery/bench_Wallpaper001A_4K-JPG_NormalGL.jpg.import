@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3yv36jgjcsj3"
+uid="uid://cbx4wghxfvx68"
 path.s3tc="res://.godot/imported/bench_Wallpaper001A_4K-JPG_NormalGL.jpg-432be00b7266e27c22d41333f0a8bd39.s3tc.ctex"
 path.etc2="res://.godot/imported/bench_Wallpaper001A_4K-JPG_NormalGL.jpg-432be00b7266e27c22d41333f0a8bd39.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "823f997f6f9053054a1609809fd5dbbd"
 }
 
 [deps]

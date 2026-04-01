@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvc2dg2arradj"
-path.s3tc="res://.godot/imported/Desk_lamp.png-80ba9a3f07618b0199781c2352d4d2f6.s3tc.ctex"
-path.etc2="res://.godot/imported/Desk_lamp.png-80ba9a3f07618b0199781c2352d4d2f6.etc2.ctex"
+uid="uid://cr61rfmb03lhu"
+path.s3tc="res://.godot/imported/Desk_lamp.png-8b2caca70f3ff7073f4b592dd0fc4086.s3tc.ctex"
+path.etc2="res://.godot/imported/Desk_lamp.png-8b2caca70f3ff7073f4b592dd0fc4086.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Desk_lamp.png"
-dest_files=["res://.godot/imported/Desk_lamp.png-80ba9a3f07618b0199781c2352d4d2f6.s3tc.ctex", "res://.godot/imported/Desk_lamp.png-80ba9a3f07618b0199781c2352d4d2f6.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Desk_lamp.png"
+dest_files=["res://.godot/imported/Desk_lamp.png-8b2caca70f3ff7073f4b592dd0fc4086.s3tc.ctex", "res://.godot/imported/Desk_lamp.png-8b2caca70f3ff7073f4b592dd0fc4086.etc2.ctex"]
 
 [params]
 

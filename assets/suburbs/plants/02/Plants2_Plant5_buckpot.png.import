@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3uoqhipiunln"
+uid="uid://ddxcd6ts3sl5v"
 path.s3tc="res://.godot/imported/Plants2_Plant5_buckpot.png-3148442996c0e4a12e465133bbfdd202.s3tc.ctex"
 path.etc2="res://.godot/imported/Plants2_Plant5_buckpot.png-3148442996c0e4a12e465133bbfdd202.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "5df90aec5c99782cbcd835ecd9dcb64c"
 }
 
 [deps]

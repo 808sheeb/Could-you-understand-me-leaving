@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnkl1f2ktfo1y"
-path.s3tc="res://.godot/imported/Plastic_04.jpg-eaa47c1edadd5f959bb5cc613dcd7726.s3tc.ctex"
-path.etc2="res://.godot/imported/Plastic_04.jpg-eaa47c1edadd5f959bb5cc613dcd7726.etc2.ctex"
+uid="uid://blc7a82tseqrt"
+path.s3tc="res://.godot/imported/Plastic_04.jpg-4524da76e5ca8e6a0b8e512391c28a67.s3tc.ctex"
+path.etc2="res://.godot/imported/Plastic_04.jpg-4524da76e5ca8e6a0b8e512391c28a67.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/Textures/Plastic_04.jpg"
-dest_files=["res://.godot/imported/Plastic_04.jpg-eaa47c1edadd5f959bb5cc613dcd7726.s3tc.ctex", "res://.godot/imported/Plastic_04.jpg-eaa47c1edadd5f959bb5cc613dcd7726.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/textures/Plastic_04.jpg"
+dest_files=["res://.godot/imported/Plastic_04.jpg-4524da76e5ca8e6a0b8e512391c28a67.s3tc.ctex", "res://.godot/imported/Plastic_04.jpg-4524da76e5ca8e6a0b8e512391c28a67.etc2.ctex"]
 
 [params]
 

@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckmeeyam33dx4"
+uid="uid://doh8vhatmbrx2"
 path.s3tc="res://.godot/imported/beef_blend_cat_tex.png-b99cc4da4135e237002b5d4e49291a87.s3tc.ctex"
 path.etc2="res://.godot/imported/beef_blend_cat_tex.png-b99cc4da4135e237002b5d4e49291a87.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "d615c7770e1e63f910883eb3804f624f"
 }
 
 [deps]

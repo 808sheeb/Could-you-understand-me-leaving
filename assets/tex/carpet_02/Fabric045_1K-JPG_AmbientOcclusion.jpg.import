@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tdgjikuclmri"
+uid="uid://cwd02wlh8dfdi"
 path.s3tc="res://.godot/imported/Fabric045_1K-JPG_AmbientOcclusion.jpg-b3ed642b144eaa5d2f32e8a2a64151b3.s3tc.ctex"
 path.etc2="res://.godot/imported/Fabric045_1K-JPG_AmbientOcclusion.jpg-b3ed642b144eaa5d2f32e8a2a64151b3.etc2.ctex"
 metadata={
@@ -27,8 +27,8 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=8
-roughness/src_normal="res://assets/tex/carpet_02/Fabric045_1K-JPG_NormalGL.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

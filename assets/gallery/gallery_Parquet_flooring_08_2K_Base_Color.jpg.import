@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://co402l45j3cdm"
+uid="uid://dlbs4mawg7ml3"
 path.s3tc="res://.godot/imported/gallery_Parquet_flooring_08_2K_Base_Color.jpg-ce9e7d824248aebdfa5673073881556a.s3tc.ctex"
 path.etc2="res://.godot/imported/gallery_Parquet_flooring_08_2K_Base_Color.jpg-ce9e7d824248aebdfa5673073881556a.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "60f835047ee8a0bc9622a877a4c33a5e"
 }
 
 [deps]

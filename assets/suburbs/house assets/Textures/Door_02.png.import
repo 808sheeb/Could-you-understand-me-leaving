@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh7p7pcpy458g"
-path.s3tc="res://.godot/imported/Door_02.png-c90e67563dbe570119f885ed90932a6f.s3tc.ctex"
-path.etc2="res://.godot/imported/Door_02.png-c90e67563dbe570119f885ed90932a6f.etc2.ctex"
+uid="uid://duys4pb7jmi6x"
+path.s3tc="res://.godot/imported/Door_02.png-0526ebf593c372c86316033ed09656d2.s3tc.ctex"
+path.etc2="res://.godot/imported/Door_02.png-0526ebf593c372c86316033ed09656d2.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Door_02.png"
-dest_files=["res://.godot/imported/Door_02.png-c90e67563dbe570119f885ed90932a6f.s3tc.ctex", "res://.godot/imported/Door_02.png-c90e67563dbe570119f885ed90932a6f.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Door_02.png"
+dest_files=["res://.godot/imported/Door_02.png-0526ebf593c372c86316033ed09656d2.s3tc.ctex", "res://.godot/imported/Door_02.png-0526ebf593c372c86316033ed09656d2.etc2.ctex"]
 
 [params]
 

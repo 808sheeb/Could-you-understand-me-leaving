@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://skuv6xsi4ym5"
-path.s3tc="res://.godot/imported/Chair_04.png-44404ee350917eb00cf587bc7fccffba.s3tc.ctex"
-path.etc2="res://.godot/imported/Chair_04.png-44404ee350917eb00cf587bc7fccffba.etc2.ctex"
+uid="uid://brp2jcnvg6dvn"
+path.s3tc="res://.godot/imported/Chair_04.png-f4d2bdc32af419c35ccb03ed05b45232.s3tc.ctex"
+path.etc2="res://.godot/imported/Chair_04.png-f4d2bdc32af419c35ccb03ed05b45232.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Chair_04.png"
-dest_files=["res://.godot/imported/Chair_04.png-44404ee350917eb00cf587bc7fccffba.s3tc.ctex", "res://.godot/imported/Chair_04.png-44404ee350917eb00cf587bc7fccffba.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Chair_04.png"
+dest_files=["res://.godot/imported/Chair_04.png-f4d2bdc32af419c35ccb03ed05b45232.s3tc.ctex", "res://.godot/imported/Chair_04.png-f4d2bdc32af419c35ccb03ed05b45232.etc2.ctex"]
 
 [params]
 

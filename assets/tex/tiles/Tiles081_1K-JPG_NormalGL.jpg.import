@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pp2q36w0hbt3"
+uid="uid://ds6o444gd2npd"
 path.s3tc="res://.godot/imported/Tiles081_1K-JPG_NormalGL.jpg-06946b9f62dd160d095c9c162b6331ee.s3tc.ctex"
 path.etc2="res://.godot/imported/Tiles081_1K-JPG_NormalGL.jpg-06946b9f62dd160d095c9c162b6331ee.etc2.ctex"
 metadata={
@@ -27,8 +27,8 @@ compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://assets/tex/tiles/Tiles081_1K-JPG_NormalGL.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di8aoev12q0kk"
+uid="uid://dp8yxfwvy65hx"
 path.s3tc="res://.godot/imported/DoriHome_2.png-964a089185dd2bf1550fcd0a2d9adf19.s3tc.ctex"
 path.etc2="res://.godot/imported/DoriHome_2.png-964a089185dd2bf1550fcd0a2d9adf19.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "d9c34c3a057801433b24782e0801ba83"
 }
 
 [deps]

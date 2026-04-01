@@ -11,7 +11,7 @@
 [ext_resource type="Material" uid="uid://dcfkcyddxkglf" path="res://addons/portals/materials/editor-preview-portal-material.tres" id="7_vwutt"]
 [ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="8_ax3ly"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
-[ext_resource type="PackedScene" uid="uid://c7fx2742nccr" path="res://assets/town/town.tscn" id="12_xxq3l"]
+[ext_resource type="PackedScene" uid="uid://dblivhyqjirc8" path="res://scenes/worlds/town/town.tscn" id="12_ltgfj"]
 [ext_resource type="Material" uid="uid://qcmiw8pm4h2e" path="res://assets/tex/wood.tres" id="14_18mtf"]
 [ext_resource type="PackedScene" uid="uid://ds87qi8ojohlg" path="res://scenes/worlds/gallery/gallery.tscn" id="14_si686"]
 [ext_resource type="PackedScene" uid="uid://dsj0s6uwet7if" path="res://scenes/worlds/meadow/meadow.tscn" id="17_seot8"]
@@ -760,9 +760,6 @@ shape = SubResource("BoxShape3D_seot8")
 [node name="Town" type="Node3D" parent="." unique_id=1932365854]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1950.2949)
 
-[node name="town" parent="Town" unique_id=247096640 instance=ExtResource("12_xxq3l")]
-transform = Transform3D(2, 0, 0, 0, -8.742278e-08, 2, 0, -2, -8.742278e-08, 39.38196, 0, -14.78064)
-
 [node name="TownPortalHouse" type="Node3D" parent="Town" unique_id=416155339 node_paths=PackedStringArray("exit_portal") groups=["portals"]]
 process_priority = 100
 process_physics_priority = 100
@@ -878,6 +875,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.365456, 1.6268842, -15.550
 light_energy = 0.5
 light_indirect_energy = 4.457
 omni_range = 3.4919634
+
+[node name="Town3" parent="Town" unique_id=727444368 instance=ExtResource("12_ltgfj")]
+transform = Transform3D(1.635, 0, 0, 0, 1.635, 0, 0, 0, 1.635, 45.12934, -0.104876995, -14.717285)
 
 [node name="Gallery" parent="." unique_id=2129912509 instance=ExtResource("14_si686")]
 transform = Transform3D(1.68, 0, 0, 0, 1.68, 0, 0, 0, 1.68, 0, 316.68054, 165.88193)

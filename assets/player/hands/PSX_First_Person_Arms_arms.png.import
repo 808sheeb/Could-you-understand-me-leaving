@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5s5uci8xbr6c"
+uid="uid://bx8qxwg4ujvat"
 path.s3tc="res://.godot/imported/PSX_First_Person_Arms_arms.png-f3e748dbd28393b4ef4abf71a97cb2fa.s3tc.ctex"
 path.etc2="res://.godot/imported/PSX_First_Person_Arms_arms.png-f3e748dbd28393b4ef4abf71a97cb2fa.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "7f0855d4997b09dde884d2e873fb4cff"
 }
 
 [deps]

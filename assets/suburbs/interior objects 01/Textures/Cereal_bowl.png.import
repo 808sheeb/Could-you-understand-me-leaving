@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7iculp5n770u"
-path.s3tc="res://.godot/imported/Cereal_bowl.png-e2235383044247a994853315538062cd.s3tc.ctex"
-path.etc2="res://.godot/imported/Cereal_bowl.png-e2235383044247a994853315538062cd.etc2.ctex"
+uid="uid://ck0wr1eqhnffm"
+path.s3tc="res://.godot/imported/Cereal_bowl.png-a14ec662ef0a45a0a6b2b021ece8e503.s3tc.ctex"
+path.etc2="res://.godot/imported/Cereal_bowl.png-a14ec662ef0a45a0a6b2b021ece8e503.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Cereal_bowl.png"
-dest_files=["res://.godot/imported/Cereal_bowl.png-e2235383044247a994853315538062cd.s3tc.ctex", "res://.godot/imported/Cereal_bowl.png-e2235383044247a994853315538062cd.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Cereal_bowl.png"
+dest_files=["res://.godot/imported/Cereal_bowl.png-a14ec662ef0a45a0a6b2b021ece8e503.s3tc.ctex", "res://.godot/imported/Cereal_bowl.png-a14ec662ef0a45a0a6b2b021ece8e503.etc2.ctex"]
 
 [params]
 

@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://02nng16226kj"
+uid="uid://b2ylbw5piscys"
 path.s3tc="res://.godot/imported/congo_Flag_of_Haiti.png-b3b06b29d198bc7514b600a9a9719b10.s3tc.ctex"
 path.etc2="res://.godot/imported/congo_Flag_of_Haiti.png-b3b06b29d198bc7514b600a9a9719b10.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "ad980dfde9b2e574a4a395e4eff65701"
 }
 
 [deps]

@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3uucgu1mgbef"
+uid="uid://davpusd2pco3y"
 path.s3tc="res://.godot/imported/Plants2_monstera.png-4583fb3ce243c8c843b226b94fd40451.s3tc.ctex"
 path.etc2="res://.godot/imported/Plants2_monstera.png-4583fb3ce243c8c843b226b94fd40451.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "b2ae84d19b1eec3cfc52ff83315bcf36"
 }
 
 [deps]

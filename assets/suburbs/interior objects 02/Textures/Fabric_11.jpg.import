@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjt483y3v84k6"
-path.s3tc="res://.godot/imported/Fabric_11.jpg-0efecc1655050bb8e8895de8e821c18a.s3tc.ctex"
-path.etc2="res://.godot/imported/Fabric_11.jpg-0efecc1655050bb8e8895de8e821c18a.etc2.ctex"
+uid="uid://pxb83wiu8n7s"
+path.s3tc="res://.godot/imported/Fabric_11.jpg-7a23809f867e7a877345f4fe47ae2be5.s3tc.ctex"
+path.etc2="res://.godot/imported/Fabric_11.jpg-7a23809f867e7a877345f4fe47ae2be5.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/Textures/Fabric_11.jpg"
-dest_files=["res://.godot/imported/Fabric_11.jpg-0efecc1655050bb8e8895de8e821c18a.s3tc.ctex", "res://.godot/imported/Fabric_11.jpg-0efecc1655050bb8e8895de8e821c18a.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/textures/Fabric_11.jpg"
+dest_files=["res://.godot/imported/Fabric_11.jpg-7a23809f867e7a877345f4fe47ae2be5.s3tc.ctex", "res://.godot/imported/Fabric_11.jpg-7a23809f867e7a877345f4fe47ae2be5.etc2.ctex"]
 
 [params]
 

@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bktss62mjl1wb"
+uid="uid://nv33gl2mcrd2"
 path.s3tc="res://.godot/imported/billi_blend_billi_tex.png-6393e703afa5422ab9a14444e81f2736.s3tc.ctex"
 path.etc2="res://.godot/imported/billi_blend_billi_tex.png-6393e703afa5422ab9a14444e81f2736.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "63fb14d0871588534464f2f070dee205"
 }
 
 [deps]

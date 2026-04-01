@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nchgund28k2j"
-path.s3tc="res://.godot/imported/Armchair.png-e75a1476c8e551cebc6fb5f176820c6f.s3tc.ctex"
-path.etc2="res://.godot/imported/Armchair.png-e75a1476c8e551cebc6fb5f176820c6f.etc2.ctex"
+uid="uid://bavytouhrnbqe"
+path.s3tc="res://.godot/imported/Armchair.png-c295a31635ad88696ff40ffacbd34f47.s3tc.ctex"
+path.etc2="res://.godot/imported/Armchair.png-c295a31635ad88696ff40ffacbd34f47.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Armchair.png"
-dest_files=["res://.godot/imported/Armchair.png-e75a1476c8e551cebc6fb5f176820c6f.s3tc.ctex", "res://.godot/imported/Armchair.png-e75a1476c8e551cebc6fb5f176820c6f.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Armchair.png"
+dest_files=["res://.godot/imported/Armchair.png-c295a31635ad88696ff40ffacbd34f47.s3tc.ctex", "res://.godot/imported/Armchair.png-c295a31635ad88696ff40ffacbd34f47.etc2.ctex"]
 
 [params]
 

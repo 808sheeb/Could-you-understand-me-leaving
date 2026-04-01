@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dte2eetxmtlsb"
+uid="uid://dst3rkbv42qmw"
 path.s3tc="res://.godot/imported/Ground037_1K-JPG_AmbientOcclusion.jpg-6d0dc812c1717837e54fa96c463661c1.s3tc.ctex"
 path.etc2="res://.godot/imported/Ground037_1K-JPG_AmbientOcclusion.jpg-6d0dc812c1717837e54fa96c463661c1.etc2.ctex"
 metadata={
@@ -27,8 +27,8 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=8
-roughness/src_normal="res://assets/tex/grass/Ground037_1K-JPG_NormalGL.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

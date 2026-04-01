@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boph2rsmbf58y"
+uid="uid://dcekod2xlqyxi"
 path.s3tc="res://.godot/imported/congo_Flag_of_Palestine.png-65334cb7198d517689e721ffda39a420.s3tc.ctex"
 path.etc2="res://.godot/imported/congo_Flag_of_Palestine.png-65334cb7198d517689e721ffda39a420.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "c9c049a6635293e5b9f95bbdf51188d9"
 }
 
 [deps]

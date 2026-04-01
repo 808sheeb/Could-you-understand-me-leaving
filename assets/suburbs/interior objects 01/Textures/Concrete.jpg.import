@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxqv1gm603bp0"
-path.s3tc="res://.godot/imported/Concrete.jpg-832cce9d4c16ea5cac2b369b06272935.s3tc.ctex"
-path.etc2="res://.godot/imported/Concrete.jpg-832cce9d4c16ea5cac2b369b06272935.etc2.ctex"
+uid="uid://ccm58n0q28bve"
+path.s3tc="res://.godot/imported/Concrete.jpg-4c4893a4e557052f8a93cc9dd0c4012a.s3tc.ctex"
+path.etc2="res://.godot/imported/Concrete.jpg-4c4893a4e557052f8a93cc9dd0c4012a.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Concrete.jpg"
-dest_files=["res://.godot/imported/Concrete.jpg-832cce9d4c16ea5cac2b369b06272935.s3tc.ctex", "res://.godot/imported/Concrete.jpg-832cce9d4c16ea5cac2b369b06272935.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Concrete.jpg"
+dest_files=["res://.godot/imported/Concrete.jpg-4c4893a4e557052f8a93cc9dd0c4012a.s3tc.ctex", "res://.godot/imported/Concrete.jpg-4c4893a4e557052f8a93cc9dd0c4012a.etc2.ctex"]
 
 [params]
 

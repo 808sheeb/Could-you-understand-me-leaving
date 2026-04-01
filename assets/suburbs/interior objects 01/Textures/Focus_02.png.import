@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmrdup6yuulax"
-path.s3tc="res://.godot/imported/Focus_02.png-7a1fcc934d5caecf1b48ad0a30eb14ce.s3tc.ctex"
-path.etc2="res://.godot/imported/Focus_02.png-7a1fcc934d5caecf1b48ad0a30eb14ce.etc2.ctex"
+uid="uid://fe3h0gmwdiuc"
+path.s3tc="res://.godot/imported/Focus_02.png-bfa69399695f6267487213ff37a5b7e4.s3tc.ctex"
+path.etc2="res://.godot/imported/Focus_02.png-bfa69399695f6267487213ff37a5b7e4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Focus_02.png"
-dest_files=["res://.godot/imported/Focus_02.png-7a1fcc934d5caecf1b48ad0a30eb14ce.s3tc.ctex", "res://.godot/imported/Focus_02.png-7a1fcc934d5caecf1b48ad0a30eb14ce.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Focus_02.png"
+dest_files=["res://.godot/imported/Focus_02.png-bfa69399695f6267487213ff37a5b7e4.s3tc.ctex", "res://.godot/imported/Focus_02.png-bfa69399695f6267487213ff37a5b7e4.etc2.ctex"]
 
 [params]
 

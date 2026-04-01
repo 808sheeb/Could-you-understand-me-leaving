@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cge0pnuahncy8"
-path.s3tc="res://.godot/imported/Ice_cream_01.png-39618f37ff721fb3b2138e3543755061.s3tc.ctex"
-path.etc2="res://.godot/imported/Ice_cream_01.png-39618f37ff721fb3b2138e3543755061.etc2.ctex"
+uid="uid://cijrbaw66j2cm"
+path.s3tc="res://.godot/imported/Ice_cream_01.png-dc2255b5cb406db1e816f50ae800ca0b.s3tc.ctex"
+path.etc2="res://.godot/imported/Ice_cream_01.png-dc2255b5cb406db1e816f50ae800ca0b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Ice_cream_01.png"
-dest_files=["res://.godot/imported/Ice_cream_01.png-39618f37ff721fb3b2138e3543755061.s3tc.ctex", "res://.godot/imported/Ice_cream_01.png-39618f37ff721fb3b2138e3543755061.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Ice_cream_01.png"
+dest_files=["res://.godot/imported/Ice_cream_01.png-dc2255b5cb406db1e816f50ae800ca0b.s3tc.ctex", "res://.godot/imported/Ice_cream_01.png-dc2255b5cb406db1e816f50ae800ca0b.etc2.ctex"]
 
 [params]
 

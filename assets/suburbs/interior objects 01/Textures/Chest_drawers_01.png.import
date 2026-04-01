@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0on6iybcha3u"
-path.s3tc="res://.godot/imported/Chest_drawers_01.png-958be8fa84fd23e3fa1d0d4ce32b20da.s3tc.ctex"
-path.etc2="res://.godot/imported/Chest_drawers_01.png-958be8fa84fd23e3fa1d0d4ce32b20da.etc2.ctex"
+uid="uid://dkgiw82srg8m5"
+path.s3tc="res://.godot/imported/Chest_drawers_01.png-6ace0af2b049b31e8e4ec57b3022c4bc.s3tc.ctex"
+path.etc2="res://.godot/imported/Chest_drawers_01.png-6ace0af2b049b31e8e4ec57b3022c4bc.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Chest_drawers_01.png"
-dest_files=["res://.godot/imported/Chest_drawers_01.png-958be8fa84fd23e3fa1d0d4ce32b20da.s3tc.ctex", "res://.godot/imported/Chest_drawers_01.png-958be8fa84fd23e3fa1d0d4ce32b20da.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Chest_drawers_01.png"
+dest_files=["res://.godot/imported/Chest_drawers_01.png-6ace0af2b049b31e8e4ec57b3022c4bc.s3tc.ctex", "res://.godot/imported/Chest_drawers_01.png-6ace0af2b049b31e8e4ec57b3022c4bc.etc2.ctex"]
 
 [params]
 

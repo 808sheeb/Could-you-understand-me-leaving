@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8x7u4c5r8w1d"
-path.s3tc="res://.godot/imported/PlasterWhite.jpg-7457ceed9a45270eef5339b6246268d8.s3tc.ctex"
-path.etc2="res://.godot/imported/PlasterWhite.jpg-7457ceed9a45270eef5339b6246268d8.etc2.ctex"
+uid="uid://buxrfje20mi5l"
+path.s3tc="res://.godot/imported/PlasterWhite.jpg-22cb91296c92d37fa88ca915ae584abc.s3tc.ctex"
+path.etc2="res://.godot/imported/PlasterWhite.jpg-22cb91296c92d37fa88ca915ae584abc.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/PlasterWhite.jpg"
-dest_files=["res://.godot/imported/PlasterWhite.jpg-7457ceed9a45270eef5339b6246268d8.s3tc.ctex", "res://.godot/imported/PlasterWhite.jpg-7457ceed9a45270eef5339b6246268d8.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/PlasterWhite.jpg"
+dest_files=["res://.godot/imported/PlasterWhite.jpg-22cb91296c92d37fa88ca915ae584abc.s3tc.ctex", "res://.godot/imported/PlasterWhite.jpg-22cb91296c92d37fa88ca915ae584abc.etc2.ctex"]
 
 [params]
 

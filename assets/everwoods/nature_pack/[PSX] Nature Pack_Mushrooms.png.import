@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgvi4kruvme1v"
+uid="uid://pmtlgybsidi3"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_Mushrooms.png-70fa643a601270b0b410d78274bf2fa9.s3tc.ctex"
 path.etc2="res://.godot/imported/[PSX] Nature Pack_Mushrooms.png-70fa643a601270b0b410d78274bf2fa9.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "f7b4f548bed15326de9846bfd6602897"
 }
 
 [deps]

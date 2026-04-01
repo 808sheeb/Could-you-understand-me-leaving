@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8ncdhdja82sa"
+uid="uid://dlabxnicwqfy6"
 path.s3tc="res://.godot/imported/congo_Flag_of_Sudan.png-9ab15a927c069dea539e4898314f791b.s3tc.ctex"
 path.etc2="res://.godot/imported/congo_Flag_of_Sudan.png-9ab15a927c069dea539e4898314f791b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "030983899dd82901f45465ef3a60d4c5"
 }
 
 [deps]

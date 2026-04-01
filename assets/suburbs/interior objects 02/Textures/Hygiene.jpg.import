@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tx81ul8n2o0f"
-path.s3tc="res://.godot/imported/Hygiene.jpg-11c0232ab2ddfaecd6f045a0042ccb54.s3tc.ctex"
-path.etc2="res://.godot/imported/Hygiene.jpg-11c0232ab2ddfaecd6f045a0042ccb54.etc2.ctex"
+uid="uid://drr61nh0kmq64"
+path.s3tc="res://.godot/imported/Hygiene.jpg-afbea7f854b0e9f3e967c5d3eb834b9f.s3tc.ctex"
+path.etc2="res://.godot/imported/Hygiene.jpg-afbea7f854b0e9f3e967c5d3eb834b9f.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/Textures/Hygiene.jpg"
-dest_files=["res://.godot/imported/Hygiene.jpg-11c0232ab2ddfaecd6f045a0042ccb54.s3tc.ctex", "res://.godot/imported/Hygiene.jpg-11c0232ab2ddfaecd6f045a0042ccb54.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/textures/Hygiene.jpg"
+dest_files=["res://.godot/imported/Hygiene.jpg-afbea7f854b0e9f3e967c5d3eb834b9f.s3tc.ctex", "res://.godot/imported/Hygiene.jpg-afbea7f854b0e9f3e967c5d3eb834b9f.etc2.ctex"]
 
 [params]
 

@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpcltk5c0sjm8"
-path.s3tc="res://.godot/imported/Paint_pot.png-dd04a5d2df9bb07d5533c19e5a66207b.s3tc.ctex"
-path.etc2="res://.godot/imported/Paint_pot.png-dd04a5d2df9bb07d5533c19e5a66207b.etc2.ctex"
+uid="uid://5rr1r1q3l5qg"
+path.s3tc="res://.godot/imported/Paint_pot.png-fdd501330eac336ca6550a82876ddb98.s3tc.ctex"
+path.etc2="res://.godot/imported/Paint_pot.png-fdd501330eac336ca6550a82876ddb98.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Paint_pot.png"
-dest_files=["res://.godot/imported/Paint_pot.png-dd04a5d2df9bb07d5533c19e5a66207b.s3tc.ctex", "res://.godot/imported/Paint_pot.png-dd04a5d2df9bb07d5533c19e5a66207b.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Paint_pot.png"
+dest_files=["res://.godot/imported/Paint_pot.png-fdd501330eac336ca6550a82876ddb98.s3tc.ctex", "res://.godot/imported/Paint_pot.png-fdd501330eac336ca6550a82876ddb98.etc2.ctex"]
 
 [params]
 

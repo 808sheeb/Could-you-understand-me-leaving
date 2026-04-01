@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3jpr2ohl8a76"
+uid="uid://kvlen2ownlac"
 path.s3tc="res://.godot/imported/Plants2_IMG_3498.png-71b8fdd0433a246865c30a06c5ed4d9f.s3tc.ctex"
 path.etc2="res://.godot/imported/Plants2_IMG_3498.png-71b8fdd0433a246865c30a06c5ed4d9f.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "3cdc68bcadb4ed0ea009f312b2a56cb7"
 }
 
 [deps]

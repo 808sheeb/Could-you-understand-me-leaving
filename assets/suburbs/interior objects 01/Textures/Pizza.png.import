@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4t5rv8futy7a"
-path.s3tc="res://.godot/imported/Pizza.png-76dea4002c0be8ed04f3c24ee7912d86.s3tc.ctex"
-path.etc2="res://.godot/imported/Pizza.png-76dea4002c0be8ed04f3c24ee7912d86.etc2.ctex"
+uid="uid://bjp26tr218ss6"
+path.s3tc="res://.godot/imported/Pizza.png-2df4c2be9d26419afac28c6ec34e6655.s3tc.ctex"
+path.etc2="res://.godot/imported/Pizza.png-2df4c2be9d26419afac28c6ec34e6655.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Pizza.png"
-dest_files=["res://.godot/imported/Pizza.png-76dea4002c0be8ed04f3c24ee7912d86.s3tc.ctex", "res://.godot/imported/Pizza.png-76dea4002c0be8ed04f3c24ee7912d86.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Pizza.png"
+dest_files=["res://.godot/imported/Pizza.png-2df4c2be9d26419afac28c6ec34e6655.s3tc.ctex", "res://.godot/imported/Pizza.png-2df4c2be9d26419afac28c6ec34e6655.etc2.ctex"]
 
 [params]
 

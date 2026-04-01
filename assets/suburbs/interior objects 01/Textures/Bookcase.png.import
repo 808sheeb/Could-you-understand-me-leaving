@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvgla1btpljao"
-path.s3tc="res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.s3tc.ctex"
-path.etc2="res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.etc2.ctex"
+uid="uid://dc7mlk1oq073f"
+path.s3tc="res://.godot/imported/Bookcase.png-691005023364eedbd6bb6809b2298237.s3tc.ctex"
+path.etc2="res://.godot/imported/Bookcase.png-691005023364eedbd6bb6809b2298237.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Bookcase.png"
-dest_files=["res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.s3tc.ctex", "res://.godot/imported/Bookcase.png-ee1fd1930b02ae9e9cdf199c93bc4742.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Bookcase.png"
+dest_files=["res://.godot/imported/Bookcase.png-691005023364eedbd6bb6809b2298237.s3tc.ctex", "res://.godot/imported/Bookcase.png-691005023364eedbd6bb6809b2298237.etc2.ctex"]
 
 [params]
 

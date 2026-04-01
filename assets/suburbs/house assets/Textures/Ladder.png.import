@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkwqtqj7inab4"
-path.s3tc="res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.s3tc.ctex"
-path.etc2="res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.etc2.ctex"
+uid="uid://c0kcm7c25jp0b"
+path.s3tc="res://.godot/imported/Ladder.png-9804f57a2ba3d3b42bd0d0818420e66b.s3tc.ctex"
+path.etc2="res://.godot/imported/Ladder.png-9804f57a2ba3d3b42bd0d0818420e66b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Ladder.png"
-dest_files=["res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.s3tc.ctex", "res://.godot/imported/Ladder.png-be167d6c5e102dceeabff70c87a70f44.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Ladder.png"
+dest_files=["res://.godot/imported/Ladder.png-9804f57a2ba3d3b42bd0d0818420e66b.s3tc.ctex", "res://.godot/imported/Ladder.png-9804f57a2ba3d3b42bd0d0818420e66b.etc2.ctex"]
 
 [params]
 

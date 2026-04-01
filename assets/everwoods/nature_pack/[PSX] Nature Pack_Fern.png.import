@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6r2l8udwmb1y"
+uid="uid://jbuofs2g2kkb"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_Fern.png-4483ec83181bd4d9312f60ebc6a28414.s3tc.ctex"
 path.etc2="res://.godot/imported/[PSX] Nature Pack_Fern.png-4483ec83181bd4d9312f60ebc6a28414.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "4abfd87c22b71ebdb2fc48f2a2bffbe7"
 }
 
 [deps]

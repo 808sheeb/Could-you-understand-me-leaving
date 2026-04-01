@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ms7617gr0ync"
-path.s3tc="res://.godot/imported/Flowers.png-c0a373bfecb59cbaf3b0aeddfb66b802.s3tc.ctex"
-path.etc2="res://.godot/imported/Flowers.png-c0a373bfecb59cbaf3b0aeddfb66b802.etc2.ctex"
+uid="uid://camvqj5otsl2t"
+path.s3tc="res://.godot/imported/Flowers.png-10541b74e7384fd53e93149af2af6f49.s3tc.ctex"
+path.etc2="res://.godot/imported/Flowers.png-10541b74e7384fd53e93149af2af6f49.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Flowers.png"
-dest_files=["res://.godot/imported/Flowers.png-c0a373bfecb59cbaf3b0aeddfb66b802.s3tc.ctex", "res://.godot/imported/Flowers.png-c0a373bfecb59cbaf3b0aeddfb66b802.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Flowers.png"
+dest_files=["res://.godot/imported/Flowers.png-10541b74e7384fd53e93149af2af6f49.s3tc.ctex", "res://.godot/imported/Flowers.png-10541b74e7384fd53e93149af2af6f49.etc2.ctex"]
 
 [params]
 

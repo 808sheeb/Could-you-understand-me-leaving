@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw025cdeogtse"
-path.s3tc="res://.godot/imported/Kitchen.jpg-31dca513f88768101c6e0e1cb16753d4.s3tc.ctex"
-path.etc2="res://.godot/imported/Kitchen.jpg-31dca513f88768101c6e0e1cb16753d4.etc2.ctex"
+uid="uid://cuegjr27eo36j"
+path.s3tc="res://.godot/imported/Kitchen.jpg-497a9bac01983a09c8216102fe3758f4.s3tc.ctex"
+path.etc2="res://.godot/imported/Kitchen.jpg-497a9bac01983a09c8216102fe3758f4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Kitchen.jpg"
-dest_files=["res://.godot/imported/Kitchen.jpg-31dca513f88768101c6e0e1cb16753d4.s3tc.ctex", "res://.godot/imported/Kitchen.jpg-31dca513f88768101c6e0e1cb16753d4.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Kitchen.jpg"
+dest_files=["res://.godot/imported/Kitchen.jpg-497a9bac01983a09c8216102fe3758f4.s3tc.ctex", "res://.godot/imported/Kitchen.jpg-497a9bac01983a09c8216102fe3758f4.etc2.ctex"]
 
 [params]
 

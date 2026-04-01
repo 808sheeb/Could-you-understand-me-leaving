@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyraadfynnbv7"
-path.s3tc="res://.godot/imported/Flower_Table.png-e667b372785cf2df6be101fef8056624.s3tc.ctex"
-path.etc2="res://.godot/imported/Flower_Table.png-e667b372785cf2df6be101fef8056624.etc2.ctex"
+uid="uid://8smflewdftpm"
+path.s3tc="res://.godot/imported/Flower_Table.png-1d48e5b6f5d072e835b7d32c58a4838f.s3tc.ctex"
+path.etc2="res://.godot/imported/Flower_Table.png-1d48e5b6f5d072e835b7d32c58a4838f.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Flower_Table.png"
-dest_files=["res://.godot/imported/Flower_Table.png-e667b372785cf2df6be101fef8056624.s3tc.ctex", "res://.godot/imported/Flower_Table.png-e667b372785cf2df6be101fef8056624.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Flower_Table.png"
+dest_files=["res://.godot/imported/Flower_Table.png-1d48e5b6f5d072e835b7d32c58a4838f.s3tc.ctex", "res://.godot/imported/Flower_Table.png-1d48e5b6f5d072e835b7d32c58a4838f.etc2.ctex"]
 
 [params]
 

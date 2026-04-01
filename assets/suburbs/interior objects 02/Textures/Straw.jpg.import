@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://thijcql7whua"
-path.s3tc="res://.godot/imported/Straw.jpg-45e9c3d033d0b904f618a26ddf04004e.s3tc.ctex"
-path.etc2="res://.godot/imported/Straw.jpg-45e9c3d033d0b904f618a26ddf04004e.etc2.ctex"
+uid="uid://b3poo41p2n0qe"
+path.s3tc="res://.godot/imported/Straw.jpg-9f4808c96d143c26f9ad28bcbd9111ce.s3tc.ctex"
+path.etc2="res://.godot/imported/Straw.jpg-9f4808c96d143c26f9ad28bcbd9111ce.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/Textures/Straw.jpg"
-dest_files=["res://.godot/imported/Straw.jpg-45e9c3d033d0b904f618a26ddf04004e.s3tc.ctex", "res://.godot/imported/Straw.jpg-45e9c3d033d0b904f618a26ddf04004e.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/textures/Straw.jpg"
+dest_files=["res://.godot/imported/Straw.jpg-9f4808c96d143c26f9ad28bcbd9111ce.s3tc.ctex", "res://.godot/imported/Straw.jpg-9f4808c96d143c26f9ad28bcbd9111ce.etc2.ctex"]
 
 [params]
 

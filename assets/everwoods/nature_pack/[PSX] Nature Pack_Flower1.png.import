@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxiiakddv684j"
+uid="uid://ssq1c3r82ilb"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_Flower1.png-386c9687b7c32e9ca459c68c5c8bb24f.s3tc.ctex"
 path.etc2="res://.godot/imported/[PSX] Nature Pack_Flower1.png-386c9687b7c32e9ca459c68c5c8bb24f.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "b06722e692f45191b3279a480d10f1f5"
 }
 
 [deps]

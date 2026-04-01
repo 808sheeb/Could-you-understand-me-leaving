@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7ywyiw22bwmg"
+uid="uid://dumwpsulsasqa"
 path.s3tc="res://.godot/imported/gallery_wood_baseColor.png-4042d47c0f5b9c957d1780500bc32737.s3tc.ctex"
 path.etc2="res://.godot/imported/gallery_wood_baseColor.png-4042d47c0f5b9c957d1780500bc32737.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "2fe5af437643b5ab4e70d1f669d67b84"
 }
 
 [deps]

@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8m8k6d0kxkpf"
+uid="uid://bpb3uxdtqv4o8"
 path.s3tc="res://.godot/imported/PS2_Lights_lights_D.png-f35e6050bec3f44f0c2785079f230569.s3tc.ctex"
 path.etc2="res://.godot/imported/PS2_Lights_lights_D.png-f35e6050bec3f44f0c2785079f230569.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "2e861c1b309bb27763b21e34e7e60fc7"
 }
 
 [deps]

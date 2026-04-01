@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://16tae3r48f5i"
-path.s3tc="res://.godot/imported/Grass.jpg-8151f4c1eac72b02c6808d0af0cf497b.s3tc.ctex"
-path.etc2="res://.godot/imported/Grass.jpg-8151f4c1eac72b02c6808d0af0cf497b.etc2.ctex"
+uid="uid://b6a5w1b5a6ute"
+path.s3tc="res://.godot/imported/Grass.jpg-f81fb5d2644db31e5e2344b16c234e69.s3tc.ctex"
+path.etc2="res://.godot/imported/Grass.jpg-f81fb5d2644db31e5e2344b16c234e69.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Grass.jpg"
-dest_files=["res://.godot/imported/Grass.jpg-8151f4c1eac72b02c6808d0af0cf497b.s3tc.ctex", "res://.godot/imported/Grass.jpg-8151f4c1eac72b02c6808d0af0cf497b.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Grass.jpg"
+dest_files=["res://.godot/imported/Grass.jpg-f81fb5d2644db31e5e2344b16c234e69.s3tc.ctex", "res://.godot/imported/Grass.jpg-f81fb5d2644db31e5e2344b16c234e69.etc2.ctex"]
 
 [params]
 

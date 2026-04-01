@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ph7drl81j3ol"
-path.s3tc="res://.godot/imported/Wire.png-01a8f7ef20a5a28dc3491fabcb5311c7.s3tc.ctex"
-path.etc2="res://.godot/imported/Wire.png-01a8f7ef20a5a28dc3491fabcb5311c7.etc2.ctex"
+uid="uid://bap6fmybnnhs0"
+path.s3tc="res://.godot/imported/Wire.png-61e124fc086a9ee9cc8ebd27c50003c7.s3tc.ctex"
+path.etc2="res://.godot/imported/Wire.png-61e124fc086a9ee9cc8ebd27c50003c7.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/Textures/Wire.png"
-dest_files=["res://.godot/imported/Wire.png-01a8f7ef20a5a28dc3491fabcb5311c7.s3tc.ctex", "res://.godot/imported/Wire.png-01a8f7ef20a5a28dc3491fabcb5311c7.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/textures/Wire.png"
+dest_files=["res://.godot/imported/Wire.png-61e124fc086a9ee9cc8ebd27c50003c7.s3tc.ctex", "res://.godot/imported/Wire.png-61e124fc086a9ee9cc8ebd27c50003c7.etc2.ctex"]
 
 [params]
 

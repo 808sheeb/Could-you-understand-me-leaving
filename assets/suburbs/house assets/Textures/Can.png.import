@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj7qrsctmi4rt"
-path.s3tc="res://.godot/imported/Can.png-a4ed465d0d43d4129f882d77c657d27b.s3tc.ctex"
-path.etc2="res://.godot/imported/Can.png-a4ed465d0d43d4129f882d77c657d27b.etc2.ctex"
+uid="uid://dl62isxu0uog4"
+path.s3tc="res://.godot/imported/Can.png-f17211f2f6e69595274a2167ceea8cd4.s3tc.ctex"
+path.etc2="res://.godot/imported/Can.png-f17211f2f6e69595274a2167ceea8cd4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/Textures/Can.png"
-dest_files=["res://.godot/imported/Can.png-a4ed465d0d43d4129f882d77c657d27b.s3tc.ctex", "res://.godot/imported/Can.png-a4ed465d0d43d4129f882d77c657d27b.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/textures/Can.png"
+dest_files=["res://.godot/imported/Can.png-f17211f2f6e69595274a2167ceea8cd4.s3tc.ctex", "res://.godot/imported/Can.png-f17211f2f6e69595274a2167ceea8cd4.etc2.ctex"]
 
 [params]
 

@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6hmxkb6twrsy"
-path.s3tc="res://.godot/imported/Entertainment.png-d8f58d9e1ba0196d16a3d9f0019fa444.s3tc.ctex"
-path.etc2="res://.godot/imported/Entertainment.png-d8f58d9e1ba0196d16a3d9f0019fa444.etc2.ctex"
+uid="uid://d112tgk2l0n4v"
+path.s3tc="res://.godot/imported/Entertainment.png-f8cbca7474e9c716aa8edb4a374c5acc.s3tc.ctex"
+path.etc2="res://.godot/imported/Entertainment.png-f8cbca7474e9c716aa8edb4a374c5acc.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/Textures/Entertainment.png"
-dest_files=["res://.godot/imported/Entertainment.png-d8f58d9e1ba0196d16a3d9f0019fa444.s3tc.ctex", "res://.godot/imported/Entertainment.png-d8f58d9e1ba0196d16a3d9f0019fa444.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/textures/Entertainment.png"
+dest_files=["res://.godot/imported/Entertainment.png-f8cbca7474e9c716aa8edb4a374c5acc.s3tc.ctex", "res://.godot/imported/Entertainment.png-f8cbca7474e9c716aa8edb4a374c5acc.etc2.ctex"]
 
 [params]
 

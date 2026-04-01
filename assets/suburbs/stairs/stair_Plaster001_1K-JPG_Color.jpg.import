@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqlegvtyshcte"
+uid="uid://cyu23f0l25icv"
 path.s3tc="res://.godot/imported/stair_Plaster001_1K-JPG_Color.jpg-63b8e13bc0b29048daaf4f02b0299579.s3tc.ctex"
 path.etc2="res://.godot/imported/stair_Plaster001_1K-JPG_Color.jpg-63b8e13bc0b29048daaf4f02b0299579.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "d3ea1bb6bd622efb2d971c7b2978c74f"
 }
 
 [deps]

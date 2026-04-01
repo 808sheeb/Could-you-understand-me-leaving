@@ -2,15 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://glw7ksa0ddhy"
+uid="uid://bw8uat0ku8vfc"
 path.s3tc="res://.godot/imported/[PSX] Nature Pack_birch_leaves_autumn.png-53063b63e67b5542f621bd5870d952e9.s3tc.ctex"
 path.etc2="res://.godot/imported/[PSX] Nature Pack_birch_leaves_autumn.png-53063b63e67b5542f621bd5870d952e9.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "c917fad56174fd491a1878da63993f05"
 }
 
 [deps]

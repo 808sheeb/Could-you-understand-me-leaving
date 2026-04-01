@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7bwv7lotr10d"
-path.s3tc="res://.godot/imported/Refrigerator.png-d7afd9779d7a5a05c1ec8a455cb4577b.s3tc.ctex"
-path.etc2="res://.godot/imported/Refrigerator.png-d7afd9779d7a5a05c1ec8a455cb4577b.etc2.ctex"
+uid="uid://bddmij87iwff0"
+path.s3tc="res://.godot/imported/Refrigerator.png-3f842362be908699193b92b13d4b2220.s3tc.ctex"
+path.etc2="res://.godot/imported/Refrigerator.png-3f842362be908699193b92b13d4b2220.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/Textures/Refrigerator.png"
-dest_files=["res://.godot/imported/Refrigerator.png-d7afd9779d7a5a05c1ec8a455cb4577b.s3tc.ctex", "res://.godot/imported/Refrigerator.png-d7afd9779d7a5a05c1ec8a455cb4577b.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/textures/Refrigerator.png"
+dest_files=["res://.godot/imported/Refrigerator.png-3f842362be908699193b92b13d4b2220.s3tc.ctex", "res://.godot/imported/Refrigerator.png-3f842362be908699193b92b13d4b2220.etc2.ctex"]
 
 [params]
 
