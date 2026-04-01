@@ -14137,6 +14137,7 @@ one_shot = true
 
 [node name="Init" type="Timer" parent="GUI" unique_id=852631913]
 wait_time = 90.0
+one_shot = true
 
 [connection signal="timeout" from="NavigationRegion3D/floorplan/Foyer_Basement/Basement/GalleryTimer" to="NavigationRegion3D/floorplan/Foyer_Basement/Basement" method="galleryClosed"]
 [connection signal="body_entered" from="NavigationRegion3D/floorplan/Kitchen/Colliders/Area3D" to="NavigationRegion3D/Billi" method="entered_table"]
