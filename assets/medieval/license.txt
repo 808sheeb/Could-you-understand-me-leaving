@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sombrero de Paja (Straw hat) (麦わらの一味) Luffy
+* source:	https://sketchfab.com/3d-models/sombrero-de-paja-straw-hat-luffy-8f6b910d990c449bb913d378733667b7
+* author:	Pikachu_Elegante (https://sketchfab.com/PikachuElegante)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sombrero de Paja (Straw hat) (麦わらの一味) Luffy" (https://sketchfab.com/3d-models/sombrero-de-paja-straw-hat-luffy-8f6b910d990c449bb913d378733667b7) by Pikachu_Elegante (https://sketchfab.com/PikachuElegante) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

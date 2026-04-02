@@ -19,7 +19,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta) -> void:
 	if keysCollected > 0:
-		visible = false
+		visible = true
 	else:
 		visible = false
 

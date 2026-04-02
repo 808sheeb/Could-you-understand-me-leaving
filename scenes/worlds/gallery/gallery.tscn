@@ -2,10 +2,10 @@
 
 [ext_resource type="Material" uid="uid://cc1l6wsrgyoc7" path="res://assets/tex/plaster/Plaster001_1K-JPG.tres" id="1_f21w3"]
 [ext_resource type="Material" uid="uid://cw0l88njlqhpb" path="res://assets/gallery/wood.tres" id="3_f21w3"]
-[ext_resource type="Texture2D" uid="uid://dbbxy72boc0tg" path="res://assets/tex/woodFloor/WoodFloor051_1K-JPG_Color.jpg" id="3_ww88h"]
+[ext_resource type="Texture2D" uid="uid://djjdth3ablcel" path="res://assets/tex/woodFloor/WoodFloor051_1K-JPG_Color.jpg" id="3_ww88h"]
 [ext_resource type="Material" uid="uid://dy6obmcyomgbp" path="res://assets/gallery/stuccoGallery.tres" id="4_3pphj"]
 [ext_resource type="PackedScene" uid="uid://b1qwqx5jfqt5t" path="res://scenes/objects/bench.tscn" id="5_rtnw1"]
-[ext_resource type="FontFile" uid="uid://c88gt6f36oh8d" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="6_rtnw1"]
+[ext_resource type="FontFile" uid="uid://bf87pjn7w8nyj" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="6_rtnw1"]
 [ext_resource type="PackedScene" uid="uid://bc1i0x7j611rq" path="res://assets/gallery/raavi_13_lauraglen_2.tscn" id="7_5renq"]
 [ext_resource type="PackedScene" uid="uid://b50gw0kf52kdd" path="res://scenes/objects/light.tscn" id="7_p8dl5"]
 [ext_resource type="PackedScene" uid="uid://b03wm4on1coac" path="res://scenes/worlds/gallery/desire lines.tscn" id="9_ohy8r"]
@@ -1333,6 +1333,3 @@ omni_attenuation = 1.58
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Speciation2/StaticBody3D" unique_id=1456906621]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06457996, -1.1921289, 0)
 shape = SubResource("CylinderShape3D_5renq")
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=195338382]
-transform = Transform3D(-0.48360455, 0.15281335, -0.86184376, 0.07477952, 0.9882551, 0.13326645, 0.87208635, 0, -0.48935196, -11.685939, 0.7343484, -3.2426105)

@@ -40,6 +40,8 @@ func _ready() -> void:
 	GlobalMessenger.connect("KEY_GNOME_LOCK", galleryPortal)
 	GlobalMessenger.connect("KEY_VILLAGE", villagePortal)
 	
+	GlobalMessenger.connect("RESET", gameReset)
+	
 func _process(_delta) -> void:
 	#DEBUG PLAYER POSITION
 	#print(player.get_position())
@@ -91,3 +93,6 @@ func resetPortal():
 	meadow_particles.visible = false
 	meadow_portal.deactivate()
 	meadow.visible = false
+
+func gameReset():
+	get_tree().reload_current_scene()

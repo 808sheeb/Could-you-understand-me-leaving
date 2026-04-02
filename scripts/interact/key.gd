@@ -6,14 +6,20 @@ var keyBody = null
 var keyParent = null
 var pickedUp = false
 var isAlarmGoingOff = false
+var readyForPickup = false
 
 func _ready() -> void:
 	GlobalMessenger.connect('SPAWN_KEYS', reset_key)
 	GlobalMessenger.connect('ALARM_TIMEOUT', alarming)
-	GlobalMessenger.connect('ALARM_SNOOZE', snooze)
+	#GlobalMessenger.connect('ALARM_SNOOZE', snooze)
+	GlobalMessenger.connect('INIT_READY', initReady)
 
+func _process(_delta) -> void:
+	#print(readyForPickup)
+	pass
+	
 func _on_interacted(_body):
-	if !isAlarmGoingOff:
+	if !isAlarmGoingOff and readyForPickup:
 		keyBody = _body.get_parent_node_3d()
 		keyParent = keyBody.get_parent_node_3d()
 		keyBody.remove_child(self)
@@ -25,11 +31,8 @@ func _on_interacted(_body):
 			GlobalMessenger.KEY_VILLAGE.emit()
 		elif keyName == "meadow":
 			GlobalMessenger.KEY_MEADOW.emit()
-	elif isAlarmGoingOff:
+	elif isAlarmGoingOff || !readyForPickup:
 		GlobalMessenger.UI_ITEM.emit()
-
-func snooze():
-	isAlarmGoingOff = false
 
 func reset_key():
 	if pickedUp:
@@ -49,3 +52,10 @@ func reset_key():
 
 func alarming():
 	isAlarmGoingOff = true
+	readyForPickup = false
+	#print('cant pickup')
+	
+func initReady():
+	isAlarmGoingOff = false
+	readyForPickup = true
+	#print("emit recieved")

@@ -10,13 +10,14 @@ signal KEY_GNOME_RESET
 signal KEY_VILLAGE
 signal KEY_MEADOW
 signal INTERACTED
-
+signal RESET
 signal SPAWN_KEYS
+signal INIT_READY
 
 signal UI_ITEM
+signal UI_ITEM_2
 signal UI_DOOR
 signal UI_WORLD
-signal UI_WATER
 
 var gnomeCount = 0
 

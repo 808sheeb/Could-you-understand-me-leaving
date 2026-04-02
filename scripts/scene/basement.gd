@@ -25,3 +25,4 @@ func activeToggle():
 func galleryClosed():
 	keyIsActive = false
 	GlobalMessenger.KEY_GNOME_RESET.emit()
+	print("gallery closed")

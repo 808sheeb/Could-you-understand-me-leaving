@@ -14,7 +14,7 @@ func _process(_delta) -> void:
 	elif !toggler:
 		toggle_group.visible = false
 
-func _input(event: InputEvent) -> void:
+func _input(_event) -> void:
 	if Input.is_action_just_pressed("toggle"):
 		toggler = !toggler
 		print(toggler)

@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="8_ax3ly"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
 [ext_resource type="PackedScene" uid="uid://dblivhyqjirc8" path="res://scenes/worlds/town/town.tscn" id="12_ltgfj"]
+[ext_resource type="PackedScene" uid="uid://bklk2f6g44260" path="res://scenes/objects/key_gnome.tscn" id="13_18mtf"]
 [ext_resource type="Material" uid="uid://qcmiw8pm4h2e" path="res://assets/tex/wood.tres" id="14_18mtf"]
 [ext_resource type="PackedScene" uid="uid://ds87qi8ojohlg" path="res://scenes/worlds/gallery/gallery.tscn" id="14_si686"]
 [ext_resource type="PackedScene" uid="uid://dsj0s6uwet7if" path="res://scenes/worlds/meadow/meadow.tscn" id="17_seot8"]
@@ -313,16 +314,16 @@ emission = Color(0.4751587, 0.6461334, 0.703125, 1)
 height_falloff = 1e-05
 edge_fade = 0.47568443
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_ltgfj"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_18mtf"]
 viewport_path = NodePath("CSGBox3D/Sprite3D/SubViewport")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_18mtf"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_seot8"]
 viewport_path = NodePath("CSGBox3D3/Sprite3D/SubViewport")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_qwap7"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_a8erk"]
 viewport_path = NodePath("CSGBox3D4/Sprite3D/SubViewport")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_100eh"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_qwap7"]
 viewport_path = NodePath("CSGBox3D2/Sprite3D/SubViewport")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_18mtf"]
@@ -365,12 +366,6 @@ size = Vector3(2.14, 3.055, 1)
 density = 0.02
 emission = Color(0.80078125, 0.7289827, 0.4473114, 1)
 edge_fade = 1.6564229
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_a8erk"]
-viewport_path = NodePath("Town/townCSGBox3D2/SubViewport")
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_seot8"]
-viewport_path = NodePath("Town/townCSGBox3D3/SubViewport")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a8erk"]
 _surfaces = [{
@@ -669,7 +664,7 @@ mesh = SubResource("ArrayMesh_seot8")
 shape = SubResource("BoxShape3D_a8erk")
 
 [node name="player" parent="." unique_id=1561527512 instance=ExtResource("2_oaoh5")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.88255, -3.5526738, -12.868246)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -86.380684, -1.5862377, -34.11892)
 collision_layer = 32769
 collision_mask = 32781
 
@@ -683,16 +678,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -454.1902, 1797.1227)
 material = SubResource("FogMaterial_si686")
 
 [node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D" parent_id_path=PackedInt32Array(1381277873, 207302882) index="0" unique_id=296165150]
-texture = SubResource("ViewportTexture_ltgfj")
-
-[node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D3" parent_id_path=PackedInt32Array(1381277873, 23983598) index="0" unique_id=853267237]
 texture = SubResource("ViewportTexture_18mtf")
 
+[node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D3" parent_id_path=PackedInt32Array(1381277873, 23983598) index="0" unique_id=853267237]
+texture = SubResource("ViewportTexture_seot8")
+
 [node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D4" parent_id_path=PackedInt32Array(1381277873, 457549837) index="0" unique_id=65557123]
-texture = SubResource("ViewportTexture_qwap7")
+texture = SubResource("ViewportTexture_a8erk")
 
 [node name="Sprite3D" parent="FrostgorgeSound/CSGBox3D2" parent_id_path=PackedInt32Array(1381277873, 454856884) index="0" unique_id=533292651]
-texture = SubResource("ViewportTexture_100eh")
+texture = SubResource("ViewportTexture_qwap7")
 
 [node name="WinterBorder" type="Node3D" parent="FrostgorgeSound" unique_id=371345923]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.514254, 4.982025, 47.598267)
@@ -824,49 +819,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.216682, 4.2250977, -13.521
 size = Vector3(95.64798, 10.450195, 59.115906)
 material = SubResource("FogMaterial_xxq3l")
 
-[node name="townCSGBox3D2" type="CSGBox3D" parent="Town" unique_id=1171468227]
-transform = Transform3D(-0.32343853, 0, 0.31591707, 0, 0.45212403, 0, -0.31591707, 0, -0.32343853, 60.39539, 0.6754515, -16.678345)
-use_collision = true
-size = Vector3(0.546875, 9.178497, 12.295944)
-
-[node name="Sprite3D" type="Sprite3D" parent="Town/townCSGBox3D2" unique_id=1360498708]
-transform = Transform3D(-5.9604645e-08, 0, -1.03695, 0, 1.0369501, 0, 1.03695, 0, -5.9604645e-08, -0.6386719, 1.3648667, 0.73706055)
-texture = SubResource("ViewportTexture_a8erk")
-
-[node name="SubViewport" type="SubViewport" parent="Town/townCSGBox3D2" unique_id=160528713]
-transparent_bg = true
-size = Vector2i(1065, 191)
-
-[node name="Label" type="Label" parent="Town/townCSGBox3D2/SubViewport" unique_id=2066883177]
-offset_right = 40.0
-offset_bottom = 23.0
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.73333335, 0.22352941, 0, 1)
-theme_override_font_sizes/font_size = 64
-text = "i wish i hadn't blinded myself,
-i want to see your face."
-
-[node name="townCSGBox3D3" type="CSGBox3D" parent="Town" unique_id=827258272]
-transform = Transform3D(-0.32343853, 0, 0.31591707, 0, 0.45212403, 0, -0.31591707, 0, -0.32343853, 52.87452, 0.6754515, -16.678345)
-use_collision = true
-size = Vector3(0.546875, 9.178497, 12.295944)
-
-[node name="Sprite3D" type="Sprite3D" parent="Town/townCSGBox3D3" unique_id=2023765961]
-transform = Transform3D(-5.9604645e-08, 0, -1.03695, 0, 1.0369501, 0, 1.03695, 0, -5.9604645e-08, -0.5402832, 1.3648667, 0.2163086)
-texture = SubResource("ViewportTexture_seot8")
-
-[node name="SubViewport" type="SubViewport" parent="Town/townCSGBox3D3" unique_id=590282108]
-transparent_bg = true
-size = Vector2i(598, 91)
-
-[node name="Label" type="Label" parent="Town/townCSGBox3D3/SubViewport" unique_id=1708137800]
-offset_right = 40.0
-offset_bottom = 23.0
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.73333335, 0.22352941, 0, 1)
-theme_override_font_sizes/font_size = 64
-text = "I bet you look kind."
-
 [node name="OmniLight3D" type="OmniLight3D" parent="Town" unique_id=254452657]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.29325, 1.6268842, -15.130737)
 
@@ -878,6 +830,9 @@ omni_range = 3.4919634
 
 [node name="Town3" parent="Town" unique_id=727444368 instance=ExtResource("12_ltgfj")]
 transform = Transform3D(1.635, 0, 0, 0, 1.635, 0, 0, 0, 1.635, 45.12934, -0.104876995, -14.717285)
+
+[node name="key_gnome" parent="Town" unique_id=1103591069 instance=ExtResource("13_18mtf")]
+transform = Transform3D(-0.3424539, 0, 0.06553717, 0, 0.3486686, 0, -0.06553717, 0, -0.3424539, 33.315857, 0.21799284, -8.921265)
 
 [node name="Gallery" parent="." unique_id=2129912509 instance=ExtResource("14_si686")]
 transform = Transform3D(1.68, 0, 0, 0, 1.68, 0, 0, 0, 1.68, 0, 316.68054, 165.88193)
@@ -941,8 +896,6 @@ material = ExtResource("14_18mtf")
 transform = Transform3D(-4.3711395e-08, -1, 0, 1, -4.3711395e-08, 0, -2.4140439e-20, 0, 1, 0.6100693, 0.75737, -0.0070724487)
 size = Vector3(2.1608026, 0.03125, 0.123046875)
 material = ExtResource("14_18mtf")
-
-[node name="AudioController" parent="." unique_id=1228426800 instance=ExtResource("9_ymoqr")]
 
 [node name="Meadow" parent="." unique_id=1047031754 instance=ExtResource("17_seot8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1401.7241, 492.43976, 12.979649)
@@ -1008,6 +961,8 @@ mesh = SubResource("ArrayMesh_vwutt")
 
 [node name="Collider" type="CollisionShape3D" parent="Meadow/MeadowPortalHouse/TeleportArea" unique_id=1732693959]
 shape = SubResource("BoxShape3D_ax3ly")
+
+[node name="AudioController" parent="." unique_id=1228426800 instance=ExtResource("9_ymoqr")]
 
 [editable path="player"]
 [editable path="player/head/InteractRay"]

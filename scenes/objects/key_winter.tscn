@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://celmha118kao6"]
 
 [ext_resource type="Script" uid="uid://dy6l5wgllx48c" path="res://scripts/interact/key.gd" id="1_ruipk"]
-[ext_resource type="Texture2D" uid="uid://mj02qnsr4l85" path="res://assets/suburbs/xbox/textures/M_Xbox_baseColor.png" id="2_ssuva"]
+[ext_resource type="Texture2D" uid="uid://ke4sfmiv50bf" path="res://assets/suburbs/xbox/textures/M_Xbox_baseColor.png" id="2_ssuva"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gmmk2"]
 size = Vector3(0.32641602, 0.1430664, 0.27197266)

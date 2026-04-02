@@ -5,7 +5,6 @@ extends CharacterBody3D
 @onready var standing_collision_shape: CollisionShape3D = $standing_collision_shape
 @onready var crouching_collision_shape: CollisionShape3D = $crouching_collision_shape
 @onready var ray_cast_3d: RayCast3D = $crouch_checker
-@onready var audio: Node = $PlayerAudio
 
 @onready var ap: AnimationPlayer = $head/PSX_First_Person_Arms/AnimationPlayer
 
@@ -25,7 +24,8 @@ const CROUCHING_SPEED = 2.0
 
 
 # Input variables
-const mouse_sens = 0.08
+const mouse_sens : float = 0.08
+const controller_look_sens := 0.05
 var direction = Vector3.ZERO
 
 # Movement Variables
@@ -34,10 +34,21 @@ const JUMP_VELOCITY = 5.2
 var crouching_depth = -0.9
 
 
-# Audio
-@onready var snow: AudioStreamPlayer = $PlayerAudio/Snow
-@onready var wood: AnimationPlayer = $PlayerAudio/WoodSound
-
+#smooth interp controller look with accel
+var _cur_controller_look = Vector2()
+func _handle_controller_look_input(delta):
+	var target_look = Input.get_vector("look_right", "look_left", "look_down", "look_up").normalized()
+	
+	if target_look.length() < _cur_controller_look.length():
+		_cur_controller_look = target_look
+	else:
+		_cur_controller_look = _cur_controller_look.lerp(target_look, 5.0*delta)
+	
+	rotate_y(_cur_controller_look.x * controller_look_sens)
+	head.rotate_x(_cur_controller_look.y * controller_look_sens)
+	head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90), deg_to_rad(90))
+	
+	
 
 # Constrain mouse to window
 func _ready() -> void:
@@ -60,6 +71,7 @@ func _physics_process(delta: float) -> void:
 	#if %interact_ray.is_colliding():
 		#var target = %interact_ray.get_collider()
 		#print(target)
+	_handle_controller_look_input(delta)
 	
 # Handle Movement State
 	# Crouching
@@ -103,7 +115,9 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, CURRENT_SPEED)
 		
 	move_and_slide()
-
+	
+	if Input.is_action_pressed("reset"):
+		GlobalMessenger.RESET.emit()
 
 	#var moving = isMoving()
 	

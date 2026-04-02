@@ -34,5 +34,5 @@ func spawn():
 		keym.rotation_degrees = Vector3(0, -34.2, 0)
 		keym.scale = Vector3(0.495, 0.495, 0.495)
 		self.add_child(keym)
-		print("Meadow Key Spawned")
+		#print("Meadow Key Spawned")
 		inWorld = true

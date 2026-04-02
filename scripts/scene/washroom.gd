@@ -12,7 +12,7 @@ func spawn():
 		keyt.transform.origin = Vector3(-8.228,3.28,-18.314)
 		keyt.rotation_degrees = Vector3(-73.6, 0, -11.1)
 		self.add_child(keyt)
-		print("Bathroom Key Spawned")
+		#print("Bathroom Key Spawned")
 		inWorld = true
 
 func activeToggle():

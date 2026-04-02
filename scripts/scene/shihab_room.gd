@@ -36,5 +36,5 @@ func spawn():
 		keyw.transform.origin = Vector3(6.256,1.711,-18.685)
 		keyw.rotation_degrees = Vector3(0, -62.6, 0)
 		self.add_child(keyw)
-		print("Winter Key Spawned")
+		#print("Winter Key Spawned")
 		inWorld = true
