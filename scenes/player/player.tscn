@@ -5615,7 +5615,7 @@ skin = SubResource("Skin_lgqa7")
 libraries/ = SubResource("AnimationLibrary_kjdoh")
 
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=1404271733]
-fov = 80.0
+fov = 80.2
 far = 2000.0
 
 [node name="InteractRay" parent="head" unique_id=629465107 instance=ExtResource("2_lvxji")]

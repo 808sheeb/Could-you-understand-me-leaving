@@ -25,11 +25,11 @@ func _on_button_interacted(_body):
 		initGame()
 
 func startAlarm():
-	var snoozeTime = rng.randi_range(35,270)
+	var snoozeTime = rng.randi_range(25,300)
 	alarm.start(snoozeTime)
 
 func initGame():
-	var initTime = rng.randi_range(45, 120)
+	var initTime = rng.randi_range(45, 80)
 	init.start(initTime)
 	snooze = true
 	

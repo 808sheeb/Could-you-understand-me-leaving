@@ -1,0 +1,12 @@
+[gd_resource type="QuadMesh" format=3 uid="uid://bme7kly4ayo7q"]
+
+[ext_resource type="Texture2D" uid="uid://bl1sfgyv5cpad" path="res://assets/anohana.png" id="1_e2dpm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_066nb"]
+transparency = 1
+albedo_color = Color(0.07058824, 1, 1, 1)
+albedo_texture = ExtResource("1_e2dpm")
+
+[resource]
+material = SubResource("StandardMaterial3D_066nb")
+size = Vector2(0.3, 0.3)
