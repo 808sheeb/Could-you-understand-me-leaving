@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjxd01cmwoefx"
-path.s3tc="res://.godot/imported/bed_04.png-24fb1e5bc21d3a3711537468ece00281.s3tc.ctex"
-path.etc2="res://.godot/imported/bed_04.png-24fb1e5bc21d3a3711537468ece00281.etc2.ctex"
+path.s3tc="res://.godot/imported/bed_04.png-a01afceee6f38b7317d83a8b94ffa2ce.s3tc.ctex"
+path.etc2="res://.godot/imported/bed_04.png-a01afceee6f38b7317d83a8b94ffa2ce.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/textures/bed_04.png"
-dest_files=["res://.godot/imported/bed_04.png-24fb1e5bc21d3a3711537468ece00281.s3tc.ctex", "res://.godot/imported/bed_04.png-24fb1e5bc21d3a3711537468ece00281.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/Textures/bed_04.png"
+dest_files=["res://.godot/imported/bed_04.png-a01afceee6f38b7317d83a8b94ffa2ce.s3tc.ctex", "res://.godot/imported/bed_04.png-a01afceee6f38b7317d83a8b94ffa2ce.etc2.ctex"]
 
 [params]
 

@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chw1xis66rftm"
-path.s3tc="res://.godot/imported/Phone_01.png-04577e58d24bb1db306c5145a354eb0e.s3tc.ctex"
-path.etc2="res://.godot/imported/Phone_01.png-04577e58d24bb1db306c5145a354eb0e.etc2.ctex"
+path.s3tc="res://.godot/imported/Phone_01.png-04a5d5424f36b38efce04b60359e7673.s3tc.ctex"
+path.etc2="res://.godot/imported/Phone_01.png-04a5d5424f36b38efce04b60359e7673.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Phone_01.png"
-dest_files=["res://.godot/imported/Phone_01.png-04577e58d24bb1db306c5145a354eb0e.s3tc.ctex", "res://.godot/imported/Phone_01.png-04577e58d24bb1db306c5145a354eb0e.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Phone_01.png"
+dest_files=["res://.godot/imported/Phone_01.png-04a5d5424f36b38efce04b60359e7673.s3tc.ctex", "res://.godot/imported/Phone_01.png-04a5d5424f36b38efce04b60359e7673.etc2.ctex"]
 
 [params]
 

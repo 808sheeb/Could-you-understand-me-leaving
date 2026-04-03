@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwg2fn7wr145"
-path.s3tc="res://.godot/imported/Garage_Door.png-f61bbe71fbd3c4a40770c566def00463.s3tc.ctex"
-path.etc2="res://.godot/imported/Garage_Door.png-f61bbe71fbd3c4a40770c566def00463.etc2.ctex"
+path.s3tc="res://.godot/imported/Garage_Door.png-5a8765ed0fa59715558b3ea32d551c31.s3tc.ctex"
+path.etc2="res://.godot/imported/Garage_Door.png-5a8765ed0fa59715558b3ea32d551c31.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Garage_Door.png"
-dest_files=["res://.godot/imported/Garage_Door.png-f61bbe71fbd3c4a40770c566def00463.s3tc.ctex", "res://.godot/imported/Garage_Door.png-f61bbe71fbd3c4a40770c566def00463.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Garage_Door.png"
+dest_files=["res://.godot/imported/Garage_Door.png-5a8765ed0fa59715558b3ea32d551c31.s3tc.ctex", "res://.godot/imported/Garage_Door.png-5a8765ed0fa59715558b3ea32d551c31.etc2.ctex"]
 
 [params]
 

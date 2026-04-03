@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be27mpo7gkq2"
-path.s3tc="res://.godot/imported/Plastic_Boat.png-0114a155f1fa4a7797b311b9df2a17f4.s3tc.ctex"
-path.etc2="res://.godot/imported/Plastic_Boat.png-0114a155f1fa4a7797b311b9df2a17f4.etc2.ctex"
+path.s3tc="res://.godot/imported/Plastic_Boat.png-54539aa2e9d47bedfed34adc788e2d01.s3tc.ctex"
+path.etc2="res://.godot/imported/Plastic_Boat.png-54539aa2e9d47bedfed34adc788e2d01.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Plastic_Boat.png"
-dest_files=["res://.godot/imported/Plastic_Boat.png-0114a155f1fa4a7797b311b9df2a17f4.s3tc.ctex", "res://.godot/imported/Plastic_Boat.png-0114a155f1fa4a7797b311b9df2a17f4.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Plastic_Boat.png"
+dest_files=["res://.godot/imported/Plastic_Boat.png-54539aa2e9d47bedfed34adc788e2d01.s3tc.ctex", "res://.godot/imported/Plastic_Boat.png-54539aa2e9d47bedfed34adc788e2d01.etc2.ctex"]
 
 [params]
 

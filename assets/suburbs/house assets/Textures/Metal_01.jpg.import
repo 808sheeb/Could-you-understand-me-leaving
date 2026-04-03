@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy70alcmr0c0f"
-path.s3tc="res://.godot/imported/Metal_01.jpg-c1799c2b3c77811993823662b6f8316e.s3tc.ctex"
-path.etc2="res://.godot/imported/Metal_01.jpg-c1799c2b3c77811993823662b6f8316e.etc2.ctex"
+path.s3tc="res://.godot/imported/Metal_01.jpg-37dc5be15f63c1c0de2b6ad1436fc7e3.s3tc.ctex"
+path.etc2="res://.godot/imported/Metal_01.jpg-37dc5be15f63c1c0de2b6ad1436fc7e3.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Metal_01.jpg"
-dest_files=["res://.godot/imported/Metal_01.jpg-c1799c2b3c77811993823662b6f8316e.s3tc.ctex", "res://.godot/imported/Metal_01.jpg-c1799c2b3c77811993823662b6f8316e.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Metal_01.jpg"
+dest_files=["res://.godot/imported/Metal_01.jpg-37dc5be15f63c1c0de2b6ad1436fc7e3.s3tc.ctex", "res://.godot/imported/Metal_01.jpg-37dc5be15f63c1c0de2b6ad1436fc7e3.etc2.ctex"]
 
 [params]
 

@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7num2d46x4u4"
-path.s3tc="res://.godot/imported/NaturePlants_02.png-478fedb377175cd0f293077a1f78c6e4.s3tc.ctex"
-path.etc2="res://.godot/imported/NaturePlants_02.png-478fedb377175cd0f293077a1f78c6e4.etc2.ctex"
+path.s3tc="res://.godot/imported/NaturePlants_02.png-eb44fd197c6e73a37270308880dbb1a0.s3tc.ctex"
+path.etc2="res://.godot/imported/NaturePlants_02.png-eb44fd197c6e73a37270308880dbb1a0.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/NaturePlants_02.png"
-dest_files=["res://.godot/imported/NaturePlants_02.png-478fedb377175cd0f293077a1f78c6e4.s3tc.ctex", "res://.godot/imported/NaturePlants_02.png-478fedb377175cd0f293077a1f78c6e4.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/NaturePlants_02.png"
+dest_files=["res://.godot/imported/NaturePlants_02.png-eb44fd197c6e73a37270308880dbb1a0.s3tc.ctex", "res://.godot/imported/NaturePlants_02.png-eb44fd197c6e73a37270308880dbb1a0.etc2.ctex"]
 
 [params]
 

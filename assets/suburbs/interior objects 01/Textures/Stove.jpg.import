@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mtb7r6ipay6e"
-path.s3tc="res://.godot/imported/Stove.jpg-ae893566b749af871cad6faab9429848.s3tc.ctex"
-path.etc2="res://.godot/imported/Stove.jpg-ae893566b749af871cad6faab9429848.etc2.ctex"
+path.s3tc="res://.godot/imported/Stove.jpg-c9c58586c6daf91daf2ac228d4ffe66c.s3tc.ctex"
+path.etc2="res://.godot/imported/Stove.jpg-c9c58586c6daf91daf2ac228d4ffe66c.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/textures/Stove.jpg"
-dest_files=["res://.godot/imported/Stove.jpg-ae893566b749af871cad6faab9429848.s3tc.ctex", "res://.godot/imported/Stove.jpg-ae893566b749af871cad6faab9429848.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/Textures/Stove.jpg"
+dest_files=["res://.godot/imported/Stove.jpg-c9c58586c6daf91daf2ac228d4ffe66c.s3tc.ctex", "res://.godot/imported/Stove.jpg-c9c58586c6daf91daf2ac228d4ffe66c.etc2.ctex"]
 
 [params]
 

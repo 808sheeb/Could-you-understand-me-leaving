@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0cqnwtdmqifl"
-path.s3tc="res://.godot/imported/Tool_Table_01.png-94ee8e8986a5692ba11cb9d193b55d78.s3tc.ctex"
-path.etc2="res://.godot/imported/Tool_Table_01.png-94ee8e8986a5692ba11cb9d193b55d78.etc2.ctex"
+path.s3tc="res://.godot/imported/Tool_Table_01.png-5402d4f8f9cd57ce3be221cc80dfe78c.s3tc.ctex"
+path.etc2="res://.godot/imported/Tool_Table_01.png-5402d4f8f9cd57ce3be221cc80dfe78c.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Tool_Table_01.png"
-dest_files=["res://.godot/imported/Tool_Table_01.png-94ee8e8986a5692ba11cb9d193b55d78.s3tc.ctex", "res://.godot/imported/Tool_Table_01.png-94ee8e8986a5692ba11cb9d193b55d78.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Tool_Table_01.png"
+dest_files=["res://.godot/imported/Tool_Table_01.png-5402d4f8f9cd57ce3be221cc80dfe78c.s3tc.ctex", "res://.godot/imported/Tool_Table_01.png-5402d4f8f9cd57ce3be221cc80dfe78c.etc2.ctex"]
 
 [params]
 

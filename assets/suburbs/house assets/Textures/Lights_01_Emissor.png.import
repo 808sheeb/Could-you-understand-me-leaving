@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b02w0a6rgvby6"
-path.s3tc="res://.godot/imported/Lights_01_Emissor.png-8b8485bea0b6cea12c797378d4b450c8.s3tc.ctex"
-path.etc2="res://.godot/imported/Lights_01_Emissor.png-8b8485bea0b6cea12c797378d4b450c8.etc2.ctex"
+path.s3tc="res://.godot/imported/Lights_01_Emissor.png-508c77b8bd0e0912036672853c7e4ebe.s3tc.ctex"
+path.etc2="res://.godot/imported/Lights_01_Emissor.png-508c77b8bd0e0912036672853c7e4ebe.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Lights_01_Emissor.png"
-dest_files=["res://.godot/imported/Lights_01_Emissor.png-8b8485bea0b6cea12c797378d4b450c8.s3tc.ctex", "res://.godot/imported/Lights_01_Emissor.png-8b8485bea0b6cea12c797378d4b450c8.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Lights_01_Emissor.png"
+dest_files=["res://.godot/imported/Lights_01_Emissor.png-508c77b8bd0e0912036672853c7e4ebe.s3tc.ctex", "res://.godot/imported/Lights_01_Emissor.png-508c77b8bd0e0912036672853c7e4ebe.etc2.ctex"]
 
 [params]
 

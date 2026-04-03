@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r5d1wm4dij8n"
-path.s3tc="res://.godot/imported/Paper.jpg-fd10a45b7bc83aafc0abc8edc8691ac3.s3tc.ctex"
-path.etc2="res://.godot/imported/Paper.jpg-fd10a45b7bc83aafc0abc8edc8691ac3.etc2.ctex"
+path.s3tc="res://.godot/imported/Paper.jpg-7b63d83bbdac3741acc4515abcc537ac.s3tc.ctex"
+path.etc2="res://.godot/imported/Paper.jpg-7b63d83bbdac3741acc4515abcc537ac.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/textures/Paper.jpg"
-dest_files=["res://.godot/imported/Paper.jpg-fd10a45b7bc83aafc0abc8edc8691ac3.s3tc.ctex", "res://.godot/imported/Paper.jpg-fd10a45b7bc83aafc0abc8edc8691ac3.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/Textures/Paper.jpg"
+dest_files=["res://.godot/imported/Paper.jpg-7b63d83bbdac3741acc4515abcc537ac.s3tc.ctex", "res://.godot/imported/Paper.jpg-7b63d83bbdac3741acc4515abcc537ac.etc2.ctex"]
 
 [params]
 

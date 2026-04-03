@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://corucvex222ck"
-path.s3tc="res://.godot/imported/Petrol_Can_01.png-69d749073e1770bebb787fce92c91712.s3tc.ctex"
-path.etc2="res://.godot/imported/Petrol_Can_01.png-69d749073e1770bebb787fce92c91712.etc2.ctex"
+path.s3tc="res://.godot/imported/Petrol_Can_01.png-0983cedd073f66ee10d92d75b19d09b2.s3tc.ctex"
+path.etc2="res://.godot/imported/Petrol_Can_01.png-0983cedd073f66ee10d92d75b19d09b2.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Petrol_Can_01.png"
-dest_files=["res://.godot/imported/Petrol_Can_01.png-69d749073e1770bebb787fce92c91712.s3tc.ctex", "res://.godot/imported/Petrol_Can_01.png-69d749073e1770bebb787fce92c91712.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Petrol_Can_01.png"
+dest_files=["res://.godot/imported/Petrol_Can_01.png-0983cedd073f66ee10d92d75b19d09b2.s3tc.ctex", "res://.godot/imported/Petrol_Can_01.png-0983cedd073f66ee10d92d75b19d09b2.etc2.ctex"]
 
 [params]
 

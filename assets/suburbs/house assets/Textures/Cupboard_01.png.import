@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqiwgprd3niro"
-path.s3tc="res://.godot/imported/Cupboard_01.png-c8c827018bff4b57f113c7268af7b52e.s3tc.ctex"
-path.etc2="res://.godot/imported/Cupboard_01.png-c8c827018bff4b57f113c7268af7b52e.etc2.ctex"
+path.s3tc="res://.godot/imported/Cupboard_01.png-4a49e68372e524719a6ea5e7900c53ca.s3tc.ctex"
+path.etc2="res://.godot/imported/Cupboard_01.png-4a49e68372e524719a6ea5e7900c53ca.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Cupboard_01.png"
-dest_files=["res://.godot/imported/Cupboard_01.png-c8c827018bff4b57f113c7268af7b52e.s3tc.ctex", "res://.godot/imported/Cupboard_01.png-c8c827018bff4b57f113c7268af7b52e.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Cupboard_01.png"
+dest_files=["res://.godot/imported/Cupboard_01.png-4a49e68372e524719a6ea5e7900c53ca.s3tc.ctex", "res://.godot/imported/Cupboard_01.png-4a49e68372e524719a6ea5e7900c53ca.etc2.ctex"]
 
 [params]
 

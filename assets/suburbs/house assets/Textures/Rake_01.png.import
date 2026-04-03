@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btpeoharqco1x"
-path.s3tc="res://.godot/imported/Rake_01.png-783853955ae8d1dc962c8be4425f1579.s3tc.ctex"
-path.etc2="res://.godot/imported/Rake_01.png-783853955ae8d1dc962c8be4425f1579.etc2.ctex"
+path.s3tc="res://.godot/imported/Rake_01.png-bf12bdbfd3a32ff8cb38a430534158a7.s3tc.ctex"
+path.etc2="res://.godot/imported/Rake_01.png-bf12bdbfd3a32ff8cb38a430534158a7.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Rake_01.png"
-dest_files=["res://.godot/imported/Rake_01.png-783853955ae8d1dc962c8be4425f1579.s3tc.ctex", "res://.godot/imported/Rake_01.png-783853955ae8d1dc962c8be4425f1579.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Rake_01.png"
+dest_files=["res://.godot/imported/Rake_01.png-bf12bdbfd3a32ff8cb38a430534158a7.s3tc.ctex", "res://.godot/imported/Rake_01.png-bf12bdbfd3a32ff8cb38a430534158a7.etc2.ctex"]
 
 [params]
 

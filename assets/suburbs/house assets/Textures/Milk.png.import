@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://du6nh7mrhv2vt"
-path.s3tc="res://.godot/imported/Milk.png-418a8faae0f8b9b247ac6a5bd2beba8f.s3tc.ctex"
-path.etc2="res://.godot/imported/Milk.png-418a8faae0f8b9b247ac6a5bd2beba8f.etc2.ctex"
+path.s3tc="res://.godot/imported/Milk.png-76b4d74becb87f46fc760522ebc71ad0.s3tc.ctex"
+path.etc2="res://.godot/imported/Milk.png-76b4d74becb87f46fc760522ebc71ad0.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Milk.png"
-dest_files=["res://.godot/imported/Milk.png-418a8faae0f8b9b247ac6a5bd2beba8f.s3tc.ctex", "res://.godot/imported/Milk.png-418a8faae0f8b9b247ac6a5bd2beba8f.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Milk.png"
+dest_files=["res://.godot/imported/Milk.png-76b4d74becb87f46fc760522ebc71ad0.s3tc.ctex", "res://.godot/imported/Milk.png-76b4d74becb87f46fc760522ebc71ad0.etc2.ctex"]
 
 [params]
 

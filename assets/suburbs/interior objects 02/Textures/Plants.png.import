@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4lere8gdw7b4"
-path.s3tc="res://.godot/imported/Plants.png-2eb154e31625157d3c3234b40d2e7222.s3tc.ctex"
-path.etc2="res://.godot/imported/Plants.png-2eb154e31625157d3c3234b40d2e7222.etc2.ctex"
+path.s3tc="res://.godot/imported/Plants.png-2043d8d9ac264dc836dc1dd3f8ef395f.s3tc.ctex"
+path.etc2="res://.godot/imported/Plants.png-2043d8d9ac264dc836dc1dd3f8ef395f.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/textures/Plants.png"
-dest_files=["res://.godot/imported/Plants.png-2eb154e31625157d3c3234b40d2e7222.s3tc.ctex", "res://.godot/imported/Plants.png-2eb154e31625157d3c3234b40d2e7222.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/Textures/Plants.png"
+dest_files=["res://.godot/imported/Plants.png-2043d8d9ac264dc836dc1dd3f8ef395f.s3tc.ctex", "res://.godot/imported/Plants.png-2043d8d9ac264dc836dc1dd3f8ef395f.etc2.ctex"]
 
 [params]
 

@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq64b3sgkxn0h"
-path.s3tc="res://.godot/imported/Bottle.png-ac25119cecdb43b9adacef8fdab1f188.s3tc.ctex"
-path.etc2="res://.godot/imported/Bottle.png-ac25119cecdb43b9adacef8fdab1f188.etc2.ctex"
+path.s3tc="res://.godot/imported/Bottle.png-f86ee9afdec3c43232bd4a5242cf95bc.s3tc.ctex"
+path.etc2="res://.godot/imported/Bottle.png-f86ee9afdec3c43232bd4a5242cf95bc.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/textures/Bottle.png"
-dest_files=["res://.godot/imported/Bottle.png-ac25119cecdb43b9adacef8fdab1f188.s3tc.ctex", "res://.godot/imported/Bottle.png-ac25119cecdb43b9adacef8fdab1f188.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/Textures/Bottle.png"
+dest_files=["res://.godot/imported/Bottle.png-f86ee9afdec3c43232bd4a5242cf95bc.s3tc.ctex", "res://.godot/imported/Bottle.png-f86ee9afdec3c43232bd4a5242cf95bc.etc2.ctex"]
 
 [params]
 
