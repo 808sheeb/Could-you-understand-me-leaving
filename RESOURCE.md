@@ -23,6 +23,8 @@ https://store.steampowered.com/app/2475490/Mouthwashing/
 
 ## Resources
 
+Below are a list of resources I have directly used or came across while scouring the internet for assets for my game. Everything in *Could You Understand Me Leaving?* was either pulled from one of these sites, was modelled by me in Blender, created by me in a different software in my stack or created natively in Godot Engine.
+
 ### Game Assets
 https://itch.io/game-assets/free
 https://opengameart.org/
@@ -43,3 +45,16 @@ https://free3d.com/
 
 ### Audio
 https://vcvrack.com/
+
+### Software Stack
+> Godot Engine 4.5 -> 4.6
+> Blender 5
+> VCV Rack
+> Adobe Photoshop
+>> Free Alternatives:
+>> GIMP / Photopea
+>> Krita (Painting)
+> Adobe Illustrator
+>> Free Alternatives:
+>> Inkscape
+>> Audacity
