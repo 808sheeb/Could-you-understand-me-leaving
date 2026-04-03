@@ -38,7 +38,7 @@ func get_prompt():
 		if action is InputEventKey:
 			key_name = action.as_text_physical_keycode()
 			break
-	return prompt_message + "\n[" + key_name + "]"
+	return prompt_message
 
 func interact(body):
 	interacted.emit(body)

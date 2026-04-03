@@ -33,13 +33,13 @@ func _on_interacted(_body):
 		keyBody = _body.get_parent_node_3d()
 		if keyParent == null:
 			keyParent = keyBody.get_parent_node_3d()
-		print(keyParent)
+		#print(keyParent)
 		if objP == null:
 			objP = keyBody.get_global_position()
 		if objR == null:
 			objR = keyBody.get_rotation()
-		print(objP)
-		print(objR)
+		#print(objP)
+		#print(objR)
 		keyBody.remove_child(self)
 		pickedUp = true
 		GlobalMessenger.KEY_GNOME.emit()

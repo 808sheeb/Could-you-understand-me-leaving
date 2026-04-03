@@ -10,14 +10,24 @@
 [ext_resource type="Script" uid="uid://c5d4fa34y23i2" path="res://scripts/ui/controlToggle.gd" id="4_8ydkj"]
 [ext_resource type="Texture2D" uid="uid://cg5mplxelmlb1" path="res://assets/ui/xbox.png" id="5_h17s1"]
 [ext_resource type="Texture2D" uid="uid://dfwrv54f5xh73" path="res://assets/ui/gnome.png" id="6_je7p5"]
+[ext_resource type="Texture2D" uid="uid://cplkr25rmqwon" path="res://assets/ui/E.png" id="8_8ydkj"]
 [ext_resource type="FontFile" uid="uid://bf87pjn7w8nyj" path="res://assets/font/ALEGREYASANS-REGULAR.TTF" id="10_h17s1"]
+[ext_resource type="Texture2D" uid="uid://dklgjao1uogss" path="res://assets/ui/G.png" id="11_3j4b4"]
+[ext_resource type="Texture2D" uid="uid://enchdgyat6uq" path="res://assets/ui/xbox/T_X_L_2D.png" id="12_cnsyf"]
 [ext_resource type="Script" uid="uid://civ04amcchtb6" path="res://scripts/ui/narration.gd" id="12_fm80t"]
+[ext_resource type="Texture2D" uid="uid://c43ci1jmq24rm" path="res://assets/ui/xbox/T_X_A_Color.png" id="13_007i1"]
+[ext_resource type="Texture2D" uid="uid://ba3i8caduq8ej" path="res://assets/ui/xbox/T_X_R_2D.png" id="13_28m0y"]
+[ext_resource type="Texture2D" uid="uid://cf8oy3cvfx437" path="res://assets/ui/xbox/T_X_LB.png" id="14_6cv16"]
+[ext_resource type="Texture2D" uid="uid://dgsnrg6ab4uq7" path="res://assets/ui/xbox/T_X_RB.png" id="15_j4nxn"]
 [ext_resource type="Texture2D" uid="uid://dxmxcej0x7ylv" path="res://assets/ui/WASD.png" id="15_lgqa7"]
+[ext_resource type="Texture2D" uid="uid://1aoj0b4dbewp" path="res://assets/ui/xbox/T_X_X_Color.png" id="15_uniwh"]
 [ext_resource type="Texture2D" uid="uid://b13n66eknopxq" path="res://assets/ui/Space.png" id="16_8ydkj"]
 [ext_resource type="Texture2D" uid="uid://bchjwgn2ah4j7" path="res://assets/ui/Shift.png" id="17_3j4b4"]
 [ext_resource type="Texture2D" uid="uid://bx8qxwg4ujvat" path="res://assets/player/hands/PSX_First_Person_Arms_arms.png" id="17_kvlxm"]
+[ext_resource type="Texture2D" uid="uid://pwvpmx2ilcuf" path="res://assets/ui/xbox/T_X_Share.png" id="18_iqsei"]
 [ext_resource type="Texture2D" uid="uid://k2bpwp6ylgey" path="res://assets/ui/Ctrl.png" id="18_yj68g"]
 [ext_resource type="Texture2D" uid="uid://5nr4el4w0gva" path="res://assets/ui/Alt.png" id="19_ioxgp"]
+[ext_resource type="Texture2D" uid="uid://btn6mmcci83vn" path="res://assets/ui/xbox/T_X_X.png" id="19_tffgl"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0wfyh"]
 radius = 0.38964844
@@ -5623,11 +5633,13 @@ collision_mask = 786433
 
 [node name="prompt" parent="head/InteractRay" index="0"]
 theme_override_font_sizes/font_size = 18
+text = "Prompt"
 
 [node name="crouch_checker" type="RayCast3D" parent="." unique_id=29947425]
 target_position = Vector3(0, 2, 0)
 
 [node name="UI" type="Control" parent="." unique_id=1148642993]
+top_level = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -5645,146 +5657,360 @@ offset_top = -20.289978
 offset_right = 11.29
 offset_bottom = -20.289978
 grow_vertical = 0
+scale = Vector2(0.75, 0.75)
 script = ExtResource("4_8ydkj")
-
-[node name="ToggleGroup" type="Control" parent="UI/Controls" unique_id=1979862830]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="WASD" type="Control" parent="UI/Controls/ToggleGroup" unique_id=773966729]
-anchors_preset = 0
-offset_top = -109.67999
-offset_right = 123.0
-offset_bottom = -61.679993
-
-[node name="Move" type="Label" parent="UI/Controls/ToggleGroup/WASD" unique_id=966777712]
-layout_mode = 0
-offset_left = 108.71
-offset_top = 19.835022
-offset_right = 151.70999
-offset_bottom = 42.835022
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("10_h17s1")
-theme_override_font_sizes/font_size = 20
-text = "Move"
-
-[node name="TextureRect" type="TextureRect" parent="UI/Controls/ToggleGroup/WASD" unique_id=455661985]
-layout_mode = 0
-offset_top = -23.164976
-offset_right = 1019.0
-offset_bottom = 657.835
-scale = Vector2(0.1, 0.1)
-size_flags_horizontal = 0
-texture = ExtResource("15_lgqa7")
-stretch_mode = 2
-
-[node name="Space" type="Control" parent="UI/Controls/ToggleGroup" unique_id=1097132948]
-anchors_preset = 0
-offset_left = 109.71
-offset_top = -60.73999
-offset_right = 260.71
-offset_bottom = -27.312988
-
-[node name="TextureRect2" type="TextureRect" parent="UI/Controls/ToggleGroup/Space" unique_id=654486620]
-layout_mode = 0
-offset_left = 1.0000076
-offset_right = 814.0
-offset_bottom = 328.0
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("16_8ydkj")
-
-[node name="Label2" type="Label" parent="UI/Controls/ToggleGroup/Space" unique_id=748411012]
-layout_mode = 0
-offset_left = 89.494995
-offset_top = 5.0
-offset_right = 132.495
-offset_bottom = 28.0
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("10_h17s1")
-theme_override_font_sizes/font_size = 20
-text = "Jump"
-
-[node name="Shift" type="Control" parent="UI/Controls/ToggleGroup" unique_id=1108393050]
-anchors_preset = 0
-offset_left = 158.70999
-offset_top = -104.84497
-offset_right = 255.70999
-offset_bottom = -58.84497
-
-[node name="TextureRect4" type="TextureRect" parent="UI/Controls/ToggleGroup/Shift" unique_id=1786996857]
-layout_mode = 0
-offset_left = 2.0000076
-offset_top = 6.999999
-offset_right = 364.0
-offset_bottom = 335.0
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("17_3j4b4")
-
-[node name="Label3" type="Label" parent="UI/Controls/ToggleGroup/Shift" unique_id=870041914]
-layout_mode = 0
-offset_left = 47.000015
-offset_top = 16.0
-offset_right = 95.000015
-offset_bottom = 39.0
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("10_h17s1")
-theme_override_font_sizes/font_size = 20
-text = "Sprint"
-
-[node name="Control" type="Control" parent="UI/Controls/ToggleGroup" unique_id=413759079]
-anchors_preset = 0
-offset_left = 0.22500038
-offset_top = -60.73999
-offset_right = 107.93487
-offset_bottom = -27.71997
-
-[node name="Move2" type="Label" parent="UI/Controls/ToggleGroup/Control" unique_id=142816353]
-layout_mode = 0
-offset_left = 44.71
-offset_top = 6.0200195
-offset_right = 99.71
-offset_bottom = 29.02002
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("10_h17s1")
-theme_override_font_sizes/font_size = 20
-text = "Crouch"
-
-[node name="TextureRect5" type="TextureRect" parent="UI/Controls/ToggleGroup/Control" unique_id=562679501]
-layout_mode = 0
-offset_right = 362.0
-offset_bottom = 328.0
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("18_yj68g")
 
 [node name="Alt" type="Control" parent="UI/Controls" unique_id=1845286598]
 anchors_preset = 0
 offset_top = -24.415
-offset_right = 124.0
+offset_right = 153.71
 offset_bottom = 9.155006
 
 [node name="Label3" type="Label" parent="UI/Controls/Alt" unique_id=1852251931]
 layout_mode = 0
-offset_left = 41.71
-offset_top = 7.5700073
-offset_right = 126.71
-offset_bottom = 30.570007
+offset_left = 48.71
+offset_top = 4.7049866
+offset_right = 143.70999
+offset_bottom = 27.704987
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("10_h17s1")
 theme_override_font_sizes/font_size = 20
 text = "HUD Toggle"
 
-[node name="TextureRect3" type="TextureRect" parent="UI/Controls/Alt" unique_id=1186325248]
+[node name="xbox_toggle" type="TextureRect" parent="UI/Controls/Alt" unique_id=1186325248]
+visible = false
 layout_mode = 0
-offset_right = 362.0
-offset_bottom = 328.0
+offset_left = 1.7099999
+offset_top = -5.2950206
+offset_right = 376.98996
+offset_bottom = 364.705
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("19_tffgl")
+stretch_mode = 4
+
+[node name="keeb_toggle" type="TextureRect" parent="UI/Controls/Alt" unique_id=114286321]
+layout_mode = 0
+offset_left = -0.28999993
+offset_top = -5.2950206
+offset_right = 436.80994
+offset_bottom = 425.65518
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("19_ioxgp")
+stretch_mode = 4
+
+[node name="ToggleGroup" type="Control" parent="UI/Controls" unique_id=268080655]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -156.71002
+offset_right = 298.71
+grow_vertical = 0
+
+[node name="Keyboard" type="Control" parent="UI/Controls/ToggleGroup" unique_id=1979862830]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -158.71002
+offset_right = 255.71
+offset_bottom = -5.0
+grow_vertical = 0
+
+[node name="Move" type="Label" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=966777712]
+layout_mode = 0
+offset_left = 109.71
+offset_top = 27.999756
+offset_right = 152.70999
+offset_bottom = 50.999756
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Move"
+
+[node name="TextureRect" type="TextureRect" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=455661985]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -15.0
+offset_right = 1020.0
+offset_bottom = 666.0
+scale = Vector2(0.1, 0.1)
+size_flags_horizontal = 0
+texture = ExtResource("15_lgqa7")
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=654486620]
+layout_mode = 0
+offset_left = 111.71001
+offset_top = 57.104492
+offset_right = 924.71
+offset_bottom = 385.1045
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("16_8ydkj")
+
+[node name="Label2" type="Label" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=748411012]
+layout_mode = 0
+offset_left = 200.20502
+offset_top = 62.104736
+offset_right = 243.20502
+offset_bottom = 85.10474
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Jump"
+
+[node name="TextureRect3" type="TextureRect" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=682212269]
+layout_mode = 0
+offset_left = 88.71
+offset_top = 95.134766
+offset_right = 388.70987
+offset_bottom = 423.13477
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("8_8ydkj")
+stretch_mode = 4
+
+[node name="Label3" type="Label" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=919185858]
+layout_mode = 0
+offset_left = 126.70998
+offset_top = 100.134705
+offset_right = 187.70999
+offset_bottom = 123.134705
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Interact"
+
+[node name="TextureRect4" type="TextureRect" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=1786996857]
+layout_mode = 0
+offset_left = 161.71
+offset_top = 20.0
+offset_right = 523.71
+offset_bottom = 348.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("17_3j4b4")
+
+[node name="Label4" type="Label" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=870041914]
+layout_mode = 0
+offset_left = 206.71002
+offset_top = 28.999756
+offset_right = 254.71002
+offset_bottom = 51.999756
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Sprint"
+
+[node name="Move2" type="Label" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=142816353]
+layout_mode = 0
+offset_left = 45.934998
+offset_top = 63.124756
+offset_right = 100.935
+offset_bottom = 86.124756
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Crouch"
+
+[node name="TextureRect5" type="TextureRect" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=562679501]
+layout_mode = 0
+offset_left = 1.2249985
+offset_top = 57.104492
+offset_right = 363.225
+offset_bottom = 385.1045
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("18_yj68g")
+
+[node name="Move3" type="Label" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=1632657907]
+layout_mode = 0
+offset_left = 36.71
+offset_top = 99.154724
+offset_right = 91.71
+offset_bottom = 122.154724
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Reset"
+
+[node name="TextureRect6" type="TextureRect" parent="UI/Controls/ToggleGroup/Keyboard" unique_id=564355092]
+layout_mode = 0
+offset_left = 1.2249985
+offset_top = 93.134766
+offset_right = 300.225
+offset_bottom = 421.13477
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("11_3j4b4")
+stretch_mode = 4
+
+[node name="Controller" type="Control" parent="UI/Controls/ToggleGroup" unique_id=661777618]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -97.71002
+offset_right = 307.71
+grow_vertical = 0
+
+[node name="Move" type="Label" parent="UI/Controls/ToggleGroup/Controller" unique_id=1048977730]
+layout_mode = 0
+offset_left = 45.71
+offset_top = 6.289978
+offset_right = 88.71
+offset_bottom = 29.289978
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Move"
+
+[node name="TextureRect" type="TextureRect" parent="UI/Controls/ToggleGroup/Controller" unique_id=271614382]
+layout_mode = 1
+offset_left = 4.709999
+offset_top = 1.2900391
+offset_right = 299.09998
+offset_bottom = 299.5045
+scale = Vector2(0.1, 0.1)
+size_flags_horizontal = 0
+texture = ExtResource("12_cnsyf")
+stretch_mode = 4
+
+[node name="Move4" type="Label" parent="UI/Controls/ToggleGroup/Controller" unique_id=1846276508]
+layout_mode = 0
+offset_left = 45.71
+offset_top = 42.99994
+offset_right = 88.71
+offset_bottom = 65.99994
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Look"
+
+[node name="TextureRect7" type="TextureRect" parent="UI/Controls/ToggleGroup/Controller" unique_id=678424137]
+layout_mode = 1
+offset_left = 4.709999
+offset_top = 38.0
+offset_right = 299.09998
+offset_bottom = 336.21445
+scale = Vector2(0.1, 0.1)
+size_flags_horizontal = 0
+texture = ExtResource("13_28m0y")
+stretch_mode = 4
+
+[node name="TextureRect2" type="TextureRect" parent="UI/Controls/ToggleGroup/Controller" unique_id=465962716]
+layout_mode = 0
+offset_left = 97.70999
+offset_top = 34.29004
+offset_right = 477.70987
+offset_bottom = 424.58984
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("13_007i1")
+stretch_mode = 4
+
+[node name="Label2" type="Label" parent="UI/Controls/ToggleGroup/Controller" unique_id=495753990]
+layout_mode = 0
+offset_left = 141.70999
+offset_top = 43.289978
+offset_right = 184.70999
+offset_bottom = 66.28998
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Jump"
+
+[node name="TextureRect3" type="TextureRect" parent="UI/Controls/ToggleGroup/Controller" unique_id=919720446]
+layout_mode = 0
+offset_left = 192.70999
+offset_top = 35.29004
+offset_right = 582.70996
+offset_bottom = 461.6902
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("15_uniwh")
+stretch_mode = 4
+
+[node name="Label3" type="Label" parent="UI/Controls/ToggleGroup/Controller" unique_id=525243007]
+layout_mode = 0
+offset_left = 234.70999
+offset_top = 45.289673
+offset_right = 295.71
+offset_bottom = 68.28967
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Interact"
+
+[node name="TextureRect4" type="TextureRect" parent="UI/Controls/ToggleGroup/Controller" unique_id=855827901]
+layout_mode = 0
+offset_left = 99.709984
+offset_top = -0.84472656
+offset_right = 461.71
+offset_bottom = 327.15527
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("14_6cv16")
+
+[node name="Label4" type="Label" parent="UI/Controls/ToggleGroup/Controller" unique_id=789168308]
+layout_mode = 0
+offset_left = 143.70999
+offset_top = 6.1550293
+offset_right = 191.70999
+offset_bottom = 29.15503
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Sprint"
+
+[node name="Move2" type="Label" parent="UI/Controls/ToggleGroup/Controller" unique_id=320151606]
+layout_mode = 0
+offset_left = 244.42001
+offset_top = 5.3099976
+offset_right = 299.42
+offset_bottom = 28.309998
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Crouch"
+
+[node name="TextureRect5" type="TextureRect" parent="UI/Controls/ToggleGroup/Controller" unique_id=1053664206]
+layout_mode = 0
+offset_left = 199.70999
+offset_top = -0.70996094
+offset_right = 561.70996
+offset_bottom = 327.29004
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("15_j4nxn")
+
+[node name="Move3" type="Label" parent="UI/Controls/ToggleGroup/Controller" unique_id=1881544251]
+layout_mode = 0
+offset_left = 195.19502
+offset_top = 79.0199
+offset_right = 250.19502
+offset_bottom = 102.0199
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_h17s1")
+theme_override_font_sizes/font_size = 20
+text = "Reset"
+
+[node name="TextureRect6" type="TextureRect" parent="UI/Controls/ToggleGroup/Controller" unique_id=1917502457]
+layout_mode = 0
+offset_left = 152.71
+offset_top = 69.0
+offset_right = 542.71
+offset_bottom = 490.6216
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("18_iqsei")
+stretch_mode = 4
 
 [node name="Inventory" type="Control" parent="UI" unique_id=1736042319]
 z_index = 1
