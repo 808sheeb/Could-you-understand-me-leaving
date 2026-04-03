@@ -67,3 +67,26 @@ https://vcvrack.com/
 >>
 >> Audacity
 >
+
+### Godot 4.6
+https://docs.godotengine.org/en/stable/index.html
+
+Please, please, please read documentation!! Doing youtube tutorials is so crucial, but so is knowing your way around a reference and being able to pull shit out of your ass.
+
+### Github
+
+Git is always so poorly explained to those outside the computer science world was for before this project because people talked about git... committing... version control... codebases... 
+I don't know what that shit means.
+Git is a protocol, or a procedure for doing "things", in this case the "thing" is saving files. When you have any kind of application, you end up having so many scripts, assets, objects, classes, a bunch of shit. Git saves not only the files, but the root locations of all the files and folders. It also shows you each and every change you made per "commit" or save. 
+
+Save your files, and keep a logged history of each change you made, so if you made a game breaking bug that you only found 3 saves later, you aren't completely fucked.
+
+Github is a terrible company run by Microsoft, an even more terrible company. We shouldn't be using their services, but it's hard to teach an old dog new tricks.
+
+Let's all try to switch to more holistic services that we can count on. Services that hopefully are not selling our data to the highest bidder.
+
+https://codeberg.org/ is a German non-profit, community led initiative that provides services to free and open-source projects.
+I hear you can host your own Gitea, but I don't know what that means.
+https://codefloe.com/ is Swiss-based and sounds cool.
+
+Basically, you're going to need to host your data, do it outside of the USA.
