@@ -55,11 +55,15 @@ https://vcvrack.com/
 >
 > Adobe Photoshop
 >> Free Alternatives:
+>>
 >> GIMP / Photopea
+>>
 >> Krita (Painting)
 >
 > Adobe Illustrator
 >> Free Alternatives:
+>>
 >> Inkscape
+>>
 >> Audacity
 >
