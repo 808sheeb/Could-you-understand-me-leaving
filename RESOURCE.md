@@ -47,9 +47,12 @@ https://free3d.com/
 https://vcvrack.com/
 
 ### Software Stack
-> Godot Engine 4.5 -> 4.6
+> Godot Engine 4.5
+>
 > Blender 5
+>
 > VCV Rack
+>
 > Adobe Photoshop
 >> Free Alternatives:
 >> GIMP / Photopea
