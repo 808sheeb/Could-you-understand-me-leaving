@@ -140,7 +140,6 @@
 [ext_resource type="Texture2D" uid="uid://btyu7bon4ue3s" path="res://assets/suburbs/house assets/Textures/Entertainment2.png" id="93_kj2f2"]
 [ext_resource type="PackedScene" uid="uid://ccnwk2bgilasj" path="res://assets/suburbs/cat/billi.tscn" id="93_pyu8g"]
 [ext_resource type="Texture2D" uid="uid://ky2op07be7j0" path="res://assets/suburbs/electronics/textures/Blank_Floppy_Disk_baseColor.png" id="93_slq44"]
-[ext_resource type="Texture2D" uid="uid://btd80554un4e1" path="res://assets/suburbs/electronics/textures/Calculator.001_baseColor.jpeg" id="94_6sevm"]
 [ext_resource type="Texture2D" uid="uid://y3mny0qb4eyd" path="res://assets/suburbs/house assets/Textures/Wardrobe.png" id="95_nh0vu"]
 [ext_resource type="Texture2D" uid="uid://bunxshb6nytx" path="res://assets/suburbs/electronics/textures/floppy2.png" id="96_6sevm"]
 [ext_resource type="Texture2D" uid="uid://71hbg5eptopl" path="res://assets/suburbs/electronics/textures/Blank_VHS_Tape_baseColor.png" id="96_nn72x"]
@@ -8096,10 +8095,13 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_nvnk7")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k5mem"]
+load_path = "res://.godot/imported/Calculator.001_baseColor.jpeg-b57369b4286491aa830e4abe7bc0eb56.s3tc.ctex"
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hpfm"]
 resource_name = "Calculator.001"
 cull_mode = 2
-albedo_texture = ExtResource("94_6sevm")
+albedo_texture = SubResource("CompressedTexture2D_k5mem")
 roughness = 0.5
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qy5my"]

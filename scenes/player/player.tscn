@@ -5695,7 +5695,6 @@ texture = ExtResource("19_tffgl")
 stretch_mode = 4
 
 [node name="keeb_toggle" type="TextureRect" parent="UI/Alt" unique_id=114286321]
-visible = false
 layout_mode = 0
 offset_left = 20.0
 offset_top = -27.429968
@@ -5726,7 +5725,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Keyboard" type="Control" parent="UI/Controls/ToggleGroup" unique_id=1979862830]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -5876,15 +5874,16 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -507.145
-offset_top = -311.145
-offset_right = 519.8549
-offset_bottom = 251.85501
+offset_left = -685.145
+offset_top = -334.145
+offset_right = 687.14496
+offset_bottom = 312.145
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_28m0y")
 
 [node name="Controller" type="Control" parent="UI/Controls/ToggleGroup" unique_id=661777618]
+visible = false
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -6052,10 +6051,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -483.0
-offset_top = -330.0
-offset_right = 544.0
-offset_bottom = 233.0
+offset_left = -544.0
+offset_top = -307.0
+offset_right = 483.0
+offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_28m0y")
