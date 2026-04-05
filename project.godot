@@ -23,7 +23,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 GlobalMessenger="*res://scripts/interact/globalMessenger.gd"
-DebugMenu="*uid://cggqb75a8w8r"
 Autoload="*uid://u3y0jxl0vtmg"
 
 [display]
@@ -38,7 +37,7 @@ window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/csg_mesher/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/portals/plugin.cfg", "res://addons/proton_scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
+enabled=PackedStringArray("res://addons/portals/plugin.cfg")
 
 [filesystem]
 
