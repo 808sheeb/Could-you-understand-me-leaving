@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://vyw6dy48k3wb"]
+[gd_scene format=3 uid="uid://vyw6dy48k3wb"]
 
-[ext_resource type="PackedScene" uid="uid://dma1polm0t2m4" path="res://assets/everwoods/nature_pack/[PSX] Nature Pack.fbx" id="1_hwayl"]
+[ext_resource type="PackedScene" uid="uid://xdktxkxpk46r" path="res://assets/everwoods/nature_pack/[PSX] Nature Pack.fbx" id="1_hwayl"]
 
-[node name="[PSX] Nature Pack" instance=ExtResource("1_hwayl")]
+[node name="[PSX] Nature Pack" unique_id=596583830 instance=ExtResource("1_hwayl")]
 
-[node name="Stone2" parent="." index="46"]
+[node name="Stone2" parent="." index="46" unique_id=1564554271]
 transform = Transform3D(-98.41771, 17.718792, -1.532967e-06, 0, 5.9604645e-06, 100, 17.718792, 98.41771, -1.1915495e-05, -12.972055, 0.7258841, -2.663212)
