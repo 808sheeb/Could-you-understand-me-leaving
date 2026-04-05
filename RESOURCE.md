@@ -69,9 +69,13 @@ https://vcvrack.com/
 >
 
 ### Godot 4.6
+https://godotengine.org/
+
+You, on your own, owe it to yourself to use Godot. You are no studio, no team. As solo developers, creating for ourselves, we also need to have a committment to open-source and free tools. Using Godot is giving back to the open-source community. I try to always make my code publicly available. Because why does it matter, all the things I learned, all the things I know, I learned from someone else. So we pass it on.
+
 https://docs.godotengine.org/en/stable/index.html
 
-Please, please, please read documentation!! Doing youtube tutorials is so crucial, but so is knowing your way around a reference and being able to pull shit out of your ass.
+Please read documentation!! Doing youtube tutorials is so crucial, but so is knowing your way around a reference and being able to pull shit out of your ass.
 
 ### Github
 
