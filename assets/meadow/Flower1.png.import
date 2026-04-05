@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3tv7xjnendp4"
-path.s3tc="res://.godot/imported/Flower1.png-611ed8cf2db9aa46bf697aac6a5b42ec.s3tc.ctex"
-path.etc2="res://.godot/imported/Flower1.png-611ed8cf2db9aa46bf697aac6a5b42ec.etc2.ctex"
+path.s3tc="res://.godot/imported/Flower1.png-8a15c53173ad1b4e64d1cc036bb03243.s3tc.ctex"
+path.etc2="res://.godot/imported/Flower1.png-8a15c53173ad1b4e64d1cc036bb03243.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/everwoods/nature_pack/textures/Flower1.png"
-dest_files=["res://.godot/imported/Flower1.png-611ed8cf2db9aa46bf697aac6a5b42ec.s3tc.ctex", "res://.godot/imported/Flower1.png-611ed8cf2db9aa46bf697aac6a5b42ec.etc2.ctex"]
+source_file="res://assets/meadow/Flower1.png"
+dest_files=["res://.godot/imported/Flower1.png-8a15c53173ad1b4e64d1cc036bb03243.s3tc.ctex", "res://.godot/imported/Flower1.png-8a15c53173ad1b4e64d1cc036bb03243.etc2.ctex"]
 
 [params]
 
