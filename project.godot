@@ -28,8 +28,8 @@ Autoload="*uid://u3y0jxl0vtmg"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=768
+window/size/viewport_width=1024
+window/size/viewport_height=576
 window/size/mode=4
 window/size/resizable=false
 window/size/borderless=true
