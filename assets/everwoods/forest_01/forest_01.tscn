@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cf2bor1ryo8o6"]
-
-[ext_resource type="PackedScene" uid="uid://cttfvhwhm4ju4" path="res://assets/everwoods/forest_01/scene.gltf" id="1_jx6eu"]
-
-[node name="Sketchfab_Scene" instance=ExtResource("1_jx6eu")]

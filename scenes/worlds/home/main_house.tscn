@@ -171,7 +171,6 @@ agent_height = 0.6
 agent_max_slope = 60.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1no4f"]
-load_path = "res://.godot/imported/texture_07.png-65d7708dcf7cae789a0ea395cb7cc8ff.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2olvw"]
 albedo_texture = SubResource("CompressedTexture2D_1no4f")
@@ -8096,7 +8095,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_nvnk7")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k5mem"]
-load_path = "res://.godot/imported/Calculator.001_baseColor.jpeg-b57369b4286491aa830e4abe7bc0eb56.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hpfm"]
 resource_name = "Calculator.001"

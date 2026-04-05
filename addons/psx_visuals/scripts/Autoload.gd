@@ -1,4 +1,3 @@
-
 extends CanvasLayer
 
 const POST_PROCESS_MATERIAL : ShaderMaterial = preload("uid://da2sluxj84btb")

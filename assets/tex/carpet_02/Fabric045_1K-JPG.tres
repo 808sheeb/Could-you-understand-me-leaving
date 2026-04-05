@@ -1,20 +1,21 @@
-[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://bi3i1ijjo7bd3"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bi3i1ijjo7bd3"]
 
-[ext_resource type="Texture2D" uid="uid://tdgjikuclmri" path="res://assets/tex/carpet_02/Fabric045_1K-JPG_AmbientOcclusion.jpg" id="AmbientOcclusion"]
-[ext_resource type="Texture2D" uid="uid://djw6uqok0ruh7" path="res://assets/tex/carpet_02/Fabric045_1K-JPG_Color.jpg" id="Color"]
-[ext_resource type="Texture2D" uid="uid://b1jmearvinpny" path="res://assets/tex/carpet_02/Fabric045_1K-JPG_Displacement.jpg" id="Displacement"]
-[ext_resource type="Texture2D" uid="uid://cwlmtqsul5gbl" path="res://assets/tex/carpet_02/Fabric045_1K-JPG_NormalGL.jpg" id="NormalGL"]
-[ext_resource type="Texture2D" uid="uid://ii2xpqqb2fn3" path="res://assets/tex/carpet_02/Fabric045_1K-JPG_Roughness.jpg" id="Roughness"]
+[ext_resource type="Texture2D" uid="uid://dnbw76yvbrvc8" path="res://assets/tex/carpet_02/Fabric045_1K-JPG_Color.jpg" id="Color"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ttheb"]
+load_path = "res://.godot/imported/Fabric045_1K-JPG_AmbientOcclusion.jpg-b3ed642b144eaa5d2f32e8a2a64151b3.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hvanq"]
+load_path = "res://.godot/imported/Fabric045_1K-JPG_Displacement.jpg-4a865f082b458cd637b1d9b207c1ada1.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_picjl"]
+load_path = "res://.godot/imported/Fabric045_1K-JPG_NormalGL.jpg-9b2b344446acfbbcf259ae288eac0e66.s3tc.ctex"
 
 [resource]
 albedo_texture = ExtResource("Color")
-roughness_texture = ExtResource("Roughness")
 roughness_texture_channel = 4
-normal_enabled = true
-normal_texture = ExtResource("NormalGL")
-ao_enabled = true
-ao_texture = ExtResource("AmbientOcclusion")
+normal_texture = SubResource("CompressedTexture2D_picjl")
+ao_texture = SubResource("CompressedTexture2D_ttheb")
 ao_texture_channel = 4
-heightmap_enabled = true
 heightmap_scale = 1.0
-heightmap_texture = ExtResource("Displacement")
+heightmap_texture = SubResource("CompressedTexture2D_hvanq")

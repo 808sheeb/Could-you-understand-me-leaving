@@ -1,21 +1,23 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://dq6fwlkj0be1m"]
 
-[ext_resource type="Texture2D" uid="uid://dst3rkbv42qmw" path="res://assets/tex/grass/Ground037_1K-JPG_AmbientOcclusion.jpg" id="AmbientOcclusion"]
 [ext_resource type="Texture2D" uid="uid://b11fqpiolayd5" path="res://assets/tex/grass/Ground037_1K-JPG_Color.jpg" id="Color"]
-[ext_resource type="Texture2D" uid="uid://jg6ko1xbnqnf" path="res://assets/tex/grass/Ground037_1K-JPG_Displacement.jpg" id="Displacement"]
-[ext_resource type="Texture2D" uid="uid://2bnsvc7gfrao" path="res://assets/tex/grass/Ground037_1K-JPG_NormalGL.jpg" id="NormalGL"]
-[ext_resource type="Texture2D" uid="uid://xjkoyc0d03xd" path="res://assets/tex/grass/Ground037_1K-JPG_Roughness.jpg" id="Roughness"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w568x"]
+load_path = "res://.godot/imported/Ground037_1K-JPG_AmbientOcclusion.jpg-6d0dc812c1717837e54fa96c463661c1.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_24iod"]
+load_path = "res://.godot/imported/Ground037_1K-JPG_Displacement.jpg-99d15aa94d4982af68197a9c43f7acdc.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_liini"]
+load_path = "res://.godot/imported/Ground037_1K-JPG_NormalGL.jpg-1a6b82b77af8fa1ecb1724a20cec95ac.ctex"
 
 [resource]
 albedo_color = Color(0.7063041, 0.915556, 0.5992555, 1)
 albedo_texture = ExtResource("Color")
-roughness_texture = ExtResource("Roughness")
 roughness_texture_channel = 4
-normal_texture = ExtResource("NormalGL")
-ao_enabled = true
-ao_texture = ExtResource("AmbientOcclusion")
+normal_texture = SubResource("CompressedTexture2D_liini")
+ao_texture = SubResource("CompressedTexture2D_w568x")
 ao_texture_channel = 4
-heightmap_enabled = true
 heightmap_scale = 1.0
-heightmap_texture = ExtResource("Displacement")
+heightmap_texture = SubResource("CompressedTexture2D_24iod")
 uv1_scale = Vector3(1.045, 1.045, 1.045)
