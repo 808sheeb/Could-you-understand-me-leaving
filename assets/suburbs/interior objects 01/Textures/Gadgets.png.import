@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dldbt1wbsoxwc"
-path.s3tc="res://.godot/imported/Gadgets.png-775a5942262eb58f16718c17b0ce27d8.s3tc.ctex"
-path.etc2="res://.godot/imported/Gadgets.png-775a5942262eb58f16718c17b0ce27d8.etc2.ctex"
+path.s3tc="res://.godot/imported/Gadgets.png-e8ce20f1ac2b2de3f5f08b3a8a75267e.s3tc.ctex"
+path.etc2="res://.godot/imported/Gadgets.png-e8ce20f1ac2b2de3f5f08b3a8a75267e.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/textures/Gadgets.png"
-dest_files=["res://.godot/imported/Gadgets.png-775a5942262eb58f16718c17b0ce27d8.s3tc.ctex", "res://.godot/imported/Gadgets.png-775a5942262eb58f16718c17b0ce27d8.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/Textures/Gadgets.png"
+dest_files=["res://.godot/imported/Gadgets.png-e8ce20f1ac2b2de3f5f08b3a8a75267e.s3tc.ctex", "res://.godot/imported/Gadgets.png-e8ce20f1ac2b2de3f5f08b3a8a75267e.etc2.ctex"]
 
 [params]
 

@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdo5u3k1amcn5"
-path.s3tc="res://.godot/imported/Table_01.png-bb0382be0001ae4a98ff3984b9569dcb.s3tc.ctex"
-path.etc2="res://.godot/imported/Table_01.png-bb0382be0001ae4a98ff3984b9569dcb.etc2.ctex"
+path.s3tc="res://.godot/imported/Table_01.png-aeb2de3d084c1c92500a4a5ae5488469.s3tc.ctex"
+path.etc2="res://.godot/imported/Table_01.png-aeb2de3d084c1c92500a4a5ae5488469.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/textures/Table_01.png"
-dest_files=["res://.godot/imported/Table_01.png-bb0382be0001ae4a98ff3984b9569dcb.s3tc.ctex", "res://.godot/imported/Table_01.png-bb0382be0001ae4a98ff3984b9569dcb.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/Textures/Table_01.png"
+dest_files=["res://.godot/imported/Table_01.png-aeb2de3d084c1c92500a4a5ae5488469.s3tc.ctex", "res://.godot/imported/Table_01.png-aeb2de3d084c1c92500a4a5ae5488469.etc2.ctex"]
 
 [params]
 

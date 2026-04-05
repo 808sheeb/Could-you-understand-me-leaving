@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nstcykmwb6c"
-path.s3tc="res://.godot/imported/Chicken.png-87468e0cb81bf7539c17ef4f413b4913.s3tc.ctex"
-path.etc2="res://.godot/imported/Chicken.png-87468e0cb81bf7539c17ef4f413b4913.etc2.ctex"
+path.s3tc="res://.godot/imported/Chicken.png-65ee386f7d8165493e0464540fd8ec39.s3tc.ctex"
+path.etc2="res://.godot/imported/Chicken.png-65ee386f7d8165493e0464540fd8ec39.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Chicken.png"
-dest_files=["res://.godot/imported/Chicken.png-87468e0cb81bf7539c17ef4f413b4913.s3tc.ctex", "res://.godot/imported/Chicken.png-87468e0cb81bf7539c17ef4f413b4913.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Chicken.png"
+dest_files=["res://.godot/imported/Chicken.png-65ee386f7d8165493e0464540fd8ec39.s3tc.ctex", "res://.godot/imported/Chicken.png-65ee386f7d8165493e0464540fd8ec39.etc2.ctex"]
 
 [params]
 

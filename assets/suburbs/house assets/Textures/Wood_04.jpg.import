@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ssqohw1o6nxu"
-path.s3tc="res://.godot/imported/Wood_04.jpg-2fccf697b600699f48c74ccf746d42cd.s3tc.ctex"
-path.etc2="res://.godot/imported/Wood_04.jpg-2fccf697b600699f48c74ccf746d42cd.etc2.ctex"
+path.s3tc="res://.godot/imported/Wood_04.jpg-a15b3516620f305e4565d36d1f7fa8ea.s3tc.ctex"
+path.etc2="res://.godot/imported/Wood_04.jpg-a15b3516620f305e4565d36d1f7fa8ea.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Wood_04.jpg"
-dest_files=["res://.godot/imported/Wood_04.jpg-2fccf697b600699f48c74ccf746d42cd.s3tc.ctex", "res://.godot/imported/Wood_04.jpg-2fccf697b600699f48c74ccf746d42cd.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Wood_04.jpg"
+dest_files=["res://.godot/imported/Wood_04.jpg-a15b3516620f305e4565d36d1f7fa8ea.s3tc.ctex", "res://.godot/imported/Wood_04.jpg-a15b3516620f305e4565d36d1f7fa8ea.etc2.ctex"]
 
 [params]
 

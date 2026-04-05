@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb1fbk3myma0r"
-path.s3tc="res://.godot/imported/Shovel.png-998a7c04b84d3981a3450924a3d5055d.s3tc.ctex"
-path.etc2="res://.godot/imported/Shovel.png-998a7c04b84d3981a3450924a3d5055d.etc2.ctex"
+path.s3tc="res://.godot/imported/Shovel.png-cf6ca8a424d9b33e24f9141112fafc1c.s3tc.ctex"
+path.etc2="res://.godot/imported/Shovel.png-cf6ca8a424d9b33e24f9141112fafc1c.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Shovel.png"
-dest_files=["res://.godot/imported/Shovel.png-998a7c04b84d3981a3450924a3d5055d.s3tc.ctex", "res://.godot/imported/Shovel.png-998a7c04b84d3981a3450924a3d5055d.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Shovel.png"
+dest_files=["res://.godot/imported/Shovel.png-cf6ca8a424d9b33e24f9141112fafc1c.s3tc.ctex", "res://.godot/imported/Shovel.png-cf6ca8a424d9b33e24f9141112fafc1c.etc2.ctex"]
 
 [params]
 

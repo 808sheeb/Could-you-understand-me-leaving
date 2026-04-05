@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s4axit6anj6m"
-path.s3tc="res://.godot/imported/Hedges.jpg-d67011bf4c76a3d9971961e75518a2fe.s3tc.ctex"
-path.etc2="res://.godot/imported/Hedges.jpg-d67011bf4c76a3d9971961e75518a2fe.etc2.ctex"
+path.s3tc="res://.godot/imported/Hedges.jpg-ac36eab38ef9f432cd40f92fd83f3479.s3tc.ctex"
+path.etc2="res://.godot/imported/Hedges.jpg-ac36eab38ef9f432cd40f92fd83f3479.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Hedges.jpg"
-dest_files=["res://.godot/imported/Hedges.jpg-d67011bf4c76a3d9971961e75518a2fe.s3tc.ctex", "res://.godot/imported/Hedges.jpg-d67011bf4c76a3d9971961e75518a2fe.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Hedges.jpg"
+dest_files=["res://.godot/imported/Hedges.jpg-ac36eab38ef9f432cd40f92fd83f3479.s3tc.ctex", "res://.godot/imported/Hedges.jpg-ac36eab38ef9f432cd40f92fd83f3479.etc2.ctex"]
 
 [params]
 

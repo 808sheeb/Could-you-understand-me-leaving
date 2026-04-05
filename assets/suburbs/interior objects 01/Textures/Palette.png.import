@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3vkiyvuxisl"
-path.s3tc="res://.godot/imported/Palette.png-4d19801087f02b9b9b4cd25dedfc27eb.s3tc.ctex"
-path.etc2="res://.godot/imported/Palette.png-4d19801087f02b9b9b4cd25dedfc27eb.etc2.ctex"
+path.s3tc="res://.godot/imported/Palette.png-ab4eba28c401b9db30ba2a8a785d572f.s3tc.ctex"
+path.etc2="res://.godot/imported/Palette.png-ab4eba28c401b9db30ba2a8a785d572f.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/textures/Palette.png"
-dest_files=["res://.godot/imported/Palette.png-4d19801087f02b9b9b4cd25dedfc27eb.s3tc.ctex", "res://.godot/imported/Palette.png-4d19801087f02b9b9b4cd25dedfc27eb.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/Textures/Palette.png"
+dest_files=["res://.godot/imported/Palette.png-ab4eba28c401b9db30ba2a8a785d572f.s3tc.ctex", "res://.godot/imported/Palette.png-ab4eba28c401b9db30ba2a8a785d572f.etc2.ctex"]
 
 [params]
 

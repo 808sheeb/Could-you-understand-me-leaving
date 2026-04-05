@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drjfjpj1qxe3y"
-path.s3tc="res://.godot/imported/Fence.png-6a03ee0a3f7f28620eb907c7445809d5.s3tc.ctex"
-path.etc2="res://.godot/imported/Fence.png-6a03ee0a3f7f28620eb907c7445809d5.etc2.ctex"
+path.s3tc="res://.godot/imported/Fence.png-97232e8fa6dee0c8f6e7dbea559046d1.s3tc.ctex"
+path.etc2="res://.godot/imported/Fence.png-97232e8fa6dee0c8f6e7dbea559046d1.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Fence.png"
-dest_files=["res://.godot/imported/Fence.png-6a03ee0a3f7f28620eb907c7445809d5.s3tc.ctex", "res://.godot/imported/Fence.png-6a03ee0a3f7f28620eb907c7445809d5.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Fence.png"
+dest_files=["res://.godot/imported/Fence.png-97232e8fa6dee0c8f6e7dbea559046d1.s3tc.ctex", "res://.godot/imported/Fence.png-97232e8fa6dee0c8f6e7dbea559046d1.etc2.ctex"]
 
 [params]
 

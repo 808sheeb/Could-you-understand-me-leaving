@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhgrb01j4m030"
-path.s3tc="res://.godot/imported/Cutlery.png-a0047a45b0af84440b59e1d7a90655f5.s3tc.ctex"
-path.etc2="res://.godot/imported/Cutlery.png-a0047a45b0af84440b59e1d7a90655f5.etc2.ctex"
+path.s3tc="res://.godot/imported/Cutlery.png-01582df2123ea6b74a8aaa0cdc639200.s3tc.ctex"
+path.etc2="res://.godot/imported/Cutlery.png-01582df2123ea6b74a8aaa0cdc639200.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Cutlery.png"
-dest_files=["res://.godot/imported/Cutlery.png-a0047a45b0af84440b59e1d7a90655f5.s3tc.ctex", "res://.godot/imported/Cutlery.png-a0047a45b0af84440b59e1d7a90655f5.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Cutlery.png"
+dest_files=["res://.godot/imported/Cutlery.png-01582df2123ea6b74a8aaa0cdc639200.s3tc.ctex", "res://.godot/imported/Cutlery.png-01582df2123ea6b74a8aaa0cdc639200.etc2.ctex"]
 
 [params]
 

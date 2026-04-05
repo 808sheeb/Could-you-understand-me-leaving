@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2ksgrvmw3vcv"
-path.s3tc="res://.godot/imported/RooftilesSlate.jpg-1d20685d13c8d83f0b622df177f22d3d.s3tc.ctex"
-path.etc2="res://.godot/imported/RooftilesSlate.jpg-1d20685d13c8d83f0b622df177f22d3d.etc2.ctex"
+path.s3tc="res://.godot/imported/RooftilesSlate.jpg-c187ec0f0b62a84ddc09bce39e23fc91.s3tc.ctex"
+path.etc2="res://.godot/imported/RooftilesSlate.jpg-c187ec0f0b62a84ddc09bce39e23fc91.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 01/textures/RooftilesSlate.jpg"
-dest_files=["res://.godot/imported/RooftilesSlate.jpg-1d20685d13c8d83f0b622df177f22d3d.s3tc.ctex", "res://.godot/imported/RooftilesSlate.jpg-1d20685d13c8d83f0b622df177f22d3d.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 01/Textures/RooftilesSlate.jpg"
+dest_files=["res://.godot/imported/RooftilesSlate.jpg-c187ec0f0b62a84ddc09bce39e23fc91.s3tc.ctex", "res://.godot/imported/RooftilesSlate.jpg-c187ec0f0b62a84ddc09bce39e23fc91.etc2.ctex"]
 
 [params]
 

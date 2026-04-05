@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwkbojtona52k"
-path.s3tc="res://.godot/imported/hose_01.png-f7bf5f28da10784530bae6e19085c395.s3tc.ctex"
-path.etc2="res://.godot/imported/hose_01.png-f7bf5f28da10784530bae6e19085c395.etc2.ctex"
+path.s3tc="res://.godot/imported/hose_01.png-aec29519cf57edf4d43f2d45247788d1.s3tc.ctex"
+path.etc2="res://.godot/imported/hose_01.png-aec29519cf57edf4d43f2d45247788d1.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/hose_01.png"
-dest_files=["res://.godot/imported/hose_01.png-f7bf5f28da10784530bae6e19085c395.s3tc.ctex", "res://.godot/imported/hose_01.png-f7bf5f28da10784530bae6e19085c395.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/hose_01.png"
+dest_files=["res://.godot/imported/hose_01.png-aec29519cf57edf4d43f2d45247788d1.s3tc.ctex", "res://.godot/imported/hose_01.png-aec29519cf57edf4d43f2d45247788d1.etc2.ctex"]
 
 [params]
 

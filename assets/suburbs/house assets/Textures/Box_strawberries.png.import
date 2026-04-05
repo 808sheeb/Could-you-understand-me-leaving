@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy5ojl0u687kk"
-path.s3tc="res://.godot/imported/Box_strawberries.png-d6da90b40235b7519f228fe330778c3b.s3tc.ctex"
-path.etc2="res://.godot/imported/Box_strawberries.png-d6da90b40235b7519f228fe330778c3b.etc2.ctex"
+path.s3tc="res://.godot/imported/Box_strawberries.png-9489806d9cc6a862314306d672a88048.s3tc.ctex"
+path.etc2="res://.godot/imported/Box_strawberries.png-9489806d9cc6a862314306d672a88048.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Box_strawberries.png"
-dest_files=["res://.godot/imported/Box_strawberries.png-d6da90b40235b7519f228fe330778c3b.s3tc.ctex", "res://.godot/imported/Box_strawberries.png-d6da90b40235b7519f228fe330778c3b.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Box_strawberries.png"
+dest_files=["res://.godot/imported/Box_strawberries.png-9489806d9cc6a862314306d672a88048.s3tc.ctex", "res://.godot/imported/Box_strawberries.png-9489806d9cc6a862314306d672a88048.etc2.ctex"]
 
 [params]
 

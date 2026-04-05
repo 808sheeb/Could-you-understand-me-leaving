@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg6q1hq2nkkaa"
-path.s3tc="res://.godot/imported/Electronics.jpg-e0cf0cddab191076f25433fbeea7fb5f.s3tc.ctex"
-path.etc2="res://.godot/imported/Electronics.jpg-e0cf0cddab191076f25433fbeea7fb5f.etc2.ctex"
+path.s3tc="res://.godot/imported/Electronics.jpg-1f099d881a51462dcc68b9295c81f160.s3tc.ctex"
+path.etc2="res://.godot/imported/Electronics.jpg-1f099d881a51462dcc68b9295c81f160.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Electronics.jpg"
-dest_files=["res://.godot/imported/Electronics.jpg-e0cf0cddab191076f25433fbeea7fb5f.s3tc.ctex", "res://.godot/imported/Electronics.jpg-e0cf0cddab191076f25433fbeea7fb5f.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Electronics.jpg"
+dest_files=["res://.godot/imported/Electronics.jpg-1f099d881a51462dcc68b9295c81f160.s3tc.ctex", "res://.godot/imported/Electronics.jpg-1f099d881a51462dcc68b9295c81f160.etc2.ctex"]
 
 [params]
 

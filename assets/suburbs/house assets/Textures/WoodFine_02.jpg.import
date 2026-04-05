@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx0da3gbkkpdp"
-path.s3tc="res://.godot/imported/WoodFine_02.jpg-0b1826c9d8c8a4fa0acf66b378df72b7.s3tc.ctex"
-path.etc2="res://.godot/imported/WoodFine_02.jpg-0b1826c9d8c8a4fa0acf66b378df72b7.etc2.ctex"
+path.s3tc="res://.godot/imported/WoodFine_02.jpg-0afa9b0b7c7ff15ee3b70f62ff7343f8.s3tc.ctex"
+path.etc2="res://.godot/imported/WoodFine_02.jpg-0afa9b0b7c7ff15ee3b70f62ff7343f8.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/WoodFine_02.jpg"
-dest_files=["res://.godot/imported/WoodFine_02.jpg-0b1826c9d8c8a4fa0acf66b378df72b7.s3tc.ctex", "res://.godot/imported/WoodFine_02.jpg-0b1826c9d8c8a4fa0acf66b378df72b7.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/WoodFine_02.jpg"
+dest_files=["res://.godot/imported/WoodFine_02.jpg-0afa9b0b7c7ff15ee3b70f62ff7343f8.s3tc.ctex", "res://.godot/imported/WoodFine_02.jpg-0afa9b0b7c7ff15ee3b70f62ff7343f8.etc2.ctex"]
 
 [params]
 

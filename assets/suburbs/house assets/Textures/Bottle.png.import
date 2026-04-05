@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqxfu0xm5dm2q"
-path.s3tc="res://.godot/imported/Bottle.png-2e00d84b4e41e7db0a9ff808a20583e0.s3tc.ctex"
-path.etc2="res://.godot/imported/Bottle.png-2e00d84b4e41e7db0a9ff808a20583e0.etc2.ctex"
+path.s3tc="res://.godot/imported/Bottle.png-c1adc918e7af7ec0e0a0735957d7e854.s3tc.ctex"
+path.etc2="res://.godot/imported/Bottle.png-c1adc918e7af7ec0e0a0735957d7e854.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Bottle.png"
-dest_files=["res://.godot/imported/Bottle.png-2e00d84b4e41e7db0a9ff808a20583e0.s3tc.ctex", "res://.godot/imported/Bottle.png-2e00d84b4e41e7db0a9ff808a20583e0.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Bottle.png"
+dest_files=["res://.godot/imported/Bottle.png-c1adc918e7af7ec0e0a0735957d7e854.s3tc.ctex", "res://.godot/imported/Bottle.png-c1adc918e7af7ec0e0a0735957d7e854.etc2.ctex"]
 
 [params]
 

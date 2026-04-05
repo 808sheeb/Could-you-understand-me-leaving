@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cca8loq1u7nrs"
-path.s3tc="res://.godot/imported/TilesSmall_01.jpg-ac35480679ad80e3ea791dded1013c0d.s3tc.ctex"
-path.etc2="res://.godot/imported/TilesSmall_01.jpg-ac35480679ad80e3ea791dded1013c0d.etc2.ctex"
+path.s3tc="res://.godot/imported/TilesSmall_01.jpg-79f365c0594b47be5e054e4253ba7419.s3tc.ctex"
+path.etc2="res://.godot/imported/TilesSmall_01.jpg-79f365c0594b47be5e054e4253ba7419.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/TilesSmall_01.jpg"
-dest_files=["res://.godot/imported/TilesSmall_01.jpg-ac35480679ad80e3ea791dded1013c0d.s3tc.ctex", "res://.godot/imported/TilesSmall_01.jpg-ac35480679ad80e3ea791dded1013c0d.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/TilesSmall_01.jpg"
+dest_files=["res://.godot/imported/TilesSmall_01.jpg-79f365c0594b47be5e054e4253ba7419.s3tc.ctex", "res://.godot/imported/TilesSmall_01.jpg-79f365c0594b47be5e054e4253ba7419.etc2.ctex"]
 
 [params]
 

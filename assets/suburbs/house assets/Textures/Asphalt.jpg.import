@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ciosovx2kwnll"
-path.s3tc="res://.godot/imported/Asphalt.jpg-855c6330ceab1696da0d07996246238a.s3tc.ctex"
-path.etc2="res://.godot/imported/Asphalt.jpg-855c6330ceab1696da0d07996246238a.etc2.ctex"
+path.s3tc="res://.godot/imported/Asphalt.jpg-13a6ce9c9aa5639363c71aaae88487a6.s3tc.ctex"
+path.etc2="res://.godot/imported/Asphalt.jpg-13a6ce9c9aa5639363c71aaae88487a6.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/house assets/textures/Asphalt.jpg"
-dest_files=["res://.godot/imported/Asphalt.jpg-855c6330ceab1696da0d07996246238a.s3tc.ctex", "res://.godot/imported/Asphalt.jpg-855c6330ceab1696da0d07996246238a.etc2.ctex"]
+source_file="res://assets/suburbs/house assets/Textures/Asphalt.jpg"
+dest_files=["res://.godot/imported/Asphalt.jpg-13a6ce9c9aa5639363c71aaae88487a6.s3tc.ctex", "res://.godot/imported/Asphalt.jpg-13a6ce9c9aa5639363c71aaae88487a6.etc2.ctex"]
 
 [params]
 

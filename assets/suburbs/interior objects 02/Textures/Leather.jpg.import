@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw286vc4wb1gx"
-path.s3tc="res://.godot/imported/Leather.jpg-a778967e726396fc3c74b3d9bb8103f1.s3tc.ctex"
-path.etc2="res://.godot/imported/Leather.jpg-a778967e726396fc3c74b3d9bb8103f1.etc2.ctex"
+path.s3tc="res://.godot/imported/Leather.jpg-3ee1072085e108cacb42a454533cdad3.s3tc.ctex"
+path.etc2="res://.godot/imported/Leather.jpg-3ee1072085e108cacb42a454533cdad3.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/textures/Leather.jpg"
-dest_files=["res://.godot/imported/Leather.jpg-a778967e726396fc3c74b3d9bb8103f1.s3tc.ctex", "res://.godot/imported/Leather.jpg-a778967e726396fc3c74b3d9bb8103f1.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/Textures/Leather.jpg"
+dest_files=["res://.godot/imported/Leather.jpg-3ee1072085e108cacb42a454533cdad3.s3tc.ctex", "res://.godot/imported/Leather.jpg-3ee1072085e108cacb42a454533cdad3.etc2.ctex"]
 
 [params]
 

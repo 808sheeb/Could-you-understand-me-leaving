@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0h1n4lb1utcs"
-path.s3tc="res://.godot/imported/Marble_02.png-de311d4c2a45db7d9fb64d502b167876.s3tc.ctex"
-path.etc2="res://.godot/imported/Marble_02.png-de311d4c2a45db7d9fb64d502b167876.etc2.ctex"
+path.s3tc="res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.s3tc.ctex"
+path.etc2="res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/textures/Marble_02.png"
-dest_files=["res://.godot/imported/Marble_02.png-de311d4c2a45db7d9fb64d502b167876.s3tc.ctex", "res://.godot/imported/Marble_02.png-de311d4c2a45db7d9fb64d502b167876.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/Textures/Marble_02.png"
+dest_files=["res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.s3tc.ctex", "res://.godot/imported/Marble_02.png-d7bec295d38247976cb480d59bc0d3d4.etc2.ctex"]
 
 [params]
 

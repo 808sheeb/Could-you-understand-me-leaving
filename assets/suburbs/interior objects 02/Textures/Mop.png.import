@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn40urfoh102u"
-path.s3tc="res://.godot/imported/Mop.png-56c4bf7da10b6d142f98d49e0de26b50.s3tc.ctex"
-path.etc2="res://.godot/imported/Mop.png-56c4bf7da10b6d142f98d49e0de26b50.etc2.ctex"
+path.s3tc="res://.godot/imported/Mop.png-7910943df850cef58c69aad8a6456d93.s3tc.ctex"
+path.etc2="res://.godot/imported/Mop.png-7910943df850cef58c69aad8a6456d93.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/suburbs/interior objects 02/textures/Mop.png"
-dest_files=["res://.godot/imported/Mop.png-56c4bf7da10b6d142f98d49e0de26b50.s3tc.ctex", "res://.godot/imported/Mop.png-56c4bf7da10b6d142f98d49e0de26b50.etc2.ctex"]
+source_file="res://assets/suburbs/interior objects 02/Textures/Mop.png"
+dest_files=["res://.godot/imported/Mop.png-7910943df850cef58c69aad8a6456d93.s3tc.ctex", "res://.godot/imported/Mop.png-7910943df850cef58c69aad8a6456d93.etc2.ctex"]
 
 [params]
 
