@@ -3,13 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://b11fqpiolayd5" path="res://assets/tex/grass/Ground037_1K-JPG_Color.jpg" id="Color"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w568x"]
-load_path = "res://.godot/imported/Ground037_1K-JPG_AmbientOcclusion.jpg-6d0dc812c1717837e54fa96c463661c1.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_24iod"]
-load_path = "res://.godot/imported/Ground037_1K-JPG_Displacement.jpg-99d15aa94d4982af68197a9c43f7acdc.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_liini"]
-load_path = "res://.godot/imported/Ground037_1K-JPG_NormalGL.jpg-1a6b82b77af8fa1ecb1724a20cec95ac.ctex"
 
 [resource]
 albedo_color = Color(0.7063041, 0.915556, 0.5992555, 1)
