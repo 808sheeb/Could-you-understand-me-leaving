@@ -1,43 +1,20 @@
 extends Node3D
 
-var winterPortalActive =  false
-var meadowPortalActive = false
-var galleryPortalActive = false
 var villagePortalActive = false
-@onready var winter_portal: Portal3D = $main_house/HousePortalWinter
-@onready var winter_border: Node3D = $main_house/WinterBorder
-@onready var meadow_border: Node3D = $main_house/meadowBorder
-@onready var meadow_portal: Portal3D = $main_house/HousePortalMeadow
-@onready var meadow_particles: GPUParticles3D = $main_house/MeadowParticles
 @onready var village_portal: Portal3D = $main_house/HousePortalVillage
 @onready var player: CharacterBody3D = $player
 @onready var village_particles: GPUParticles3D = $main_house/VillageParticles
-@onready var winter_particles: GPUParticles3D = $main_house/WinterParticles
-@onready var gallery_portal: Portal3D = $main_house/HousePortalGallery
-@onready var frostgorge_sound: Node3D = $FrostgorgeSound
 @onready var town: Node3D = $Town
-@onready var gallery: Node3D = $Gallery
-@onready var meadow: Node3D = $Meadow
 
 
 func _ready() -> void:
-	winter_border.visible = false
-	meadow_border.visible = false
 	village_particles.visible = false
-	meadow_particles.visible = false
-	winter_particles.visible = false
-	frostgorge_sound.visible = false
 	town.visible = false
-	gallery.visible = false
-	meadow.visible = false
 	
 	#on alarm reset, do this
 	GlobalMessenger.connect('ALARM_SNOOZE', resetPortal)
 	
 	#on key pickup, do this
-	GlobalMessenger.connect("KEY_WINTER", winterPortal)
-	GlobalMessenger.connect("KEY_MEADOW", meadowPortal)
-	GlobalMessenger.connect("KEY_GNOME_LOCK", galleryPortal)
 	GlobalMessenger.connect("KEY_VILLAGE", villagePortal)
 	
 	GlobalMessenger.connect("RESET", gameReset)
@@ -47,26 +24,6 @@ func _process(_delta) -> void:
 	#print(player.get_position())
 	pass
 
-func winterPortal():
-	winterPortalActive = true
-	winter_border.visible = true
-	winter_particles.visible = true
-	winter_portal.activate()
-	frostgorge_sound.visible = true
-	
-func meadowPortal():
-	meadow.visible = true
-	meadowPortalActive = true
-	meadow_border.visible = true
-	meadow_particles.visible = true
-	meadow_portal.activate()
-	
-func galleryPortal():
-	galleryPortalActive = true
-	gallery_portal.activate()
-	gallery.visible = true
-	
-
 func villagePortal():
 	villagePortalActive = true
 	village_portal.visible = true
@@ -75,24 +32,12 @@ func villagePortal():
 	town.visible = true
 
 func resetPortal():
-	#WINTER
-	winterPortalActive = false
-	winter_border.visible = false
-	winter_particles.visible = false
-	winter_portal.deactivate()
-	frostgorge_sound.visible = false
 	#VILLAGE
 	villagePortalActive = false
 	village_portal.visible = false
 	village_particles.visible = false
 	village_portal.deactivate()
 	town.visible = false
-	#MEADOW
-	meadowPortalActive = false
-	meadow_border.visible = false
-	meadow_particles.visible = false
-	meadow_portal.deactivate()
-	meadow.visible = false
 
 func gameReset():
 	get_tree().reload_current_scene()
