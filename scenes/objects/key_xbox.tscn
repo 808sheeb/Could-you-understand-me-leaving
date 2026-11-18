@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://celmha118kao6"]
 
-[ext_resource type="Script" uid="uid://dy6l5wgllx48c" path="res://scripts/interact/key.gd" id="1_ruipk"]
-[ext_resource type="Texture2D" uid="uid://ke4sfmiv50bf" path="res://assets/suburbs/xbox/textures/M_Xbox_baseColor.png" id="2_ssuva"]
+[ext_resource type="Script" uid="uid://dy6l5wgllx48c" path="res://scripts/interact/key.gd" id="1_rngvt"]
+[ext_resource type="Texture2D" uid="uid://ke4sfmiv50bf" path="res://assets/suburbs/xbox/textures/M_Xbox_baseColor.png" id="2_lotx2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gmmk2"]
 size = Vector3(0.32641602, 0.1430664, 0.27197266)
@@ -10,7 +10,7 @@ size = Vector3(0.32641602, 0.1430664, 0.27197266)
 resource_name = "M_Xbox"
 cull_mode = 2
 specular_mode = 2
-albedo_texture = ExtResource("2_ssuva")
+albedo_texture = ExtResource("2_lotx2")
 metallic_specular = 0.0
 emission = Color(0.08471489, 0.10546875, 0.08404541, 1)
 emission_energy_multiplier = 4.01
@@ -88,11 +88,11 @@ proximity_fade_distance = 2.0
 material = SubResource("StandardMaterial3D_5souc")
 size = Vector2(0.1, 0.1)
 
-[node name="KEY_WINTER" type="Node3D" unique_id=315732678]
+[node name="KEY_XBOX" type="Node3D" unique_id=315732678]
 
 [node name="winter_key" type="StaticBody3D" parent="." unique_id=1396074766]
-script = ExtResource("1_ruipk")
-keyName = "winter"
+script = ExtResource("1_rngvt")
+keyName = "xbox"
 prompt_message = "Pick Up"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="winter_key" unique_id=1694374780]

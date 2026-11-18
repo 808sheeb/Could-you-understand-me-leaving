@@ -5,7 +5,7 @@ var keyIsActive := false
 var isAlarmGoingOff := false
 
 func _ready() -> void:
-	GlobalMessenger.connect("KEY_VILLAGE", activeToggle)
+	GlobalMessenger.connect("KEY_XBOX", activeToggle)
 	GlobalMessenger.connect("ALARM_SNOOZE", alarmSnoozed)
 	
 func _process(_delta) -> void:

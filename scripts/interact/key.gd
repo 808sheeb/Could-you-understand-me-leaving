@@ -25,12 +25,10 @@ func _on_interacted(_body):
 		keyBody.remove_child(self)
 		pickedUp = true
 	
-		if keyName == "winter":
-			GlobalMessenger.KEY_WINTER.emit()
-		elif keyName == "merry":
-			GlobalMessenger.KEY_VILLAGE.emit()
-		elif keyName == "meadow":
-			GlobalMessenger.KEY_MEADOW.emit()
+		if keyName == "xbox":
+			GlobalMessenger.KEY_XBOX.emit()
+		
+		
 	elif isAlarmGoingOff || !readyForPickup:
 		GlobalMessenger.UI_ITEM.emit()
 

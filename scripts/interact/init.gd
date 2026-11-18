@@ -26,12 +26,12 @@ func _on_button_interacted(_body):
 
 func startAlarm():
 	# how long before the alarm goes off?
-	var snoozeTime = rng.randi_range(2,5)
+	var snoozeTime = rng.randi_range(120,300)
 	alarm.start(snoozeTime)
 
 func initGame():
 	# how long after the game starts do the items spawn?
-	var initTime = rng.randi_range(1, 2)
+	var initTime = rng.randi_range(12, 15)
 	init.start(initTime)
 	snooze = true
 	
