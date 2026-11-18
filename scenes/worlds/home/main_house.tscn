@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bg1e8b1jsunfw" path="res://assets/suburbs/trailer park/textures/WoodFine_baseColor.jpeg" id="6_f86le"]
 [ext_resource type="Material" uid="uid://dy6obmcyomgbp" path="res://assets/gallery/stuccoGallery.tres" id="6_qyt41"]
 [ext_resource type="Texture2D" uid="uid://dldbt1wbsoxwc" path="res://assets/suburbs/interior objects 01/Textures/Gadgets.png" id="6_x0qis"]
-[ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/gui.gd" id="7_63qeg"]
+[ext_resource type="Script" uid="uid://cfxt55cwidjg4" path="res://scripts/interact/init.gd" id="7_63qeg"]
 [ext_resource type="PackedScene" uid="uid://b50gw0kf52kdd" path="res://scenes/objects/light.tscn" id="7_gmmk2"]
 [ext_resource type="Texture2D" uid="uid://3ekxl5aj3mge" path="res://assets/suburbs/trailer park/textures/alarm_clock_01_baseColor.png" id="8_on6aa"]
 [ext_resource type="Texture2D" uid="uid://cd4268gwn5maq" path="res://assets/suburbs/trailer park/textures/Vase_baseColor.png" id="9_y85yq"]
@@ -8094,46 +8094,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_nvnk7")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k5mem"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hpfm"]
-resource_name = "Calculator.001"
-cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_k5mem")
-roughness = 0.5
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_qy5my"]
-_surfaces = [{
-"aabb": AABB(-0.04815668, -0.0075995326, -0.0353295, 0.11527598, 0.018974006, 0.070659004),
-"format": 34896613377,
-"index_count": 60,
-"index_data": PackedByteArray("AAABAAIAAQADAAIAAAAEAAEAAQAFAAMABAAFAAEABAAGAAUAAAAGAAQABwAFAAYAAAAHAAYABwADAAUACAAHAAAAAgADAAkABwAJAAMACAAKAAcABwAKAAkAAAALAAgAAAACAAsACwAKAAgAAgAJAAsACwAJAAoA"),
-"name": "Calculator.001",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 12,
-"vertex_data": PackedByteArray("1EAAAP//AAD//wAAAAAAANRAAAAAAAAA1EAzZwAAAAD//wAA//8AAP//M2cAAAAA//8zZ///AADUQDNn//8AAAAAy5j//wAAAAD//wAAAAAAAP////8AAAAAy5gAAAAA")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_j15mp"]
-resource_name = "Sketchfab_Scene_Calculator_Calculator_001_0"
-_surfaces = [{
-"aabb": AABB(-0.04815668, -0.0075995326, -0.0353295, 0.11527598, 0.018974006, 0.070659004),
-"attribute_data": PackedByteArray("DlGQjDA7QpgOUUKYMDuQjA5RkIwCWUKYAlmQjA5RQpilAPCap/9DAKUAQwCn//CaEwBlpOT/9//k/2WkEwD3/6Fs+5CXYwuZp2NzlZJsk5TWhnuTx4YSl61tM5qEKwWPhCszmq1tBY+tbQ+ahCvhjoQrD5qtbeGOcGMzliVsaZTVa82QwGPOmdVrzZBChj+U8oWkkCVsaZQ="),
-"format": 34896613399,
-"index_count": 60,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAATABAAFAAVABMAFgAXABgAFgAZABcAGgAbABwAGgAdABsAHgAfACAAHgAhAB8AIgAjACQAIgAlACMA"),
-"material": SubResource("StandardMaterial3D_3hpfm"),
-"name": "Calculator.001",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 38,
-"vertex_data": PackedByteArray("1EAAAP//AAD//wAAAAAAANRAAAAAAAAA//8AAP//AADUQAAA//+hCgAAy5gAAKEKAADLmP//oQrUQAAAAAChCtRAM2f//6oq//8zZwAAqir//zNn//+qKtRAM2cAAKoq1EAzZ///wzIAAP//AADDMtRAM2cAAMMyAAD/////wzLUQAAAAAD//wAA//8AAP//AADLmAAA///UQDNnAAD/////AAAAAP////8zZwAA//8AAMuYAAAAAAAA/////wAAAADLmP//AAAAAP//AAAAAP//AAD//wAA//8zZwAAAAD//wAAAAAAAP//M2f//wAAAADLmP//1X/UQDNn///Vf9RAAAD//9V/AAD/////1X/UQAAA///Vf///M2f//9V///8AAP//1X/UQDNn///Vf/9//z//f/8//3//P/9//z95xQr1ecUK9XnFCvV5xQr1VNWqKlTVqipU1aoqVNWqKvnJ/CT5yfwk+cn8JPnJ/CQp/Cp8KfwpfCn8KXwp/Cp8KfwqfCn8Knz/P/9//z//f/8//3//P/9//7//f/+//3//v/9//7//f/3////9/////f////3/////////////////////////")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_qy5my")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nn72x"]
 resource_name = "Doom_Floppy_Disk"
 cull_mode = 2
@@ -13088,13 +13048,6 @@ transform = Transform3D(-82.94862, 1.6741653e-05, -55.85271, -1.50995775e-05, -1
 [node name="Blank Floppy Disc_Blank Floppy Disk_0" type="MeshInstance3D" parent="Shihab/Furniture/Node3D/Blank Floppy Disc" unique_id=384890674]
 transform = Transform3D(1, -4.1744386e-14, 2.9802322e-08, 3.1974423e-14, 1, 2.6645353e-14, -2.9802322e-08, -3.5527137e-15, 1, 0.41677094, -4.5634806e-08, -0.2234106)
 mesh = SubResource("ArrayMesh_n2k6u")
-skeleton = NodePath("")
-
-[node name="Calculator" type="Node3D" parent="Shihab/Furniture/Node3D" unique_id=1307886363]
-transform = Transform3D(95.43811, -1.6665052e-05, 29.859118, -1.50995775e-05, -100, -7.5497887e-06, 29.859118, 2.6967755e-06, -95.43811, -129.19824, -23.381699, -118.499756)
-
-[node name="Calculator_Calculator_001_0" type="MeshInstance3D" parent="Shihab/Furniture/Node3D/Calculator" unique_id=1571630581]
-mesh = SubResource("ArrayMesh_j15mp")
 skeleton = NodePath("")
 
 [node name="Doom Floppy Disc" type="Node3D" parent="Shihab/Furniture/Node3D" unique_id=1795553361]

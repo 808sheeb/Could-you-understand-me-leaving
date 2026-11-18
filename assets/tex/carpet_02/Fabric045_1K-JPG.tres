@@ -3,13 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://dnbw76yvbrvc8" path="res://assets/tex/carpet_02/Fabric045_1K-JPG_Color.jpg" id="Color"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ttheb"]
-load_path = "res://.godot/imported/Fabric045_1K-JPG_AmbientOcclusion.jpg-b3ed642b144eaa5d2f32e8a2a64151b3.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hvanq"]
-load_path = "res://.godot/imported/Fabric045_1K-JPG_Displacement.jpg-4a865f082b458cd637b1d9b207c1ada1.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_picjl"]
-load_path = "res://.godot/imported/Fabric045_1K-JPG_NormalGL.jpg-9b2b344446acfbbcf259ae288eac0e66.s3tc.ctex"
 
 [resource]
 albedo_texture = ExtResource("Color")
