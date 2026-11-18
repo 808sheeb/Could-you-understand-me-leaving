@@ -43,7 +43,7 @@
 [ext_resource type="Texture2D" uid="uid://w8ykj8kmln0" path="res://assets/suburbs/interior objects 01/Textures/Trash_can.png" id="23_2l44h"]
 [ext_resource type="Texture2D" uid="uid://bc3uojm2v68h2" path="res://assets/suburbs/interior objects 01/Textures/Table.png" id="24_fdi1n"]
 [ext_resource type="Texture2D" uid="uid://dskc2q8orxkxa" path="res://assets/tex/pegah_watermelon.png" id="24_puu7y"]
-[ext_resource type="PackedScene" uid="uid://dbcang1ea2n86" path="res://scenes/worlds/home/jeffcoat_copy.tscn" id="24_wjckd"]
+[ext_resource type="PackedScene" uid="uid://d1bx0uasub2do" path="res://scenes/worlds/home/jeffcoat.tscn" id="24_wjckd"]
 [ext_resource type="Texture2D" uid="uid://umju2wqru5lh" path="res://assets/tex/poster03.jpg" id="24_x2ut5"]
 [ext_resource type="Texture2D" uid="uid://bq6sgpw61kdqs" path="res://assets/tex/poster02.jpg" id="25_hfj31"]
 [ext_resource type="Texture2D" uid="uid://brp2jcnvg6dvn" path="res://assets/suburbs/interior objects 01/Textures/Chair_04.png" id="25_itjl3"]
@@ -13438,11 +13438,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 2.5, -30.5)
 use_collision = true
 size = Vector3(0.1, 5, 13)
 material = ExtResource("6_qyt41")
-
-[node name="RayahCutter" type="CSGBox3D" parent="Rayah/Walls & Floors/rayah_wall_back" unique_id=1669954781]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.009552598, 0.96003914)
-operation = 2
-size = Vector3(1, 3.7, 1.898211)
 
 [node name="rayah_wall_back2" type="CSGBox3D" parent="Rayah/Walls & Floors" unique_id=1445229041]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.811241, 2.5, -30.5)

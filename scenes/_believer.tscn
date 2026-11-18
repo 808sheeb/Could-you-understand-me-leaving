@@ -10,7 +10,6 @@
 [ext_resource type="Script" uid="uid://bxcel82b180o3" path="res://addons/portals/scripts/portal_boxmesh.gd" id="8_ax3ly"]
 [ext_resource type="PackedScene" uid="uid://cpyx1bu2rhbyc" path="res://scenes/objects/audio_controller.tscn" id="9_ymoqr"]
 [ext_resource type="PackedScene" uid="uid://dblivhyqjirc8" path="res://scenes/worlds/town/town.tscn" id="12_ltgfj"]
-[ext_resource type="PackedScene" uid="uid://bklk2f6g44260" path="res://scenes/objects/key_gnome.tscn" id="13_18mtf"]
 [ext_resource type="Material" uid="uid://qcmiw8pm4h2e" path="res://assets/tex/wood.tres" id="14_18mtf"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ltgfj"]
@@ -323,9 +322,6 @@ omni_range = 3.4919634
 
 [node name="Town3" parent="Town" unique_id=727444368 instance=ExtResource("12_ltgfj")]
 transform = Transform3D(1.635, 0, 0, 0, 1.635, 0, 0, 0, 1.635, 45.12934, -0.104876995, -14.717285)
-
-[node name="key_gnome" parent="Town" unique_id=1103591069 instance=ExtResource("13_18mtf")]
-transform = Transform3D(-0.3424539, 0, 0.06553717, 0, 0.3486686, 0, -0.06553717, 0, -0.3424539, 33.315857, 0.21799284, -8.921265)
 
 [node name="AudioController" parent="." unique_id=1228426800 instance=ExtResource("9_ymoqr")]
 

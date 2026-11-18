@@ -31,7 +31,7 @@ func startAlarm():
 
 func initGame():
 	# how long after the game starts do the items spawn?
-	var initTime = rng.randi_range(12, 15)
+	var initTime = rng.randi_range(50, 100)
 	init.start(initTime)
 	snooze = true
 	
